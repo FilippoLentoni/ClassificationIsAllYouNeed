@@ -26,3 +26,5 @@ configs/*.local.yaml
 # private working notes
 prompt.md
 prompts.md
+# personal Claude Code permissions
+.claude/settings.local.json
