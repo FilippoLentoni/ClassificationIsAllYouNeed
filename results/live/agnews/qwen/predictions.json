@@ -1,0 +1,13 @@
+{
+ "dataset": "agnews",
+ "model": "qwen",
+ "mode": "live",
+ "artifact_modes": [
+  "live"
+ ],
+ "model_version": [
+  "Qwen/Qwen3.6-27B@6a9e13bd6fc8"
+ ],
+ "n_rows": 8100,
+ "invalid": 0
+}

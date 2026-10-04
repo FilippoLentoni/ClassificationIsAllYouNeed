@@ -1,0 +1,13 @@
+{
+ "dataset": "agnews",
+ "model": "xgb",
+ "mode": "live",
+ "artifact_modes": [
+  "live"
+ ],
+ "model_version": [
+  "xgboost-3.0.5"
+ ],
+ "n_rows": 12600,
+ "invalid": 0
+}

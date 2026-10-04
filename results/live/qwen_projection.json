@@ -1,0 +1,136 @@
+{
+ "superseded": {
+  "engine": "vllm",
+  "instance_type": "ml.g5.12xlarge",
+  "region": "us-east-2",
+  "projected_seconds": 281401.09623559716,
+  "projected_hours": 78.16697117655477,
+  "projected_usd": 554.2191923084399,
+  "recorded_usd": 9.422475015833333,
+  "limit_usd": 75.0,
+  "fits": false,
+  "max_runtime_s": 14400,
+  "overhead_s": 217.14622831344604,
+  "from_execution": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/fymmhe6yvg03",
+  "cache_stats": {
+   "unavailable": "AssertionError: Stat logging disabled"
+  },
+  "made_at": "2026-10-01T02:24:24Z"
+ },
+ "vllm": {
+  "kind": "full",
+  "engine": "vllm",
+  "instance_type": "ml.g5.12xlarge",
+  "region": "us-east-2",
+  "projected_seconds": 3894.5685815811153,
+  "projected_hours": 1.0818246059947543,
+  "projected_usd": 7.685503123169474,
+  "overhead_s": 217.14622831344604,
+  "load_s": 305.6792702674866,
+  "datasets": {
+   "german": {
+    "nothink_s_per_item": 0.4125398755073547,
+    "think_s_per_item": 25.635294187068936,
+    "seconds": 1281.7647093534467
+   },
+   "wdbc": {
+    "nothink_s_per_item": 0.6941552519798279,
+    "think_s_per_item": 27.219919312000272,
+    "seconds": 1360.9959656000135
+   },
+   "sst2": {
+    "nothink_s_per_item": 0.15083062648773193,
+    "think_s_per_item": 5.964514136314392,
+    "seconds": 298.2257068157196
+   },
+   "agnews": {
+    "nothink_s_per_item": 0.507127833366394,
+    "think_s_per_item": 8.615134024620057,
+    "seconds": 430.7567012310028
+   }
+  },
+  "from_execution": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/fymmhe6yvg03",
+  "made_at": "2026-10-01T14:04:05Z",
+  "note": "an upper estimate where the smoke run used larger thinking settings than the full job"
+ },
+ "projected_usd": 18.30371228870281,
+ "recorded_usd": 16.31454976138889,
+ "limit_usd": 75.0,
+ "complete": true,
+ "fits": true,
+ "invalidated": {
+  "transformers": {
+   "kind": "full-hf",
+   "engine": "transformers",
+   "instance_type": "ml.g6.12xlarge",
+   "region": "us-east-2",
+   "projected_seconds": 7408.463025111705,
+   "projected_hours": 2.0579063958643626,
+   "projected_usd": 11.852444255678481,
+   "overhead_s": 198.83777356147766,
+   "load_s": 19.936750650405884,
+   "datasets": {
+    "german": {
+     "nothink_s_per_item": 0.43559547886252403,
+     "think_s_per_item": 0.43559547886252403,
+     "seconds": 475.818288885057
+    },
+    "wdbc": {
+     "nothink_s_per_item": 0.7589083127677441,
+     "think_s_per_item": 0.7589083127677441,
+     "seconds": 491.3282023407519
+    },
+    "sst2": {
+     "nothink_s_per_item": 0.39517973735928535,
+     "think_s_per_item": 0.39517973735928535,
+     "seconds": 579.5176723822951
+    },
+    "agnews": {
+     "nothink_s_per_item": 0.5898504853248596,
+     "think_s_per_item": 0.5898504853248596,
+     "seconds": 4824.762081503868
+    }
+   },
+   "from_execution": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/9kt9w3cxbg9v",
+   "made_at": "2026-10-01T13:49:21Z",
+   "note": "an upper estimate where the smoke run used larger thinking settings than the full job"
+  },
+  "why": "the smoke run it came from could not score Banking77 (out of GPU memory); all 8 items were invalid"
+ },
+ "transformers": {
+  "kind": "full-hf",
+  "engine": "transformers",
+  "instance_type": "ml.g6.12xlarge",
+  "region": "us-east-2",
+  "projected_seconds": 6635.993219040334,
+  "projected_hours": 1.843331449733426,
+  "projected_usd": 10.618209165533333,
+  "overhead_s": 209.25461983680725,
+  "load_s": 20.516230821609497,
+  "datasets": {
+   "german": {
+    "nothink_s_per_item": 0.43123091757297516,
+    "think_s_per_item": 0.43123091757297516,
+    "seconds": 471.3894273340702
+   },
+   "wdbc": {
+    "nothink_s_per_item": 0.7707036957144737,
+    "think_s_per_item": 0.7707036957144737,
+    "seconds": 498.6460095718503
+   },
+   "sst2": {
+    "nothink_s_per_item": 0.39273776486516,
+    "think_s_per_item": 0.39273776486516,
+    "seconds": 575.9432611688972
+   },
+   "agnews": {
+    "nothink_s_per_item": 0.5941557921469212,
+    "think_s_per_item": 0.5941557921469212,
+    "seconds": 4860.2436703071
+   }
+  },
+  "from_execution": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/gitxl1mk24f8",
+  "made_at": "2026-10-01T14:04:09Z",
+  "note": "an upper estimate where the smoke run used larger thinking settings than the full job"
+ }
+}

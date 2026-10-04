@@ -1,0 +1,53 @@
+{
+ "dataset": "german",
+ "example_id": "german-870",
+ "gold_label": "good",
+ "selection": "first evaluation example in a seeded order (seed 0) whose request is in the request log",
+ "source": "cache/exchanges/predict.jsonl, copied verbatim",
+ "exchange": {
+  "ledger_n": 951,
+  "stage": "predict",
+  "dataset": "german",
+  "cache_key": "fa2440e676f752e7476c7cd4c81dce3968ec5647f2a601216db06becc6a63c5f",
+  "ts": "2026-09-30T13:43:22.039+00:00",
+  "sdk_version": "0.7.2",
+  "requested_model": "jev-1.13.0",
+  "method": "POST",
+  "url": "https://api.typesafe.ai/v1/systemone",
+  "request": {
+   "state": "checking account balance: no checking account\nloan duration (months): 36\ncredit history: delayed previously\nloan purpose: furniture/equipment\ncredit amount (DM): 7678\nsavings account balance: 500 to 1000 DM\ntime in present employment: 4 to 7 years\ninstallment rate (% of disposable income): 2\npersonal status and sex: female div/dep/mar\nother debtors / guarantors: none\nyears at present residence: 4\nmost valuable property: car\nage (years): 40\nother installment plans: none\nhousing: own\nnumber of existing credits at this bank: 2\njob: skilled\nnumber of dependents: 1\nhas telephone: yes\nforeign worker: yes",
+   "model": "jev-1.13.0",
+   "questions": {
+    "label": {
+     "type": "choice",
+     "instructions": "Assess the credit risk of a bank loan applicant described below. Fields that are not listed are unknown.",
+     "criteria": {
+      "good": "The applicant is a good credit risk and is likely to repay the loan.",
+      "bad": "The applicant is a bad credit risk and is likely to default on the loan."
+     }
+    }
+   }
+  },
+  "status": 200,
+  "response": {
+   "model": "jev-1.13.0",
+   "answers": {
+    "label": {
+     "type": "choice",
+     "choice": "good",
+     "confidence": 0.13,
+     "probabilities": {
+      "good": 0.56,
+      "bad": 0.44
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 520,
+    "output_tokens": 31
+   }
+  },
+  "latency_s": 0.1776366669946583,
+  "reported_model": "jev-1.13.0"
+ }
+}

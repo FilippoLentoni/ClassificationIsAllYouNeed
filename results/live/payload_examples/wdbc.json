@@ -1,0 +1,53 @@
+{
+ "dataset": "wdbc",
+ "example_id": "wdbc-360",
+ "gold_label": "benign",
+ "selection": "first evaluation example in a seeded order (seed 0) whose request is in the request log",
+ "source": "cache/exchanges/predict.jsonl, copied verbatim",
+ "exchange": {
+  "ledger_n": 1423,
+  "stage": "predict",
+  "dataset": "wdbc",
+  "cache_key": "3caecc3988fea4f778a0077297f9217c81ed68498b698348366379524dd87c85",
+  "ts": "2026-09-30T13:43:34.432+00:00",
+  "sdk_version": "0.7.2",
+  "requested_model": "jev-1.13.0",
+  "method": "POST",
+  "url": "https://api.typesafe.ai/v1/systemone",
+  "request": {
+   "state": "mean radius: 12.54\nmean texture: 18.07\nmean perimeter: 79.42\nmean area: 491.9\nmean smoothness: 0.07436\nmean compactness: 0.0265\nmean concavity: 0.001194\nmean concave points: 0.005449\nmean symmetry: 0.1528\nmean fractal dimension: 0.05185\nradius error: 0.3511\ntexture error: 0.9527\nperimeter error: 2.329\narea error: 28.3\nsmoothness error: 0.005783\ncompactness error: 0.004693\nconcavity error: 0.0007929\nconcave points error: 0.003617\nsymmetry error: 0.02043\nfractal dimension error: 0.001058\nworst radius: 13.72\nworst texture: 20.98\nworst perimeter: 86.82\nworst area: 585.7\nworst smoothness: 0.09293\nworst compactness: 0.04327\nworst concavity: 0.003581\nworst concave points: 0.01635\nworst symmetry: 0.2233\nworst fractal dimension: 0.05521",
+   "model": "jev-1.13.0",
+   "questions": {
+    "label": {
+     "type": "choice",
+     "instructions": "Assess whether the breast mass described by the cell-nucleus measurements below is benign or malignant. Fields that are not listed are unknown.",
+     "criteria": {
+      "benign": "The mass is benign (not cancerous).",
+      "malignant": "The mass is malignant (cancerous)."
+     }
+    }
+   }
+  },
+  "status": 200,
+  "response": {
+   "model": "jev-1.13.0",
+   "answers": {
+    "label": {
+     "type": "choice",
+     "choice": "benign",
+     "confidence": 0.06,
+     "probabilities": {
+      "malignant": 0.47,
+      "benign": 0.53
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 733,
+    "output_tokens": 35
+   }
+  },
+  "latency_s": 0.11049597199598793,
+  "reported_model": "jev-1.13.0"
+ }
+}

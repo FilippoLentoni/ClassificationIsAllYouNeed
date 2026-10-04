@@ -1,0 +1,32 @@
+\section{Perturbation-based explanations}
+\label{sec:explain}
+
+Model-agnostic attribution needs only a real-valued function of the input, and with a class
+distribution it is immediate: $f(z) = \mu_{x(z)}(\{c^\star\})$, Jev's probability of the class it
+predicts on the full input when only the units in the coalition $z$ are kept (a feature line for
+tabular rows, a word for text). We ran KernelSHAP~\citep{lundberg2017shap} and
+LIME~\citep{ribeiro2016lime} on \ExExamplesGerman{} seeded examples per dataset, on live Jev, and
+tested faithfulness by deleting the top-attributed units and re-querying.
+
+\begin{table}[t]
+  \caption{Explanations of Jev's predictions: mean drop in the predicted-class probability and
+    share of label flips after deleting the top three attributed units, against three random
+    units; Kendall's $\tau$ and top-3 overlap between KernelSHAP and LIME; and Jev requests used.}
+  \label{tab:explain}
+  \centering\small
+  \setlength{\tabcolsep}{4pt}
+  \fittable{\input{generated/tab_explain}}
+\end{table}
+
+Both methods run unmodified, and how useful they are depends on the dataset
+(Table~\ref{tab:explain}). On German Credit
+and SST-2 the explanations are faithful: deleting the three top KernelSHAP units lowers the
+predicted-class probability by \ExDropShapGermanKThree{} and \ExDropShapSstKThree, against
+\ExDropRandomGermanKThree{} and \ExDropRandomSstKThree{} for three random units. On Breast Cancer
+Wisconsin and AG News they are weak (\ExDropShapWdbcKThree{} and \ExDropShapAgnewsKThree): with
+\ExMeanUnitsWdbc{} correlated measurements, or \ExMeanUnitsAgnews{} words, no three units carry
+the decision. The base value is informative in itself: with every feature removed, Jev still
+gives \emph{bad} a probability of \ExEmptyInputPositiveGerman{} on German Credit, the bias that
+Section~\ref{sec:metrics} measures. These explanations cost \ExRequestsTotal{} requests;
+Appendix~\ref{app:explain} shows the deletion curves (Figure~\ref{fig:faithfulness}) and
+example attributions (Figure~\ref{fig:attributions}).

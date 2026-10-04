@@ -1,0 +1,37 @@
+# Synthetic stand-ins used in mock mode. They are NOT real model outputs.
+seed: 0
+jev:
+  margin: 1.2          # logit margin on the gold class (log(K - 1) is added for K classes)
+  noise: 1.2           # std of per-item Gaussian logit noise (seeded by example id)
+  feature_noise: 1.0   # total std of the seeded per-unit (feature line or word) logit effects
+  temperature: 0.8     # logits / T
+  latency_s: 0.35
+  usd_per_mtok: 0.042
+xgb:
+  margin: 2.0
+  noise: 1.2
+  feature_noise: 0.0
+  temperature: 1.0
+  latency_s: 0.0
+  usd_per_mtok: 0.0
+bert:                  # mock-bert: a supervised stand-in, addressed by id like mock-xgb
+  margin: 2.4
+  noise: 1.2
+  feature_noise: 0.0
+  temperature: 1.0
+  latency_s: 0.0
+  usd_per_mtok: 0.0
+qwen:                  # mock-qwen: a zero-shot stand-in, one prediction per item
+  margin: 1.6
+  noise: 1.2
+  feature_noise: 0.0
+  temperature: 0.9
+  latency_s: 0.05
+  usd_per_mtok: 0.0
+qwen_think:            # mock-qwen with thinking enabled, on the thinking subsample only
+  margin: 1.9
+  noise: 1.2
+  feature_noise: 0.0
+  temperature: 0.9
+  latency_s: 2.0
+  usd_per_mtok: 0.0

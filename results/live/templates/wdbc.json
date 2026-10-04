@@ -1,0 +1,25 @@
+{
+ "dataset": "wdbc",
+ "question_name": "label",
+ "instructions": "Assess whether the breast mass described by the cell-nucleus measurements below is benign or malignant. Fields that are not listed are unknown.",
+ "criteria": [
+  [
+   "benign",
+   "The mass is benign (not cancerous)."
+  ],
+  [
+   "malignant",
+   "The mass is malignant (cancerous)."
+  ]
+ ],
+ "model": "jev-1.13.0",
+ "question_sha256": "0600f5c44b7d0246b4e56a276b230bdb9db51dc03969ea63a50532ffdc41750e",
+ "mode": "live",
+ "sdk_version": "0.7.2",
+ "frozen_at": "2026-09-30T13:42:43Z",
+ "check": {
+  "split": null,
+  "n": 0,
+  "reason": "every row of a repeated-split dataset can be an evaluation row; the response shape is validated by the first request of predict"
+ }
+}

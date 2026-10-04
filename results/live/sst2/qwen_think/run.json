@@ -1,0 +1,119 @@
+{
+ "mode": "live",
+ "model_version": "Qwen/Qwen3.6-27B@6a9e13bd6fc8",
+ "engine": "transformers",
+ "scoring": "one forward pass over the prompt, option suffixes on copies of the cached state",
+ "versions": {
+  "torch": "2.13.0+cu130",
+  "transformers": "5.16.1",
+  "python": "3.12.3"
+ },
+ "gpus": [
+  "NVIDIA L4",
+  "NVIDIA L4",
+  "NVIDIA L4",
+  "NVIDIA L4"
+ ],
+ "region": "us-east-2",
+ "instance_type": "ml.g6.12xlarge",
+ "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/mpsepno5ej5b",
+ "substitution": "inference ran in a SageMaker training job, because the account's quota for GPU processing jobs is 0 in every region checked, while GPU training-job quotas exist",
+ "job_status": "Succeeded",
+ "billable_seconds": 4807.348,
+ "cost_usd": 7.602667063333333,
+ "load_s": 20.543058395385742,
+ "timing": {
+  "options": [
+   "negative",
+   "positive"
+  ],
+  "option_tokens": [
+   2,
+   2
+  ],
+  "shared_prefix_tokens": 57,
+  "cache_check": {
+   "options": 2,
+   "max_abs_logprob_difference": 0.002694893628358841
+  },
+  "nothink": {
+   "items": 1372,
+   "seconds": 284.48273849487305,
+   "mode": "disabled",
+   "prompt_tokens": 117315,
+   "invalid": 0
+  },
+  "latency_s": [
+   0.9180314540863037,
+   0.9194440841674805,
+   0.9159092903137207,
+   0.916527271270752,
+   0.9194655418395996,
+   0.9139578342437744,
+   0.9182682037353516,
+   0.9217145442962646,
+   0.926367998123169,
+   0.915149450302124,
+   0.9366984367370605,
+   0.9156339168548584,
+   0.915092945098877,
+   0.9158236980438232,
+   0.916919469833374,
+   0.9245882034301758,
+   0.9140825271606445,
+   0.9196751117706299,
+   0.9213173389434814,
+   0.9176430702209473
+  ],
+  "think": {
+   "items": 50,
+   "seconds": 59.096803426742554,
+   "mode": "given",
+   "prompt_tokens": 23160,
+   "invalid": 0
+  }
+ },
+ "rendered_example": {
+  "id": "sst2-validation-2",
+  "thinking_disabled": "<|im_start|>system\nClassify the sentiment of the movie review sentence below.\n\nOptions:\n- negative: The sentence expresses a negative opinion of the movie.\n- positive: The sentence expresses a positive opinion of the movie.\n\nAnswer with exactly one option name.<|im_end|>\n<|im_start|>user\nallows us to hope that nolan is poised to embark a major career as a commercial yet inventive filmmaker .<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+ },
+ "cache_stats": {
+  "engine": "transformers, prompt state reused for every option",
+  "cache_check": {
+   "options": 3,
+   "max_abs_logprob_difference": 0.12470699253026396
+  }
+ },
+ "jobs": {
+  "Infer": {
+   "job": "pipelines-mpsepno5ej5b-Infer-x6tpoBWqRD",
+   "image": "763104351884.dkr.ecr.us-east-2.amazonaws.com/vllm:0.29.0-gpu-py312-cu130-ubuntu24.04-sagemaker-v1.2",
+   "billable_seconds": 4754.0,
+   "instance_type": "ml.g6.12xlarge",
+   "cost_usd": 7.595835555555555
+  },
+  "Stage": {
+   "job": "pipelines-mpsepno5ej5b-Stage-v94SgsnQRY",
+   "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+   "billable_seconds": 53.348,
+   "instance_type": "ml.m5.2xlarge",
+   "cost_usd": 0.006831507777777778
+  }
+ },
+ "run_totals": {
+  "nothink_items": 11041,
+  "nothink_seconds": 3930.185095310211,
+  "think_seconds": 495.1349256038666,
+  "latency_seconds": 77.97512674331665
+ },
+ "fetched_at": "2026-10-01T15:53:12Z",
+ "thinking": "seeded subsample",
+ "reasoning_generated_by": "vllm",
+ "reasoning_timing": {
+  "items": 50,
+  "seconds": 80.95333313941956,
+  "mode": "generate",
+  "prompt_tokens": 0,
+  "invalid": 0
+ }
+}

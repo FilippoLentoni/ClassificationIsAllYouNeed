@@ -1,0 +1,171 @@
+\subsection*{German Credit}
+Example \texttt{german-870}, gold label \texttt{good}; ledger number 951, sent 2026-09-30T13:\allowbreak{}43:\allowbreak{}22.039+00:\allowbreak{}00; \texttt{POST https://api.typesafe.ai/\allowbreak{}v1/\allowbreak{}systemone}; SDK \texttt{typesafe-sdk 0.7.2}; requested model \texttt{jev-1.13.0}, reported model \texttt{jev-1.13.0}; HTTP status 200; latency 0.18\,s.
+
+\noindent\textbf{Request body as sent}
+\begin{lstlisting}
+{
+ "state": "checking account balance: no checking account\nloan duration (months): 36\ncredit history: delayed previously\nloan purpose: furniture/equipment\ncredit amount (DM): 7678\nsavings account balance: 500 to 1000 DM\ntime in present employment: 4 to 7 years\ninstallment rate (% of disposable income): 2\npersonal status and sex: female div/dep/mar\nother debtors / guarantors: none\nyears at present residence: 4\nmost valuable property: car\nage (years): 40\nother installment plans: none\nhousing: own\nnumber of existing credits at this bank: 2\njob: skilled\nnumber of dependents: 1\nhas telephone: yes\nforeign worker: yes",
+ "model": "jev-1.13.0",
+ "questions": {
+  "label": {
+   "type": "choice",
+   "instructions": "Assess the credit risk of a bank loan applicant described below. Fields that are not listed are unknown.",
+   "criteria": {
+    "good": "The applicant is a good credit risk and is likely to repay the loan.",
+    "bad": "The applicant is a bad credit risk and is likely to default on the loan."
+   }
+  }
+ }
+}
+\end{lstlisting}
+\noindent\textbf{Response body as received}
+\begin{lstlisting}
+{
+ "model": "jev-1.13.0",
+ "answers": {
+  "label": {
+   "type": "choice",
+   "choice": "good",
+   "confidence": 0.13,
+   "probabilities": {
+    "good": 0.56,
+    "bad": 0.44
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 520,
+  "output_tokens": 31
+ }
+}
+\end{lstlisting}
+
+\subsection*{Breast Cancer Wisconsin Diagnostic}
+Example \texttt{wdbc-360}, gold label \texttt{benign}; ledger number 1423, sent 2026-09-30T13:\allowbreak{}43:\allowbreak{}34.432+00:\allowbreak{}00; \texttt{POST https://api.typesafe.ai/\allowbreak{}v1/\allowbreak{}systemone}; SDK \texttt{typesafe-sdk 0.7.2}; requested model \texttt{jev-1.13.0}, reported model \texttt{jev-1.13.0}; HTTP status 200; latency 0.11\,s.
+
+\noindent\textbf{Request body as sent}
+\begin{lstlisting}
+{
+ "state": "mean radius: 12.54\nmean texture: 18.07\nmean perimeter: 79.42\nmean area: 491.9\nmean smoothness: 0.07436\nmean compactness: 0.0265\nmean concavity: 0.001194\nmean concave points: 0.005449\nmean symmetry: 0.1528\nmean fractal dimension: 0.05185\nradius error: 0.3511\ntexture error: 0.9527\nperimeter error: 2.329\narea error: 28.3\nsmoothness error: 0.005783\ncompactness error: 0.004693\nconcavity error: 0.0007929\nconcave points error: 0.003617\nsymmetry error: 0.02043\nfractal dimension error: 0.001058\nworst radius: 13.72\nworst texture: 20.98\nworst perimeter: 86.82\nworst area: 585.7\nworst smoothness: 0.09293\nworst compactness: 0.04327\nworst concavity: 0.003581\nworst concave points: 0.01635\nworst symmetry: 0.2233\nworst fractal dimension: 0.05521",
+ "model": "jev-1.13.0",
+ "questions": {
+  "label": {
+   "type": "choice",
+   "instructions": "Assess whether the breast mass described by the cell-nucleus measurements below is benign or malignant. Fields that are not listed are unknown.",
+   "criteria": {
+    "benign": "The mass is benign (not cancerous).",
+    "malignant": "The mass is malignant (cancerous)."
+   }
+  }
+ }
+}
+\end{lstlisting}
+\noindent\textbf{Response body as received}
+\begin{lstlisting}
+{
+ "model": "jev-1.13.0",
+ "answers": {
+  "label": {
+   "type": "choice",
+   "choice": "benign",
+   "confidence": 0.06,
+   "probabilities": {
+    "malignant": 0.47,
+    "benign": 0.53
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 733,
+  "output_tokens": 35
+ }
+}
+\end{lstlisting}
+
+\subsection*{SST-2}
+Example \texttt{sst2-validation-36}, gold label \texttt{positive}; ledger number 1668, sent 2026-09-30T13:\allowbreak{}43:\allowbreak{}49.101+00:\allowbreak{}00; \texttt{POST https://api.typesafe.ai/\allowbreak{}v1/\allowbreak{}systemone}; SDK \texttt{typesafe-sdk 0.7.2}; requested model \texttt{jev-1.13.0}, reported model \texttt{jev-1.13.0}; HTTP status 200; latency 0.13\,s.
+
+\noindent\textbf{Request body as sent}
+\begin{lstlisting}
+{
+ "state": "the weight of the piece , the unerring professionalism of the chilly production , and the fascination embedded in the lurid topic prove recommendation enough .",
+ "model": "jev-1.13.0",
+ "questions": {
+  "label": {
+   "type": "choice",
+   "instructions": "Classify the sentiment of the movie review sentence below.",
+   "criteria": {
+    "negative": "The sentence expresses a negative opinion of the movie.",
+    "positive": "The sentence expresses a positive opinion of the movie."
+   }
+  }
+ }
+}
+\end{lstlisting}
+\noindent\textbf{Response body as received}
+\begin{lstlisting}
+{
+ "model": "jev-1.13.0",
+ "answers": {
+  "label": {
+   "type": "choice",
+   "choice": "positive",
+   "confidence": 0.96,
+   "probabilities": {
+    "negative": 0.02,
+    "positive": 0.98
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 359,
+  "output_tokens": 31
+ }
+}
+\end{lstlisting}
+
+\subsection*{AG News}
+Example \texttt{agnews-test-3752}, gold label \texttt{Business}; ledger number 9835, sent 2026-09-30T13:\allowbreak{}46:\allowbreak{}45.754+00:\allowbreak{}00; \texttt{POST https://api.typesafe.ai/\allowbreak{}v1/\allowbreak{}systemone}; SDK \texttt{typesafe-sdk 0.7.2}; requested model \texttt{jev-1.13.0}, reported model \texttt{jev-1.13.0}; HTTP status 200; latency 0.11\,s.
+
+\noindent\textbf{Request body as sent}
+\begin{lstlisting}
+{
+ "state": "McTeer: Lonesome Dove to be an Aggie NEW YORK (CNN/Money) - A New Economy champion, a lover of the Texas picker poets who write lovesick country songs...and, oh, by the way, a member of the Federal Reserve system for 36 years.",
+ "model": "jev-1.13.0",
+ "questions": {
+  "label": {
+   "type": "choice",
+   "instructions": "Classify the topic of the news article below.",
+   "criteria": {
+    "World": "International news, politics, conflicts and world affairs.",
+    "Sports": "Sports news: games, athletes, teams and competitions.",
+    "Business": "Business and economic news: companies, markets, finance and the economy.",
+    "Sci/Tech": "Science and technology news: computing, the internet, research, space and health science."
+   }
+  }
+ }
+}
+\end{lstlisting}
+\noindent\textbf{Response body as received}
+\begin{lstlisting}
+{
+ "model": "jev-1.13.0",
+ "answers": {
+  "label": {
+   "type": "choice",
+   "choice": "Business",
+   "confidence": 0.97,
+   "probabilities": {
+    "Sci/Tech": 0.0,
+    "Business": 0.98,
+    "Sports": 0.01,
+    "World": 0.01
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 446,
+  "output_tokens": 47
+ }
+}
+\end{lstlisting}

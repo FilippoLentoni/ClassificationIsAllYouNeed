@@ -1,0 +1,17 @@
+{
+ "dataset": "agnews",
+ "model": "jev",
+ "mode": "live",
+ "artifact_modes": [
+  "live"
+ ],
+ "model_version": [
+  "jev-1.13.0"
+ ],
+ "n_rows": 7600,
+ "invalid": 0,
+ "missing": 0,
+ "total_cost_usd": 0.13975214400000002,
+ "total_input_tokens": 3327432.0,
+ "mean_latency_s": 0.1471099059625129
+}

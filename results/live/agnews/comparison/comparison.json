@@ -1,0 +1,149 @@
+{
+ "mode": "live",
+ "artifact_modes": [
+  "live"
+ ],
+ "dataset": "agnews",
+ "title": "AG News",
+ "f1_by_labels": {
+  "jev": [
+   {
+    "n_train": 0,
+    "macro_f1": 0.8778163422684104,
+    "sd": 0.0
+   }
+  ],
+  "qwen": [
+   {
+    "n_train": 0,
+    "macro_f1": 0.8770497261848982,
+    "sd": 0.0
+   }
+  ],
+  "xgb": [
+   {
+    "n_train": 5752,
+    "macro_f1": 0.8424676853485379,
+    "sd": 0.0
+   },
+   {
+    "n_train": 11500,
+    "macro_f1": 0.8681531148413633,
+    "sd": 0.0
+   },
+   {
+    "n_train": 28752,
+    "macro_f1": 0.8959587895499326,
+    "sd": 0.0
+   },
+   {
+    "n_train": 57500,
+    "macro_f1": 0.9098158804735279,
+    "sd": 0.0
+   },
+   {
+    "n_train": 115000,
+    "macro_f1": 0.9142829944313474,
+    "sd": 0.0
+   }
+  ],
+  "bert": [
+   {
+    "n_train": 5752,
+    "macro_f1": 0.90376223872822,
+    "sd": 0.0
+   },
+   {
+    "n_train": 11500,
+    "macro_f1": 0.9142388965508927,
+    "sd": 0.0
+   },
+   {
+    "n_train": 28752,
+    "macro_f1": 0.9266104518933762,
+    "sd": 0.0
+   },
+   {
+    "n_train": 57500,
+    "macro_f1": 0.9342043478147029,
+    "sd": 0.0
+   },
+   {
+    "n_train": 115000,
+    "macro_f1": 0.9418891525681672,
+    "sd": 0.0
+   }
+  ]
+ },
+ "costs": {
+  "jev": {
+   "kind": "API, per request",
+   "n_predictions": 7600,
+   "n_with_cost": 7600,
+   "usd_per_1k": 0.018388440000000006,
+   "how": "mean recorded cost per request (input tokens x published price), x 1,000",
+   "latency": {
+    "kind": "measured request latency",
+    "mean_s": 0.1471099059625129,
+    "median_s": 0.13847604100737954
+   },
+   "training_usd": 0.0
+  },
+  "qwen": {
+   "kind": "self-hosted, batch job",
+   "training_usd": 0.0,
+   "usd_per_1k": 0.5864188055461099,
+   "usd_per_1k_inference_only": 0.5512545123223906,
+   "latency": {
+    "kind": "batch throughput and single-request latency",
+    "throughput_items_per_s": 2.8984393634193935,
+    "single_request_mean_s": 0.9318901777267456,
+    "single_request_median_s": 0.9272300004959106,
+    "single_request_n": 20
+   },
+   "how": "whole billed scoring job (instance start, weight copy, model loading included), less the time spent on the thinking subsample and the latency sample, allocated to the dataset by its share of scoring time; and inference time only, at the instance's list price",
+   "load_s": 20.543058395385742,
+   "instance_type": "ml.g6.12xlarge",
+   "region": "us-east-2"
+  },
+  "xgb": {
+   "kind": "trained on SageMaker",
+   "training_usd": 0.1567491527777778,
+   "billable_seconds": 2453.465,
+   "instance_type": "ml.m5.xlarge",
+   "usd_per_1k": 4.137785636890702e-06,
+   "how": "measured batch inference time per evaluation item at the instance's list price, x 1,000; training cost is the whole recorded execution",
+   "latency": {
+    "kind": "measured batch inference time per item",
+    "per_item_s": 6.476534040350663e-05
+   }
+  },
+  "bert": {
+   "kind": "trained on SageMaker",
+   "training_usd": 1.0912305555555555,
+   "billable_seconds": 3124.0,
+   "instance_type": "ml.g5.xlarge",
+   "usd_per_1k": 0.00010805964208485787,
+   "how": "measured batch inference time per evaluation item at the instance's list price, x 1,000; training cost is the whole recorded execution",
+   "latency": {
+    "kind": "measured batch inference time per item",
+    "per_item_s": 0.00030935563539203844
+   }
+  }
+ },
+ "missing_models": [],
+ "list_prices_usd_per_hour": {
+  "ml.m5.large": 0.115,
+  "ml.m5.xlarge": 0.23,
+  "ml.m5.2xlarge": 0.461,
+  "ml.c5.xlarge": 0.204,
+  "ml.m4.xlarge": 0.24,
+  "ml.c5.2xlarge": 0.408,
+  "ml.g5.xlarge": 1.2575,
+  "ml.g5.2xlarge": 1.515,
+  "ml.g5.12xlarge": 7.09,
+  "ml.g6e.xlarge": 2.61,
+  "ml.g6e.12xlarge": 13.12,
+  "ml.g6.12xlarge": 5.752
+ }
+}

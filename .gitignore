@@ -1,0 +1,28 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# response cache and raw data downloads
+cache/
+# predictions, metrics and figures under results/ are tracked; the raw exchange log lives in cache/
+logs/
+# LaTeX build outputs
+paper/*.aux
+paper/*.log
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/*.synctex.gz
+paper/*.toc
+results/mock/
+# AWS account records (account ID, bucket, role ARNs); the code reads them with an empty default
+results/live/aws_stack.json
+results/live/backup.json
+results/live/*_running_*.json
+configs/*.local.yaml
+# private working notes
+prompt.md
+prompts.md

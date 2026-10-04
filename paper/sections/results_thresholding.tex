@@ -1,0 +1,42 @@
+\section{Threshold selection}
+\label{sec:thresholding}
+
+With class probabilities a decision can be tuned after the fact: predict the positive class when
+$\mu_x(\{\text{positive}\}) \ge t$. We compare the default $t$, the analytic cost threshold
+$C_{\text{FP}}/(C_{\text{FP}} + C_{\text{FN}})$, which is optimal under
+calibration~\citep{elkan2001cost}, and the threshold that minimizes mean decision cost on
+validation examples. German Credit has a canonical cost matrix (\CostRatioGerman); for Breast
+Cancer Wisconsin we assume \CostRatioWdbc{} for a missed malignant case and for SST-2 symmetric
+costs.
+
+\begin{table}[t]
+  \caption{Mean decision cost at the default and the analytic threshold, the validation-selected
+    threshold $t$ with its cost, and accuracy before and after selection. Tabular values are
+    means over \NRepeats{} split repeats. All models and all metrics are in
+    Table~\ref{tab:thresholds-all}, and further sweeps in Figure~\ref{fig:threshold-more}.}
+  \label{tab:thresholds}
+  \centering\small
+  \input{generated/tab_thresholds_main}
+\end{table}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.86\linewidth]{generated/figs/threshold_wdbc_jev}
+  \caption{Jev on Breast Cancer Wisconsin Diagnostic, first split repeat. Left: precision,
+    recall, accuracy and positive-class F1 against the threshold $t$ (macro-F1 dashed). Right:
+    mean decision cost against $t$. The three thresholds are marked in both panels.}
+  \label{fig:threshold}
+\end{figure}
+
+Breast Cancer Wisconsin shows what the probabilities are worth when the default decision is not
+(Table~\ref{tab:thresholds}, Figure~\ref{fig:threshold}). Jev's probability of \emph{malignant} ranks the rows well but sits
+too high. The analytic threshold assumes calibration and moves the wrong way. The
+validation-selected threshold moves to $t = \ThresholdValidationJevWdbc$: accuracy rises from
+\ThrAccuracyDefaultJevWdbc{} to \ThrAccuracyValidationJevWdbc{} and the cost falls from
+\ThrMeanCostDefaultJevWdbc{} to \ThrMeanCostValidationJevWdbc, using \ThrValLabelsJevWdbc{}
+labels and no training. It does not close the gap to XGBoost (\ThrMeanCostValidationXgbWdbc).
+On German Credit no threshold helps Jev much, because there is little ranking to exploit; for
+the calibrated XGBoost the analytic threshold works as theory says, cutting its cost from
+\ThrMeanCostDefaultXgbGerman{} to \ThrMeanCostAnalyticXgbGerman. On SST-2, where Jev is already
+accurate and calibrated, selection changes little. A model that returns only a label is fixed at
+one operating point; a distribution lets about a hundred labels place the decision.

@@ -1,0 +1,21 @@
+# NeurIPS 2026 main-track submission format (capability submission-format). Checked by `verify-paper`.
+style_file: neurips_2026.sty
+forbidden_style_options: [final, preprint, nonanonymous]
+# The checklist was removed from the paper at the author's request on 2026-10-02. NeurIPS requires
+# it for a submission; set this to true and restore the \input in main.tex before submitting there.
+checklist_required: false
+page_limit: 9                    # main text, from the title to the end of the conclusion
+overfull_tolerance_pt: 5.0
+# Strings that would identify the authors or their accounts; searched (case-insensitively) in the
+# PDF text and metadata. The check reports this list. Strings that must not be published at all (the AWS
+# account ID) go under `private_identifying_strings` in the untracked configs/submission.local.yaml.
+identifying_strings: ["ciayn-baseline", "ciayn-sagemaker", "agentcore", "ec2-user",
+                      "filippo", "lentoni", "columbia", "@gmail", "@icloud"]
+# Generated files that need not be included on their own, with the reason.
+not_included:
+  tab_thresholds.tex: "its rows (Jev and XGBoost) are a subset of tab_thresholds_all.tex, which is in the appendix"
+  macros.tex: "loaded by main.tex"
+  mockdraft.tex: "loaded by main.tex"
+# Figures of the previous version that must still be in the paper (main text or appendix).
+required_figures: [reliability, learning_curves, f1_by_labels, escalation, importance, faithfulness, attributions_german,
+                   attributions_sst2, threshold_wdbc_jev, threshold_german_jev, threshold_sst2_jev, threshold_wdbc_xgb]

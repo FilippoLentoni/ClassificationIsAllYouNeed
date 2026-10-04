@@ -1,0 +1,13 @@
+\section{Related evaluations of Jev}
+\label{sec:related}
+
+Jev has been evaluated publicly on three of our four datasets. \citet{deusser2026jev} benchmark
+the same model version zero-shot on 37 datasets and report that its choice probabilities are well
+calibrated on text, but that binary probabilities ``rank well but are poorly placed relative to a
+fixed 0.5 threshold''; a public repository reports \PriorNJevbenchSst-item samples of the text
+datasets~\citep{jevbench2026}, and another evaluates Breast Cancer Wisconsin with its own
+serialization~\citep{statsguysam2026}. We found no public evaluation on German Credit. Our text
+results agree with these (Appendix~\ref{app:prior}, Table~\ref{tab:prior}). None of these studies
+trains supervised models on the same examples, reports the exact requests sent, or applies
+cost-sensitive thresholds, importance-sampled evaluation, escalation or perturbation-based
+explanations.

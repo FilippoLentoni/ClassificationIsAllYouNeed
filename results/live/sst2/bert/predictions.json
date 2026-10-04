@@ -1,0 +1,13 @@
+{
+ "dataset": "sst2",
+ "model": "bert",
+ "mode": "live",
+ "artifact_modes": [
+  "live"
+ ],
+ "model_version": [
+  "google-bert/bert-base-uncased@86b5e0934494"
+ ],
+ "n_rows": 2872,
+ "invalid": 0
+}

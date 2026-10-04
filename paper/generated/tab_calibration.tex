@@ -1,0 +1,25 @@
+\begin{tabular}{llcccc}
+\toprule
+Dataset & Model & ECE & Brier & Log-loss & Mean confidence \\
+\midrule
+\multirow{4}{*}{German Credit} & Jev, zero-shot & 0.364\,{\scriptsize$\pm$0.030} & 0.833\,{\scriptsize$\pm$0.041} & 2.136\,{\scriptsize$\pm$0.291} & 0.814 \\
+ & Qwen3.6-27B, zero-shot & 0.136\,{\scriptsize$\pm$0.015} & 0.499\,{\scriptsize$\pm$0.017} & 0.694\,{\scriptsize$\pm$0.019} & 0.669 \\
+ & XGBoost, supervised & 0.069\,{\scriptsize$\pm$0.017} & 0.346\,{\scriptsize$\pm$0.022} & 0.516\,{\scriptsize$\pm$0.027} & 0.757 \\
+ & BERT, supervised & 0.060\,{\scriptsize$\pm$0.034} & 0.390\,{\scriptsize$\pm$0.024} & 0.574\,{\scriptsize$\pm$0.029} & 0.706 \\
+\addlinespace
+\multirow{4}{*}{Breast Cancer Wisconsin} & Jev, zero-shot & 0.374\,{\scriptsize$\pm$0.013} & 0.655\,{\scriptsize$\pm$0.014} & 0.865\,{\scriptsize$\pm$0.020} & 0.773 \\
+ & Qwen3.6-27B, zero-shot & 0.072\,{\scriptsize$\pm$0.026} & 0.223\,{\scriptsize$\pm$0.012} & 0.341\,{\scriptsize$\pm$0.015} & 0.857 \\
+ & XGBoost, supervised & 0.036\,{\scriptsize$\pm$0.010} & 0.074\,{\scriptsize$\pm$0.032} & 0.139\,{\scriptsize$\pm$0.064} & 0.966 \\
+ & BERT, supervised & 0.115\,{\scriptsize$\pm$0.052} & 0.312\,{\scriptsize$\pm$0.062} & 0.486\,{\scriptsize$\pm$0.075} & 0.747 \\
+\addlinespace
+\multirow{4}{*}{SST-2} & Jev, zero-shot & 0.020\,{\scriptsize[0.014,\,0.034]} & 0.064\,{\scriptsize[0.047,\,0.082]} & 0.255\,{\scriptsize[0.138,\,0.397]} & 0.967 \\
+ & Qwen3.6-27B, zero-shot & 0.023\,{\scriptsize[0.017,\,0.038]} & 0.073\,{\scriptsize[0.054,\,0.093]} & 0.159\,{\scriptsize[0.112,\,0.214]} & 0.974 \\
+ & XGBoost, supervised & 0.026\,{\scriptsize[0.022,\,0.061]} & 0.290\,{\scriptsize[0.261,\,0.320]} & 0.451\,{\scriptsize[0.411,\,0.493]} & 0.799 \\
+ & BERT, supervised & 0.054\,{\scriptsize[0.040,\,0.075]} & 0.138\,{\scriptsize[0.109,\,0.170]} & 0.259\,{\scriptsize[0.204,\,0.321]} & 0.966 \\
+\addlinespace
+\multirow{4}{*}{AG News} & Jev, zero-shot & 0.082\,{\scriptsize[0.076,\,0.090]} & 0.204\,{\scriptsize[0.192,\,0.216]} & 1.464\,{\scriptsize[1.337,\,1.591]} & 0.960 \\
+ & Qwen3.6-27B, zero-shot & 0.099\,{\scriptsize[0.093,\,0.107]} & 0.219\,{\scriptsize[0.207,\,0.233]} & 0.925\,{\scriptsize[0.857,\,0.997]} & 0.976 \\
+ & XGBoost, supervised & 0.032\,{\scriptsize[0.027,\,0.038]} & 0.135\,{\scriptsize[0.127,\,0.143]} & 0.270\,{\scriptsize[0.256,\,0.286]} & 0.887 \\
+ & BERT, supervised & 0.018\,{\scriptsize[0.014,\,0.023]} & 0.091\,{\scriptsize[0.084,\,0.100]} & 0.179\,{\scriptsize[0.165,\,0.197]} & 0.958 \\
+\bottomrule
+\end{tabular}

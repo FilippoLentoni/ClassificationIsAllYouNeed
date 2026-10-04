@@ -1,0 +1,5 @@
+# Jev->Qwen escalation (change add-bert-qwen-ensemble). AG News has no Jev
+# predictions on validation items; these seeded items from their validation parts are predicted
+# by Jev (stage `escalation-val`) and by Qwen, only to select the escalation threshold.
+validation_items: {agnews: 500}
+seed: 0

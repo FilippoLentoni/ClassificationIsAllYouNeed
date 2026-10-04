@@ -1,0 +1,25 @@
+{
+ "dataset": "german",
+ "question_name": "label",
+ "instructions": "Assess the credit risk of a bank loan applicant described below. Fields that are not listed are unknown.",
+ "criteria": [
+  [
+   "good",
+   "The applicant is a good credit risk and is likely to repay the loan."
+  ],
+  [
+   "bad",
+   "The applicant is a bad credit risk and is likely to default on the loan."
+  ]
+ ],
+ "model": "jev-1.13.0",
+ "question_sha256": "624b1253aa108b8f3e3925bcd973640aa30131c0f478fc40318e61ef1828a524",
+ "mode": "live",
+ "sdk_version": "0.7.2",
+ "frozen_at": "2026-09-30T13:42:43Z",
+ "check": {
+  "split": null,
+  "n": 0,
+  "reason": "every row of a repeated-split dataset can be an evaluation row; the response shape is validated by the first request of predict"
+ }
+}

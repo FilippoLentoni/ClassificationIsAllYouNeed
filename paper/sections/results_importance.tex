@@ -1,0 +1,34 @@
+\section{Estimating accuracy from few labels}
+\label{sec:importance}
+
+Labels are often the bottleneck for evaluating a deployed classifier. With class probabilities
+the predicted uncertainty $u_i = 1 - p_{\max,i}$ can guide which items to label. We compare
+uniform sampling with the confidence-guided proposal
+$q_i = (1 - \varepsilon)\,u_i^{\alpha} / \sum_j u_j^{\alpha} + \varepsilon / N$ with
+$\varepsilon = \ISEpsilon$ and $\alpha = \ISAlpha$~\citep{sawade2010are,kossen2021active},
+estimating the error rate with the Hansen--Hurwitz estimator~\citep{hansen1943}, over
+\ISTrials{} seeded trials per label budget; the sampler never sees a label it did not draw.
+
+\begin{table}[t]
+  \caption{RMSE of the accuracy estimate from $n$ labels, for uniform and confidence-guided
+    sampling, and the ratio of their variances (uniform over guided; above 1 favours guided
+    sampling), over \ISTrials{} trials.}
+  \label{tab:importance}
+  \centering\small
+  \setlength{\tabcolsep}{4pt}
+  \fittable{\input{generated/tab_importance}}
+\end{table}
+
+The estimator is unbiased in practice (largest absolute bias \IsMaxAbsBias), but the guided
+proposal reduces variance on only \IsDatasetsGuidedWins{} of the \NDatasets{} datasets
+(Table~\ref{tab:importance}). At
+\ISMaxBudget{} labels the ratio of uniform to guided variance is \IsVarRatioWdbcNFourZeroZero{}
+on Breast Cancer Wisconsin and \IsVarRatioGermanNFourZeroZero, \IsVarRatioSstNFourZeroZero{} and
+\IsVarRatioAgnewsNFourZeroZero{} on German Credit, SST-2 and AG News. The distribution itself
+shows why. Jev rounds probabilities to two decimals, so \IsZeroUncertaintyAgnews{} of
+\IsPoolAgnews{} AG News items have a reported uncertainty of exactly zero; they receive only the
+minimum sampling probability yet contain \IsErrorsZeroUncertaintyAgnews{} of the
+\IsErrorsAgnews{} errors, each weighted by $1/\varepsilon$. And for a 0/1 loss a proposal
+proportional to the expected loss is not variance-optimal even under perfect calibration. The
+check that reveals this needs only a small labelled sample (Appendix~\ref{app:importance},
+Figure~\ref{fig:is}).

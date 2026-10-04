@@ -1,0 +1,110 @@
+{
+ "mode": "live",
+ "model_version": "Qwen/Qwen3.6-27B@6a9e13bd6fc8",
+ "engine": "transformers",
+ "scoring": "one forward pass over the prompt, option suffixes on copies of the cached state",
+ "versions": {
+  "torch": "2.13.0+cu130",
+  "transformers": "5.16.1",
+  "python": "3.12.3"
+ },
+ "gpus": [
+  "NVIDIA L4",
+  "NVIDIA L4",
+  "NVIDIA L4",
+  "NVIDIA L4"
+ ],
+ "region": "us-east-2",
+ "instance_type": "ml.g6.12xlarge",
+ "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/mpsepno5ej5b",
+ "substitution": "inference ran in a SageMaker training job, because the account's quota for GPU processing jobs is 0 in every region checked, while GPU training-job quotas exist",
+ "job_status": "Succeeded",
+ "billable_seconds": 4807.348,
+ "cost_usd": 7.602667063333333,
+ "load_s": 20.543058395385742,
+ "timing": {
+  "options": [
+   "good",
+   "bad"
+  ],
+  "option_tokens": [
+   2,
+   2
+  ],
+  "shared_prefix_tokens": 82,
+  "cache_check": {
+   "options": 2,
+   "max_abs_logprob_difference": 0.08308005283470266
+  },
+  "nothink": {
+   "items": 1000,
+   "seconds": 401.8240125179291,
+   "mode": "disabled",
+   "prompt_tokens": 251597,
+   "invalid": 0
+  },
+  "latency_s": [
+   0.9507908821105957,
+   0.947986364364624,
+   0.9484744071960449,
+   0.9481678009033203,
+   0.9492483139038086,
+   0.9483695030212402,
+   0.9460570812225342,
+   0.9496700763702393,
+   0.9490349292755127,
+   0.9459939002990723,
+   0.9466755390167236,
+   0.9480111598968506,
+   0.9480936527252197,
+   0.9480302333831787,
+   0.9493184089660645,
+   0.9478147029876709,
+   0.948333740234375,
+   0.9508821964263916,
+   0.9474561214447021,
+   0.949249267578125
+  ],
+  "think": {
+   "items": 50,
+   "seconds": 185.99848079681396,
+   "mode": "given",
+   "prompt_tokens": 100773,
+   "invalid": 0
+  }
+ },
+ "rendered_example": {
+  "id": "german-529",
+  "thinking_disabled": "<|im_start|>system\nAssess the credit risk of a bank loan applicant described below. Fields that are not listed are unknown.\n\nOptions:\n- good: The applicant is a good credit risk and is likely to repay the loan.\n- bad: The applicant is a bad credit risk and is likely to default on the loan.\n\nAnswer with exactly one option name.<|im_end|>\n<|im_start|>user\nchecking account balance: below 0 DM\nloan duration (months): 6\ncredit history: existing paid\nloan purpose: new car\ncredit amount (DM): 662\nsavings account balance: below 100 DM\ntime in present employment: less than 1 year\ninstallment rate (% of disposable income): 3\npersonal status and sex: male single\nother debtors / guarantors: none\nyears at present residence: 4\nmost valuable property: real estate\nage (years): 41\nother installment plans: none\nhousing: own\nnumber of existing credits at this bank: 1\njob: unskilled resident\nnumber of dependents: 2\nhas telephone: yes\nforeign worker: yes<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+ },
+ "cache_stats": {
+  "engine": "transformers, prompt state reused for every option",
+  "cache_check": {
+   "options": 3,
+   "max_abs_logprob_difference": 0.12470699253026396
+  }
+ },
+ "jobs": {
+  "Infer": {
+   "job": "pipelines-mpsepno5ej5b-Infer-x6tpoBWqRD",
+   "image": "763104351884.dkr.ecr.us-east-2.amazonaws.com/vllm:0.29.0-gpu-py312-cu130-ubuntu24.04-sagemaker-v1.2",
+   "billable_seconds": 4754.0,
+   "instance_type": "ml.g6.12xlarge",
+   "cost_usd": 7.595835555555555
+  },
+  "Stage": {
+   "job": "pipelines-mpsepno5ej5b-Stage-v94SgsnQRY",
+   "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+   "billable_seconds": 53.348,
+   "instance_type": "ml.m5.2xlarge",
+   "cost_usd": 0.006831507777777778
+  }
+ },
+ "run_totals": {
+  "nothink_items": 11041,
+  "nothink_seconds": 3930.185095310211,
+  "think_seconds": 495.1349256038666,
+  "latency_seconds": 77.97512674331665
+ },
+ "fetched_at": "2026-10-01T15:53:11Z"
+}

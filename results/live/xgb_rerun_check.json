@@ -1,0 +1,30 @@
+{
+ "what": "XGBoost was rerun on 2026-10-01 with batch inference timing; its predictions are compared with the ones saved from the first runs",
+ "datasets": {
+  "german": {
+   "same_ids": true,
+   "max_abs_prob_diff": 0.0,
+   "labels_differ": 0,
+   "infer_s_per_item_repeat0": 1.348257064819336e-06
+  },
+  "wdbc": {
+   "same_ids": true,
+   "max_abs_prob_diff": 0.0,
+   "labels_differ": 0,
+   "infer_s_per_item_repeat0": 3.082710399962308e-06
+  },
+  "sst2": {
+   "same_ids": true,
+   "max_abs_prob_diff": 0.0,
+   "labels_differ": 0,
+   "infer_s_per_item_repeat0": 1.2118061748119669e-05
+  },
+  "agnews": {
+   "same_ids": true,
+   "max_abs_prob_diff": 0.0,
+   "labels_differ": 0,
+   "infer_s_per_item_repeat0": 6.476534040350663e-05
+  }
+ },
+ "all_identical": true
+}

@@ -1,0 +1,15 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+A generative language model defines a measure on token strings; classes are reached only through
+a parsing map that leaks probability, and the class distribution can only be estimated. A model
+that returns a probability for every option defines the measure on $(C, 2^C)$ directly. On four
+datasets that was enough to apply calibration analysis, threshold selection, escalation,
+importance-sampled evaluation and perturbation-based explanations to Jev with standard tools,
+and to score it with the same code as supervised classifiers; obtaining the same object from a
+generative model took a scoring procedure of its own and far more computation per prediction.
+What the toolbox found is mixed, and that is its value: accurate, usable probabilities on text;
+a bias towards the adverse class on tables that a threshold or a second model repairs in one
+case and not in the other; and guided sampling and escalation that pay off only where the
+reported confidence is informative. The first thing the classical toolbox reports about a class
+distribution is where it can be trusted.

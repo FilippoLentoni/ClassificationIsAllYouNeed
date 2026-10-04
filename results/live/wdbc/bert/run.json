@@ -1,0 +1,547 @@
+{
+ "mode": "live",
+ "dataset": "wdbc",
+ "selected": {
+  "learning_rate": 5e-05,
+  "epochs": 3,
+  "val_logloss": 0.2560531040624824,
+  "selected_on": "repeat 0 validation log-loss"
+ },
+ "repeats": {
+  "0": {
+   "truncated": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "n": {
+    "train": 341,
+    "val": 114,
+    "test": 114
+   },
+   "grid": [
+    {
+     "learning_rate": 2e-05,
+     "history": [
+      {
+       "epoch": 1,
+       "val_logloss": 0.654492279438416
+      },
+      {
+       "epoch": 2,
+       "val_logloss": 0.5680915427291431
+      },
+      {
+       "epoch": 3,
+       "val_logloss": 0.5333667042352068
+      },
+      {
+       "epoch": 4,
+       "val_logloss": 0.37748948194355625
+      }
+     ],
+     "best_epoch": 4,
+     "val_logloss": 0.37748948194355625,
+     "train_s": 8.911296844482422
+    },
+    {
+     "learning_rate": 5e-05,
+     "history": [
+      {
+       "epoch": 1,
+       "val_logloss": 0.5704038294926252
+      },
+      {
+       "epoch": 2,
+       "val_logloss": 0.30635983700168173
+      },
+      {
+       "epoch": 3,
+       "val_logloss": 0.2560531040624824
+      },
+      {
+       "epoch": 4,
+       "val_logloss": 0.25848455416133165
+      }
+     ],
+     "best_epoch": 3,
+     "val_logloss": 0.2560531040624824,
+     "train_s": 7.924994468688965
+    }
+   ],
+   "label_budget": {
+    "training": 341,
+    "early_stopping_and_selection": 114,
+    "calibration": 0,
+    "threshold_selection": 114
+   },
+   "train_s": 7.924994468688965,
+   "infer_val_s": 0.1437380313873291,
+   "infer_test_s": 0.14419865608215332,
+   "infer_s_per_item": 0.0012649004919487133,
+   "curve": {
+    "0.05": {
+     "n_train": 17
+    },
+    "0.1": {
+     "n_train": 34
+    },
+    "0.25": {
+     "n_train": 86
+    },
+    "0.5": {
+     "n_train": 171
+    },
+    "1.0": {
+     "n_train": 341
+    }
+   }
+  },
+  "1": {
+   "truncated": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "n": {
+    "train": 341,
+    "val": 114,
+    "test": 114
+   },
+   "label_budget": {
+    "training": 341,
+    "early_stopping_and_selection": 0,
+    "calibration": 0,
+    "threshold_selection": 114
+   },
+   "train_s": 5.202327728271484,
+   "infer_val_s": 0.14429855346679688,
+   "infer_test_s": 0.14377140998840332,
+   "infer_s_per_item": 0.0012611527191965205,
+   "curve": {
+    "0.05": {
+     "n_train": 17
+    },
+    "0.1": {
+     "n_train": 34
+    },
+    "0.25": {
+     "n_train": 86
+    },
+    "0.5": {
+     "n_train": 171
+    },
+    "1.0": {
+     "n_train": 341
+    }
+   }
+  },
+  "2": {
+   "truncated": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "n": {
+    "train": 341,
+    "val": 114,
+    "test": 114
+   },
+   "label_budget": {
+    "training": 341,
+    "early_stopping_and_selection": 0,
+    "calibration": 0,
+    "threshold_selection": 114
+   },
+   "train_s": 5.211474895477295,
+   "infer_val_s": 0.14390110969543457,
+   "infer_test_s": 0.1440436840057373,
+   "infer_s_per_item": 0.0012635410877696255,
+   "curve": {
+    "0.05": {
+     "n_train": 17
+    },
+    "0.1": {
+     "n_train": 34
+    },
+    "0.25": {
+     "n_train": 86
+    },
+    "0.5": {
+     "n_train": 171
+    },
+    "1.0": {
+     "n_train": 341
+    }
+   }
+  },
+  "3": {
+   "truncated": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "n": {
+    "train": 341,
+    "val": 114,
+    "test": 114
+   },
+   "label_budget": {
+    "training": 341,
+    "early_stopping_and_selection": 0,
+    "calibration": 0,
+    "threshold_selection": 114
+   },
+   "train_s": 5.20349907875061,
+   "infer_val_s": 0.14427399635314941,
+   "infer_test_s": 0.1448211669921875,
+   "infer_s_per_item": 0.001270361113966557,
+   "curve": {
+    "0.05": {
+     "n_train": 17
+    },
+    "0.1": {
+     "n_train": 34
+    },
+    "0.25": {
+     "n_train": 86
+    },
+    "0.5": {
+     "n_train": 171
+    },
+    "1.0": {
+     "n_train": 341
+    }
+   }
+  },
+  "4": {
+   "truncated": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "n": {
+    "train": 341,
+    "val": 114,
+    "test": 114
+   },
+   "label_budget": {
+    "training": 341,
+    "early_stopping_and_selection": 0,
+    "calibration": 0,
+    "threshold_selection": 114
+   },
+   "train_s": 5.204345464706421,
+   "infer_val_s": 0.1445598602294922,
+   "infer_test_s": 0.1446828842163086,
+   "infer_s_per_item": 0.0012691481071606017,
+   "curve": {
+    "0.05": {
+     "n_train": 17
+    },
+    "0.1": {
+     "n_train": 34
+    },
+    "0.25": {
+     "n_train": 86
+    },
+    "0.5": {
+     "n_train": 171
+    },
+    "1.0": {
+     "n_train": 341
+    }
+   }
+  },
+  "5": {
+   "truncated": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "n": {
+    "train": 341,
+    "val": 114,
+    "test": 114
+   },
+   "label_budget": {
+    "training": 341,
+    "early_stopping_and_selection": 0,
+    "calibration": 0,
+    "threshold_selection": 114
+   },
+   "train_s": 5.2017083168029785,
+   "infer_val_s": 0.14457273483276367,
+   "infer_test_s": 0.14403319358825684,
+   "infer_s_per_item": 0.0012634490665636565,
+   "curve": {
+    "0.05": {
+     "n_train": 17
+    },
+    "0.1": {
+     "n_train": 34
+    },
+    "0.25": {
+     "n_train": 86
+    },
+    "0.5": {
+     "n_train": 171
+    },
+    "1.0": {
+     "n_train": 341
+    }
+   }
+  },
+  "6": {
+   "truncated": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "n": {
+    "train": 341,
+    "val": 114,
+    "test": 114
+   },
+   "label_budget": {
+    "training": 341,
+    "early_stopping_and_selection": 0,
+    "calibration": 0,
+    "threshold_selection": 114
+   },
+   "train_s": 5.2095654010772705,
+   "infer_val_s": 0.1441059112548828,
+   "infer_test_s": 0.14423370361328125,
+   "infer_s_per_item": 0.0012652079264322917,
+   "curve": {
+    "0.05": {
+     "n_train": 17
+    },
+    "0.1": {
+     "n_train": 34
+    },
+    "0.25": {
+     "n_train": 86
+    },
+    "0.5": {
+     "n_train": 171
+    },
+    "1.0": {
+     "n_train": 341
+    }
+   }
+  },
+  "7": {
+   "truncated": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "n": {
+    "train": 341,
+    "val": 114,
+    "test": 114
+   },
+   "label_budget": {
+    "training": 341,
+    "early_stopping_and_selection": 0,
+    "calibration": 0,
+    "threshold_selection": 114
+   },
+   "train_s": 5.204837083816528,
+   "infer_val_s": 0.1447887420654297,
+   "infer_test_s": 0.14419293403625488,
+   "infer_s_per_item": 0.0012648502985636394,
+   "curve": {
+    "0.05": {
+     "n_train": 17
+    },
+    "0.1": {
+     "n_train": 34
+    },
+    "0.25": {
+     "n_train": 86
+    },
+    "0.5": {
+     "n_train": 171
+    },
+    "1.0": {
+     "n_train": 341
+    }
+   }
+  },
+  "8": {
+   "truncated": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "n": {
+    "train": 341,
+    "val": 114,
+    "test": 114
+   },
+   "label_budget": {
+    "training": 341,
+    "early_stopping_and_selection": 0,
+    "calibration": 0,
+    "threshold_selection": 114
+   },
+   "train_s": 5.201819896697998,
+   "infer_val_s": 0.14362001419067383,
+   "infer_test_s": 0.1448042392730713,
+   "infer_s_per_item": 0.0012702126252023798,
+   "curve": {
+    "0.05": {
+     "n_train": 17
+    },
+    "0.1": {
+     "n_train": 34
+    },
+    "0.25": {
+     "n_train": 86
+    },
+    "0.5": {
+     "n_train": 171
+    },
+    "1.0": {
+     "n_train": 341
+    }
+   }
+  },
+  "9": {
+   "truncated": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "n": {
+    "train": 341,
+    "val": 114,
+    "test": 114
+   },
+   "label_budget": {
+    "training": 341,
+    "early_stopping_and_selection": 0,
+    "calibration": 0,
+    "threshold_selection": 114
+   },
+   "train_s": 5.2015931606292725,
+   "infer_val_s": 0.14454412460327148,
+   "infer_test_s": 0.14481472969055176,
+   "infer_s_per_item": 0.0012703046464083488,
+   "curve": {
+    "0.05": {
+     "n_train": 17
+    },
+    "0.1": {
+     "n_train": 34
+    },
+    "0.25": {
+     "n_train": 86
+    },
+    "0.5": {
+     "n_train": 171
+    },
+    "1.0": {
+     "n_train": 341
+    }
+   }
+  }
+ },
+ "fractions": [
+  0.05,
+  0.1,
+  0.25,
+  0.5,
+  1.0
+ ],
+ "max_length": 512,
+ "model_id": "google-bert/bert-base-uncased",
+ "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+ "device": "cuda",
+ "gpu": "NVIDIA A10G",
+ "versions": {
+  "torch": "2.9.0+cu130",
+  "transformers": "5.3.0",
+  "python": "3.12.10"
+ },
+ "elapsed_s": 140.61658263206482,
+ "model_version": "google-bert/bert-base-uncased@86b5e0934494",
+ "label_budget": [
+  {
+   "training": 341,
+   "early_stopping_and_selection": 114,
+   "calibration": 0,
+   "threshold_selection": 114
+  },
+  {
+   "training": 341,
+   "early_stopping_and_selection": 0,
+   "calibration": 0,
+   "threshold_selection": 114
+  },
+  {
+   "training": 341,
+   "early_stopping_and_selection": 0,
+   "calibration": 0,
+   "threshold_selection": 114
+  },
+  {
+   "training": 341,
+   "early_stopping_and_selection": 0,
+   "calibration": 0,
+   "threshold_selection": 114
+  },
+  {
+   "training": 341,
+   "early_stopping_and_selection": 0,
+   "calibration": 0,
+   "threshold_selection": 114
+  },
+  {
+   "training": 341,
+   "early_stopping_and_selection": 0,
+   "calibration": 0,
+   "threshold_selection": 114
+  },
+  {
+   "training": 341,
+   "early_stopping_and_selection": 0,
+   "calibration": 0,
+   "threshold_selection": 114
+  },
+  {
+   "training": 341,
+   "early_stopping_and_selection": 0,
+   "calibration": 0,
+   "threshold_selection": 114
+  },
+  {
+   "training": 341,
+   "early_stopping_and_selection": 0,
+   "calibration": 0,
+   "threshold_selection": 114
+  },
+  {
+   "training": 341,
+   "early_stopping_and_selection": 0,
+   "calibration": 0,
+   "threshold_selection": 114
+  }
+ ],
+ "region": "us-east-2",
+ "instance_type": "ml.g5.xlarge",
+ "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-bert/execution/7y7b5h3bcsbl",
+ "jobs": {
+  "Train": {
+   "job": "pipelines-7y7b5h3bcsbl-Train-Eb3N3kDori",
+   "image": "763104351884.dkr.ecr.us-east-2.amazonaws.com/huggingface-pytorch-training:2.9.0-transformers5.3.0-gpu-py312-cu130-ubuntu22.04",
+   "billable_seconds": 370.0
+  }
+ },
+ "billable_seconds": 370.0,
+ "cost_usd": 0.12924305555555557,
+ "fetched_at": "2026-10-01T11:05:24Z",
+ "infer_s_per_item": 0.0012649004919487133
+}

@@ -1,0 +1,7 @@
+{
+ "file": "neurips_2026.sty",
+ "url": "https://media.neurips.cc/Conferences/NeurIPS2026/Formatting_Instructions_For_NeurIPS_2026.zip",
+ "downloaded_on": "2026-10-01",
+ "sha256": "c3fc2894e83d2517ca18b66741d6c595986d97957dc08ec08bb2125a7ec4555a",
+ "note": "official style file, unmodified; checklist.tex from the same archive is the basis of sections/checklist.tex"
+}

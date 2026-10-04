@@ -1,0 +1,53 @@
+\begin{tabular}{lllcccccc}
+\toprule
+Dataset & Model & Threshold & $t$ & Precision & Recall & F1 (pos.) & Accuracy & Mean cost \\
+\midrule
+\multirow{12}{*}{German Credit} & \multirow{3}{*}{Jev, zero-shot} & default & 0.50 & 0.334\,{\scriptsize$\pm$0.012} & 0.790\,{\scriptsize$\pm$0.030} & 0.470\,{\scriptsize$\pm$0.016} & 0.465\,{\scriptsize$\pm$0.020} & 0.787\,{\scriptsize$\pm$0.048} \\
+ &  & analytic & 0.17 & 0.313\,{\scriptsize$\pm$0.007} & 0.968\,{\scriptsize$\pm$0.018} & 0.473\,{\scriptsize$\pm$0.010} & 0.351\,{\scriptsize$\pm$0.016} & 0.686\,{\scriptsize$\pm$0.034} \\
+ &  & validation-selected & 0.17 & 0.311\,{\scriptsize$\pm$0.008} & 0.960\,{\scriptsize$\pm$0.027} & 0.470\,{\scriptsize$\pm$0.011} & 0.350\,{\scriptsize$\pm$0.017} & 0.698\,{\scriptsize$\pm$0.042} \\
+\cmidrule(lr){2-9}
+ & \multirow{3}{*}{Qwen3.6-27B, zero-shot} & default & 0.50 & 0.244\,{\scriptsize$\pm$0.037} & 0.252\,{\scriptsize$\pm$0.043} & 0.248\,{\scriptsize$\pm$0.039} & 0.542\,{\scriptsize$\pm$0.023} & 1.356\,{\scriptsize$\pm$0.068} \\
+ &  & analytic & 0.17 & 0.314\,{\scriptsize$\pm$0.009} & 0.955\,{\scriptsize$\pm$0.026} & 0.472\,{\scriptsize$\pm$0.012} & 0.360\,{\scriptsize$\pm$0.020} & 0.694\,{\scriptsize$\pm$0.043} \\
+ &  & validation-selected & 0.14 & 0.306\,{\scriptsize$\pm$0.008} & 0.960\,{\scriptsize$\pm$0.039} & 0.464\,{\scriptsize$\pm$0.012} & 0.335\,{\scriptsize$\pm$0.024} & 0.713\,{\scriptsize$\pm$0.046} \\
+\cmidrule(lr){2-9}
+ & \multirow{3}{*}{XGBoost, supervised} & default & 0.50 & 0.604\,{\scriptsize$\pm$0.084} & 0.413\,{\scriptsize$\pm$0.071} & 0.488\,{\scriptsize$\pm$0.064} & 0.741\,{\scriptsize$\pm$0.031} & 0.963\,{\scriptsize$\pm$0.106} \\
+ &  & analytic & 0.17 & 0.419\,{\scriptsize$\pm$0.017} & 0.883\,{\scriptsize$\pm$0.047} & 0.568\,{\scriptsize$\pm$0.021} & 0.597\,{\scriptsize$\pm$0.026} & 0.544\,{\scriptsize$\pm$0.062} \\
+ &  & validation-selected & 0.17 & 0.415\,{\scriptsize$\pm$0.031} & 0.872\,{\scriptsize$\pm$0.091} & 0.560\,{\scriptsize$\pm$0.031} & 0.588\,{\scriptsize$\pm$0.057} & 0.566\,{\scriptsize$\pm$0.096} \\
+\cmidrule(lr){2-9}
+ & \multirow{3}{*}{BERT, supervised} & default & 0.50 & 0.231\,{\scriptsize$\pm$0.306} & 0.093\,{\scriptsize$\pm$0.137} & 0.125\,{\scriptsize$\pm$0.173} & 0.704\,{\scriptsize$\pm$0.007} & 1.384\,{\scriptsize$\pm$0.167} \\
+ &  & analytic & 0.17 & 0.345\,{\scriptsize$\pm$0.051} & 0.930\,{\scriptsize$\pm$0.093} & 0.498\,{\scriptsize$\pm$0.038} & 0.426\,{\scriptsize$\pm$0.133} & 0.658\,{\scriptsize$\pm$0.048} \\
+ &  & validation-selected & 0.21 & 0.352\,{\scriptsize$\pm$0.034} & 0.918\,{\scriptsize$\pm$0.085} & 0.506\,{\scriptsize$\pm$0.026} & 0.459\,{\scriptsize$\pm$0.085} & 0.639\,{\scriptsize$\pm$0.062} \\
+\midrule
+\multirow{12}{*}{Breast Cancer Wisconsin} & \multirow{3}{*}{Jev, zero-shot} & default & 0.50 & 0.382\,{\scriptsize$\pm$0.007} & 0.993\,{\scriptsize$\pm$0.012} & 0.552\,{\scriptsize$\pm$0.008} & 0.405\,{\scriptsize$\pm$0.014} & 0.605\,{\scriptsize$\pm$0.030} \\
+ &  & analytic & 0.17 & 0.369\,{\scriptsize$\pm$0.001} & 1.000\,{\scriptsize$\pm$0.000} & 0.539\,{\scriptsize$\pm$0.001} & 0.370\,{\scriptsize$\pm$0.004} & 0.630\,{\scriptsize$\pm$0.004} \\
+ &  & validation-selected & 0.77 & 0.605\,{\scriptsize$\pm$0.079} & 0.912\,{\scriptsize$\pm$0.083} & 0.721\,{\scriptsize$\pm$0.040} & 0.735\,{\scriptsize$\pm$0.068} & 0.395\,{\scriptsize$\pm$0.089} \\
+\cmidrule(lr){2-9}
+ & \multirow{3}{*}{Qwen3.6-27B, zero-shot} & default & 0.50 & 0.991\,{\scriptsize$\pm$0.019} & 0.531\,{\scriptsize$\pm$0.056} & 0.690\,{\scriptsize$\pm$0.048} & 0.825\,{\scriptsize$\pm$0.021} & 0.866\,{\scriptsize$\pm$0.104} \\
+ &  & analytic & 0.17 & 0.838\,{\scriptsize$\pm$0.031} & 0.905\,{\scriptsize$\pm$0.032} & 0.870\,{\scriptsize$\pm$0.023} & 0.900\,{\scriptsize$\pm$0.018} & 0.240\,{\scriptsize$\pm$0.059} \\
+ &  & validation-selected & 0.15 & 0.789\,{\scriptsize$\pm$0.058} & 0.926\,{\scriptsize$\pm$0.046} & 0.850\,{\scriptsize$\pm$0.027} & 0.878\,{\scriptsize$\pm$0.029} & 0.231\,{\scriptsize$\pm$0.059} \\
+\cmidrule(lr){2-9}
+ & \multirow{3}{*}{XGBoost, supervised} & default & 0.50 & 0.942\,{\scriptsize$\pm$0.023} & 0.919\,{\scriptsize$\pm$0.047} & 0.930\,{\scriptsize$\pm$0.030} & 0.949\,{\scriptsize$\pm$0.021} & 0.170\,{\scriptsize$\pm$0.088} \\
+ &  & analytic & 0.17 & 0.879\,{\scriptsize$\pm$0.036} & 0.960\,{\scriptsize$\pm$0.046} & 0.917\,{\scriptsize$\pm$0.029} & 0.936\,{\scriptsize$\pm$0.022} & 0.124\,{\scriptsize$\pm$0.084} \\
+ &  & validation-selected & 0.27 & 0.895\,{\scriptsize$\pm$0.042} & 0.943\,{\scriptsize$\pm$0.053} & 0.917\,{\scriptsize$\pm$0.026} & 0.937\,{\scriptsize$\pm$0.019} & 0.147\,{\scriptsize$\pm$0.089} \\
+\cmidrule(lr){2-9}
+ & \multirow{3}{*}{BERT, supervised} & default & 0.50 & 0.613\,{\scriptsize$\pm$0.333} & 0.593\,{\scriptsize$\pm$0.334} & 0.595\,{\scriptsize$\pm$0.321} & 0.778\,{\scriptsize$\pm$0.092} & 0.822\,{\scriptsize$\pm$0.574} \\
+ &  & analytic & 0.17 & 0.560\,{\scriptsize$\pm$0.127} & 0.879\,{\scriptsize$\pm$0.080} & 0.671\,{\scriptsize$\pm$0.089} & 0.661\,{\scriptsize$\pm$0.161} & 0.518\,{\scriptsize$\pm$0.127} \\
+ &  & validation-selected & 0.20 & 0.587\,{\scriptsize$\pm$0.103} & 0.845\,{\scriptsize$\pm$0.079} & 0.687\,{\scriptsize$\pm$0.079} & 0.709\,{\scriptsize$\pm$0.099} & 0.519\,{\scriptsize$\pm$0.168} \\
+\midrule
+\multirow{12}{*}{SST-2} & \multirow{3}{*}{Jev, zero-shot} & default & 0.50 & 0.979 & 0.941 & 0.960 & 0.960 & 0.040 \\
+ &  & analytic & 0.50 & 0.979 & 0.941 & 0.960 & 0.960 & 0.040 \\
+ &  & validation-selected & 0.36 & 0.975 & 0.959 & 0.967 & 0.967 & 0.033 \\
+\cmidrule(lr){2-9}
+ & \multirow{3}{*}{Qwen3.6-27B, zero-shot} & default & 0.50 & 0.981 & 0.932 & 0.956 & 0.956 & 0.044 \\
+ &  & analytic & 0.50 & 0.981 & 0.932 & 0.956 & 0.956 & 0.044 \\
+ &  & validation-selected & 0.29 & 0.972 & 0.953 & 0.962 & 0.962 & 0.038 \\
+\cmidrule(lr){2-9}
+ & \multirow{3}{*}{XGBoost, supervised} & default & 0.50 & 0.781 & 0.820 & 0.800 & 0.791 & 0.209 \\
+ &  & analytic & 0.50 & 0.781 & 0.820 & 0.800 & 0.791 & 0.209 \\
+ &  & validation-selected & 0.55 & 0.798 & 0.800 & 0.799 & 0.795 & 0.205 \\
+\cmidrule(lr){2-9}
+ & \multirow{3}{*}{BERT, supervised} & default & 0.50 & 0.901 & 0.939 & 0.920 & 0.916 & 0.084 \\
+ &  & analytic & 0.50 & 0.901 & 0.939 & 0.920 & 0.916 & 0.084 \\
+ &  & validation-selected & 0.49 & 0.901 & 0.939 & 0.920 & 0.916 & 0.084 \\
+\bottomrule
+\end{tabular}

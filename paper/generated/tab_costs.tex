@@ -1,0 +1,25 @@
+\begin{tabular}{llrcrll}
+\toprule
+Dataset & Model & Labels & Macro-F1 & Training & Per 1,000 & Latency \\
+\midrule
+\multirow{4}{*}{German Credit} & Jev & 0 & 0.467 & -- & 0.022 & 0.15\,s \\
+ & Qwen3.6-27B & 0 & 0.457 & -- & 0.683 (0.642) & 0.95\,s (2.5/s) \\
+ & XGBoost & 600 & 0.657 & 0.0097 & $<$0.0001 & 1.3\,$\mu$s \\
+ & BERT & 600 & 0.473 & 0.148 & 0.0003 & 0.76\,ms \\
+\addlinespace
+\multirow{4}{*}{Breast Cancer Wisconsin} & Jev & 0 & 0.343 & -- & 0.030 & 0.14\,s \\
+ & Qwen3.6-27B & 0 & 0.783 & -- & 1.34 (1.26) & 1.10\,s (1.3/s) \\
+ & XGBoost & 341 & 0.945 & 0.010 & $<$0.0001 & 3.1\,$\mu$s \\
+ & BERT & 341 & 0.716 & 0.129 & 0.0004 & 1.26\,ms \\
+\addlinespace
+\multirow{4}{*}{SST-2} & Jev & 0 & 0.960 & -- & 0.015 & 0.15\,s \\
+ & Qwen3.6-27B & 0 & 0.956 & -- & 0.352 (0.331) & 0.92\,s (4.8/s) \\
+ & XGBoost & 65{,}349 & 0.791 & 0.024 & $<$0.0001 & 0.01\,ms \\
+ & BERT & 65{,}349 & 0.916 & 0.457 & $<$0.0001 & 0.19\,ms \\
+\addlinespace
+\multirow{4}{*}{AG News} & Jev & 0 & 0.878 & -- & 0.018 & 0.15\,s \\
+ & Qwen3.6-27B & 0 & 0.877 & -- & 0.586 (0.551) & 0.93\,s (2.9/s) \\
+ & XGBoost & 115{,}000 & 0.914 & 0.157 & $<$0.0001 & 0.06\,ms \\
+ & BERT & 115{,}000 & 0.942 & 1.09 & 0.0001 & 0.31\,ms \\
+\bottomrule
+\end{tabular}

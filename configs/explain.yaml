@@ -1,0 +1,10 @@
+# Perturbation explanations on Jev (design D10).
+seed: 0
+n_examples: 20            # seeded draw from each dataset's evaluation examples
+min_words: 6              # text examples are drawn among those with min_words..max_words words,
+max_words: 40             #   so that deleting 5 words is meaningful and the perturbation count is bounded
+shap_nsamples: 200        # KernelSHAP coalitions per example
+lime_samples: 200         # LIME perturbations per example
+lime_kernel_width: 25     # on cosine distance x 100, as in LIME's text explainer
+deletion_k: [1, 3, 5]
+random_draws: 5           # random-k deletions per example and k

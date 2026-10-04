@@ -1,0 +1,2525 @@
+{
+ "mode": "live",
+ "artifact_modes": [
+  "live"
+ ],
+ "dataset": "german",
+ "title": "German Credit",
+ "model": "jev-1.13.0",
+ "n_examples": 20,
+ "positive_given_empty_input": 0.6899999999999998,
+ "selection": {
+  "eligible": 885,
+  "evaluation_examples": 885,
+  "rule": "all rows"
+ },
+ "unit": "feature",
+ "faithfulness": {
+  "kernel_shap": {
+   "1": {
+    "top_drop": 0.2965,
+    "top_flip": 0.45,
+    "rand_drop": 0.011400000000000002,
+    "rand_flip": 0.030000000000000006
+   },
+   "3": {
+    "top_drop": 0.5770000000000001,
+    "top_flip": 0.85,
+    "rand_drop": 0.008200000000000004,
+    "rand_flip": 0.06000000000000001
+   },
+   "5": {
+    "top_drop": 0.7609999999999999,
+    "top_flip": 1.0,
+    "rand_drop": 0.055700000000000006,
+    "rand_flip": 0.14
+   }
+  },
+  "lime": {
+   "1": {
+    "top_drop": 0.29850000000000004,
+    "top_flip": 0.45,
+    "rand_drop": 0.011400000000000002,
+    "rand_flip": 0.030000000000000006
+   },
+   "3": {
+    "top_drop": 0.6025,
+    "top_flip": 0.9,
+    "rand_drop": 0.008200000000000004,
+    "rand_flip": 0.06000000000000001
+   },
+   "5": {
+    "top_drop": 0.7459999999999999,
+    "top_flip": 0.95,
+    "rand_drop": 0.055700000000000006,
+    "rand_flip": 0.14
+   }
+  }
+ },
+ "agreement": {
+  "kendall_tau_mean": 0.7142105263157895,
+  "kendall_tau_sd": 0.08707464877812483,
+  "top3_overlap_mean": 0.7999999999999999
+ },
+ "evaluations_per_explanation": {
+  "kernel_shap": 202.0,
+  "lime": 200.0
+ },
+ "shap_additivity_error": {
+  "mean": 8.881784197001253e-17,
+  "max": 2.220446049250313e-16
+ },
+ "lime_r2_mean": 0.7989035317005394,
+ "mean_units": 20.0,
+ "jev_requests": 7164,
+ "jev_requests_this_run": 0,
+ "failed_requests": 0,
+ "examples": [
+  {
+   "id": "german-16",
+   "predicted": "bad",
+   "gold": "good",
+   "p_full": 0.86,
+   "n_units": 20,
+   "units": [
+    "checking account balance",
+    "loan duration (months)",
+    "credit history",
+    "loan purpose",
+    "credit amount (DM)",
+    "savings account balance",
+    "time in present employment",
+    "installment rate (% of disposable income)",
+    "personal status and sex",
+    "other debtors / guarantors",
+    "years at present residence",
+    "most valuable property",
+    "age (years)",
+    "other installment plans",
+    "housing",
+    "number of existing credits at this bank",
+    "job",
+    "number of dependents",
+    "has telephone",
+    "foreign worker"
+   ],
+   "kendall_tau": 0.6842105263157895,
+   "top3_overlap": 0.6666666666666666,
+   "faithfulness": {
+    "1": {
+     "rand_drop": -0.020000000000000018,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.45,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.45,
+      "top_flip": true
+     }
+    },
+    "3": {
+     "rand_drop": -0.06600000000000002,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.64,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.73,
+      "top_flip": true
+     }
+    },
+    "5": {
+     "rand_drop": 0.044,
+     "rand_flip": 0.2,
+     "kernel_shap": {
+      "top_drop": 0.84,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.84,
+      "top_flip": true
+     }
+    }
+   },
+   "kernel_shap": {
+    "attributions": [
+     0.1445605746270636,
+     -0.015603675322218983,
+     0.5031102124297968,
+     -0.04980788582513911,
+     -0.048469347312336986,
+     0.15590571164144895,
+     -0.23868625696750212,
+     -0.12284462532158576,
+     -0.030766542998899714,
+     -0.01880797394309097,
+     -0.09998990101192368,
+     0.03913960479011451,
+     -0.03130667783551708,
+     -0.04633736152493142,
+     -0.10373869505374653,
+     -0.06659880641671766,
+     -0.03239398402050092,
+     -0.08504120185525325,
+     0.20296887940841443,
+     0.11470795251252577
+    ],
+    "base_value": 0.69,
+    "additivity_error": 2.220446049250313e-16,
+    "calls": 202
+   },
+   "lime": {
+    "attributions": [
+     0.0966296119524925,
+     0.024448753179079553,
+     0.4871549804252037,
+     0.017090925987678304,
+     -0.009143316123956963,
+     0.04769373411859713,
+     -0.16172847865968315,
+     -0.06737833273987556,
+     -0.012344738266428087,
+     -0.02401947365317404,
+     -0.024226472470712673,
+     0.018843563415084003,
+     -0.007967411605002743,
+     -0.06993278647890468,
+     -0.0655972873412306,
+     0.0021950834163034024,
+     -0.03255329404897512,
+     -0.02915884543714924,
+     0.1407323545012621,
+     0.10857745804319577
+    ],
+    "r2": 0.8720671837989631,
+    "calls": 200
+   }
+  },
+  {
+   "id": "german-40",
+   "predicted": "good",
+   "gold": "good",
+   "p_full": 0.85,
+   "n_units": 20,
+   "units": [
+    "checking account balance",
+    "loan duration (months)",
+    "credit history",
+    "loan purpose",
+    "credit amount (DM)",
+    "savings account balance",
+    "time in present employment",
+    "installment rate (% of disposable income)",
+    "personal status and sex",
+    "other debtors / guarantors",
+    "years at present residence",
+    "most valuable property",
+    "age (years)",
+    "other installment plans",
+    "housing",
+    "number of existing credits at this bank",
+    "job",
+    "number of dependents",
+    "has telephone",
+    "foreign worker"
+   ],
+   "kendall_tau": 0.6842105263157895,
+   "top3_overlap": 0.6666666666666666,
+   "faithfulness": {
+    "1": {
+     "rand_drop": 0.0019999999999999575,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.06999999999999995,
+      "top_flip": false
+     },
+     "lime": {
+      "top_drop": 0.13,
+      "top_flip": false
+     }
+    },
+    "3": {
+     "rand_drop": 0.041999999999999996,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.30999999999999994,
+      "top_flip": false
+     },
+     "lime": {
+      "top_drop": 0.5,
+      "top_flip": true
+     }
+    },
+    "5": {
+     "rand_drop": 0.08199999999999999,
+     "rand_flip": 0.2,
+     "kernel_shap": {
+      "top_drop": 0.78,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.8099999999999999,
+      "top_flip": true
+     }
+    }
+   },
+   "kernel_shap": {
+    "attributions": [
+     -0.1532148727027987,
+     0.02709410491231087,
+     0.16149206046120387,
+     -0.053945303318145434,
+     0.018495505432137904,
+     0.04036422243174563,
+     0.14050812479486716,
+     0.12483483231048141,
+     -0.016745223709988655,
+     0.08069059340965978,
+     -0.01591664789710848,
+     0.008706745918001212,
+     0.008623692435727593,
+     0.05945650268508317,
+     0.1819349554145402,
+     0.06392833592285235,
+     0.17181166835239842,
+     0.01381739380953485,
+     -0.18067165111636999,
+     -0.14126503954613312
+    ],
+    "base_value": 0.31,
+    "additivity_error": 1.1102230246251565e-16,
+    "calls": 202
+   },
+   "lime": {
+    "attributions": [
+     -0.12394052594452731,
+     -0.032968089009937855,
+     0.13090515720519122,
+     -0.029644833587914157,
+     0.007919913478194554,
+     0.054083531457108744,
+     0.12563041370349876,
+     0.05110029944503708,
+     -0.02704676364401851,
+     0.01006813206019047,
+     -0.04336907184822193,
+     0.033634693969868006,
+     0.032276984789955915,
+     0.0328723836520321,
+     0.08373073190922019,
+     0.0028264475311701,
+     0.07839680013350647,
+     0.008545047156887758,
+     -0.1681218017798271,
+     -0.12331742450854508
+    ],
+    "r2": 0.7821979647987998,
+    "calls": 200
+   }
+  },
+  {
+   "id": "german-75",
+   "predicted": "bad",
+   "gold": "good",
+   "p_full": 0.99,
+   "n_units": 20,
+   "units": [
+    "checking account balance",
+    "loan duration (months)",
+    "credit history",
+    "loan purpose",
+    "credit amount (DM)",
+    "savings account balance",
+    "time in present employment",
+    "installment rate (% of disposable income)",
+    "personal status and sex",
+    "other debtors / guarantors",
+    "years at present residence",
+    "most valuable property",
+    "age (years)",
+    "other installment plans",
+    "housing",
+    "number of existing credits at this bank",
+    "job",
+    "number of dependents",
+    "has telephone",
+    "foreign worker"
+   ],
+   "kendall_tau": 0.6421052631578947,
+   "top3_overlap": 1.0,
+   "faithfulness": {
+    "1": {
+     "rand_drop": 0.0020000000000000018,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.050000000000000044,
+      "top_flip": false
+     },
+     "lime": {
+      "top_drop": 0.030000000000000027,
+      "top_flip": false
+     }
+    },
+    "3": {
+     "rand_drop": 0.0,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.53,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.53,
+      "top_flip": true
+     }
+    },
+    "5": {
+     "rand_drop": 0.01399999999999999,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.86,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.86,
+      "top_flip": true
+     }
+    }
+   },
+   "kernel_shap": {
+    "attributions": [
+     0.21987157582687017,
+     -0.018390811686885628,
+     0.2937899141702712,
+     -0.01273986305712178,
+     -0.020371665372149912,
+     0.1664344873602107,
+     -0.16554862562186087,
+     -0.11320757227071629,
+     0.023808376719816515,
+     -0.03507461919737587,
+     -0.046704659150141326,
+     0.15435912576605446,
+     0.0029363385474826015,
+     -0.10680431854727154,
+     0.016337828068272008,
+     -0.04915394285694427,
+     -0.11351548952783001,
+     -0.018807804134835363,
+     0.064520948950803,
+     0.05826077601335228
+    ],
+    "base_value": 0.69,
+    "additivity_error": 1.1102230246251565e-16,
+    "calls": 202
+   },
+   "lime": {
+    "attributions": [
+     0.17238647527432463,
+     0.030089602137066695,
+     0.17165803081694284,
+     -0.007380749143445217,
+     -0.019814214820560776,
+     0.05793011193126805,
+     -0.060733010617180255,
+     -0.01941149955081082,
+     0.005378507427006323,
+     0.02473191553041834,
+     -0.01773662443425793,
+     0.02705121428454402,
+     0.008347055736494963,
+     -0.01634403856546395,
+     -0.01315421955682224,
+     0.028864702838331275,
+     -0.06665549591470502,
+     -0.003343215732019728,
+     0.03162192595624408,
+     0.03766844112679514
+    ],
+    "r2": 0.5733137538604455,
+    "calls": 200
+   }
+  },
+  {
+   "id": "german-177",
+   "predicted": "bad",
+   "gold": "good",
+   "p_full": 0.96,
+   "n_units": 20,
+   "units": [
+    "checking account balance",
+    "loan duration (months)",
+    "credit history",
+    "loan purpose",
+    "credit amount (DM)",
+    "savings account balance",
+    "time in present employment",
+    "installment rate (% of disposable income)",
+    "personal status and sex",
+    "other debtors / guarantors",
+    "years at present residence",
+    "most valuable property",
+    "age (years)",
+    "other installment plans",
+    "housing",
+    "number of existing credits at this bank",
+    "job",
+    "number of dependents",
+    "has telephone",
+    "foreign worker"
+   ],
+   "kendall_tau": 0.6421052631578947,
+   "top3_overlap": 1.0,
+   "faithfulness": {
+    "1": {
+     "rand_drop": 0.072,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.15999999999999992,
+      "top_flip": false
+     },
+     "lime": {
+      "top_drop": 0.15999999999999992,
+      "top_flip": false
+     }
+    },
+    "3": {
+     "rand_drop": 0.04599999999999997,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.9199999999999999,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.9199999999999999,
+      "top_flip": true
+     }
+    },
+    "5": {
+     "rand_drop": 0.08199999999999999,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.94,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.88,
+      "top_flip": true
+     }
+    }
+   },
+   "kernel_shap": {
+    "attributions": [
+     0.49636301224051577,
+     0.05233937003628898,
+     0.47074412293049894,
+     0.02304243432317887,
+     -0.12556990763490739,
+     -0.12156346106076804,
+     -0.1363371558530929,
+     -0.11217325830133829,
+     0.004838885056055631,
+     -0.015704366532480165,
+     -0.0773940488498143,
+     0.0011755486386199737,
+     -0.05163513136480745,
+     -0.052231676482687485,
+     -0.08662672858498965,
+     -0.10195955261512961,
+     -0.14652802638536477,
+     0.002931261717174048,
+     0.14973699236801252,
+     0.09655168635503525
+    ],
+    "base_value": 0.69,
+    "additivity_error": 2.220446049250313e-16,
+    "calls": 202
+   },
+   "lime": {
+    "attributions": [
+     0.33099083181953076,
+     0.022647410926578314,
+     0.29805945902506153,
+     0.034416060422572996,
+     0.01098190939456911,
+     -0.02960498980347661,
+     -0.08156715161484318,
+     -0.028769515433804554,
+     0.02851978000945441,
+     0.038700486480750446,
+     -0.058403969339789585,
+     -0.031201900568370345,
+     0.01504922295957576,
+     -0.014777103359614189,
+     -0.02420755521158256,
+     -0.0007978384904823197,
+     -0.03730486204241193,
+     0.0036695650416764623,
+     0.04242876061195209,
+     0.01664721478235554
+    ],
+    "r2": 0.7811741539493877,
+    "calls": 200
+   }
+  },
+  {
+   "id": "german-274",
+   "predicted": "bad",
+   "gold": "bad",
+   "p_full": 0.97,
+   "n_units": 20,
+   "units": [
+    "checking account balance",
+    "loan duration (months)",
+    "credit history",
+    "loan purpose",
+    "credit amount (DM)",
+    "savings account balance",
+    "time in present employment",
+    "installment rate (% of disposable income)",
+    "personal status and sex",
+    "other debtors / guarantors",
+    "years at present residence",
+    "most valuable property",
+    "age (years)",
+    "other installment plans",
+    "housing",
+    "number of existing credits at this bank",
+    "job",
+    "number of dependents",
+    "has telephone",
+    "foreign worker"
+   ],
+   "kendall_tau": 0.7157894736842105,
+   "top3_overlap": 0.6666666666666666,
+   "faithfulness": {
+    "1": {
+     "rand_drop": -0.0040000000000000036,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.030000000000000027,
+      "top_flip": false
+     },
+     "lime": {
+      "top_drop": 0.030000000000000027,
+      "top_flip": false
+     }
+    },
+    "3": {
+     "rand_drop": 0.022,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.21999999999999997,
+      "top_flip": false
+     },
+     "lime": {
+      "top_drop": 0.21999999999999997,
+      "top_flip": false
+     }
+    },
+    "5": {
+     "rand_drop": 0.10199999999999998,
+     "rand_flip": 0.2,
+     "kernel_shap": {
+      "top_drop": 0.61,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.44999999999999996,
+      "top_flip": false
+     }
+    }
+   },
+   "kernel_shap": {
+    "attributions": [
+     0.23858610679036113,
+     -0.009127466152245016,
+     -0.17149147326436406,
+     0.02168056512633869,
+     0.00435906821703678,
+     0.10286918674672298,
+     0.17612475013292356,
+     -0.1765832217477713,
+     0.03964397055313663,
+     -0.005212114611966159,
+     0.04938896741582637,
+     0.12277350059172222,
+     -0.0805587246233023,
+     -0.06209216968171224,
+     -0.09731325580752961,
+     -0.006331338528141617,
+     0.1191587914060717,
+     -0.00742741930269797,
+     -0.05270030559895462,
+     0.07425258233854493
+    ],
+    "base_value": 0.69,
+    "additivity_error": 1.1102230246251565e-16,
+    "calls": 202
+   },
+   "lime": {
+    "attributions": [
+     0.1239115432837771,
+     0.019355083279184337,
+     -0.07512505511107115,
+     0.01120704922054467,
+     0.013183085898547395,
+     0.06427516759308043,
+     0.09141111949866823,
+     -0.05361819143781018,
+     0.04540533499072509,
+     -0.025161330888451103,
+     -0.000450504077757321,
+     0.04738465806968324,
+     -0.01766585201476431,
+     -0.0032340656501387483,
+     -0.03888171061411762,
+     2.794804986278236e-05,
+     0.03416703342152584,
+     0.03219949435664172,
+     -0.0041920809540965595,
+     0.01844261808492264
+    ],
+    "r2": 0.5243495573815866,
+    "calls": 200
+   }
+  },
+  {
+   "id": "german-308",
+   "predicted": "good",
+   "gold": "bad",
+   "p_full": 0.76,
+   "n_units": 20,
+   "units": [
+    "checking account balance",
+    "loan duration (months)",
+    "credit history",
+    "loan purpose",
+    "credit amount (DM)",
+    "savings account balance",
+    "time in present employment",
+    "installment rate (% of disposable income)",
+    "personal status and sex",
+    "other debtors / guarantors",
+    "years at present residence",
+    "most valuable property",
+    "age (years)",
+    "other installment plans",
+    "housing",
+    "number of existing credits at this bank",
+    "job",
+    "number of dependents",
+    "has telephone",
+    "foreign worker"
+   ],
+   "kendall_tau": 0.7789473684210527,
+   "top3_overlap": 1.0,
+   "faithfulness": {
+    "1": {
+     "rand_drop": 2.2204460492503132e-17,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.24,
+      "top_flip": false
+     },
+     "lime": {
+      "top_drop": 0.24,
+      "top_flip": false
+     }
+    },
+    "3": {
+     "rand_drop": 0.02400000000000001,
+     "rand_flip": 0.2,
+     "kernel_shap": {
+      "top_drop": 0.65,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.65,
+      "top_flip": true
+     }
+    },
+    "5": {
+     "rand_drop": 0.042000000000000016,
+     "rand_flip": 0.2,
+     "kernel_shap": {
+      "top_drop": 0.73,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.73,
+      "top_flip": true
+     }
+    }
+   },
+   "kernel_shap": {
+    "attributions": [
+     -0.17111621323598272,
+     0.016347372171603567,
+     0.22805910984388317,
+     0.002917078295676861,
+     0.0017357166498036245,
+     -0.20763158048828131,
+     0.08189981352402463,
+     0.17356899448672652,
+     -0.04160710838063367,
+     -0.008470793405040597,
+     0.11239584759904572,
+     0.16577391272836375,
+     -0.0789801813456328,
+     0.12391672042771743,
+     0.12970748362278828,
+     0.08838341475684312,
+     0.12615697206433643,
+     0.009959900432231565,
+     -0.15896814724903863,
+     -0.14404831249843492
+    ],
+    "base_value": 0.31,
+    "additivity_error": 0.0,
+    "calls": 202
+   },
+   "lime": {
+    "attributions": [
+     -0.12662406060720358,
+     -0.002756891133936506,
+     0.2269738219422958,
+     0.00793125457737747,
+     0.031282735214435545,
+     -0.09207003488293816,
+     0.04449411304631917,
+     0.12751767225782057,
+     -0.02258802285970006,
+     -0.012371902915304118,
+     -0.003072071941167838,
+     0.11678299851241597,
+     -0.07978843910490058,
+     0.032557955341402454,
+     0.07185013841543035,
+     0.019449005636959272,
+     0.09278601273470924,
+     0.0024292151105208375,
+     -0.15245648053284774,
+     -0.14331809143956292
+    ],
+    "r2": 0.8018873119427982,
+    "calls": 200
+   }
+  },
+  {
+   "id": "german-506",
+   "predicted": "bad",
+   "gold": "good",
+   "p_full": 0.89,
+   "n_units": 20,
+   "units": [
+    "checking account balance",
+    "loan duration (months)",
+    "credit history",
+    "loan purpose",
+    "credit amount (DM)",
+    "savings account balance",
+    "time in present employment",
+    "installment rate (% of disposable income)",
+    "personal status and sex",
+    "other debtors / guarantors",
+    "years at present residence",
+    "most valuable property",
+    "age (years)",
+    "other installment plans",
+    "housing",
+    "number of existing credits at this bank",
+    "job",
+    "number of dependents",
+    "has telephone",
+    "foreign worker"
+   ],
+   "kendall_tau": 0.4736842105263158,
+   "top3_overlap": 0.6666666666666666,
+   "faithfulness": {
+    "1": {
+     "rand_drop": -0.0020000000000000018,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.73,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.73,
+      "top_flip": true
+     }
+    },
+    "3": {
+     "rand_drop": -0.009999999999999964,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.87,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.84,
+      "top_flip": true
+     }
+    },
+    "5": {
+     "rand_drop": 0.31799999999999995,
+     "rand_flip": 0.4,
+     "kernel_shap": {
+      "top_drop": 0.85,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.88,
+      "top_flip": true
+     }
+    }
+   },
+   "kernel_shap": {
+    "attributions": [
+     -0.008865297383860346,
+     -0.005994428085938666,
+     0.8235077992392781,
+     -0.022122105247747516,
+     -0.0459991602981923,
+     -0.009302878517180481,
+     -0.0035054529751645394,
+     -0.15297970744691777,
+     0.012256490189140195,
+     -0.08016897376539261,
+     -0.025964740188418222,
+     -0.022764041238406668,
+     -0.06425892602253332,
+     -0.05706425710448974,
+     -0.07949904408333393,
+     -0.03434118117642032,
+     -0.06438279443487374,
+     -0.07084513473527881,
+     -0.043242140387342635,
+     0.15553597366307334
+    ],
+    "base_value": 0.69,
+    "additivity_error": 1.1102230246251565e-16,
+    "calls": 202
+   },
+   "lime": {
+    "attributions": [
+     0.005435140626780071,
+     0.031172210948713787,
+     0.7270328296063597,
+     0.015539161092295828,
+     0.02924521938227263,
+     -0.0047996102695869,
+     -0.01122401232950613,
+     -0.0347857070771098,
+     0.012427539079048087,
+     -0.0012642352697121745,
+     0.010915804258380917,
+     0.007452199510530175,
+     -0.0217489438980926,
+     -0.0006527245132431476,
+     -0.05736426820409247,
+     -0.01113140603097629,
+     -0.01986587272043551,
+     0.012053241455454266,
+     -0.0008580580257553241,
+     0.06941555780055113
+    ],
+    "r2": 0.984023447126068,
+    "calls": 200
+   }
+  },
+  {
+   "id": "german-507",
+   "predicted": "bad",
+   "gold": "bad",
+   "p_full": 0.81,
+   "n_units": 20,
+   "units": [
+    "checking account balance",
+    "loan duration (months)",
+    "credit history",
+    "loan purpose",
+    "credit amount (DM)",
+    "savings account balance",
+    "time in present employment",
+    "installment rate (% of disposable income)",
+    "personal status and sex",
+    "other debtors / guarantors",
+    "years at present residence",
+    "most valuable property",
+    "age (years)",
+    "other installment plans",
+    "housing",
+    "number of existing credits at this bank",
+    "job",
+    "number of dependents",
+    "has telephone",
+    "foreign worker"
+   ],
+   "kendall_tau": 0.6421052631578947,
+   "top3_overlap": 0.6666666666666666,
+   "faithfulness": {
+    "1": {
+     "rand_drop": -0.0059999999999999385,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.56,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.56,
+      "top_flip": true
+     }
+    },
+    "3": {
+     "rand_drop": 0.11400000000000003,
+     "rand_flip": 0.2,
+     "kernel_shap": {
+      "top_drop": 0.74,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.7300000000000001,
+      "top_flip": true
+     }
+    },
+    "5": {
+     "rand_drop": 0.15400000000000005,
+     "rand_flip": 0.2,
+     "kernel_shap": {
+      "top_drop": 0.79,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.78,
+      "top_flip": true
+     }
+    }
+   },
+   "kernel_shap": {
+    "attributions": [
+     0.22802878273537808,
+     -0.02168503806193087,
+     -0.2146424417281215,
+     0.02825263864862271,
+     0.016671312053035167,
+     0.035349418106003644,
+     0.6661847310651496,
+     -0.08250679730805892,
+     0.012936152230583248,
+     -0.019941218182637638,
+     -0.04886970094159359,
+     -0.038058444908471996,
+     -0.04925011355300335,
+     -0.10800060544350694,
+     -0.04935761024455831,
+     -0.06243269220589946,
+     -0.17886118005718718,
+     -0.016863503314927,
+     -0.10860287802180081,
+     0.13164918913292517
+    ],
+    "base_value": 0.69,
+    "additivity_error": 0.0,
+    "calls": 202
+   },
+   "lime": {
+    "attributions": [
+     0.061735773327610155,
+     0.004918382859420035,
+     -0.18115684938079868,
+     0.03257521535983243,
+     0.07091059143466352,
+     0.03200137364194433,
+     0.5638139166870855,
+     0.005132487571528657,
+     0.013882964898202265,
+     -0.008544781275284486,
+     -0.04150797158722916,
+     -0.0021761918654584936,
+     -0.008194440505039067,
+     -0.041932214182098734,
+     -0.08380778021221413,
+     0.020307705603676757,
+     -0.16257561424328018,
+     0.051107784435052345,
+     0.011650889471463538,
+     0.13038662159264391
+    ],
+    "r2": 0.9289482711941881,
+    "calls": 200
+   }
+  },
+  {
+   "id": "german-548",
+   "predicted": "bad",
+   "gold": "bad",
+   "p_full": 0.78,
+   "n_units": 20,
+   "units": [
+    "checking account balance",
+    "loan duration (months)",
+    "credit history",
+    "loan purpose",
+    "credit amount (DM)",
+    "savings account balance",
+    "time in present employment",
+    "installment rate (% of disposable income)",
+    "personal status and sex",
+    "other debtors / guarantors",
+    "years at present residence",
+    "most valuable property",
+    "age (years)",
+    "other installment plans",
+    "housing",
+    "number of existing credits at this bank",
+    "job",
+    "number of dependents",
+    "has telephone",
+    "foreign worker"
+   ],
+   "kendall_tau": 0.7473684210526316,
+   "top3_overlap": 0.6666666666666666,
+   "faithfulness": {
+    "1": {
+     "rand_drop": 0.028000000000000004,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.52,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.52,
+      "top_flip": true
+     }
+    },
+    "3": {
+     "rand_drop": -0.0019999999999999797,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.67,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.68,
+      "top_flip": true
+     }
+    },
+    "5": {
+     "rand_drop": 0.11000000000000003,
+     "rand_flip": 0.4,
+     "kernel_shap": {
+      "top_drop": 0.77,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.77,
+      "top_flip": true
+     }
+    }
+   },
+   "kernel_shap": {
+    "attributions": [
+     0.4910324710894308,
+     -0.03441473135062399,
+     -0.2980390670475085,
+     -0.002451300580519335,
+     -0.05945482880377141,
+     0.19133022636995173,
+     -0.1143786963411208,
+     -0.1319261524117594,
+     0.015358930263261225,
+     -0.01131377056909328,
+     -0.059284701689109764,
+     -0.10101023112939136,
+     0.044869481248134245,
+     0.013649377823388981,
+     -0.10170042594930538,
+     -0.08098208823794405,
+     0.19056093396935847,
+     -0.053881391309387905,
+     0.13503982934489486,
+     0.05699613531111494
+    ],
+    "base_value": 0.69,
+    "additivity_error": 0.0,
+    "calls": 202
+   },
+   "lime": {
+    "attributions": [
+     0.4623542800533326,
+     -0.03617357876187721,
+     -0.164381618222343,
+     -0.017480782615722376,
+     -0.04192321719778389,
+     0.06993140771124462,
+     -0.06816938813376394,
+     -0.05361684404882509,
+     0.03567342336885816,
+     -0.011754929211121912,
+     -0.02086188279855537,
+     -0.06366950034478358,
+     0.03447912663106175,
+     -0.021844288380062696,
+     -0.09263727328290826,
+     -0.004058745955984934,
+     0.11337939374391509,
+     -0.010407558492286516,
+     0.09379752749301058,
+     0.0892593542069119
+    ],
+    "r2": 0.8587123283085506,
+    "calls": 200
+   }
+  },
+  {
+   "id": "german-562",
+   "predicted": "bad",
+   "gold": "good",
+   "p_full": 0.95,
+   "n_units": 20,
+   "units": [
+    "checking account balance",
+    "loan duration (months)",
+    "credit history",
+    "loan purpose",
+    "credit amount (DM)",
+    "savings account balance",
+    "time in present employment",
+    "installment rate (% of disposable income)",
+    "personal status and sex",
+    "other debtors / guarantors",
+    "years at present residence",
+    "most valuable property",
+    "age (years)",
+    "other installment plans",
+    "housing",
+    "number of existing credits at this bank",
+    "job",
+    "number of dependents",
+    "has telephone",
+    "foreign worker"
+   ],
+   "kendall_tau": 0.7894736842105264,
+   "top3_overlap": 0.6666666666666666,
+   "faithfulness": {
+    "1": {
+     "rand_drop": -0.014000000000000012,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.13,
+      "top_flip": false
+     },
+     "lime": {
+      "top_drop": 0.13,
+      "top_flip": false
+     }
+    },
+    "3": {
+     "rand_drop": 0.007999999999999962,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.6199999999999999,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.59,
+      "top_flip": true
+     }
+    },
+    "5": {
+     "rand_drop": 0.021999999999999954,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.86,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.86,
+      "top_flip": true
+     }
+    }
+   },
+   "kernel_shap": {
+    "attributions": [
+     -0.08455375372439992,
+     -0.05755517638635482,
+     0.3210543557499312,
+     -0.012988048051151835,
+     0.027332594611677,
+     0.18708541101330114,
+     0.23579297331206645,
+     -0.1627514348798085,
+     0.01908412046765403,
+     -0.01185926986781414,
+     0.028991181220773658,
+     0.013277995586914372,
+     -0.07353632950253919,
+     -0.04440765472737854,
+     -0.16155389213278248,
+     -0.08735323502009727,
+     -0.11410095149886502,
+     -0.029508392404538945,
+     0.15305238763590553,
+     0.11449711859750736
+    ],
+    "base_value": 0.69,
+    "additivity_error": 1.1102230246251565e-16,
+    "calls": 202
+   },
+   "lime": {
+    "attributions": [
+     -0.07825843825625733,
+     -0.007880867730495726,
+     0.25460384080384485,
+     0.024603303358279458,
+     0.019377714138968504,
+     0.10667888991155627,
+     0.16206415668886895,
+     -0.12699647539125253,
+     0.010931905212809189,
+     0.014721873794174792,
+     0.04115661203401717,
+     0.007821069747409851,
+     -0.0011573864049088454,
+     0.02512241889778818,
+     -0.10722336409098747,
+     -0.025591297173911797,
+     -0.07610125994457075,
+     0.02640852365649369,
+     0.11116596525575469,
+     0.07303989377981307
+    ],
+    "r2": 0.7489773634916099,
+    "calls": 200
+   }
+  },
+  {
+   "id": "german-606",
+   "predicted": "bad",
+   "gold": "good",
+   "p_full": 0.95,
+   "n_units": 20,
+   "units": [
+    "checking account balance",
+    "loan duration (months)",
+    "credit history",
+    "loan purpose",
+    "credit amount (DM)",
+    "savings account balance",
+    "time in present employment",
+    "installment rate (% of disposable income)",
+    "personal status and sex",
+    "other debtors / guarantors",
+    "years at present residence",
+    "most valuable property",
+    "age (years)",
+    "other installment plans",
+    "housing",
+    "number of existing credits at this bank",
+    "job",
+    "number of dependents",
+    "has telephone",
+    "foreign worker"
+   ],
+   "kendall_tau": 0.7157894736842105,
+   "top3_overlap": 1.0,
+   "faithfulness": {
+    "1": {
+     "rand_drop": 0.005999999999999983,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.2899999999999999,
+      "top_flip": false
+     },
+     "lime": {
+      "top_drop": 0.2899999999999999,
+      "top_flip": false
+     }
+    },
+    "3": {
+     "rand_drop": -0.02400000000000002,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.6499999999999999,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.6499999999999999,
+      "top_flip": true
+     }
+    },
+    "5": {
+     "rand_drop": -0.024000000000000042,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.9299999999999999,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.75,
+      "top_flip": true
+     }
+    }
+   },
+   "kernel_shap": {
+    "attributions": [
+     0.08850183740763903,
+     -0.024892553742216,
+     0.4642479879287995,
+     0.0397527294777421,
+     -0.021464684953628726,
+     0.15678671208412978,
+     -0.048926893151066186,
+     -0.13075372008714845,
+     0.015690877806129103,
+     0.015128435036978161,
+     -0.024180535291859543,
+     -0.12630208015258135,
+     0.1661106641870843,
+     -0.0754805528163426,
+     -0.1180674127991142,
+     -0.02002054103530411,
+     -0.137440533401445,
+     -0.03189072624929112,
+     -0.031261771353904344,
+     0.10446276110539968
+    ],
+    "base_value": 0.69,
+    "additivity_error": 1.1102230246251565e-16,
+    "calls": 202
+   },
+   "lime": {
+    "attributions": [
+     0.04758102884417941,
+     0.051654507753868824,
+     0.35417851799167976,
+     0.06511641613568628,
+     -0.0364765877744878,
+     0.08929671607077301,
+     0.010354326087312925,
+     -0.04464168590253456,
+     0.04721277691594849,
+     -0.003192974909821523,
+     -0.043700748485753,
+     -0.10060295420450274,
+     0.1624557322915366,
+     -0.0172499769145194,
+     -0.05467771341114433,
+     -0.016577051615479666,
+     -0.09837771336947783,
+     0.029105652110413483,
+     -0.028963397133972016,
+     0.048087638988778304
+    ],
+    "r2": 0.8142342396764342,
+    "calls": 200
+   }
+  },
+  {
+   "id": "german-630",
+   "predicted": "bad",
+   "gold": "good",
+   "p_full": 0.73,
+   "n_units": 20,
+   "units": [
+    "checking account balance",
+    "loan duration (months)",
+    "credit history",
+    "loan purpose",
+    "credit amount (DM)",
+    "savings account balance",
+    "time in present employment",
+    "installment rate (% of disposable income)",
+    "personal status and sex",
+    "other debtors / guarantors",
+    "years at present residence",
+    "most valuable property",
+    "age (years)",
+    "other installment plans",
+    "housing",
+    "number of existing credits at this bank",
+    "job",
+    "number of dependents",
+    "has telephone",
+    "foreign worker"
+   ],
+   "kendall_tau": 0.7578947368421053,
+   "top3_overlap": 0.6666666666666666,
+   "faithfulness": {
+    "1": {
+     "rand_drop": 0.025999999999999978,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.44999999999999996,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.44999999999999996,
+      "top_flip": true
+     }
+    },
+    "3": {
+     "rand_drop": -0.06400000000000003,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.69,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.65,
+      "top_flip": true
+     }
+    },
+    "5": {
+     "rand_drop": -0.042000000000000016,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.72,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.71,
+      "top_flip": true
+     }
+    }
+   },
+   "kernel_shap": {
+    "attributions": [
+     0.5362477551184817,
+     -0.05938234450813577,
+     -0.24230739229287085,
+     0.04213702826713053,
+     -0.0434009757097898,
+     0.196751468081505,
+     -0.07495506402857643,
+     -0.12320910012385636,
+     0.012671851684934983,
+     -0.012051139007679052,
+     -0.01898081777638446,
+     -0.031011541762228586,
+     -0.0026042963836639225,
+     -0.12910170216589573,
+     -0.14549667810591724,
+     -0.026749403419603978,
+     -0.06490989374669538,
+     -0.030294898148182835,
+     0.1548851770561447,
+     0.10176196697128356
+    ],
+    "base_value": 0.69,
+    "additivity_error": 1.1102230246251565e-16,
+    "calls": 202
+   },
+   "lime": {
+    "attributions": [
+     0.5054549595134381,
+     -0.025445719058728253,
+     -0.1571948534509884,
+     0.001357794884821114,
+     -0.015222537268855304,
+     0.07645667593787521,
+     -0.035050142672115044,
+     -0.10144318484142223,
+     0.03211978653196115,
+     -0.0212876044717907,
+     -0.02758792438118785,
+     -0.036431871047367836,
+     0.02121287197398453,
+     -0.06092743751660048,
+     -0.07568538174147747,
+     0.012744051638646493,
+     -0.006689262025538001,
+     0.0019019276453558637,
+     0.16299107825336953,
+     0.10531866578055453
+    ],
+    "r2": 0.8867213408420019,
+    "calls": 200
+   }
+  },
+  {
+   "id": "german-635",
+   "predicted": "good",
+   "gold": "good",
+   "p_full": 0.85,
+   "n_units": 20,
+   "units": [
+    "checking account balance",
+    "loan duration (months)",
+    "credit history",
+    "loan purpose",
+    "credit amount (DM)",
+    "savings account balance",
+    "time in present employment",
+    "installment rate (% of disposable income)",
+    "personal status and sex",
+    "other debtors / guarantors",
+    "years at present residence",
+    "most valuable property",
+    "age (years)",
+    "other installment plans",
+    "housing",
+    "number of existing credits at this bank",
+    "job",
+    "number of dependents",
+    "has telephone",
+    "foreign worker"
+   ],
+   "kendall_tau": 0.7052631578947369,
+   "top3_overlap": 0.6666666666666666,
+   "faithfulness": {
+    "1": {
+     "rand_drop": 0.05799999999999998,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.17999999999999994,
+      "top_flip": false
+     },
+     "lime": {
+      "top_drop": 0.17999999999999994,
+      "top_flip": false
+     }
+    },
+    "3": {
+     "rand_drop": 0.154,
+     "rand_flip": 0.2,
+     "kernel_shap": {
+      "top_drop": 0.53,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.6,
+      "top_flip": true
+     }
+    },
+    "5": {
+     "rand_drop": 0.12199999999999997,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.63,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.75,
+      "top_flip": true
+     }
+    }
+   },
+   "kernel_shap": {
+    "attributions": [
+     -0.18200605221621616,
+     -0.013915865931169655,
+     0.21070900293753353,
+     0.07442518708232342,
+     0.11537556458511229,
+     -0.2517244081616306,
+     0.1924820897434002,
+     0.13763300953414262,
+     0.040846053366710294,
+     0.07463229104319216,
+     0.05902025983497427,
+     -0.015516985813259927,
+     0.05526975779348896,
+     0.034439305452537775,
+     0.08319557890894087,
+     -0.04354890378834997,
+     0.10621412159573479,
+     0.0002280180982594227,
+     0.027523208478961225,
+     -0.16528123254468552
+    ],
+    "base_value": 0.31,
+    "additivity_error": 1.1102230246251565e-16,
+    "calls": 202
+   },
+   "lime": {
+    "attributions": [
+     -0.11976474855593111,
+     0.034052871559443615,
+     0.20619739158644973,
+     0.06253412219483646,
+     0.037293573794755695,
+     -0.1383738673946879,
+     0.16741443893882105,
+     0.06278815320341403,
+     -0.04652606821845527,
+     0.02440291993336658,
+     0.0006661165628158903,
+     0.03593433391924025,
+     0.015622582487879887,
+     -0.003980589677860334,
+     0.0721840185452796,
+     -0.040626885303708046,
+     0.06818026334561329,
+     -0.02795693432989718,
+     -0.02529889100271499,
+     -0.13182067051720706
+    ],
+    "r2": 0.8155515476601641,
+    "calls": 200
+   }
+  },
+  {
+   "id": "german-646",
+   "predicted": "bad",
+   "gold": "good",
+   "p_full": 0.79,
+   "n_units": 20,
+   "units": [
+    "checking account balance",
+    "loan duration (months)",
+    "credit history",
+    "loan purpose",
+    "credit amount (DM)",
+    "savings account balance",
+    "time in present employment",
+    "installment rate (% of disposable income)",
+    "personal status and sex",
+    "other debtors / guarantors",
+    "years at present residence",
+    "most valuable property",
+    "age (years)",
+    "other installment plans",
+    "housing",
+    "number of existing credits at this bank",
+    "job",
+    "number of dependents",
+    "has telephone",
+    "foreign worker"
+   ],
+   "kendall_tau": 0.7578947368421053,
+   "top3_overlap": 1.0,
+   "faithfulness": {
+    "1": {
+     "rand_drop": 0.05600000000000001,
+     "rand_flip": 0.2,
+     "kernel_shap": {
+      "top_drop": 0.41000000000000003,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.41000000000000003,
+      "top_flip": true
+     }
+    },
+    "3": {
+     "rand_drop": 0.020000000000000018,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.65,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.65,
+      "top_flip": true
+     }
+    },
+    "5": {
+     "rand_drop": 0.014000000000000035,
+     "rand_flip": 0.2,
+     "kernel_shap": {
+      "top_drop": 0.75,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.75,
+      "top_flip": true
+     }
+    }
+   },
+   "kernel_shap": {
+    "attributions": [
+     0.5763816768530747,
+     -0.017024632842086326,
+     -0.07590428706905755,
+     -0.02659484592648108,
+     -0.10619275546151878,
+     0.20775074439211658,
+     -0.017192189903942546,
+     -0.17303017256428618,
+     0.07839240867934996,
+     -0.04030159806255638,
+     -0.013682012345473907,
+     -0.14005855019736074,
+     -0.0798414480118978,
+     -0.1177846867118788,
+     -0.15432313578195608,
+     0.010512672213196485,
+     -0.06498902111957629,
+     -0.05593628758064499,
+     0.19623397040575757,
+     0.11358415103522229
+    ],
+    "base_value": 0.69,
+    "additivity_error": 0.0,
+    "calls": 202
+   },
+   "lime": {
+    "attributions": [
+     0.42552945131785597,
+     0.01692259447944728,
+     -0.03444013554144762,
+     -0.045877327092760115,
+     -0.05460727713588522,
+     0.1649488844246506,
+     -0.011994359857103455,
+     -0.04003102132682347,
+     0.0571299909678092,
+     0.034391752856260616,
+     0.01649772075841293,
+     -0.0888074584355181,
+     -0.03095523441640106,
+     -0.060089182493141456,
+     -0.06190384647482806,
+     0.01162821279963949,
+     -0.058891497757390394,
+     -0.002477146212036716,
+     0.11894233909161307,
+     0.11853741950761647
+    ],
+    "r2": 0.8449768694264252,
+    "calls": 200
+   }
+  },
+  {
+   "id": "german-722",
+   "predicted": "bad",
+   "gold": "bad",
+   "p_full": 0.76,
+   "n_units": 20,
+   "units": [
+    "checking account balance",
+    "loan duration (months)",
+    "credit history",
+    "loan purpose",
+    "credit amount (DM)",
+    "savings account balance",
+    "time in present employment",
+    "installment rate (% of disposable income)",
+    "personal status and sex",
+    "other debtors / guarantors",
+    "years at present residence",
+    "most valuable property",
+    "age (years)",
+    "other installment plans",
+    "housing",
+    "number of existing credits at this bank",
+    "job",
+    "number of dependents",
+    "has telephone",
+    "foreign worker"
+   ],
+   "kendall_tau": 0.8736842105263158,
+   "top3_overlap": 1.0,
+   "faithfulness": {
+    "1": {
+     "rand_drop": -0.007999999999999962,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.39,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.39,
+      "top_flip": true
+     }
+    },
+    "3": {
+     "rand_drop": -0.06000000000000001,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.5800000000000001,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.5800000000000001,
+      "top_flip": true
+     }
+    },
+    "5": {
+     "rand_drop": -0.028000000000000004,
+     "rand_flip": 0.2,
+     "kernel_shap": {
+      "top_drop": 0.74,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.74,
+      "top_flip": true
+     }
+    }
+   },
+   "kernel_shap": {
+    "attributions": [
+     0.4322312538334071,
+     -0.05987449388186285,
+     -0.20096958536756512,
+     -0.028844627707688964,
+     -0.10812548201252117,
+     0.18557586614476687,
+     -0.09017467790432383,
+     -0.19055584576280202,
+     0.0620975204056377,
+     -0.02761164561861489,
+     0.022061639939852568,
+     -0.16936108903175295,
+     0.0357052073860514,
+     -0.07544435115860466,
+     -0.1544211842022183,
+     -0.03788292884347178,
+     0.2767773534425814,
+     -0.04078026345415536,
+     0.1392783756348514,
+     0.1003189581584335
+    ],
+    "base_value": 0.69,
+    "additivity_error": 0.0,
+    "calls": 202
+   },
+   "lime": {
+    "attributions": [
+     0.3866286229768781,
+     -0.04492159204055967,
+     -0.16346059705035798,
+     0.0028590584388628383,
+     -0.05429787893326691,
+     0.08750748295730681,
+     -0.010118619888812712,
+     -0.10007239219510614,
+     0.04448916695023111,
+     0.01448094750656524,
+     -0.0037767416227878848,
+     -0.056685190952669384,
+     0.06343473860342089,
+     -0.04407504414367252,
+     -0.09537764444375861,
+     -0.021564148810312614,
+     0.11637104084977405,
+     0.015334707096925948,
+     0.08660855998844603,
+     0.06687667870279426
+    ],
+    "r2": 0.8433004685887291,
+    "calls": 200
+   }
+  },
+  {
+   "id": "german-807",
+   "predicted": "bad",
+   "gold": "good",
+   "p_full": 0.91,
+   "n_units": 20,
+   "units": [
+    "checking account balance",
+    "loan duration (months)",
+    "credit history",
+    "loan purpose",
+    "credit amount (DM)",
+    "savings account balance",
+    "time in present employment",
+    "installment rate (% of disposable income)",
+    "personal status and sex",
+    "other debtors / guarantors",
+    "years at present residence",
+    "most valuable property",
+    "age (years)",
+    "other installment plans",
+    "housing",
+    "number of existing credits at this bank",
+    "job",
+    "number of dependents",
+    "has telephone",
+    "foreign worker"
+   ],
+   "kendall_tau": 0.7263157894736842,
+   "top3_overlap": 0.6666666666666666,
+   "faithfulness": {
+    "1": {
+     "rand_drop": 0.020000000000000018,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.36,
+      "top_flip": false
+     },
+     "lime": {
+      "top_drop": 0.36,
+      "top_flip": false
+     }
+    },
+    "3": {
+     "rand_drop": -0.023999999999999955,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.5900000000000001,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.71,
+      "top_flip": true
+     }
+    },
+    "5": {
+     "rand_drop": 0.004000000000000048,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.81,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.81,
+      "top_flip": true
+     }
+    }
+   },
+   "kernel_shap": {
+    "attributions": [
+     0.14552218604539396,
+     -0.05034785497133382,
+     0.49990834061516737,
+     -0.0034449903249823915,
+     -0.05722029385737445,
+     0.1476061374193313,
+     -0.1980940143289453,
+     -0.12672249118367998,
+     -0.01515885867227518,
+     -0.06439352140338842,
+     0.0056659880080680725,
+     -0.11647631594359135,
+     0.036310740822117424,
+     -0.13157041235378625,
+     -0.1549506874217659,
+     0.10020157314256226,
+     -0.08446410307066166,
+     -0.0023439374939816992,
+     0.14511439862420258,
+     0.1448581163489236
+    ],
+    "base_value": 0.69,
+    "additivity_error": 1.1102230246251565e-16,
+    "calls": 202
+   },
+   "lime": {
+    "attributions": [
+     0.07861402747669571,
+     -0.00041908321781523015,
+     0.4378777793383708,
+     0.029487481653757128,
+     -0.0034050548421563423,
+     0.07136586366146973,
+     -0.13948520575110335,
+     -0.06130850751926329,
+     0.06140617104903172,
+     0.021561863634413765,
+     -0.010485804256543302,
+     -0.08198604237144719,
+     0.020256115316122855,
+     -0.045683415145343104,
+     -0.06641892559108187,
+     0.029992839727963332,
+     -0.05152480529146807,
+     -0.0115210615112023,
+     0.10259662543448438,
+     0.07302372583511843
+    ],
+    "r2": 0.8621392681889677,
+    "calls": 200
+   }
+  },
+  {
+   "id": "german-835",
+   "predicted": "bad",
+   "gold": "bad",
+   "p_full": 0.82,
+   "n_units": 20,
+   "units": [
+    "checking account balance",
+    "loan duration (months)",
+    "credit history",
+    "loan purpose",
+    "credit amount (DM)",
+    "savings account balance",
+    "time in present employment",
+    "installment rate (% of disposable income)",
+    "personal status and sex",
+    "other debtors / guarantors",
+    "years at present residence",
+    "most valuable property",
+    "age (years)",
+    "other installment plans",
+    "housing",
+    "number of existing credits at this bank",
+    "job",
+    "number of dependents",
+    "has telephone",
+    "foreign worker"
+   ],
+   "kendall_tau": 0.768421052631579,
+   "top3_overlap": 1.0,
+   "faithfulness": {
+    "1": {
+     "rand_drop": -0.014000000000000035,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.39999999999999997,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.39999999999999997,
+      "top_flip": true
+     }
+    },
+    "3": {
+     "rand_drop": -0.084,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.71,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.71,
+      "top_flip": true
+     }
+    },
+    "5": {
+     "rand_drop": -0.018000000000000037,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.7799999999999999,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.7899999999999999,
+      "top_flip": true
+     }
+    }
+   },
+   "kernel_shap": {
+    "attributions": [
+     0.4800312076217925,
+     -0.036024269913583075,
+     -0.16204622480311415,
+     -0.017260214124764195,
+     -0.04915931521830714,
+     0.2109443726281851,
+     -0.08420769452933237,
+     -0.17236122446394497,
+     0.024498266661920707,
+     -0.028945025341652608,
+     -0.09333615322227262,
+     0.044594944086720045,
+     -0.10313604925687701,
+     0.04966342392744079,
+     -0.138564495517771,
+     0.001691167569836702,
+     -0.11043023308316713,
+     -0.03719690278900074,
+     0.22641048982598164,
+     0.1248339299419095
+    ],
+    "base_value": 0.69,
+    "additivity_error": 0.0,
+    "calls": 202
+   },
+   "lime": {
+    "attributions": [
+     0.4813964782778038,
+     0.021433833731838187,
+     -0.09175947422251758,
+     -0.014715885573053672,
+     -0.028637137107309123,
+     0.10532868148695489,
+     -0.009200389608807048,
+     -0.08897830244418621,
+     0.012649501656691566,
+     -0.0027718485032392675,
+     -0.03926719270168045,
+     0.01743174398872237,
+     -0.0011350087701327196,
+     0.012211342216690558,
+     -0.09703943237269634,
+     0.007433324734729525,
+     -0.05016885758846383,
+     -0.014090419112372262,
+     0.16410011477276681,
+     0.10298693906144868
+    ],
+    "r2": 0.8647498698496691,
+    "calls": 200
+   }
+  },
+  {
+   "id": "german-908",
+   "predicted": "bad",
+   "gold": "good",
+   "p_full": 0.99,
+   "n_units": 20,
+   "units": [
+    "checking account balance",
+    "loan duration (months)",
+    "credit history",
+    "loan purpose",
+    "credit amount (DM)",
+    "savings account balance",
+    "time in present employment",
+    "installment rate (% of disposable income)",
+    "personal status and sex",
+    "other debtors / guarantors",
+    "years at present residence",
+    "most valuable property",
+    "age (years)",
+    "other installment plans",
+    "housing",
+    "number of existing credits at this bank",
+    "job",
+    "number of dependents",
+    "has telephone",
+    "foreign worker"
+   ],
+   "kendall_tau": 0.5894736842105264,
+   "top3_overlap": 0.6666666666666666,
+   "faithfulness": {
+    "1": {
+     "rand_drop": -0.0020000000000000018,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.0,
+      "top_flip": false
+     },
+     "lime": {
+      "top_drop": 0.0,
+      "top_flip": false
+     }
+    },
+    "3": {
+     "rand_drop": 0.0,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.05999999999999994,
+      "top_flip": false
+     },
+     "lime": {
+      "top_drop": 0.08999999999999997,
+      "top_flip": false
+     }
+    },
+    "5": {
+     "rand_drop": 0.0,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.64,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.5,
+      "top_flip": true
+     }
+    }
+   },
+   "kernel_shap": {
+    "attributions": [
+     0.12127931319444078,
+     -0.014474534850920021,
+     0.15371112040308246,
+     -0.005500088353898691,
+     -0.04795173716105588,
+     0.09730769877114032,
+     0.14603735331875167,
+     -0.13712549413270006,
+     -0.0024376540868218887,
+     0.02219047245307305,
+     -0.026771852895534593,
+     0.014104424281514543,
+     -0.04276389130316971,
+     -0.07483155994663801,
+     -0.11185475232507572,
+     -0.09236458748103298,
+     0.11764363033177644,
+     -0.018508685983176374,
+     0.12411032264694134,
+     0.07820050311930343
+    ],
+    "base_value": 0.69,
+    "additivity_error": 1.1102230246251565e-16,
+    "calls": 202
+   },
+   "lime": {
+    "attributions": [
+     0.07302270226420882,
+     0.06282304864645188,
+     0.08761224719300433,
+     -0.04091552507967649,
+     0.03686763365251583,
+     0.01092444212974512,
+     0.07314268263230116,
+     -0.05824257431739243,
+     0.03447470246411574,
+     0.00608993203084381,
+     -0.023927624300610847,
+     -0.01608543760954406,
+     -0.03889912490700843,
+     -0.02243729398278314,
+     -0.0220975158229532,
+     -0.01810401788567099,
+     0.07394031215797252,
+     0.0063698257748038825,
+     0.047207518370548325,
+     0.0631420706100846
+    ],
+    "r2": 0.5531841708679859,
+    "calls": 200
+   }
+  },
+  {
+   "id": "german-936",
+   "predicted": "good",
+   "gold": "bad",
+   "p_full": 0.79,
+   "n_units": 20,
+   "units": [
+    "checking account balance",
+    "loan duration (months)",
+    "credit history",
+    "loan purpose",
+    "credit amount (DM)",
+    "savings account balance",
+    "time in present employment",
+    "installment rate (% of disposable income)",
+    "personal status and sex",
+    "other debtors / guarantors",
+    "years at present residence",
+    "most valuable property",
+    "age (years)",
+    "other installment plans",
+    "housing",
+    "number of existing credits at this bank",
+    "job",
+    "number of dependents",
+    "has telephone",
+    "foreign worker"
+   ],
+   "kendall_tau": 0.7473684210526316,
+   "top3_overlap": 0.6666666666666666,
+   "faithfulness": {
+    "1": {
+     "rand_drop": 0.016000000000000035,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.20000000000000007,
+      "top_flip": false
+     },
+     "lime": {
+      "top_drop": 0.20000000000000007,
+      "top_flip": false
+     }
+    },
+    "3": {
+     "rand_drop": 0.040000000000000056,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.4,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.51,
+      "top_flip": true
+     }
+    },
+    "5": {
+     "rand_drop": 0.012000000000000056,
+     "rand_flip": 0.0,
+     "kernel_shap": {
+      "top_drop": 0.66,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.73,
+      "top_flip": true
+     }
+    }
+   },
+   "kernel_shap": {
+    "attributions": [
+     0.16621078912018447,
+     0.03763109383170746,
+     0.2687353271087806,
+     -0.03743049258371093,
+     0.037019688717330204,
+     -0.19798086858627137,
+     0.09440429026261138,
+     0.13455246537069168,
+     -0.023766409593690592,
+     -0.03269779658424101,
+     0.0894698872764637,
+     0.08765378567027167,
+     0.0776572973806923,
+     0.07759487133218765,
+     0.13687219801654704,
+     0.11312849516288034,
+     -0.22458097591922618,
+     0.00898238043652973,
+     -0.1775460638094729,
+     -0.15590996261026518
+    ],
+    "base_value": 0.31,
+    "additivity_error": 2.220446049250313e-16,
+    "calls": 202
+   },
+   "lime": {
+    "attributions": [
+     0.12703336551995828,
+     0.04812500420369646,
+     0.20399645837333233,
+     -0.0244642828921236,
+     0.007294883597644101,
+     -0.13852362805193463,
+     0.09085871260519367,
+     0.11373030344065843,
+     -0.05314077326314278,
+     0.018458760618145033,
+     -0.011081659091375259,
+     0.08803600796765623,
+     0.04015119447536462,
+     0.015770554159893407,
+     0.08815699820194647,
+     0.007178603918205028,
+     -0.19905669117506153,
+     0.0010823403960936258,
+     -0.15542974579878194,
+     -0.09338612708661445
+    ],
+    "r2": 0.805285708774276,
+    "calls": 200
+   }
+  },
+  {
+   "id": "german-965",
+   "predicted": "good",
+   "gold": "good",
+   "p_full": 0.54,
+   "n_units": 20,
+   "units": [
+    "checking account balance",
+    "loan duration (months)",
+    "credit history",
+    "loan purpose",
+    "credit amount (DM)",
+    "savings account balance",
+    "time in present employment",
+    "installment rate (% of disposable income)",
+    "personal status and sex",
+    "other debtors / guarantors",
+    "years at present residence",
+    "most valuable property",
+    "age (years)",
+    "other installment plans",
+    "housing",
+    "number of existing credits at this bank",
+    "job",
+    "number of dependents",
+    "has telephone",
+    "foreign worker"
+   ],
+   "kendall_tau": 0.8421052631578948,
+   "top3_overlap": 1.0,
+   "faithfulness": {
+    "1": {
+     "rand_drop": 0.01200000000000001,
+     "rand_flip": 0.4,
+     "kernel_shap": {
+      "top_drop": 0.31000000000000005,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.31000000000000005,
+      "top_flip": true
+     }
+    },
+    "3": {
+     "rand_drop": 0.028000000000000035,
+     "rand_flip": 0.6,
+     "kernel_shap": {
+      "top_drop": 0.51,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.51,
+      "top_flip": true
+     }
+    },
+    "5": {
+     "rand_drop": 0.10400000000000005,
+     "rand_flip": 0.6,
+     "kernel_shap": {
+      "top_drop": 0.53,
+      "top_flip": true
+     },
+     "lime": {
+      "top_drop": 0.53,
+      "top_flip": true
+     }
+    }
+   },
+   "kernel_shap": {
+    "attributions": [
+     -0.22644717436725628,
+     0.022951030653416863,
+     0.32432222806319916,
+     -0.06477762058897565,
+     -0.01615929222169441,
+     -0.26163924931264076,
+     0.15667198197852966,
+     0.29005260932952565,
+     -0.05811227146506482,
+     0.01660307908065177,
+     -0.12117907644136164,
+     0.0010265104129989848,
+     -0.05000288131815752,
+     0.15565356875481925,
+     0.20076194805950165,
+     0.08578015831606683,
+     0.12320769536801172,
+     0.0806675232901797,
+     -0.2650765629573863,
+     -0.1643042046343638
+    ],
+    "base_value": 0.31,
+    "additivity_error": 0.0,
+    "calls": 202
+   },
+   "lime": {
+    "attributions": [
+     -0.14943965782480964,
+     -0.008746120733230304,
+     0.24752763324796112,
+     -0.02321435747073582,
+     -0.0115365240717582,
+     -0.11034149796488589,
+     0.047486463838265144,
+     0.15985874939057995,
+     -0.05070164847170771,
+     -0.01783581330402137,
+     -0.11856307874372424,
+     0.0519746645127569,
+     -0.027777391682438927,
+     0.032739600696053986,
+     0.1597674873688503,
+     0.006807793098961835,
+     0.06555361285057337,
+     0.007546275579006678,
+     -0.1907113542101741,
+     -0.1356860334976907
+    ],
+    "r2": 0.8322758142837363,
+    "calls": 200
+   }
+  }
+ ],
+ "cost_usd": {
+  "logged_requests": 7164,
+  "failed_requests": 0,
+  "input_tokens": 3141657,
+  "usd": 0.131949594
+ }
+}

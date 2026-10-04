@@ -1,0 +1,6 @@
+{
+ "region": "us-east-2",
+ "instance_type": "ml.m5.xlarge",
+ "found_at": "2026-09-30T13:47:29Z",
+ "probe_execution": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-xgb/execution/sutjzq7ymqcu"
+}

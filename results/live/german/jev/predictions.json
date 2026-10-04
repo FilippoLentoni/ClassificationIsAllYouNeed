@@ -1,0 +1,17 @@
+{
+ "dataset": "german",
+ "model": "jev",
+ "mode": "live",
+ "artifact_modes": [
+  "live"
+ ],
+ "model_version": [
+  "jev-1.13.0"
+ ],
+ "n_rows": 1000,
+ "invalid": 0,
+ "missing": 0,
+ "total_cost_usd": 0.021665238,
+ "total_input_tokens": 515839.0,
+ "mean_latency_s": 0.14686545174280763
+}

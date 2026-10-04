@@ -1,0 +1,38 @@
+\section{From a measure on strings to a measure on classes}
+\label{sec:background}
+
+Let $\Sigma$ be a finite vocabulary and $\Sstar$ the countable set of finite token sequences with
+its discrete $\sigma$-algebra $2^{\Sstar}$. Given an input $x$, an autoregressive language model
+that terminates almost surely defines a probability measure $P_x$ on $(\Sstar, 2^{\Sstar})$,
+$P_x(\{s\}) = \prod_{t=1}^{|s|} p_\theta(s_t \mid s_{<t}, x)\, p_\theta(\texttt{eos} \mid s, x)$.
+Using it as a classifier over a finite label set $C$ requires a \emph{parsing map}
+$\pi : \Sstar \to C \cup \{\invalid\}$ that sends each string to the label it names, or to
+$\invalid$ when it names none.
+
+\begin{definition}[Induced class measure and invalid mass]
+The measure the model induces on labels is the pushforward $Q_x = P_x \circ \pi^{-1}$ on
+$(C \cup \{\invalid\},\, 2^{C \cup \{\invalid\}})$, with
+$Q_x(\{c\}) = \sum_{s:\, \pi(s) = c} P_x(\{s\})$. The \emph{invalid mass}
+$\delta(x) = Q_x(\{\invalid\})$ is the probability that the answer is not a class at all;
+conditioning on validity gives $q_x(c) = Q_x(\{c\}) / (1 - \delta(x))$ when $\delta(x) < 1$.
+\end{definition}
+
+Two obstacles separate $P_x$ from a usable class distribution. Each preimage $\pi^{-1}(c)$ is an
+infinite set of strings, so $Q_x(\{c\})$ cannot be evaluated exactly: one reads the probability of
+a label's first token, samples $k$ completions (variance $q_x(c)(1-q_x(c))/k$, resolution $1/k$),
+or asks for verbalized numbers, which are strings with their own invalid mass. And $\delta(x)$ is
+an input-dependent loss of mass that every downstream procedure must handle.
+
+A classification model instead outputs a probability measure $\mu_x$ on $(C, 2^C)$ directly: a
+vector $(\mu_x(\{c\}))_{c \in C}$ summing to one, with $\delta(x) \equiv 0$ by construction. The
+tools we evaluate all take $\mu_x$ as input and need more than an argmax label. Proper scoring
+rules and calibration (Brier score, log-loss, ECE) evaluate $\mu_x(\{c\})$ for every
+$c$~\citep{brier1950,naeini2015ece,guo2017calibration}. Ranking metrics and threshold selection
+use the positive-class probability as a score, and a cost-sensitive decision picks an operating
+point analytically~\citep{elkan2001cost} or from validation labels. Label-efficient evaluation by
+importance sampling uses the predicted uncertainty $1 - \max_c \mu_x(\{c\})$ to choose which
+items to label~\citep{sawade2010are,kossen2021active}. Perturbation-based attribution needs a
+real-valued function $f(x) = \mu_x(\{c^\star\})$ on many perturbed
+inputs~\citep{lundberg2017shap,ribeiro2016lime}. With a generative model each of these consumes
+an estimate $\hat q_x$ that carries sampling noise and the invalid mass and multiplies the number
+of model calls.

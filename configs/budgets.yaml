@@ -1,0 +1,15 @@
+# Jev inference budget (design D3). `jev_total` caps Jev requests for the whole study, across
+# all stages and invocations, and includes the 100 made under the earlier limit. Per-stage
+# budgets are also cumulative over all runs. Both are enforced against the persistent ledger
+# in cache/responses.sqlite.
+jev_total: 60000
+smoke:     {jev: 5}        # 1 already spent
+template:  {jev: 60}       # 20 training-split examples for each text dataset
+predict:   {jev: 13700}    # 13,621 predictions (99 already spent) plus re-runs of failed requests
+explain:   {jev: 44000}    # 5 datasets x 20 examples x at most 423 requests
+# Added 2026-10-01 (change add-bert-qwen-ensemble, user's choice): Jev on 500 seeded validation
+# items of AG News (and of Banking77, since removed from the study), for the escalation threshold. Never evaluation items.
+escalation_val: {jev: 1000}
+# All SageMaker work of the study: XGBoost, BERT and Qwen (change add-bert-qwen-ensemble, design D6).
+# Raised from USD 5 on 2026-10-01 at the user's choice; checked against every recorded execution.
+aws_spend_limit_usd: 75.0

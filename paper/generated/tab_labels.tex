@@ -1,0 +1,25 @@
+\begin{tabular}{llrrrrr}
+\toprule
+Dataset & Model & Training & Early stopping, selection & Calibration & Threshold selection & Escalation threshold \\
+\midrule
+\multirow{4}{*}{German Credit} & Jev, zero-shot & 0 & 0 & 0 & 200 & 200 \\
+ & Qwen3.6-27B, zero-shot & 0 & 0 & 0 & 200 & 200 \\
+ & XGBoost, supervised & 600 & 200 & 0 & 200 & -- \\
+ & BERT, supervised & 600 & 200 & 0 & 200 & -- \\
+\addlinespace
+\multirow{4}{*}{Breast Cancer Wisconsin} & Jev, zero-shot & 0 & 0 & 0 & 114 & 114 \\
+ & Qwen3.6-27B, zero-shot & 0 & 0 & 0 & 114 & 114 \\
+ & XGBoost, supervised & 341 & 114 & 0 & 114 & -- \\
+ & BERT, supervised & 341 & 114 & 0 & 114 & -- \\
+\addlinespace
+\multirow{4}{*}{SST-2} & Jev, zero-shot & 0 & 0 & 0 & 500 & 500 \\
+ & Qwen3.6-27B, zero-shot & 0 & 0 & 0 & 500 & 500 \\
+ & XGBoost, supervised & 65{,}349 & 2{,}000 & 0 & 2{,}000 & -- \\
+ & BERT, supervised & 65{,}349 & 2{,}000 & 0 & 2{,}000 & -- \\
+\addlinespace
+\multirow{4}{*}{AG News} & Jev, zero-shot & 0 & 0 & 0 & 0 & 500 \\
+ & Qwen3.6-27B, zero-shot & 0 & 0 & 0 & 0 & 500 \\
+ & XGBoost, supervised & 115{,}000 & 5{,}000 & 0 & 0 & -- \\
+ & BERT, supervised & 115{,}000 & 5{,}000 & 0 & 0 & -- \\
+\bottomrule
+\end{tabular}

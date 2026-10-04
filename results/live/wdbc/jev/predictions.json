@@ -1,0 +1,17 @@
+{
+ "dataset": "wdbc",
+ "model": "jev",
+ "mode": "live",
+ "artifact_modes": [
+  "live"
+ ],
+ "model_version": [
+  "jev-1.13.0"
+ ],
+ "n_rows": 569,
+ "invalid": 0,
+ "missing": 0,
+ "total_cost_usd": 0.017175522000000002,
+ "total_input_tokens": 408941.0,
+ "mean_latency_s": 0.14184772044278865
+}

@@ -1,0 +1,149 @@
+{
+ "mode": "live",
+ "artifact_modes": [
+  "live"
+ ],
+ "dataset": "german",
+ "title": "German Credit",
+ "f1_by_labels": {
+  "jev": [
+   {
+    "n_train": 0,
+    "macro_f1": 0.4668006604748788,
+    "sd": 0.0
+   }
+  ],
+  "qwen": [
+   {
+    "n_train": 0,
+    "macro_f1": 0.4572067569573825,
+    "sd": 0.0
+   }
+  ],
+  "xgb": [
+   {
+    "n_train": 30,
+    "macro_f1": 0.44050278339183774,
+    "sd": 0.060689213889931544
+   },
+   {
+    "n_train": 60,
+    "macro_f1": 0.5310529872991898,
+    "sd": 0.08058892041626406
+   },
+   {
+    "n_train": 150,
+    "macro_f1": 0.5738544043973707,
+    "sd": 0.043558313575444055
+   },
+   {
+    "n_train": 300,
+    "macro_f1": 0.6238580134281435,
+    "sd": 0.051025615602676294
+   },
+   {
+    "n_train": 600,
+    "macro_f1": 0.6570652765744641,
+    "sd": 0.040860525895996695
+   }
+  ],
+  "bert": [
+   {
+    "n_train": 30,
+    "macro_f1": 0.40654970971713056,
+    "sd": 0.016491265871146587
+   },
+   {
+    "n_train": 60,
+    "macro_f1": 0.4117647058823529,
+    "sd": 0.0
+   },
+   {
+    "n_train": 150,
+    "macro_f1": 0.4117647058823529,
+    "sd": 0.0
+   },
+   {
+    "n_train": 300,
+    "macro_f1": 0.4117647058823529,
+    "sd": 0.0
+   },
+   {
+    "n_train": 600,
+    "macro_f1": 0.4725883590157716,
+    "sd": 0.08314665088882382
+   }
+  ]
+ },
+ "costs": {
+  "jev": {
+   "kind": "API, per request",
+   "n_predictions": 1000,
+   "n_with_cost": 1000,
+   "usd_per_1k": 0.021665238,
+   "how": "mean recorded cost per request (input tokens x published price), x 1,000",
+   "latency": {
+    "kind": "measured request latency",
+    "mean_s": 0.14686545174280763,
+    "median_s": 0.13836905049538473
+   },
+   "training_usd": 0.0
+  },
+  "qwen": {
+   "kind": "self-hosted, batch job",
+   "training_usd": 0.0,
+   "usd_per_1k": 0.6829800126677934,
+   "usd_per_1k_inference_only": 0.6420254777786467,
+   "latency": {
+    "kind": "batch throughput and single-request latency",
+    "throughput_items_per_s": 2.4886516705006043,
+    "single_request_mean_s": 0.9483829140663147,
+    "single_request_median_s": 0.9482507705688477,
+    "single_request_n": 20
+   },
+   "how": "whole billed scoring job (instance start, weight copy, model loading included), less the time spent on the thinking subsample and the latency sample, allocated to the dataset by its share of scoring time; and inference time only, at the instance's list price",
+   "load_s": 20.543058395385742,
+   "instance_type": "ml.g6.12xlarge",
+   "region": "us-east-2"
+  },
+  "xgb": {
+   "kind": "trained on SageMaker",
+   "training_usd": 0.009748166666666667,
+   "billable_seconds": 152.57999999999998,
+   "instance_type": "ml.m5.xlarge",
+   "usd_per_1k": 8.613864580790203e-08,
+   "how": "measured batch inference time per evaluation item at the instance's list price, x 1,000; training cost is the whole recorded execution",
+   "latency": {
+    "kind": "measured batch inference time per item",
+    "per_item_s": 1.348257064819336e-06
+   }
+  },
+  "bert": {
+   "kind": "trained on SageMaker",
+   "training_usd": 0.1484548611111111,
+   "billable_seconds": 425.0,
+   "instance_type": "ml.g5.xlarge",
+   "usd_per_1k": 0.0002650703051024013,
+   "how": "measured batch inference time per evaluation item at the instance's list price, x 1,000; training cost is the whole recorded execution",
+   "latency": {
+    "kind": "measured batch inference time per item",
+    "per_item_s": 0.0007588493824005126
+   }
+  }
+ },
+ "missing_models": [],
+ "list_prices_usd_per_hour": {
+  "ml.m5.large": 0.115,
+  "ml.m5.xlarge": 0.23,
+  "ml.m5.2xlarge": 0.461,
+  "ml.c5.xlarge": 0.204,
+  "ml.m4.xlarge": 0.24,
+  "ml.c5.2xlarge": 0.408,
+  "ml.g5.xlarge": 1.2575,
+  "ml.g5.2xlarge": 1.515,
+  "ml.g5.12xlarge": 7.09,
+  "ml.g6e.xlarge": 2.61,
+  "ml.g6e.12xlarge": 13.12,
+  "ml.g6.12xlarge": 5.752
+ }
+}

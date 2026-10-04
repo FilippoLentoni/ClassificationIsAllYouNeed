@@ -1,0 +1,61 @@
+\section{Setup}
+\label{sec:setup}
+
+\paragraph{Datasets and protocol.}
+We use four public datasets (Table~\ref{tab:datasets}): German Credit~\citep{statlog_german} and
+Breast Cancer Wisconsin Diagnostic~\citep{wolberg1995wdbc}, two small binary tabular tasks, SST-2
+sentiment~\citep{socher2013sst,wang2019glue} and four-class AG News~\citep{zhang2015agnews}. The
+text datasets are evaluated on their complete official held-out split, with training and
+validation data taken from the official training split only. The tabular datasets are too small
+for one split to be reliable, so they use \NRepeats{} seeded, stratified
+\SplitFractions{} train/validation/test repeats. All identifiers were frozen, with a content
+hash, before any template check, training or threshold selection.
+
+The two kinds of dataset pose different problems. The text test sets are balanced
+(\NTestNegativeSst{} negative and \NTestPositiveSst{} positive SST-2 sentences;
+\NTestPerClassMinAgnews{} AG News articles in each class) and we treat their errors as equally
+costly, so accuracy is a fair summary. The tabular datasets are small and imbalanced
+(\PctTestPositiveGerman\% of applicants are bad, \PctTestPositiveWdbc\% of masses malignant),
+and their errors are not equally costly: missing a bad applicant or a malignant mass is worse
+than a false alarm. For them we therefore report the counts of each kind of error and a decision
+cost in which a miss costs five times a false alarm (canonical for German Credit, assumed for
+Breast Cancer Wisconsin). Held-out datasets get 95\%
+bootstrap intervals; tabular datasets get the mean and standard deviation over the repeats
+(Appendix~\ref{app:protocol}).
+
+\begin{table}[t]
+  \caption{Datasets. Evaluation examples are the official held-out split (text) or the test part
+    of each of \NRepeats{} split repeats (tabular); training and validation sizes are per repeat.}
+  \label{tab:datasets}
+  \centering\small
+  \input{generated/tab_datasets_main}
+\end{table}
+
+\paragraph{Jev, zero-shot.}
+Jev (version \texttt{\JevModel})~\citep{typesafe_sdk} is queried with one question per example: a
+one-sentence instruction and one description per class, in a fixed order. Tabular rows are
+serialized as one \texttt{name: value} line per feature; text is sent as is. Each dataset has one
+template, frozen without tuning. Appendix~\ref{app:payloads} shows complete requests and
+responses.
+
+\paragraph{Qwen3.6-27B, zero-shot.}
+The open-weight \texttt{\QwenModelId}~\citep{qwen36} is self-hosted and receives exactly Jev's
+content: its instruction, options and descriptions in the same order, then the serialized input.
+To obtain a class distribution rather than a generated string, every option is scored as the
+answer: the log-probabilities of the tokens of the option name and of the end-of-turn token are
+summed, and a softmax over the options gives $\mu_x$ (Appendix~\ref{app:qwen}). Thinking is
+disabled, except on \ThinkSubsampleN{} items per dataset reported separately.
+
+\paragraph{XGBoost and BERT, supervised.}
+XGBoost~\citep{chen2016xgboost} uses one-hot tabular features or TF-IDF text features; a
+\texttt{bert-base} encoder~\citep{devlin2019bert} with a classification head is fine-tuned on the
+text Jev receives, so a tabular row is its serialized lines. Both select their configuration on
+validation log-loss only, are trained without evaluation labels, and are refitted on nested
+fractions of the training part for learning curves. No model is recalibrated.
+
+\paragraph{Label budgets and cost.}
+Jev and Qwen use no training labels and use validation labels only where a decision or escalation
+threshold is selected; XGBoost and BERT use every training and validation label
+(Appendix~\ref{app:protocol}, Table~\ref{tab:labels}). All Jev requests cost USD~\JevCostUSD{}
+and all cloud training and inference jobs USD~\AwsCostTotalUSD; a fifth dataset was run and then
+removed from the study, and its share of both is stated in Appendix~\ref{app:protocol}.

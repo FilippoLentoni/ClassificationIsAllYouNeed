@@ -1,0 +1,69 @@
+\section{Classical metrics and calibration}
+\label{sec:metrics}
+
+Because every model returns a full distribution, one metric toolbox scores all four
+(Table~\ref{tab:main}); no Jev prediction was invalid. Appendix~\ref{app:metrics} has the full
+metrics with PR-AUC (Table~\ref{tab:metrics}), Brier score and log-loss
+(Table~\ref{tab:calibration}) and reliability diagrams (Figure~\ref{fig:reliability});
+Appendix~\ref{app:perclass} has per-class metrics.
+
+\begin{table}[t]
+  \caption{Zero-shot (Jev, Qwen3.6-27B) and supervised (XGBoost, BERT) models on identical
+    evaluation examples. Accuracy carries a 95\% bootstrap interval (text) or the standard
+    deviation over \NRepeats{} split repeats (tabular). ROC-AUC is for the positive class
+    (binary) or one-vs-rest macro (AG News). Label budgets differ (Table~\ref{tab:labels}).}
+  \label{tab:main}
+  \centering\small
+  \input{generated/tab_main}
+\end{table}
+
+\paragraph{Text.}
+Zero-shot Jev is accurate and its probabilities are usable as they come: accuracy
+\AccuracyJevSst{} on SST-2 and \AccuracyJevAgnews{} on AG News, with ECE \EceJevSst{} and
+\EceJevAgnews, close to prior public evaluations of the same model version. Qwen is
+indistinguishable from it in macro-F1 (\MacroFOneQwenSst{} and \MacroFOneQwenAgnews{} against
+\MacroFOneJevSst{} and \MacroFOneJevAgnews). Jev reports probabilities rounded to two decimals,
+so a true class can receive a reported probability of exactly zero; this dominates its log-loss
+on AG News and matters again in Sections~\ref{sec:escalation} and~\ref{sec:importance}.
+
+\begin{table}[t]
+  \caption{Error counts on the two tabular datasets, summed over the test parts of the
+    \NRepeats{} split repeats. Positive is \emph{bad} (German Credit) or \emph{malignant} (Breast
+    Cancer Wisconsin); cost is $5\,\text{FN} + \text{FP}$. Left: the default decision, positive
+    when $P(\text{positive}) \ge 0.5$. Right: the threshold selected on validation labels to
+    minimize this cost (Section~\ref{sec:thresholding}). The last row of each block calls every
+    case positive.}
+  \label{tab:confusion}
+  \centering\small
+  \setlength{\tabcolsep}{4pt}
+  \fittable{\input{generated/tab_confusion}}
+\end{table}
+
+\paragraph{Tabular.}
+Here Jev's default decision fails. It labels \PredictedPositiveJevGerman{} of German Credit
+applicants \emph{bad} where \TruePositiveGerman{} are, and \PredictedPositiveJevWdbc{} of breast
+masses \emph{malignant} where \TruePositiveWdbc{} are, so its accuracy (\AccuracyJevGerman{} and
+\AccuracyJevWdbc) is below the majority-class rate, with ECE \EceJevGerman{} and \EceJevWdbc.
+The two failures differ, and only a class distribution tells them apart. On Breast Cancer
+Wisconsin the ranking is good (ROC-AUC \RocAucJevWdbc): the probabilities carry the signal and
+are misplaced relative to 0.5, which a threshold corrects (Section~\ref{sec:thresholding}). On
+German Credit the ranking itself is weak (ROC-AUC \RocAucJevGerman). Qwen does not share the bias
+on Breast Cancer Wisconsin: it calls \PredictedPositiveQwenWdbc{} of the masses malignant and
+reaches macro-F1 \MacroFOneQwenWdbc{} against Jev's \MacroFOneJevWdbc, and it is better
+calibrated on both tables (ECE \EceQwenGerman{} and \EceQwenWdbc). XGBoost is the strongest
+tabular model by a wide margin (accuracy \AccuracyXgbGerman{} and \AccuracyXgbWdbc); BERT,
+reading serialized rows, stays near the majority class on German Credit (macro-F1
+\MacroFOneBertGerman).
+
+Because a miss costs more than a false alarm, the error counts matter more than accuracy here
+(Table~\ref{tab:confusion}). Jev's bias is cheap under this cost: at the default decision it
+misses only \ConfFnDefaultJevGerman{} of \ConfPositivesGerman{} bad applicants and
+\ConfFnDefaultJevWdbc{} of \ConfPositivesWdbc{} malignant masses, at the price of
+\ConfFpDefaultJevGerman{} and \ConfFpDefaultJevWdbc{} false alarms, and its cost on German
+Credit (\ConfCostDefaultJevGerman) is the lowest of the four models. That is not skill: calling
+every case positive costs \ConfCostFlagAllGerman{} and \ConfCostFlagAllWdbc, less than Jev on
+German Credit and about the same on Breast Cancer Wisconsin. With a cost-selected threshold
+XGBoost is cheapest on both (\ConfCostValidationXgbGerman{} and \ConfCostValidationXgbWdbc), and
+on German Credit neither zero-shot model improves on calling every applicant bad
+(\ConfCostValidationJevGerman{} and \ConfCostValidationQwenGerman{} against
+\ConfCostFlagAllGerman).

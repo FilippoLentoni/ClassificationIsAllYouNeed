@@ -1,0 +1,547 @@
+{
+ "mode": "live",
+ "dataset": "german",
+ "selected": {
+  "learning_rate": 2e-05,
+  "epochs": 4,
+  "val_logloss": 0.5595762821263097,
+  "selected_on": "repeat 0 validation log-loss"
+ },
+ "repeats": {
+  "0": {
+   "truncated": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "n": {
+    "train": 600,
+    "val": 200,
+    "test": 200
+   },
+   "grid": [
+    {
+     "learning_rate": 2e-05,
+     "history": [
+      {
+       "epoch": 1,
+       "val_logloss": 0.6113619716245167
+      },
+      {
+       "epoch": 2,
+       "val_logloss": 0.5824684165230927
+      },
+      {
+       "epoch": 3,
+       "val_logloss": 0.5636164135449758
+      },
+      {
+       "epoch": 4,
+       "val_logloss": 0.5595762821263097
+      }
+     ],
+     "best_epoch": 4,
+     "val_logloss": 0.5595762821263097,
+     "train_s": 10.147191286087036
+    },
+    {
+     "learning_rate": 5e-05,
+     "history": [
+      {
+       "epoch": 1,
+       "val_logloss": 0.6105237860096056
+      },
+      {
+       "epoch": 2,
+       "val_logloss": 0.5960248111670741
+      },
+      {
+       "epoch": 3,
+       "val_logloss": 0.562498777566382
+      },
+      {
+       "epoch": 4,
+       "val_logloss": 0.5600200340179478
+      }
+     ],
+     "best_epoch": 4,
+     "val_logloss": 0.5600200340179478,
+     "train_s": 9.474813461303711
+    }
+   ],
+   "label_budget": {
+    "training": 600,
+    "early_stopping_and_selection": 200,
+    "calibration": 0,
+    "threshold_selection": 200
+   },
+   "train_s": 10.147191286087036,
+   "infer_val_s": 0.1515645980834961,
+   "infer_test_s": 0.15176987648010254,
+   "infer_s_per_item": 0.0007588493824005126,
+   "curve": {
+    "0.05": {
+     "n_train": 30
+    },
+    "0.1": {
+     "n_train": 60
+    },
+    "0.25": {
+     "n_train": 150
+    },
+    "0.5": {
+     "n_train": 300
+    },
+    "1.0": {
+     "n_train": 600
+    }
+   }
+  },
+  "1": {
+   "truncated": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "n": {
+    "train": 600,
+    "val": 200,
+    "test": 200
+   },
+   "label_budget": {
+    "training": 600,
+    "early_stopping_and_selection": 0,
+    "calibration": 0,
+    "threshold_selection": 200
+   },
+   "train_s": 8.174625158309937,
+   "infer_val_s": 0.15217876434326172,
+   "infer_test_s": 0.15111255645751953,
+   "infer_s_per_item": 0.0007555627822875976,
+   "curve": {
+    "0.05": {
+     "n_train": 30
+    },
+    "0.1": {
+     "n_train": 60
+    },
+    "0.25": {
+     "n_train": 150
+    },
+    "0.5": {
+     "n_train": 300
+    },
+    "1.0": {
+     "n_train": 600
+    }
+   }
+  },
+  "2": {
+   "truncated": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "n": {
+    "train": 600,
+    "val": 200,
+    "test": 200
+   },
+   "label_budget": {
+    "training": 600,
+    "early_stopping_and_selection": 0,
+    "calibration": 0,
+    "threshold_selection": 200
+   },
+   "train_s": 8.184163570404053,
+   "infer_val_s": 0.15265226364135742,
+   "infer_test_s": 0.15017104148864746,
+   "infer_s_per_item": 0.0007508552074432373,
+   "curve": {
+    "0.05": {
+     "n_train": 30
+    },
+    "0.1": {
+     "n_train": 60
+    },
+    "0.25": {
+     "n_train": 150
+    },
+    "0.5": {
+     "n_train": 300
+    },
+    "1.0": {
+     "n_train": 600
+    }
+   }
+  },
+  "3": {
+   "truncated": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "n": {
+    "train": 600,
+    "val": 200,
+    "test": 200
+   },
+   "label_budget": {
+    "training": 600,
+    "early_stopping_and_selection": 0,
+    "calibration": 0,
+    "threshold_selection": 200
+   },
+   "train_s": 8.19338607788086,
+   "infer_val_s": 0.15215563774108887,
+   "infer_test_s": 0.1514744758605957,
+   "infer_s_per_item": 0.0007573723793029785,
+   "curve": {
+    "0.05": {
+     "n_train": 30
+    },
+    "0.1": {
+     "n_train": 60
+    },
+    "0.25": {
+     "n_train": 150
+    },
+    "0.5": {
+     "n_train": 300
+    },
+    "1.0": {
+     "n_train": 600
+    }
+   }
+  },
+  "4": {
+   "truncated": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "n": {
+    "train": 600,
+    "val": 200,
+    "test": 200
+   },
+   "label_budget": {
+    "training": 600,
+    "early_stopping_and_selection": 0,
+    "calibration": 0,
+    "threshold_selection": 200
+   },
+   "train_s": 8.186253547668457,
+   "infer_val_s": 0.15194416046142578,
+   "infer_test_s": 0.1518874168395996,
+   "infer_s_per_item": 0.000759437084197998,
+   "curve": {
+    "0.05": {
+     "n_train": 30
+    },
+    "0.1": {
+     "n_train": 60
+    },
+    "0.25": {
+     "n_train": 150
+    },
+    "0.5": {
+     "n_train": 300
+    },
+    "1.0": {
+     "n_train": 600
+    }
+   }
+  },
+  "5": {
+   "truncated": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "n": {
+    "train": 600,
+    "val": 200,
+    "test": 200
+   },
+   "label_budget": {
+    "training": 600,
+    "early_stopping_and_selection": 0,
+    "calibration": 0,
+    "threshold_selection": 200
+   },
+   "train_s": 8.178210496902466,
+   "infer_val_s": 0.15091586112976074,
+   "infer_test_s": 0.15174031257629395,
+   "infer_s_per_item": 0.0007587015628814697,
+   "curve": {
+    "0.05": {
+     "n_train": 30
+    },
+    "0.1": {
+     "n_train": 60
+    },
+    "0.25": {
+     "n_train": 150
+    },
+    "0.5": {
+     "n_train": 300
+    },
+    "1.0": {
+     "n_train": 600
+    }
+   }
+  },
+  "6": {
+   "truncated": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "n": {
+    "train": 600,
+    "val": 200,
+    "test": 200
+   },
+   "label_budget": {
+    "training": 600,
+    "early_stopping_and_selection": 0,
+    "calibration": 0,
+    "threshold_selection": 200
+   },
+   "train_s": 8.180612802505493,
+   "infer_val_s": 0.15233159065246582,
+   "infer_test_s": 0.15140557289123535,
+   "infer_s_per_item": 0.0007570278644561767,
+   "curve": {
+    "0.05": {
+     "n_train": 30
+    },
+    "0.1": {
+     "n_train": 60
+    },
+    "0.25": {
+     "n_train": 150
+    },
+    "0.5": {
+     "n_train": 300
+    },
+    "1.0": {
+     "n_train": 600
+    }
+   }
+  },
+  "7": {
+   "truncated": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "n": {
+    "train": 600,
+    "val": 200,
+    "test": 200
+   },
+   "label_budget": {
+    "training": 600,
+    "early_stopping_and_selection": 0,
+    "calibration": 0,
+    "threshold_selection": 200
+   },
+   "train_s": 8.180696964263916,
+   "infer_val_s": 0.1514439582824707,
+   "infer_test_s": 0.1516282558441162,
+   "infer_s_per_item": 0.0007581412792205811,
+   "curve": {
+    "0.05": {
+     "n_train": 30
+    },
+    "0.1": {
+     "n_train": 60
+    },
+    "0.25": {
+     "n_train": 150
+    },
+    "0.5": {
+     "n_train": 300
+    },
+    "1.0": {
+     "n_train": 600
+    }
+   }
+  },
+  "8": {
+   "truncated": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "n": {
+    "train": 600,
+    "val": 200,
+    "test": 200
+   },
+   "label_budget": {
+    "training": 600,
+    "early_stopping_and_selection": 0,
+    "calibration": 0,
+    "threshold_selection": 200
+   },
+   "train_s": 8.18840503692627,
+   "infer_val_s": 0.1523592472076416,
+   "infer_test_s": 0.15183401107788086,
+   "infer_s_per_item": 0.0007591700553894043,
+   "curve": {
+    "0.05": {
+     "n_train": 30
+    },
+    "0.1": {
+     "n_train": 60
+    },
+    "0.25": {
+     "n_train": 150
+    },
+    "0.5": {
+     "n_train": 300
+    },
+    "1.0": {
+     "n_train": 600
+    }
+   }
+  },
+  "9": {
+   "truncated": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "n": {
+    "train": 600,
+    "val": 200,
+    "test": 200
+   },
+   "label_budget": {
+    "training": 600,
+    "early_stopping_and_selection": 0,
+    "calibration": 0,
+    "threshold_selection": 200
+   },
+   "train_s": 8.17400598526001,
+   "infer_val_s": 0.15230083465576172,
+   "infer_test_s": 0.1518862247467041,
+   "infer_s_per_item": 0.0007594311237335205,
+   "curve": {
+    "0.05": {
+     "n_train": 30
+    },
+    "0.1": {
+     "n_train": 60
+    },
+    "0.25": {
+     "n_train": 150
+    },
+    "0.5": {
+     "n_train": 300
+    },
+    "1.0": {
+     "n_train": 600
+    }
+   }
+  }
+ },
+ "fractions": [
+  0.05,
+  0.1,
+  0.25,
+  0.5,
+  1.0
+ ],
+ "max_length": 512,
+ "model_id": "google-bert/bert-base-uncased",
+ "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+ "device": "cuda",
+ "gpu": "NVIDIA A10G",
+ "versions": {
+  "torch": "2.9.0+cu130",
+  "transformers": "5.3.0",
+  "python": "3.12.10"
+ },
+ "elapsed_s": 196.32466197013855,
+ "model_version": "google-bert/bert-base-uncased@86b5e0934494",
+ "label_budget": [
+  {
+   "training": 600,
+   "early_stopping_and_selection": 200,
+   "calibration": 0,
+   "threshold_selection": 200
+  },
+  {
+   "training": 600,
+   "early_stopping_and_selection": 0,
+   "calibration": 0,
+   "threshold_selection": 200
+  },
+  {
+   "training": 600,
+   "early_stopping_and_selection": 0,
+   "calibration": 0,
+   "threshold_selection": 200
+  },
+  {
+   "training": 600,
+   "early_stopping_and_selection": 0,
+   "calibration": 0,
+   "threshold_selection": 200
+  },
+  {
+   "training": 600,
+   "early_stopping_and_selection": 0,
+   "calibration": 0,
+   "threshold_selection": 200
+  },
+  {
+   "training": 600,
+   "early_stopping_and_selection": 0,
+   "calibration": 0,
+   "threshold_selection": 200
+  },
+  {
+   "training": 600,
+   "early_stopping_and_selection": 0,
+   "calibration": 0,
+   "threshold_selection": 200
+  },
+  {
+   "training": 600,
+   "early_stopping_and_selection": 0,
+   "calibration": 0,
+   "threshold_selection": 200
+  },
+  {
+   "training": 600,
+   "early_stopping_and_selection": 0,
+   "calibration": 0,
+   "threshold_selection": 200
+  },
+  {
+   "training": 600,
+   "early_stopping_and_selection": 0,
+   "calibration": 0,
+   "threshold_selection": 200
+  }
+ ],
+ "region": "us-east-2",
+ "instance_type": "ml.g5.xlarge",
+ "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-bert/execution/3etbhy037a39",
+ "jobs": {
+  "Train": {
+   "job": "pipelines-3etbhy037a39-Train-HNZ02fkrex",
+   "image": "763104351884.dkr.ecr.us-east-2.amazonaws.com/huggingface-pytorch-training:2.9.0-transformers5.3.0-gpu-py312-cu130-ubuntu22.04",
+   "billable_seconds": 425.0
+  }
+ },
+ "billable_seconds": 425.0,
+ "cost_usd": 0.1484548611111111,
+ "fetched_at": "2026-10-01T11:05:23Z",
+ "infer_s_per_item": 0.0007588493824005126
+}

@@ -1,0 +1,110 @@
+{
+ "mode": "live",
+ "model_version": "Qwen/Qwen3.6-27B@6a9e13bd6fc8",
+ "engine": "transformers",
+ "scoring": "one forward pass over the prompt, option suffixes on copies of the cached state",
+ "versions": {
+  "torch": "2.13.0+cu130",
+  "transformers": "5.16.1",
+  "python": "3.12.3"
+ },
+ "gpus": [
+  "NVIDIA L4",
+  "NVIDIA L4",
+  "NVIDIA L4",
+  "NVIDIA L4"
+ ],
+ "region": "us-east-2",
+ "instance_type": "ml.g6.12xlarge",
+ "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/mpsepno5ej5b",
+ "substitution": "inference ran in a SageMaker training job, because the account's quota for GPU processing jobs is 0 in every region checked, while GPU training-job quotas exist",
+ "job_status": "Succeeded",
+ "billable_seconds": 4807.348,
+ "cost_usd": 7.602667063333333,
+ "load_s": 20.543058395385742,
+ "timing": {
+  "options": [
+   "benign",
+   "malignant"
+  ],
+  "option_tokens": [
+   3,
+   4
+  ],
+  "shared_prefix_tokens": 76,
+  "cache_check": {
+   "options": 2,
+   "max_abs_logprob_difference": 0.1213878895578091
+  },
+  "nothink": {
+   "items": 569,
+   "seconds": 449.2709765434265,
+   "mode": "disabled",
+   "prompt_tokens": 251897,
+   "invalid": 0
+  },
+  "latency_s": [
+   1.0973401069641113,
+   1.0959339141845703,
+   1.0995399951934814,
+   1.0997424125671387,
+   1.1046569347381592,
+   1.0994822978973389,
+   1.1028521060943604,
+   1.0977401733398438,
+   1.099045753479004,
+   1.1016361713409424,
+   1.094499111175537,
+   1.100881576538086,
+   1.1003797054290771,
+   1.099614143371582,
+   1.0953140258789062,
+   1.100036382675171,
+   1.103367567062378,
+   1.0968637466430664,
+   1.1008479595184326,
+   1.0975804328918457
+  ],
+  "think": {
+   "items": 50,
+   "seconds": 180.06759977340698,
+   "mode": "given",
+   "prompt_tokens": 97086,
+   "invalid": 0
+  }
+ },
+ "rendered_example": {
+  "id": "wdbc-477",
+  "thinking_disabled": "<|im_start|>system\nAssess whether the breast mass described by the cell-nucleus measurements below is benign or malignant. Fields that are not listed are unknown.\n\nOptions:\n- benign: The mass is benign (not cancerous).\n- malignant: The mass is malignant (cancerous).\n\nAnswer with exactly one option name.<|im_end|>\n<|im_start|>user\nmean radius: 13.9\nmean texture: 16.62\nmean perimeter: 88.97\nmean area: 599.4\nmean smoothness: 0.06828\nmean compactness: 0.05319\nmean concavity: 0.02224\nmean concave points: 0.01339\nmean symmetry: 0.1813\nmean fractal dimension: 0.05536\nradius error: 0.1555\ntexture error: 0.5762\nperimeter error: 1.392\narea error: 14.03\nsmoothness error: 0.003308\ncompactness error: 0.01315\nconcavity error: 0.009904\nconcave points error: 0.004832\nsymmetry error: 0.01316\nfractal dimension error: 0.002095\nworst radius: 15.14\nworst texture: 21.8\nworst perimeter: 101.2\nworst area: 718.9\nworst smoothness: 0.09384\nworst compactness: 0.2006\nworst concavity: 0.1384\nworst concave points: 0.06222\nworst symmetry: 0.2679\nworst fractal dimension: 0.07698<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+ },
+ "cache_stats": {
+  "engine": "transformers, prompt state reused for every option",
+  "cache_check": {
+   "options": 3,
+   "max_abs_logprob_difference": 0.12470699253026396
+  }
+ },
+ "jobs": {
+  "Infer": {
+   "job": "pipelines-mpsepno5ej5b-Infer-x6tpoBWqRD",
+   "image": "763104351884.dkr.ecr.us-east-2.amazonaws.com/vllm:0.29.0-gpu-py312-cu130-ubuntu24.04-sagemaker-v1.2",
+   "billable_seconds": 4754.0,
+   "instance_type": "ml.g6.12xlarge",
+   "cost_usd": 7.595835555555555
+  },
+  "Stage": {
+   "job": "pipelines-mpsepno5ej5b-Stage-v94SgsnQRY",
+   "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+   "billable_seconds": 53.348,
+   "instance_type": "ml.m5.2xlarge",
+   "cost_usd": 0.006831507777777778
+  }
+ },
+ "run_totals": {
+  "nothink_items": 11041,
+  "nothink_seconds": 3930.185095310211,
+  "think_seconds": 495.1349256038666,
+  "latency_seconds": 77.97512674331665
+ },
+ "fetched_at": "2026-10-01T15:53:11Z"
+}

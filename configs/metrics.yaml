@@ -1,0 +1,4 @@
+# Metrics and calibration (design D7).
+seed: 0
+bootstrap: 1000      # resamples for the 95% intervals of the held-out datasets
+ece_bins: 15         # equal-width bins on the maximum class probability

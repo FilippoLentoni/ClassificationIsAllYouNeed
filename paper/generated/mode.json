@@ -1,0 +1,7 @@
+{
+ "mode": "live",
+ "artifact_modes": [
+  "live"
+ ],
+ "mockdraft": false
+}

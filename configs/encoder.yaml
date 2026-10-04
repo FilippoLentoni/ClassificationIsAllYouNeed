@@ -1,0 +1,23 @@
+# Fine-tuned BERT baseline on SageMaker (change add-bert-qwen-ensemble, design D2).
+model_id: google-bert/bert-base-uncased
+revision: 86b5e0934494bd15c9632b12f734a8a67f723594      # pinned on 2026-09-30
+pipeline_name: ciayn-bert
+# AWS Deep Learning Containers account (the same in every region listed below)
+registry: "763104351884"
+image: huggingface-pytorch-training:2.9.0-transformers5.3.0-gpu-py312-cu130-ubuntu22.04
+# Tried in this order, without asking; GPU training-job quota is 1 for each in us-east-2 (checked 2026-09-30)
+instance_types: [ml.g5.xlarge, ml.g5.2xlarge, ml.g6e.xlarge]
+regions: [us-east-2, us-east-1, us-west-2]
+max_runtime_s: 10800
+volume_gb: 50
+curve_time_share: 0.8          # fractions that would start after this share of the time limit are skipped and recorded
+# Selection on validation log-loss only (refit per fraction and repeat with the selected configuration)
+grid: {learning_rate: [2.0e-5, 5.0e-5]}
+max_epochs: 4
+batch_size: 32
+eval_batch_size: 128
+warmup_ratio: 0.1
+weight_decay: 0.01
+seed: 0
+# Maximum sequence length in tokens; the share of truncated inputs is recorded
+max_length: {german: 512, wdbc: 512, sst2: 128, agnews: 256}

@@ -1,0 +1,41 @@
+\section{Introduction}
+\label{sec:intro}
+
+Much of practical machine learning is classification: approve or reject a loan, route a ticket,
+flag a transaction. The discipline that grew around it assumes a model that outputs a probability
+for each class. Calibration diagnostics, cost-sensitive decision rules, label-efficient
+evaluation and model-agnostic explanations all consume that distribution.
+
+Large language models are now routinely used as zero-shot classifiers, including on tabular data
+serialized to text~\citep{hegselmann2023tabllm}. But a language model does not output a class
+distribution. It defines a measure over token sequences, and a label is recovered only after
+parsing its output. Mass leaks to strings that name no class, and the class distribution can at
+best be estimated by sampling or by asking the model to verbalize numbers, which are coarse and
+often poorly calibrated~\citep{jiang2021know,tian2023justask,xiong2024uncertainty}; its
+self-reported explanations need not reflect what drove the
+prediction~\citep{turpin2023unfaithful}.
+
+Some models take a different route: given an input and a predefined set of options, they return a
+probability for \emph{every} option~\citep{typesafe_sdk}. Our thesis is that this is not a
+cosmetic difference. Moving the output from a measure on strings to a measure on the finite class
+space $(C, 2^C)$ is what the classical toolbox requires, including the part of it whose job is to
+say when a model should not be trusted.
+
+We contribute (i) a short formal account of the measure a generative model induces on classes and
+of the invalid mass it leaks (Section~\ref{sec:background}); (ii) an evaluation of one such
+model, Jev, zero-shot on four public datasets, next to an open-weight language model scored so
+that it also returns a class distribution and to two supervised models, on identical examples and
+with every label budget stated (Sections~\ref{sec:setup}--\ref{sec:metrics}); (iii) a comparison
+of macro-F1, cost and latency against the number of training labels, and an ensemble that
+escalates low-confidence predictions (Sections~\ref{sec:comparison}--\ref{sec:escalation}); and
+(iv) threshold selection, importance-sampled evaluation and perturbation-based explanations
+driven only by the class probabilities (Sections~\ref{sec:thresholding}--\ref{sec:explain}).
+
+The tools do not flatter the model. They show that its probabilities are accurate and close to
+calibrated on text and biased on the two tabular tasks, in one case in a way a threshold repairs
+and in the other not; that a textbook importance-sampling proposal does not pay off on these
+probabilities, and why; that a self-hosted open model matches it on text at many times the
+price per prediction; and that escalating its uncertain predictions helps exactly where its
+confidence is informative. The paper is about which tooling a class distribution makes available
+and what that tooling reveals. It is not a leaderboard: two models are zero-shot and two are
+supervised.

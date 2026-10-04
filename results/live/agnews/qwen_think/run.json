@@ -1,0 +1,123 @@
+{
+ "mode": "live",
+ "model_version": "Qwen/Qwen3.6-27B@6a9e13bd6fc8",
+ "engine": "transformers",
+ "scoring": "one forward pass over the prompt, option suffixes on copies of the cached state",
+ "versions": {
+  "torch": "2.13.0+cu130",
+  "transformers": "5.16.1",
+  "python": "3.12.3"
+ },
+ "gpus": [
+  "NVIDIA L4",
+  "NVIDIA L4",
+  "NVIDIA L4",
+  "NVIDIA L4"
+ ],
+ "region": "us-east-2",
+ "instance_type": "ml.g6.12xlarge",
+ "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/mpsepno5ej5b",
+ "substitution": "inference ran in a SageMaker training job, because the account's quota for GPU processing jobs is 0 in every region checked, while GPU training-job quotas exist",
+ "job_status": "Succeeded",
+ "billable_seconds": 4807.348,
+ "cost_usd": 7.602667063333333,
+ "load_s": 20.543058395385742,
+ "timing": {
+  "options": [
+   "World",
+   "Sports",
+   "Business",
+   "Sci/Tech"
+  ],
+  "option_tokens": [
+   2,
+   2,
+   2,
+   4
+  ],
+  "shared_prefix_tokens": 98,
+  "cache_check": {
+   "options": 3,
+   "max_abs_logprob_difference": 0.12470699253026396
+  },
+  "nothink": {
+   "items": 8100,
+   "seconds": 2794.6073677539825,
+   "mode": "disabled",
+   "prompt_tokens": 1291208,
+   "invalid": 0
+  },
+  "latency_s": [
+   0.9496221542358398,
+   0.9215095043182373,
+   0.9215354919433594,
+   0.9314491748809814,
+   0.9247381687164307,
+   0.9513318538665771,
+   0.922264575958252,
+   0.923783540725708,
+   0.9429099559783936,
+   0.9303183555603027,
+   0.9277217388153076,
+   0.9436564445495605,
+   0.9468624591827393,
+   0.9267382621765137,
+   0.9353489875793457,
+   0.9529337882995605,
+   0.922482967376709,
+   0.9209074974060059,
+   0.920691967010498,
+   0.9209966659545898
+  ],
+  "think": {
+   "items": 50,
+   "seconds": 69.97204160690308,
+   "mode": "given",
+   "prompt_tokens": 33856,
+   "invalid": 0
+  }
+ },
+ "rendered_example": {
+  "id": "agnews-test-20",
+  "thinking_disabled": "<|im_start|>system\nClassify the topic of the news article below.\n\nOptions:\n- World: International news, politics, conflicts and world affairs.\n- Sports: Sports news: games, athletes, teams and competitions.\n- Business: Business and economic news: companies, markets, finance and the economy.\n- Sci/Tech: Science and technology news: computing, the internet, research, space and health science.\n\nAnswer with exactly one option name.<|im_end|>\n<|im_start|>user\nIBM to hire even more new workers By the end of the year, the computing giant plans to have its biggest headcount since 1991.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+ },
+ "cache_stats": {
+  "engine": "transformers, prompt state reused for every option",
+  "cache_check": {
+   "options": 3,
+   "max_abs_logprob_difference": 0.12470699253026396
+  }
+ },
+ "jobs": {
+  "Infer": {
+   "job": "pipelines-mpsepno5ej5b-Infer-x6tpoBWqRD",
+   "image": "763104351884.dkr.ecr.us-east-2.amazonaws.com/vllm:0.29.0-gpu-py312-cu130-ubuntu24.04-sagemaker-v1.2",
+   "billable_seconds": 4754.0,
+   "instance_type": "ml.g6.12xlarge",
+   "cost_usd": 7.595835555555555
+  },
+  "Stage": {
+   "job": "pipelines-mpsepno5ej5b-Stage-v94SgsnQRY",
+   "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+   "billable_seconds": 53.348,
+   "instance_type": "ml.m5.2xlarge",
+   "cost_usd": 0.006831507777777778
+  }
+ },
+ "run_totals": {
+  "nothink_items": 11041,
+  "nothink_seconds": 3930.185095310211,
+  "think_seconds": 495.1349256038666,
+  "latency_seconds": 77.97512674331665
+ },
+ "fetched_at": "2026-10-01T15:53:12Z",
+ "thinking": "seeded subsample",
+ "reasoning_generated_by": "vllm",
+ "reasoning_timing": {
+  "items": 50,
+  "seconds": 97.90321445465088,
+  "mode": "generate",
+  "prompt_tokens": 0,
+  "invalid": 0
+ }
+}

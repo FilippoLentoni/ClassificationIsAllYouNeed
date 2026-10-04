@@ -1,0 +1,51 @@
+# Self-hosted Qwen3.6-27B, zero-shot (change add-bert-qwen-ensemble, design D3-D5).
+model_id: Qwen/Qwen3.6-27B
+revision: 6a9e13bd6fc8f0983b9b99948120bc37f49c13e9      # pinned on 2026-09-30; Apache 2.0, not gated
+pipeline_name: ciayn-qwen
+weights_prefix: weights/qwen3.6-27b          # s3://<bucket>/<weights_prefix>/<revision>/
+# Step 1, CPU processing job: stage the weights from Hugging Face to S3 (idempotent)
+stage:
+  instance_type: ml.m5.2xlarge     # processing quota 2 (ml.m5.xlarge has 1, used by the XGBoost preprocessing jobs)
+  image: sagemaker-scikit-learn:1.4-2-py312-cpu-py3    # SageMaker-owned registry, as for the XGBoost preprocessing
+  volume_gb: 150
+  max_runtime_s: 7200
+# Step 2, GPU training job used for inference (every GPU processing-job quota is 0 in this account)
+infer:
+  registry: "763104351884"
+  image: vllm:0.29.0-gpu-py312-cu130-ubuntu24.04-sagemaker-v1.2
+  instance_types: [ml.g6e.12xlarge, ml.g5.12xlarge, ml.g6.12xlarge]   # 4 GPUs each: L40S 48 GB, A10G 24 GB, L4 24 GB
+  retry_refused_after_s: 7200     # a combination refused for capacity is tried again after this long
+  regions: [us-east-2, us-east-1, us-west-2]
+  tensor_parallel: 4
+  dtype: bfloat16
+  max_model_len: 16384
+  gpu_memory_utilization: 0.90
+  volume_gb: 200
+  max_runtime_s: 21600          # the longest a job may run; an instance whose worst case exceeds the spending limit is skipped
+smoke:
+  items_per_dataset: 20
+  max_runtime_s: 5400
+answer_instruction: "Answer with exactly one option name."
+# Scoring: one single-token request per trie edge of the option names (prefix cache reused). The first
+# items of each dataset are also scored from prompt log-probabilities, which is slow, as a cross-check.
+cross_check_items: 2
+items_per_call: 16            # items scored per engine call (thinking disabled)
+think_items_per_call: 128     # items reasoning concurrently (thinking enabled)
+# Which engine scores each dataset (see the job script). The transformers engine computes the
+# instructions and option list once per dataset, the rest of the prompt once per item, and every
+# option on a copy of that state; vLLM would recompute the prompt for every option (its prefix cache
+# works in 784-token blocks for this architecture). vLLM generates the reasoning of the thinking
+# subsample, where it can run many items concurrently.
+engine_by_dataset: {german: transformers, wdbc: transformers, sst2: transformers, agnews: transformers}
+vllm_method: prompt
+smoke_hf_items: {german: 64, wdbc: 64, sst2: 64, agnews: 64}
+thinking:
+  # Reduced on 2026-10-01 from 100 items and 4,096 tokens after the first smoke run: only about 12
+  # items reason concurrently on 24 GB GPUs, so the larger setting would have cost about USD 23.
+  subsample_per_dataset: 50    # evaluation items (repeat 0) also answered with thinking enabled
+  seed: 0
+  max_thinking_tokens: 2048
+  projection_margin: 0.1       # thinking on every item runs only if its projection plus this margin fits the spending limit
+latency:
+  sample_per_dataset: 20       # evaluation items sent one at a time for single-request latency
+  seed: 0

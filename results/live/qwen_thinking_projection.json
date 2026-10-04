@@ -1,0 +1,14 @@
+{
+ "projected_seconds": 26712.211283919813,
+ "projected_usd": 49.320611818009574,
+ "reasoning_usd": 42.680177584751874,
+ "scoring_usd": 6.6404342332577,
+ "recorded_usd": 25.6688462525,
+ "limit_usd": 75.0,
+ "margin": 0.1,
+ "fits": false,
+ "from_execution": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/1bke8noosau8",
+ "made_at": "2026-10-01T15:58:31Z",
+ "basis": "reasoning: seconds per item of the thinking subsample in the vLLM job, times every item Jev predicted; scoring: one scoring pass over those items at the measured seconds per item of the transformers job",
+ "decision": "thinking enabled stays on the subsample: the projection does not fit the limit"
+}

@@ -1,0 +1,7689 @@
+{
+ "checked_at": "2026-10-02T11:25:33Z",
+ "mode": "live",
+ "mock_draft": false,
+ "generated_files_match_saved_outputs": true,
+ "generated_files_that_differ": [],
+ "macros_defined": 1088,
+ "macros_used_in_text": 252,
+ "pdf_checked": true,
+ "macros_used_but_not_found_in_pdf": [],
+ "format": {
+  "page_limit": {
+   "ok": true,
+   "requirement": "Page limit",
+   "main_text_ends_on_page": 9,
+   "limit": 9
+  },
+  "checklist": {
+   "ok": true,
+   "requirement": "Paper checklist",
+   "required": false,
+   "note": "not required by configs/submission.yaml; the paper is not a complete NeurIPS submission without it"
+  },
+  "style": {
+   "ok": true,
+   "requirement": "NeurIPS 2026 style",
+   "sha256_matches_downloaded_file": true,
+   "style_loaded": true,
+   "options": [],
+   "geometry_overrides": []
+  },
+  "fonts": {
+   "ok": true,
+   "requirement": "Fonts and figures",
+   "fonts": 34,
+   "not_embedded_or_type3": []
+  },
+  "anonymity": {
+   "ok": true,
+   "requirement": "Anonymous submission",
+   "searched_for": [
+    "<aws-account-id>",
+    "<aws-account-id>",
+    "ciayn-baseline",
+    "ciayn-sagemaker",
+    "agentcore",
+    "ec2-user",
+    "filippo",
+    "lentoni",
+    "columbia",
+    "@gmail",
+    "@icloud"
+   ],
+   "found": []
+  },
+  "overflow": {
+   "ok": true,
+   "requirement": "Fonts and figures",
+   "widest_overfull_pt": 0.0,
+   "tolerance_pt": 5.0,
+   "unresolved_references": []
+  },
+  "inclusion": {
+   "ok": true,
+   "requirement": "Paper structure within the submission format",
+   "generated_files_not_included": [],
+   "required_figures_not_included": [],
+   "tables_and_figures_never_cited": []
+  }
+ },
+ "macros": [
+  {
+   "macro": "AccPctBertAgnews",
+   "value": "94.2",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AccPctBertGerman",
+   "value": "70.5",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AccPctBertSst",
+   "value": "91.6",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AccPctBertWdbc",
+   "value": "77.8",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AccPctJevAgnews",
+   "value": "87.9",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "AccPctJevGerman",
+   "value": "46.7",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AccPctJevSst",
+   "value": "96.0",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "AccPctJevWdbc",
+   "value": "41.1",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AccPctQwenAgnews",
+   "value": "87.7",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "AccPctQwenGerman",
+   "value": "54.4",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AccPctQwenSst",
+   "value": "95.6",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "AccPctQwenWdbc",
+   "value": "82.5",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AccPctXgbAgnews",
+   "value": "91.4",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AccPctXgbGerman",
+   "value": "74.1",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AccPctXgbSst",
+   "value": "79.1",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AccPctXgbWdbc",
+   "value": "94.9",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AccuracyBertAgnews",
+   "value": "0.942",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AccuracyBertGerman",
+   "value": "0.705",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AccuracyBertSst",
+   "value": "0.916",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AccuracyBertWdbc",
+   "value": "0.778",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AccuracyJevAgnews",
+   "value": "0.879",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "AccuracyJevGerman",
+   "value": "0.467",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "AccuracyJevSst",
+   "value": "0.960",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "AccuracyJevWdbc",
+   "value": "0.411",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "AccuracyQwenAgnews",
+   "value": "0.877",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AccuracyQwenGerman",
+   "value": "0.544",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AccuracyQwenSst",
+   "value": "0.956",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AccuracyQwenWdbc",
+   "value": "0.825",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AccuracyXgbAgnews",
+   "value": "0.914",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AccuracyXgbGerman",
+   "value": "0.741",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "AccuracyXgbSst",
+   "value": "0.791",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AccuracyXgbWdbc",
+   "value": "0.949",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "AuditRegeneratedMatches",
+   "value": "99",
+   "source": "results/live/payload_audit.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "AuditUnlogged",
+   "value": "100",
+   "source": "results/live/payload_audit.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "AuditUnloggedCached",
+   "value": "99",
+   "source": "results/live/payload_audit.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "AwsAttempts",
+   "value": "12",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AwsBillableHoursTotal",
+   "value": "8.7",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AwsBillableMinutes",
+   "value": "175",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AwsBillableMinutesBert",
+   "value": "94",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AwsBillableMinutesQwen",
+   "value": "251",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AwsBillableMinutesXgb",
+   "value": "175",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AwsCostTotalUSD",
+   "value": "25.67",
+   "source": "results/live/provenance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "AwsCostUSD",
+   "value": "0.67",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AwsCostUSDBert",
+   "value": "1.97",
+   "source": "results/live/provenance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "AwsCostUSDQwen",
+   "value": "23.02",
+   "source": "results/live/provenance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "AwsCostUSDXgb",
+   "value": "0.67",
+   "source": "results/live/provenance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "AwsDatasetsDone",
+   "value": "5",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AwsExecutions",
+   "value": "12",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AwsExecutionsBert",
+   "value": "5",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AwsExecutionsNotCompleted",
+   "value": "1",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AwsExecutionsQwen",
+   "value": "14",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AwsExecutionsSucceeded",
+   "value": "11",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AwsExecutionsSucceededBert",
+   "value": "5",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AwsExecutionsSucceededQwen",
+   "value": "9",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AwsExecutionsSucceededXgb",
+   "value": "11",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AwsExecutionsSuperseded",
+   "value": "6",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AwsExecutionsXgb",
+   "value": "12",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AwsGpuHoursBert",
+   "value": "1.57",
+   "source": "results/live/provenance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "AwsGpuHoursQwen",
+   "value": "3.75",
+   "source": "results/live/provenance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "AwsGpuHoursXgb",
+   "value": "0.00",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AwsInstanceType",
+   "value": "ml.m5.xlarge",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AwsInstanceTypeBert",
+   "value": "ml.g5.xlarge",
+   "source": "results/live/provenance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "AwsInstanceTypeQwen",
+   "value": "ml.g6.12xlarge",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AwsInstanceTypeXgb",
+   "value": "ml.m5.xlarge",
+   "source": "results/live/provenance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "AwsJobs",
+   "value": "24",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AwsRefusedAttempts",
+   "value": "0",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AwsRegion",
+   "value": "us-east-2",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "AwsSpendLimit",
+   "value": "75",
+   "source": "results/live/provenance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "BaselinesMissing",
+   "value": "0",
+   "source": "results/live/*/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "BertBatchSize",
+   "value": "32",
+   "source": "configs/encoder.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "BertEpochsAgnews",
+   "value": "1",
+   "source": "results/live/agnews/bert/run.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "BertEpochsGerman",
+   "value": "4",
+   "source": "results/live/german/bert/run.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "BertEpochsSst",
+   "value": "2",
+   "source": "results/live/sst2/bert/run.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "BertEpochsWdbc",
+   "value": "3",
+   "source": "results/live/wdbc/bert/run.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "BertGpu",
+   "value": "NVIDIA A10G",
+   "source": "results/live/agnews/bert/run.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "BertImage",
+   "value": "huggingface-pytorch-training:2.9.0-transformers5.3.0-gpu-py312-cu130-ubuntu22.04",
+   "source": "configs/encoder.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "BertLearningRates",
+   "value": "2e-05 and 5e-05",
+   "source": "configs/encoder.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "BertMaxEpochs",
+   "value": "4",
+   "source": "configs/encoder.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "BertMaxLengthAgnews",
+   "value": "256",
+   "source": "configs/encoder.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "BertMaxLengthGerman",
+   "value": "512",
+   "source": "configs/encoder.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "BertMaxLengthSst",
+   "value": "128",
+   "source": "configs/encoder.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "BertMaxLengthWdbc",
+   "value": "512",
+   "source": "configs/encoder.yaml",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "BertModelId",
+   "value": "google-bert/bert-base-uncased",
+   "source": "configs/encoder.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "BertRevision",
+   "value": "86b5e0934494",
+   "source": "configs/encoder.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "BertTruncatedAgnews",
+   "value": "59",
+   "source": "results/live/agnews/bert/run.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "BertTruncatedGerman",
+   "value": "0",
+   "source": "results/live/german/bert/run.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "BertTruncatedSst",
+   "value": "0",
+   "source": "results/live/sst2/bert/run.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "BertTruncatedWdbc",
+   "value": "0",
+   "source": "results/live/wdbc/bert/run.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "BootstrapN",
+   "value": "1,000",
+   "source": "configs/metrics.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "BrierBertAgnews",
+   "value": "0.091",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "BrierBertGerman",
+   "value": "0.390",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "BrierBertSst",
+   "value": "0.138",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "BrierBertWdbc",
+   "value": "0.312",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "BrierJevAgnews",
+   "value": "0.204",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "BrierJevGerman",
+   "value": "0.833",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "BrierJevSst",
+   "value": "0.064",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "BrierJevWdbc",
+   "value": "0.655",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "BrierQwenAgnews",
+   "value": "0.219",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "BrierQwenGerman",
+   "value": "0.499",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "BrierQwenSst",
+   "value": "0.073",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "BrierQwenWdbc",
+   "value": "0.223",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "BrierXgbAgnews",
+   "value": "0.135",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "BrierXgbGerman",
+   "value": "0.346",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "BrierXgbSst",
+   "value": "0.290",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "BrierXgbWdbc",
+   "value": "0.074",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfCostDefaultBertGerman",
+   "value": "2,768",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfCostDefaultBertWdbc",
+   "value": "937",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfCostDefaultJevGerman",
+   "value": "1,575",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ConfCostDefaultJevWdbc",
+   "value": "690",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfCostDefaultQwenGerman",
+   "value": "2,712",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfCostDefaultQwenWdbc",
+   "value": "987",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfCostDefaultXgbGerman",
+   "value": "1,926",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfCostDefaultXgbWdbc",
+   "value": "194",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfCostFlagAllGerman",
+   "value": "1,400",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ConfCostFlagAllWdbc",
+   "value": "720",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ConfCostFlagNoneGerman",
+   "value": "3,000",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfCostFlagNoneWdbc",
+   "value": "2,100",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfCostValidationBertGerman",
+   "value": "1,279",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfCostValidationBertWdbc",
+   "value": "592",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfCostValidationJevGerman",
+   "value": "1,395",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ConfCostValidationJevWdbc",
+   "value": "450",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfCostValidationQwenGerman",
+   "value": "1,426",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ConfCostValidationQwenWdbc",
+   "value": "263",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfCostValidationXgbGerman",
+   "value": "1,132",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ConfCostValidationXgbWdbc",
+   "value": "168",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ConfFnDefaultBertGerman",
+   "value": "544",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFnDefaultBertWdbc",
+   "value": "171",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFnDefaultJevGerman",
+   "value": "126",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ConfFnDefaultJevWdbc",
+   "value": "3",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ConfFnDefaultQwenGerman",
+   "value": "449",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFnDefaultQwenWdbc",
+   "value": "197",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFnDefaultXgbGerman",
+   "value": "352",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFnDefaultXgbWdbc",
+   "value": "34",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFnValidationBertGerman",
+   "value": "49",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFnValidationBertWdbc",
+   "value": "65",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFnValidationJevGerman",
+   "value": "24",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFnValidationJevWdbc",
+   "value": "37",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFnValidationQwenGerman",
+   "value": "24",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFnValidationQwenWdbc",
+   "value": "31",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFnValidationXgbGerman",
+   "value": "77",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFnValidationXgbWdbc",
+   "value": "24",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFpDefaultBertGerman",
+   "value": "48",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFpDefaultBertWdbc",
+   "value": "82",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFpDefaultJevGerman",
+   "value": "945",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ConfFpDefaultJevWdbc",
+   "value": "675",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ConfFpDefaultQwenGerman",
+   "value": "467",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFpDefaultQwenWdbc",
+   "value": "2",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFpDefaultXgbGerman",
+   "value": "166",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFpDefaultXgbWdbc",
+   "value": "24",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFpValidationBertGerman",
+   "value": "1,034",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFpValidationBertWdbc",
+   "value": "267",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFpValidationJevGerman",
+   "value": "1,275",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFpValidationJevWdbc",
+   "value": "265",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFpValidationQwenGerman",
+   "value": "1,306",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFpValidationQwenWdbc",
+   "value": "108",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFpValidationXgbGerman",
+   "value": "747",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfFpValidationXgbWdbc",
+   "value": "48",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfNegativesGerman",
+   "value": "1,400",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfNegativesWdbc",
+   "value": "720",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfPositivesGerman",
+   "value": "600",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ConfPositivesWdbc",
+   "value": "420",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ConfTnDefaultBertGerman",
+   "value": "1,352",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTnDefaultBertWdbc",
+   "value": "638",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTnDefaultJevGerman",
+   "value": "455",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTnDefaultJevWdbc",
+   "value": "45",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTnDefaultQwenGerman",
+   "value": "933",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTnDefaultQwenWdbc",
+   "value": "718",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTnDefaultXgbGerman",
+   "value": "1,234",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTnDefaultXgbWdbc",
+   "value": "696",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTnValidationBertGerman",
+   "value": "366",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTnValidationBertWdbc",
+   "value": "453",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTnValidationJevGerman",
+   "value": "125",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTnValidationJevWdbc",
+   "value": "455",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTnValidationQwenGerman",
+   "value": "94",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTnValidationQwenWdbc",
+   "value": "612",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTnValidationXgbGerman",
+   "value": "653",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTnValidationXgbWdbc",
+   "value": "672",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTpDefaultBertGerman",
+   "value": "56",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTpDefaultBertWdbc",
+   "value": "249",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTpDefaultJevGerman",
+   "value": "474",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTpDefaultJevWdbc",
+   "value": "417",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTpDefaultQwenGerman",
+   "value": "151",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTpDefaultQwenWdbc",
+   "value": "223",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTpDefaultXgbGerman",
+   "value": "248",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTpDefaultXgbWdbc",
+   "value": "386",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTpValidationBertGerman",
+   "value": "551",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTpValidationBertWdbc",
+   "value": "355",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTpValidationJevGerman",
+   "value": "576",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTpValidationJevWdbc",
+   "value": "383",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTpValidationQwenGerman",
+   "value": "576",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTpValidationQwenWdbc",
+   "value": "389",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTpValidationXgbGerman",
+   "value": "523",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ConfTpValidationXgbWdbc",
+   "value": "396",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CostKindGerman",
+   "value": "canonical",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CostKindSst",
+   "value": "illustrative",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CostKindWdbc",
+   "value": "illustrative",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CostPerKBertAgnews",
+   "value": "0.000",
+   "source": "results/live/agnews/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CostPerKBertGerman",
+   "value": "0.000",
+   "source": "results/live/german/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CostPerKBertSst",
+   "value": "0.000",
+   "source": "results/live/sst2/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CostPerKBertWdbc",
+   "value": "0.000",
+   "source": "results/live/wdbc/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CostPerKInferenceOnlyQwenAgnews",
+   "value": "0.551",
+   "source": "results/live/agnews/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CostPerKInferenceOnlyQwenGerman",
+   "value": "0.642",
+   "source": "results/live/german/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CostPerKInferenceOnlyQwenSst",
+   "value": "0.331",
+   "source": "results/live/sst2/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CostPerKInferenceOnlyQwenWdbc",
+   "value": "1.262",
+   "source": "results/live/wdbc/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CostPerKJevAgnews",
+   "value": "0.018",
+   "source": "results/live/agnews/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CostPerKJevGerman",
+   "value": "0.022",
+   "source": "results/live/german/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CostPerKJevSst",
+   "value": "0.015",
+   "source": "results/live/sst2/comparison/comparison.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "CostPerKJevWdbc",
+   "value": "0.030",
+   "source": "results/live/wdbc/comparison/comparison.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "CostPerKQwenAgnews",
+   "value": "0.586",
+   "source": "results/live/agnews/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CostPerKQwenGerman",
+   "value": "0.683",
+   "source": "results/live/german/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CostPerKQwenSst",
+   "value": "0.352",
+   "source": "results/live/sst2/comparison/comparison.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "CostPerKQwenWdbc",
+   "value": "1.342",
+   "source": "results/live/wdbc/comparison/comparison.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "CostPerKXgbAgnews",
+   "value": "0.000",
+   "source": "results/live/agnews/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CostPerKXgbGerman",
+   "value": "0.000",
+   "source": "results/live/german/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CostPerKXgbSst",
+   "value": "0.000",
+   "source": "results/live/sst2/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CostPerKXgbWdbc",
+   "value": "0.000",
+   "source": "results/live/wdbc/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CostRatioGerman",
+   "value": "5:1",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "CostRatioQwenJevAgnews",
+   "value": "32",
+   "source": "results/live/agnews/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CostRatioQwenJevGerman",
+   "value": "32",
+   "source": "results/live/german/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CostRatioQwenJevSst",
+   "value": "24",
+   "source": "results/live/sst2/comparison/comparison.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "CostRatioQwenJevWdbc",
+   "value": "44",
+   "source": "results/live/wdbc/comparison/comparison.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "CostRatioSst",
+   "value": "1:1",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "CostRatioWdbc",
+   "value": "5:1",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "CurveSmallestAccAgnews",
+   "value": "0.843",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CurveSmallestAccBertAgnews",
+   "value": "0.904",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CurveSmallestAccBertGerman",
+   "value": "0.667",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CurveSmallestAccBertSst",
+   "value": "0.862",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CurveSmallestAccBertWdbc",
+   "value": "0.632",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CurveSmallestAccGerman",
+   "value": "0.701",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CurveSmallestAccSst",
+   "value": "0.657",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CurveSmallestAccWdbc",
+   "value": "0.889",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CurveSmallestNAgnews",
+   "value": "5,752",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CurveSmallestNBertAgnews",
+   "value": "5,752",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CurveSmallestNBertGerman",
+   "value": "30",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CurveSmallestNBertSst",
+   "value": "3,268",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CurveSmallestNBertWdbc",
+   "value": "17",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CurveSmallestNGerman",
+   "value": "30",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CurveSmallestNSst",
+   "value": "3,268",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "CurveSmallestNWdbc",
+   "value": "17",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ECEBins",
+   "value": "15",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "EceBertAgnews",
+   "value": "0.018",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EceBertGerman",
+   "value": "0.060",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EceBertSst",
+   "value": "0.054",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EceBertWdbc",
+   "value": "0.115",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EceJevAgnews",
+   "value": "0.082",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "EceJevGerman",
+   "value": "0.364",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "EceJevSst",
+   "value": "0.020",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "EceJevWdbc",
+   "value": "0.374",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "EceQwenAgnews",
+   "value": "0.099",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EceQwenGerman",
+   "value": "0.136",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "EceQwenSst",
+   "value": "0.023",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EceQwenWdbc",
+   "value": "0.072",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "EceXgbAgnews",
+   "value": "0.032",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EceXgbGerman",
+   "value": "0.069",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EceXgbSst",
+   "value": "0.026",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EceXgbWdbc",
+   "value": "0.036",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscAccAgnews",
+   "value": "0.879",
+   "source": "results/live/agnews/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscAccGerman",
+   "value": "0.524",
+   "source": "results/live/german/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscAccSst",
+   "value": "0.960",
+   "source": "results/live/sst2/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscAccWdbc",
+   "value": "0.868",
+   "source": "results/live/wdbc/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscCostPerKAgnews",
+   "value": "0.040",
+   "source": "results/live/agnews/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscCostPerKGerman",
+   "value": "0.421",
+   "source": "results/live/german/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscCostPerKSst",
+   "value": "0.015",
+   "source": "results/live/sst2/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscCostPerKWdbc",
+   "value": "0.950",
+   "source": "results/live/wdbc/escalation/escalation.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "EscErrorsAgnews",
+   "value": "923",
+   "source": "results/live/agnews/escalation/escalation.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "EscErrorsGerman",
+   "value": "103",
+   "source": "results/live/german/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscErrorsSst",
+   "value": "35",
+   "source": "results/live/sst2/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscErrorsWdbc",
+   "value": "66",
+   "source": "results/live/wdbc/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscFOneAgnews",
+   "value": "0.878",
+   "source": "results/live/agnews/escalation/escalation.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "EscFOneGerman",
+   "value": "0.478",
+   "source": "results/live/german/escalation/escalation.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "EscFOneSst",
+   "value": "0.960",
+   "source": "results/live/sst2/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscFOneWdbc",
+   "value": "0.856",
+   "source": "results/live/wdbc/escalation/escalation.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "EscJevFOneAgnews",
+   "value": "0.878",
+   "source": "results/live/agnews/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscJevFOneGerman",
+   "value": "0.467",
+   "source": "results/live/german/escalation/escalation.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "EscJevFOneSst",
+   "value": "0.960",
+   "source": "results/live/sst2/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscJevFOneWdbc",
+   "value": "0.343",
+   "source": "results/live/wdbc/escalation/escalation.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "EscLatencyAgnews",
+   "value": "0.18",
+   "source": "results/live/agnews/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscLatencyGerman",
+   "value": "0.70",
+   "source": "results/live/german/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscLatencySst",
+   "value": "0.15",
+   "source": "results/live/sst2/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscLatencyWdbc",
+   "value": "0.90",
+   "source": "results/live/wdbc/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscQwenFOneAgnews",
+   "value": "0.877",
+   "source": "results/live/agnews/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscQwenFOneGerman",
+   "value": "0.457",
+   "source": "results/live/german/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscQwenFOneSst",
+   "value": "0.956",
+   "source": "results/live/sst2/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscQwenFOneWdbc",
+   "value": "0.783",
+   "source": "results/live/wdbc/escalation/escalation.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "EscShareAgnews",
+   "value": "0.04",
+   "source": "results/live/agnews/escalation/escalation.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "EscShareAtMaxAgnews",
+   "value": "0.74",
+   "source": "results/live/agnews/escalation/escalation.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "EscShareAtMaxGerman",
+   "value": "0.04",
+   "source": "results/live/german/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscShareAtMaxSst",
+   "value": "0.62",
+   "source": "results/live/sst2/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscShareAtMaxWdbc",
+   "value": "0.01",
+   "source": "results/live/wdbc/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscShareGerman",
+   "value": "0.58",
+   "source": "results/live/german/escalation/escalation.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "EscShareSst",
+   "value": "0.00",
+   "source": "results/live/sst2/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscShareWdbc",
+   "value": "0.69",
+   "source": "results/live/wdbc/escalation/escalation.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "EscThresholdAgnews",
+   "value": "0.65",
+   "source": "results/live/agnews/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscThresholdGerman",
+   "value": "0.88",
+   "source": "results/live/german/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscThresholdSst",
+   "value": "0.00",
+   "source": "results/live/sst2/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscThresholdWdbc",
+   "value": "0.85",
+   "source": "results/live/wdbc/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscUnreachableAgnews",
+   "value": "307",
+   "source": "results/live/agnews/escalation/escalation.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "EscUnreachableGerman",
+   "value": "5",
+   "source": "results/live/german/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscUnreachableSst",
+   "value": "5",
+   "source": "results/live/sst2/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscUnreachableWdbc",
+   "value": "0",
+   "source": "results/live/wdbc/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscValItemsNew",
+   "value": "500",
+   "source": "configs/escalation.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "EscValLabelsAgnews",
+   "value": "500",
+   "source": "results/live/agnews/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscValLabelsGerman",
+   "value": "200",
+   "source": "results/live/german/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "EscValLabelsSst",
+   "value": "500",
+   "source": "results/live/sst2/escalation/escalation.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "EscValLabelsWdbc",
+   "value": "114",
+   "source": "results/live/wdbc/escalation/escalation.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExAdditivityMax",
+   "value": "4e-16",
+   "source": "results/live/*/explain/explain.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExCostUSD",
+   "value": "0.54",
+   "source": "results/live/*/explain/explain.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExDropLimeAgnewsKFive",
+   "value": "0.150",
+   "source": "results/live/agnews/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropLimeAgnewsKOne",
+   "value": "0.007",
+   "source": "results/live/agnews/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropLimeAgnewsKThree",
+   "value": "0.091",
+   "source": "results/live/agnews/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropLimeGermanKFive",
+   "value": "0.746",
+   "source": "results/live/german/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropLimeGermanKOne",
+   "value": "0.299",
+   "source": "results/live/german/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropLimeGermanKThree",
+   "value": "0.603",
+   "source": "results/live/german/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropLimeSstKFive",
+   "value": "0.530",
+   "source": "results/live/sst2/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropLimeSstKOne",
+   "value": "0.182",
+   "source": "results/live/sst2/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropLimeSstKThree",
+   "value": "0.419",
+   "source": "results/live/sst2/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropLimeWdbcKFive",
+   "value": "0.203",
+   "source": "results/live/wdbc/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropLimeWdbcKOne",
+   "value": "0.067",
+   "source": "results/live/wdbc/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropLimeWdbcKThree",
+   "value": "0.155",
+   "source": "results/live/wdbc/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropRandomAgnewsKFive",
+   "value": "0.016",
+   "source": "results/live/agnews/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropRandomAgnewsKOne",
+   "value": "-0.000",
+   "source": "results/live/agnews/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropRandomAgnewsKThree",
+   "value": "0.003",
+   "source": "results/live/agnews/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropRandomGermanKFive",
+   "value": "0.056",
+   "source": "results/live/german/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropRandomGermanKOne",
+   "value": "0.011",
+   "source": "results/live/german/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropRandomGermanKThree",
+   "value": "0.008",
+   "source": "results/live/german/explain/explain.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExDropRandomSstKFive",
+   "value": "0.173",
+   "source": "results/live/sst2/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropRandomSstKOne",
+   "value": "0.012",
+   "source": "results/live/sst2/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropRandomSstKThree",
+   "value": "0.096",
+   "source": "results/live/sst2/explain/explain.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExDropRandomWdbcKFive",
+   "value": "0.019",
+   "source": "results/live/wdbc/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropRandomWdbcKOne",
+   "value": "-0.001",
+   "source": "results/live/wdbc/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropRandomWdbcKThree",
+   "value": "0.010",
+   "source": "results/live/wdbc/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropShapAgnewsKFive",
+   "value": "0.130",
+   "source": "results/live/agnews/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropShapAgnewsKOne",
+   "value": "0.005",
+   "source": "results/live/agnews/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropShapAgnewsKThree",
+   "value": "0.075",
+   "source": "results/live/agnews/explain/explain.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExDropShapGermanKFive",
+   "value": "0.761",
+   "source": "results/live/german/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropShapGermanKOne",
+   "value": "0.296",
+   "source": "results/live/german/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropShapGermanKThree",
+   "value": "0.577",
+   "source": "results/live/german/explain/explain.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExDropShapSstKFive",
+   "value": "0.527",
+   "source": "results/live/sst2/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropShapSstKOne",
+   "value": "0.148",
+   "source": "results/live/sst2/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropShapSstKThree",
+   "value": "0.401",
+   "source": "results/live/sst2/explain/explain.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExDropShapWdbcKFive",
+   "value": "0.117",
+   "source": "results/live/wdbc/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropShapWdbcKOne",
+   "value": "0.026",
+   "source": "results/live/wdbc/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExDropShapWdbcKThree",
+   "value": "0.065",
+   "source": "results/live/wdbc/explain/explain.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExEligibleAgnews",
+   "value": "4,979",
+   "source": "results/live/agnews/explain/explain.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExEligibleGerman",
+   "value": "885",
+   "source": "results/live/german/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExEligibleSst",
+   "value": "835",
+   "source": "results/live/sst2/explain/explain.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExEligibleWdbc",
+   "value": "506",
+   "source": "results/live/wdbc/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExEmptyInputPositiveGerman",
+   "value": "0.69",
+   "source": "results/live/german/explain/explain.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExEmptyInputPositiveSst",
+   "value": "0.37",
+   "source": "results/live/sst2/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExEmptyInputPositiveWdbc",
+   "value": "0.51",
+   "source": "results/live/wdbc/explain/explain.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExExamplesAgnews",
+   "value": "20",
+   "source": "results/live/agnews/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExExamplesGerman",
+   "value": "20",
+   "source": "results/live/german/explain/explain.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExExamplesSst",
+   "value": "20",
+   "source": "results/live/sst2/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExExamplesWdbc",
+   "value": "20",
+   "source": "results/live/wdbc/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFailedAgnews",
+   "value": "0",
+   "source": "results/live/agnews/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFailedGerman",
+   "value": "0",
+   "source": "results/live/german/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFailedSst",
+   "value": "0",
+   "source": "results/live/sst2/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFailedWdbc",
+   "value": "0",
+   "source": "results/live/wdbc/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFlipRandomAgnewsKFive",
+   "value": "0.02",
+   "source": "results/live/agnews/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFlipRandomAgnewsKOne",
+   "value": "0.00",
+   "source": "results/live/agnews/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFlipRandomAgnewsKThree",
+   "value": "0.00",
+   "source": "results/live/agnews/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFlipRandomGermanKFive",
+   "value": "0.14",
+   "source": "results/live/german/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFlipRandomGermanKOne",
+   "value": "0.03",
+   "source": "results/live/german/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFlipRandomGermanKThree",
+   "value": "0.06",
+   "source": "results/live/german/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFlipRandomSstKFive",
+   "value": "0.18",
+   "source": "results/live/sst2/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFlipRandomSstKOne",
+   "value": "0.01",
+   "source": "results/live/sst2/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFlipRandomSstKThree",
+   "value": "0.09",
+   "source": "results/live/sst2/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFlipRandomWdbcKFive",
+   "value": "0.02",
+   "source": "results/live/wdbc/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFlipRandomWdbcKOne",
+   "value": "0.01",
+   "source": "results/live/wdbc/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFlipRandomWdbcKThree",
+   "value": "0.02",
+   "source": "results/live/wdbc/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFlipShapAgnewsKFive",
+   "value": "0.15",
+   "source": "results/live/agnews/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFlipShapAgnewsKOne",
+   "value": "0.00",
+   "source": "results/live/agnews/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFlipShapAgnewsKThree",
+   "value": "0.10",
+   "source": "results/live/agnews/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFlipShapGermanKFive",
+   "value": "1.00",
+   "source": "results/live/german/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFlipShapGermanKOne",
+   "value": "0.45",
+   "source": "results/live/german/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFlipShapGermanKThree",
+   "value": "0.85",
+   "source": "results/live/german/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFlipShapSstKFive",
+   "value": "0.60",
+   "source": "results/live/sst2/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFlipShapSstKOne",
+   "value": "0.10",
+   "source": "results/live/sst2/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFlipShapSstKThree",
+   "value": "0.40",
+   "source": "results/live/sst2/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFlipShapWdbcKFive",
+   "value": "0.20",
+   "source": "results/live/wdbc/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFlipShapWdbcKOne",
+   "value": "0.00",
+   "source": "results/live/wdbc/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExFlipShapWdbcKThree",
+   "value": "0.05",
+   "source": "results/live/wdbc/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExLimeRTwoAgnews",
+   "value": "0.29",
+   "source": "results/live/agnews/explain/explain.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExLimeRTwoGerman",
+   "value": "0.80",
+   "source": "results/live/german/explain/explain.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExLimeRTwoMax",
+   "value": "0.80",
+   "source": "results/live/*/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExLimeRTwoMin",
+   "value": "0.29",
+   "source": "results/live/*/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExLimeRTwoSst",
+   "value": "0.61",
+   "source": "results/live/sst2/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExLimeRTwoWdbc",
+   "value": "0.54",
+   "source": "results/live/wdbc/explain/explain.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExMaxWords",
+   "value": "40",
+   "source": "configs/explain.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExMeanUnitsAgnews",
+   "value": "34",
+   "source": "results/live/agnews/explain/explain.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExMeanUnitsGerman",
+   "value": "20",
+   "source": "results/live/german/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExMeanUnitsSst",
+   "value": "18",
+   "source": "results/live/sst2/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExMeanUnitsWdbc",
+   "value": "30",
+   "source": "results/live/wdbc/explain/explain.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExMinWords",
+   "value": "6",
+   "source": "configs/explain.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExRandomDraws",
+   "value": "5",
+   "source": "configs/explain.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExRequestsAgnews",
+   "value": "7,919",
+   "source": "results/live/agnews/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExRequestsGerman",
+   "value": "7,164",
+   "source": "results/live/german/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExRequestsMax",
+   "value": "7,969",
+   "source": "results/live/*/explain/explain.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExRequestsMin",
+   "value": "6,666",
+   "source": "results/live/*/explain/explain.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExRequestsPerExample",
+   "value": "423",
+   "source": "configs/explain.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExRequestsSst",
+   "value": "6,666",
+   "source": "results/live/sst2/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExRequestsTotal",
+   "value": "29,718",
+   "source": "results/live/*/explain/explain.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExRequestsWdbc",
+   "value": "7,969",
+   "source": "results/live/wdbc/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExTauAgnews",
+   "value": "0.19",
+   "source": "results/live/agnews/explain/explain.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExTauGerman",
+   "value": "0.71",
+   "source": "results/live/german/explain/explain.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExTauSst",
+   "value": "0.51",
+   "source": "results/live/sst2/explain/explain.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExTauWdbc",
+   "value": "0.37",
+   "source": "results/live/wdbc/explain/explain.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ExTopThreeAgnews",
+   "value": "0.27",
+   "source": "results/live/agnews/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExTopThreeGerman",
+   "value": "0.80",
+   "source": "results/live/german/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExTopThreeSst",
+   "value": "0.70",
+   "source": "results/live/sst2/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ExTopThreeWdbc",
+   "value": "0.35",
+   "source": "results/live/wdbc/explain/explain.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "FrozenAt",
+   "value": "2026-09-30T13:20:53Z",
+   "source": "results/splits/MANIFEST.sha256",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ISAlpha",
+   "value": "1",
+   "source": "results/live/*/importance/importance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ISAlphaSqrt",
+   "value": "0.5",
+   "source": "results/live/*/importance/importance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ISBudgets",
+   "value": "25, 50, 100, 200, 400",
+   "source": "results/live/*/importance/importance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ISEpsilon",
+   "value": "0.1",
+   "source": "results/live/*/importance/importance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ISMaxBudget",
+   "value": "400",
+   "source": "results/live/*/importance/importance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ISTrials",
+   "value": "1,000",
+   "source": "results/live/*/importance/importance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "InferMsBertAgnews",
+   "value": "0.31",
+   "source": "results/live/agnews/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "InferMsBertGerman",
+   "value": "0.76",
+   "source": "results/live/german/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "InferMsBertSst",
+   "value": "0.19",
+   "source": "results/live/sst2/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "InferMsBertWdbc",
+   "value": "1.26",
+   "source": "results/live/wdbc/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "InferMsXgbAgnews",
+   "value": "0.06",
+   "source": "results/live/agnews/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "InferMsXgbGerman",
+   "value": "0.00",
+   "source": "results/live/german/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "InferMsXgbSst",
+   "value": "0.01",
+   "source": "results/live/sst2/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "InferMsXgbWdbc",
+   "value": "0.00",
+   "source": "results/live/wdbc/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "InvalidRateBertAgnews",
+   "value": "0.000",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "InvalidRateBertGerman",
+   "value": "0.000",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "InvalidRateBertSst",
+   "value": "0.000",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "InvalidRateBertWdbc",
+   "value": "0.000",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "InvalidRateJevAgnews",
+   "value": "0.000",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "InvalidRateJevGerman",
+   "value": "0.000",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "InvalidRateJevSst",
+   "value": "0.000",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "InvalidRateJevWdbc",
+   "value": "0.000",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "InvalidRateQwenAgnews",
+   "value": "0.000",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "InvalidRateQwenGerman",
+   "value": "0.000",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "InvalidRateQwenSst",
+   "value": "0.000",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "InvalidRateQwenWdbc",
+   "value": "0.000",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "InvalidRateXgbAgnews",
+   "value": "0.000",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "InvalidRateXgbGerman",
+   "value": "0.000",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "InvalidRateXgbSst",
+   "value": "0.000",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "InvalidRateXgbWdbc",
+   "value": "0.000",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsCoverageGuidedAgnewsNFourZeroZero",
+   "value": "0.82",
+   "source": "results/live/agnews/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsCoverageGuidedAgnewsNOneZeroZero",
+   "value": "0.62",
+   "source": "results/live/agnews/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsCoverageGuidedAgnewsNTwoFive",
+   "value": "0.51",
+   "source": "results/live/agnews/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsCoverageGuidedGermanNFourZeroZero",
+   "value": "0.94",
+   "source": "results/live/german/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsCoverageGuidedGermanNOneZeroZero",
+   "value": "0.89",
+   "source": "results/live/german/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsCoverageGuidedGermanNTwoFive",
+   "value": "0.83",
+   "source": "results/live/german/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsCoverageGuidedSstNFourZeroZero",
+   "value": "0.75",
+   "source": "results/live/sst2/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsCoverageGuidedSstNOneZeroZero",
+   "value": "0.70",
+   "source": "results/live/sst2/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsCoverageGuidedSstNTwoFive",
+   "value": "0.64",
+   "source": "results/live/sst2/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsCoverageGuidedWdbcNFourZeroZero",
+   "value": "0.96",
+   "source": "results/live/wdbc/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsCoverageGuidedWdbcNOneZeroZero",
+   "value": "0.94",
+   "source": "results/live/wdbc/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsCoverageGuidedWdbcNTwoFive",
+   "value": "0.94",
+   "source": "results/live/wdbc/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsCoverageUniformAgnewsNFourZeroZero",
+   "value": "0.93",
+   "source": "results/live/agnews/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsCoverageUniformAgnewsNOneZeroZero",
+   "value": "0.93",
+   "source": "results/live/agnews/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsCoverageUniformAgnewsNTwoFive",
+   "value": "0.81",
+   "source": "results/live/agnews/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsCoverageUniformGermanNFourZeroZero",
+   "value": "0.95",
+   "source": "results/live/german/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsCoverageUniformGermanNOneZeroZero",
+   "value": "0.95",
+   "source": "results/live/german/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsCoverageUniformGermanNTwoFive",
+   "value": "0.93",
+   "source": "results/live/german/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsCoverageUniformSstNFourZeroZero",
+   "value": "0.95",
+   "source": "results/live/sst2/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsCoverageUniformSstNOneZeroZero",
+   "value": "0.89",
+   "source": "results/live/sst2/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsCoverageUniformSstNTwoFive",
+   "value": "0.67",
+   "source": "results/live/sst2/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsCoverageUniformWdbcNFourZeroZero",
+   "value": "0.96",
+   "source": "results/live/wdbc/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsCoverageUniformWdbcNOneZeroZero",
+   "value": "0.95",
+   "source": "results/live/wdbc/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsCoverageUniformWdbcNTwoFive",
+   "value": "0.92",
+   "source": "results/live/wdbc/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsDatasetsGuidedWins",
+   "value": "1",
+   "source": "results/live/*/importance/importance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "IsDatasetsSqrtBelowOne",
+   "value": "3",
+   "source": "results/live/*/importance/importance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "IsErrorRateAgnews",
+   "value": "0.12",
+   "source": "results/live/agnews/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsErrorRateGerman",
+   "value": "0.53",
+   "source": "results/live/german/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsErrorRateSst",
+   "value": "0.04",
+   "source": "results/live/sst2/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsErrorRateWdbc",
+   "value": "0.57",
+   "source": "results/live/wdbc/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsErrorsAgnews",
+   "value": "923",
+   "source": "results/live/agnews/importance/importance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "IsErrorsGerman",
+   "value": "529",
+   "source": "results/live/german/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsErrorsSst",
+   "value": "35",
+   "source": "results/live/sst2/importance/importance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "IsErrorsWdbc",
+   "value": "326",
+   "source": "results/live/wdbc/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsErrorsZeroUncertaintyAgnews",
+   "value": "307",
+   "source": "results/live/agnews/importance/importance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "IsErrorsZeroUncertaintyGerman",
+   "value": "34",
+   "source": "results/live/german/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsErrorsZeroUncertaintySst",
+   "value": "5",
+   "source": "results/live/sst2/importance/importance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "IsErrorsZeroUncertaintyWdbc",
+   "value": "0",
+   "source": "results/live/wdbc/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsMaxAbsBias",
+   "value": "0.005",
+   "source": "results/live/*/importance/importance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "IsPoolAccuracyAgnews",
+   "value": "0.879",
+   "source": "results/live/agnews/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsPoolAccuracyGerman",
+   "value": "0.471",
+   "source": "results/live/german/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsPoolAccuracySst",
+   "value": "0.960",
+   "source": "results/live/sst2/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsPoolAccuracyWdbc",
+   "value": "0.427",
+   "source": "results/live/wdbc/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsPoolAgnews",
+   "value": "7,600",
+   "source": "results/live/agnews/importance/importance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "IsPoolGerman",
+   "value": "1,000",
+   "source": "results/live/german/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsPoolSst",
+   "value": "872",
+   "source": "results/live/sst2/importance/importance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "IsPoolWdbc",
+   "value": "569",
+   "source": "results/live/wdbc/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsProposalOnErrorsAgnews",
+   "value": "0.38",
+   "source": "results/live/agnews/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsProposalOnErrorsGerman",
+   "value": "0.47",
+   "source": "results/live/german/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsProposalOnErrorsSst",
+   "value": "0.22",
+   "source": "results/live/sst2/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsProposalOnErrorsWdbc",
+   "value": "0.68",
+   "source": "results/live/wdbc/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsRmseGuidedAgnewsNFourZeroZero",
+   "value": "0.032",
+   "source": "results/live/agnews/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsRmseGuidedAgnewsNOneZeroZero",
+   "value": "0.069",
+   "source": "results/live/agnews/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsRmseGuidedAgnewsNTwoFive",
+   "value": "0.135",
+   "source": "results/live/agnews/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsRmseGuidedGermanNFourZeroZero",
+   "value": "0.052",
+   "source": "results/live/german/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsRmseGuidedGermanNOneZeroZero",
+   "value": "0.105",
+   "source": "results/live/german/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsRmseGuidedGermanNTwoFive",
+   "value": "0.212",
+   "source": "results/live/german/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsRmseGuidedSstNFourZeroZero",
+   "value": "0.014",
+   "source": "results/live/sst2/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsRmseGuidedSstNOneZeroZero",
+   "value": "0.029",
+   "source": "results/live/sst2/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsRmseGuidedSstNTwoFive",
+   "value": "0.057",
+   "source": "results/live/sst2/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsRmseGuidedWdbcNFourZeroZero",
+   "value": "0.021",
+   "source": "results/live/wdbc/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsRmseGuidedWdbcNOneZeroZero",
+   "value": "0.045",
+   "source": "results/live/wdbc/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsRmseGuidedWdbcNTwoFive",
+   "value": "0.090",
+   "source": "results/live/wdbc/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsRmseUniformAgnewsNFourZeroZero",
+   "value": "0.017",
+   "source": "results/live/agnews/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsRmseUniformAgnewsNOneZeroZero",
+   "value": "0.032",
+   "source": "results/live/agnews/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsRmseUniformAgnewsNTwoFive",
+   "value": "0.067",
+   "source": "results/live/agnews/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsRmseUniformGermanNFourZeroZero",
+   "value": "0.025",
+   "source": "results/live/german/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsRmseUniformGermanNOneZeroZero",
+   "value": "0.049",
+   "source": "results/live/german/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsRmseUniformGermanNTwoFive",
+   "value": "0.097",
+   "source": "results/live/german/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsRmseUniformSstNFourZeroZero",
+   "value": "0.010",
+   "source": "results/live/sst2/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsRmseUniformSstNOneZeroZero",
+   "value": "0.020",
+   "source": "results/live/sst2/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsRmseUniformSstNTwoFive",
+   "value": "0.039",
+   "source": "results/live/sst2/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsRmseUniformWdbcNFourZeroZero",
+   "value": "0.024",
+   "source": "results/live/wdbc/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsRmseUniformWdbcNOneZeroZero",
+   "value": "0.048",
+   "source": "results/live/wdbc/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsRmseUniformWdbcNTwoFive",
+   "value": "0.101",
+   "source": "results/live/wdbc/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsVarRatioAgnewsNFourZeroZero",
+   "value": "0.28",
+   "source": "results/live/agnews/importance/importance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "IsVarRatioAgnewsNOneZeroZero",
+   "value": "0.22",
+   "source": "results/live/agnews/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsVarRatioAgnewsNTwoFive",
+   "value": "0.24",
+   "source": "results/live/agnews/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsVarRatioGermanNFourZeroZero",
+   "value": "0.23",
+   "source": "results/live/german/importance/importance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "IsVarRatioGermanNOneZeroZero",
+   "value": "0.22",
+   "source": "results/live/german/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsVarRatioGermanNTwoFive",
+   "value": "0.21",
+   "source": "results/live/german/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsVarRatioHalfAgnews",
+   "value": "0.25",
+   "source": "results/live/agnews/importance/importance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "IsVarRatioHalfGerman",
+   "value": "0.32",
+   "source": "results/live/german/importance/importance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "IsVarRatioHalfSst",
+   "value": "0.52",
+   "source": "results/live/sst2/importance/importance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "IsVarRatioHalfWdbc",
+   "value": "1.17",
+   "source": "results/live/wdbc/importance/importance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "IsVarRatioSstNFourZeroZero",
+   "value": "0.48",
+   "source": "results/live/sst2/importance/importance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "IsVarRatioSstNOneZeroZero",
+   "value": "0.47",
+   "source": "results/live/sst2/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsVarRatioSstNTwoFive",
+   "value": "0.46",
+   "source": "results/live/sst2/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsVarRatioWdbcNFourZeroZero",
+   "value": "1.32",
+   "source": "results/live/wdbc/importance/importance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "IsVarRatioWdbcNOneZeroZero",
+   "value": "1.14",
+   "source": "results/live/wdbc/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsVarRatioWdbcNTwoFive",
+   "value": "1.27",
+   "source": "results/live/wdbc/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsZeroUncertaintyAgnews",
+   "value": "5,621",
+   "source": "results/live/agnews/importance/importance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "IsZeroUncertaintyGerman",
+   "value": "46",
+   "source": "results/live/german/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "IsZeroUncertaintySst",
+   "value": "539",
+   "source": "results/live/sst2/importance/importance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "IsZeroUncertaintyWdbc",
+   "value": "0",
+   "source": "results/live/wdbc/importance/importance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "JevCap",
+   "value": "60,000",
+   "source": "results/live/provenance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "JevCostUSD",
+   "value": "1.64",
+   "source": "results/live/provenance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "JevFailedRequests",
+   "value": "0",
+   "source": "results/live/provenance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "JevInferencesUsed",
+   "value": "50,000",
+   "source": "results/live/provenance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "JevInputTokensM",
+   "value": "39.0",
+   "source": "results/live/provenance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "JevInvalidOutputs",
+   "value": "0",
+   "source": "results/live/*/jev/predictions.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "JevLatency",
+   "value": "0.16",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "JevLatencyAgnews",
+   "value": "0.15",
+   "source": "results/live/agnews/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "JevLatencyGerman",
+   "value": "0.15",
+   "source": "results/live/german/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "JevLatencySst",
+   "value": "0.15",
+   "source": "results/live/sst2/comparison/comparison.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "JevLatencyWdbc",
+   "value": "0.14",
+   "source": "results/live/wdbc/comparison/comparison.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "JevModel",
+   "value": "jev-1.13.0",
+   "source": "results/live/provenance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "JevPredictions",
+   "value": "10,541",
+   "source": "results/live/*/jev/predictions.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "JevPricePerMTok",
+   "value": "0.042",
+   "source": "results/live/provenance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "JevRequestsBeforeLogging",
+   "value": "100",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "JevRequestsBeforeLoggingCached",
+   "value": "99",
+   "source": "results/live/provenance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "JevRequestsEscalationVal",
+   "value": "1,000",
+   "source": "results/live/provenance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "JevRequestsExplain",
+   "value": "35,317",
+   "source": "results/live/provenance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "JevRequestsLogged",
+   "value": "49,900",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "JevRequestsPredict",
+   "value": "13,620",
+   "source": "results/live/provenance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "JevRequestsSmoke",
+   "value": "3",
+   "source": "results/live/provenance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "JevRequestsTemplate",
+   "value": "60",
+   "source": "results/live/provenance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "JevRequestsWithTokens",
+   "value": "49,999",
+   "source": "results/live/provenance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "JevRequestsWithoutTokens",
+   "value": "1",
+   "source": "results/live/provenance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "LabelsToMatchJevBertAgnews",
+   "value": "5,752",
+   "source": "results/live/agnews/comparison/comparison.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "LabelsToMatchJevBertGerman",
+   "value": "600",
+   "source": "results/live/german/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "LabelsToMatchJevBertSst",
+   "value": "no size tried",
+   "source": "results/live/sst2/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "LabelsToMatchJevBertWdbc",
+   "value": "17",
+   "source": "results/live/wdbc/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "LabelsToMatchJevXgbAgnews",
+   "value": "28,752",
+   "source": "results/live/agnews/comparison/comparison.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "LabelsToMatchJevXgbGerman",
+   "value": "60",
+   "source": "results/live/german/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "LabelsToMatchJevXgbSst",
+   "value": "no size tried",
+   "source": "results/live/sst2/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "LabelsToMatchJevXgbWdbc",
+   "value": "17",
+   "source": "results/live/wdbc/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "LimeSamples",
+   "value": "200",
+   "source": "configs/explain.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "LogLossBertAgnews",
+   "value": "0.179",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "LogLossBertGerman",
+   "value": "0.574",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "LogLossBertSst",
+   "value": "0.259",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "LogLossBertWdbc",
+   "value": "0.486",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "LogLossClip",
+   "value": "10-12",
+   "source": "src/ciayn/experiments/metrics.py",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "LogLossJevAgnews",
+   "value": "1.464",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "LogLossJevGerman",
+   "value": "2.136",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "LogLossJevSst",
+   "value": "0.255",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "LogLossJevWdbc",
+   "value": "0.865",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "LogLossQwenAgnews",
+   "value": "0.925",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "LogLossQwenGerman",
+   "value": "0.694",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "LogLossQwenSst",
+   "value": "0.159",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "LogLossQwenWdbc",
+   "value": "0.341",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "LogLossXgbAgnews",
+   "value": "0.270",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "LogLossXgbGerman",
+   "value": "0.516",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "LogLossXgbSst",
+   "value": "0.451",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "LogLossXgbWdbc",
+   "value": "0.139",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "MacroFOneBertAgnews",
+   "value": "0.942",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "MacroFOneBertGerman",
+   "value": "0.473",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "MacroFOneBertSst",
+   "value": "0.916",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "MacroFOneBertWdbc",
+   "value": "0.716",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "MacroFOneJevAgnews",
+   "value": "0.878",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "MacroFOneJevGerman",
+   "value": "0.467",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "MacroFOneJevSst",
+   "value": "0.960",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "MacroFOneJevWdbc",
+   "value": "0.343",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "MacroFOneQwenAgnews",
+   "value": "0.877",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "MacroFOneQwenGerman",
+   "value": "0.457",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "MacroFOneQwenSst",
+   "value": "0.956",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "MacroFOneQwenWdbc",
+   "value": "0.783",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "MacroFOneXgbAgnews",
+   "value": "0.914",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "MacroFOneXgbGerman",
+   "value": "0.657",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "MacroFOneXgbSst",
+   "value": "0.791",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "MacroFOneXgbWdbc",
+   "value": "0.945",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "MajorityRateGerman",
+   "value": "0.700",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "MajorityRateSst",
+   "value": "0.509",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "MajorityRateWdbc",
+   "value": "0.632",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "MeanConfBertAgnews",
+   "value": "0.958",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "MeanConfBertGerman",
+   "value": "0.706",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "MeanConfBertSst",
+   "value": "0.966",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "MeanConfBertWdbc",
+   "value": "0.747",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "MeanConfJevAgnews",
+   "value": "0.960",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "MeanConfJevGerman",
+   "value": "0.814",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "MeanConfJevSst",
+   "value": "0.967",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "MeanConfJevWdbc",
+   "value": "0.773",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "MeanConfQwenAgnews",
+   "value": "0.976",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "MeanConfQwenGerman",
+   "value": "0.669",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "MeanConfQwenSst",
+   "value": "0.974",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "MeanConfQwenWdbc",
+   "value": "0.857",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "MeanConfXgbAgnews",
+   "value": "0.887",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "MeanConfXgbGerman",
+   "value": "0.757",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "MeanConfXgbSst",
+   "value": "0.799",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "MeanConfXgbWdbc",
+   "value": "0.966",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "NClassesAgnews",
+   "value": "4",
+   "source": "results/splits/agnews.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "NClassesGerman",
+   "value": "2",
+   "source": "results/splits/german.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "NClassesSst",
+   "value": "2",
+   "source": "results/splits/sst2.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "NClassesWdbc",
+   "value": "2",
+   "source": "results/splits/wdbc.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "NDatasets",
+   "value": "4",
+   "source": "results/live/removed_datasets.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "NDistinctTestGerman",
+   "value": "885",
+   "source": "results/splits/german.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "NDistinctTestWdbc",
+   "value": "506",
+   "source": "results/splits/wdbc.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "NJevAgnews",
+   "value": "7,600",
+   "source": "results/splits/agnews.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "NJevGerman",
+   "value": "1,000",
+   "source": "results/splits/german.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "NJevSst",
+   "value": "1,372",
+   "source": "results/splits/sst2.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "NJevValSst",
+   "value": "500",
+   "source": "results/splits/sst2.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "NJevWdbc",
+   "value": "569",
+   "source": "results/splits/wdbc.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "NRepeats",
+   "value": "10",
+   "source": "results/splits/MANIFEST.sha256",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "NTestAgnews",
+   "value": "7,600",
+   "source": "results/splits/agnews.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "NTestGerman",
+   "value": "200",
+   "source": "results/splits/german.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "NTestNegativeGerman",
+   "value": "140",
+   "source": "results/splits/german.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "NTestNegativeSst",
+   "value": "428",
+   "source": "results/splits/sst2.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "NTestNegativeWdbc",
+   "value": "72",
+   "source": "results/splits/wdbc.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "NTestPerClassMaxAgnews",
+   "value": "1,900",
+   "source": "results/splits/agnews.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "NTestPerClassMinAgnews",
+   "value": "1,900",
+   "source": "results/splits/agnews.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "NTestPositiveGerman",
+   "value": "60",
+   "source": "results/splits/german.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "NTestPositiveSst",
+   "value": "444",
+   "source": "results/splits/sst2.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "NTestPositiveWdbc",
+   "value": "42",
+   "source": "results/splits/wdbc.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "NTestSst",
+   "value": "872",
+   "source": "results/splits/sst2.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "NTestWdbc",
+   "value": "114",
+   "source": "results/splits/wdbc.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "NTrainAgnews",
+   "value": "115,000",
+   "source": "results/splits/agnews.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "NTrainGerman",
+   "value": "600",
+   "source": "results/splits/german.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "NTrainSst",
+   "value": "65,349",
+   "source": "results/splits/sst2.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "NTrainWdbc",
+   "value": "341",
+   "source": "results/splits/wdbc.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "NValAgnews",
+   "value": "5,000",
+   "source": "results/splits/agnews.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "NValGerman",
+   "value": "200",
+   "source": "results/splits/german.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "NValSst",
+   "value": "2,000",
+   "source": "results/splits/sst2.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "NValWdbc",
+   "value": "114",
+   "source": "results/splits/wdbc.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PayloadChoiceAgnews",
+   "value": "Business",
+   "source": "results/live/payload_examples/agnews.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PayloadChoiceGerman",
+   "value": "good",
+   "source": "results/live/payload_examples/german.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PayloadChoiceSst",
+   "value": "positive",
+   "source": "results/live/payload_examples/sst2.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PayloadChoiceWdbc",
+   "value": "benign",
+   "source": "results/live/payload_examples/wdbc.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PayloadConfidenceAgnews",
+   "value": "0.97",
+   "source": "results/live/payload_examples/agnews.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PayloadConfidenceGerman",
+   "value": "0.13",
+   "source": "results/live/payload_examples/german.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PayloadConfidenceSst",
+   "value": "0.96",
+   "source": "results/live/payload_examples/sst2.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PayloadConfidenceWdbc",
+   "value": "0.06",
+   "source": "results/live/payload_examples/wdbc.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PayloadExampleAgnews",
+   "value": "agnews-test-3752",
+   "source": "results/live/payload_examples/agnews.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PayloadExampleGerman",
+   "value": "german-870",
+   "source": "results/live/payload_examples/german.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PayloadExampleSst",
+   "value": "sst2-validation-36",
+   "source": "results/live/payload_examples/sst2.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PayloadExampleWdbc",
+   "value": "wdbc-360",
+   "source": "results/live/payload_examples/wdbc.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PayloadTokensAgnews",
+   "value": "446",
+   "source": "results/live/payload_examples/agnews.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PayloadTokensGerman",
+   "value": "520",
+   "source": "results/live/payload_examples/german.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PayloadTokensSst",
+   "value": "359",
+   "source": "results/live/payload_examples/sst2.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PayloadTokensWdbc",
+   "value": "733",
+   "source": "results/live/payload_examples/wdbc.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PctTestPositiveGerman",
+   "value": "30",
+   "source": "results/splits/german.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "PctTestPositiveSst",
+   "value": "51",
+   "source": "results/splits/sst2.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PctTestPositiveWdbc",
+   "value": "37",
+   "source": "results/splits/wdbc.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "PrAucBertAgnews",
+   "value": "0.979",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PrAucBertGerman",
+   "value": "0.467",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PrAucBertSst",
+   "value": "0.979",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PrAucBertWdbc",
+   "value": "0.829",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PrAucJevAgnews",
+   "value": "0.901",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PrAucJevGerman",
+   "value": "0.316",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PrAucJevSst",
+   "value": "0.986",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PrAucJevWdbc",
+   "value": "0.878",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PrAucQwenAgnews",
+   "value": "0.909",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PrAucQwenGerman",
+   "value": "0.304",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PrAucQwenSst",
+   "value": "0.990",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PrAucQwenWdbc",
+   "value": "0.957",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PrAucXgbAgnews",
+   "value": "0.960",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PrAucXgbGerman",
+   "value": "0.574",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PrAucXgbSst",
+   "value": "0.879",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PrAucXgbWdbc",
+   "value": "0.982",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PredictedPositiveBertGerman",
+   "value": "0.05",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PredictedPositiveBertSst",
+   "value": "0.53",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PredictedPositiveBertWdbc",
+   "value": "0.29",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PredictedPositiveJevGerman",
+   "value": "0.70",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "PredictedPositiveJevSst",
+   "value": "0.49",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PredictedPositiveJevWdbc",
+   "value": "0.95",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "PredictedPositiveQwenGerman",
+   "value": "0.30",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PredictedPositiveQwenSst",
+   "value": "0.48",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PredictedPositiveQwenWdbc",
+   "value": "0.20",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "PredictedPositiveXgbGerman",
+   "value": "0.21",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PredictedPositiveXgbSst",
+   "value": "0.53",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PredictedPositiveXgbWdbc",
+   "value": "0.36",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PriorAccDeusserAgnews",
+   "value": "0.885",
+   "source": "configs/prior_work.yaml",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PriorAccDeusserSst",
+   "value": "0.964",
+   "source": "configs/prior_work.yaml",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PriorAccJevbenchAgnews",
+   "value": "0.843",
+   "source": "configs/prior_work.yaml",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PriorAccJevbenchSst",
+   "value": "0.954",
+   "source": "configs/prior_work.yaml",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PriorAccStatsguysamWdbc",
+   "value": "0.842",
+   "source": "configs/prior_work.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "PriorCheckedOn",
+   "value": "2026-09-30",
+   "source": "configs/prior_work.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "PriorEceDeusserAgnews",
+   "value": "0.077",
+   "source": "configs/prior_work.yaml",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PriorEceDeusserSst",
+   "value": "0.015",
+   "source": "configs/prior_work.yaml",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PriorEceJevbenchAgnews",
+   "value": "0.112",
+   "source": "configs/prior_work.yaml",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PriorEceJevbenchSst",
+   "value": "0.026",
+   "source": "configs/prior_work.yaml",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PriorNDeusserAgnews",
+   "value": "7,600",
+   "source": "configs/prior_work.yaml",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PriorNDeusserSst",
+   "value": "872",
+   "source": "configs/prior_work.yaml",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PriorNJevbenchAgnews",
+   "value": "500",
+   "source": "configs/prior_work.yaml",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "PriorNJevbenchSst",
+   "value": "500",
+   "source": "configs/prior_work.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "PriorNStatsguysamWdbc",
+   "value": "114",
+   "source": "configs/prior_work.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "QwenCacheCheckAgnews",
+   "value": "0.125",
+   "source": "results/live/agnews/qwen/run.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "QwenCacheCheckGerman",
+   "value": "0.083",
+   "source": "results/live/german/qwen/run.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "QwenCacheCheckSst",
+   "value": "0.003",
+   "source": "results/live/sst2/qwen/run.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "QwenCacheCheckWdbc",
+   "value": "0.121",
+   "source": "results/live/wdbc/qwen/run.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "QwenCrossCheckN",
+   "value": "2",
+   "source": "configs/llm.yaml",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "QwenExampleAgnews",
+   "value": "agnews-test-20",
+   "source": "results/live/agnews/qwen/run.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "QwenExampleGerman",
+   "value": "german-529",
+   "source": "results/live/german/qwen/run.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "QwenExampleSst",
+   "value": "sst2-validation-2",
+   "source": "results/live/sst2/qwen/run.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "QwenExampleWdbc",
+   "value": "wdbc-477",
+   "source": "results/live/wdbc/qwen/run.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "QwenGpu",
+   "value": "NVIDIA L4",
+   "source": "results/live/agnews/qwen/run.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "QwenImage",
+   "value": "vllm:0.29.0-gpu-py312-cu130-ubuntu24.04-sagemaker-v1.2",
+   "source": "configs/llm.yaml",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "QwenLatencyAgnews",
+   "value": "0.93",
+   "source": "results/live/agnews/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "QwenLatencyGerman",
+   "value": "0.95",
+   "source": "results/live/german/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "QwenLatencyN",
+   "value": "20",
+   "source": "configs/llm.yaml",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "QwenLatencySst",
+   "value": "0.92",
+   "source": "results/live/sst2/comparison/comparison.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "QwenLatencyWdbc",
+   "value": "1.10",
+   "source": "results/live/wdbc/comparison/comparison.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "QwenModelId",
+   "value": "Qwen/Qwen3.6-27B",
+   "source": "configs/llm.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "QwenRevision",
+   "value": "6a9e13bd6fc8",
+   "source": "configs/llm.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "QwenScoringInstance",
+   "value": "ml.g6.12xlarge",
+   "source": "results/live/agnews/qwen/run.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "QwenSharedPrefixAgnews",
+   "value": "98",
+   "source": "results/live/agnews/qwen/run.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "QwenSharedPrefixGerman",
+   "value": "82",
+   "source": "results/live/german/qwen/run.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "QwenSharedPrefixSst",
+   "value": "57",
+   "source": "results/live/sst2/qwen/run.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "QwenSharedPrefixWdbc",
+   "value": "76",
+   "source": "results/live/wdbc/qwen/run.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "QwenThinkingAllFits",
+   "value": "does not fit",
+   "source": "results/live/qwen_thinking_projection.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "QwenThinkingAllProjectedHours",
+   "value": "7.4",
+   "source": "results/live/qwen_thinking_projection.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "QwenThinkingAllProjectedUSD",
+   "value": "49",
+   "source": "results/live/qwen_thinking_projection.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "QwenThroughputAgnews",
+   "value": "2.9",
+   "source": "results/live/agnews/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "QwenThroughputGerman",
+   "value": "2.5",
+   "source": "results/live/german/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "QwenThroughputSst",
+   "value": "4.8",
+   "source": "results/live/sst2/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "QwenThroughputWdbc",
+   "value": "1.3",
+   "source": "results/live/wdbc/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "QwenTorchVersion",
+   "value": "2.13.0+cu130",
+   "source": "results/live/agnews/qwen/run.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "QwenTransformersVersion",
+   "value": "5.16.1",
+   "source": "results/live/agnews/qwen/run.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "QwenVllmVersion",
+   "value": "0.29.0",
+   "source": "configs/llm.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "RecallNegativeBertGerman",
+   "value": "0.968",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RecallNegativeBertSst",
+   "value": "0.893",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RecallNegativeBertWdbc",
+   "value": "0.886",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RecallNegativeJevGerman",
+   "value": "0.330",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RecallNegativeJevSst",
+   "value": "0.979",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RecallNegativeJevWdbc",
+   "value": "0.071",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RecallNegativeQwenGerman",
+   "value": "0.674",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RecallNegativeQwenSst",
+   "value": "0.981",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RecallNegativeQwenWdbc",
+   "value": "0.997",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RecallNegativeXgbGerman",
+   "value": "0.881",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RecallNegativeXgbSst",
+   "value": "0.762",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RecallNegativeXgbWdbc",
+   "value": "0.967",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RecallPositiveBertGerman",
+   "value": "0.092",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RecallPositiveBertSst",
+   "value": "0.939",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RecallPositiveBertWdbc",
+   "value": "0.593",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RecallPositiveJevGerman",
+   "value": "0.787",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RecallPositiveJevSst",
+   "value": "0.941",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RecallPositiveJevWdbc",
+   "value": "0.993",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RecallPositiveQwenGerman",
+   "value": "0.242",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RecallPositiveQwenSst",
+   "value": "0.932",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RecallPositiveQwenWdbc",
+   "value": "0.529",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RecallPositiveXgbGerman",
+   "value": "0.413",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RecallPositiveXgbSst",
+   "value": "0.820",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RecallPositiveXgbWdbc",
+   "value": "0.919",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RemovedAwsDedicatedExecutions",
+   "value": "5",
+   "source": "results/live/removed_datasets.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "RemovedAwsDedicatedUSD",
+   "value": "1.05",
+   "source": "results/live/removed_datasets.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "RemovedAwsSharedExecutions",
+   "value": "9",
+   "source": "results/live/removed_datasets.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "RemovedAwsSharedUSD",
+   "value": "12.77",
+   "source": "results/live/removed_datasets.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "RemovedDataset",
+   "value": "Banking77",
+   "source": "results/live/removed_datasets.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "RemovedJevRequests",
+   "value": "9,198",
+   "source": "results/live/removed_datasets.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "RemovedJevTokensM",
+   "value": "21.1",
+   "source": "results/live/removed_datasets.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "RemovedJevUSD",
+   "value": "0.89",
+   "source": "results/live/removed_datasets.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "RocAucBertAgnews",
+   "value": "0.992",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RocAucBertGerman",
+   "value": "0.683",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RocAucBertSst",
+   "value": "0.976",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RocAucBertWdbc",
+   "value": "0.853",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RocAucJevAgnews",
+   "value": "0.961",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RocAucJevGerman",
+   "value": "0.537",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "RocAucJevSst",
+   "value": "0.987",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RocAucJevWdbc",
+   "value": "0.917",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "RocAucQwenAgnews",
+   "value": "0.962",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RocAucQwenGerman",
+   "value": "0.496",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RocAucQwenSst",
+   "value": "0.989",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RocAucQwenWdbc",
+   "value": "0.969",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RocAucXgbAgnews",
+   "value": "0.985",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RocAucXgbGerman",
+   "value": "0.768",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RocAucXgbSst",
+   "value": "0.873",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RocAucXgbWdbc",
+   "value": "0.985",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "RunDate",
+   "value": "2026-09-29 to 2026-10-01",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "SdkVersion",
+   "value": "0.7.2",
+   "source": "results/live/provenance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ShapCoalitions",
+   "value": "200",
+   "source": "configs/explain.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "SklearnImageTag",
+   "value": "1.4-2-py312-cpu-py3",
+   "source": "results/live/provenance.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "SplitFractions",
+   "value": "60/20/20",
+   "source": "configs/datasets.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "TemplateCheckN",
+   "value": "20",
+   "source": "configs/datasets.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "TfidfFeatures",
+   "value": "50,000",
+   "source": "configs/baseline.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThinkMaxTokens",
+   "value": "2,048",
+   "source": "configs/llm.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThinkSecondsAgnews",
+   "value": "1.40",
+   "source": "results/live/agnews/qwen_think/predictions.parquet",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThinkSecondsGerman",
+   "value": "3.72",
+   "source": "results/live/german/qwen_think/predictions.parquet",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThinkSecondsSst",
+   "value": "1.18",
+   "source": "results/live/sst2/qwen_think/predictions.parquet",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThinkSecondsWdbc",
+   "value": "3.60",
+   "source": "results/live/wdbc/qwen_think/predictions.parquet",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThinkSubFOneBertAgnews",
+   "value": "0.938",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThinkSubFOneBertGerman",
+   "value": "0.479",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThinkSubFOneBertSst",
+   "value": "0.960",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThinkSubFOneBertWdbc",
+   "value": "0.792",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThinkSubFOneJevAgnews",
+   "value": "0.873",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThinkSubFOneJevGerman",
+   "value": "0.440",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThinkSubFOneJevSst",
+   "value": "0.939",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThinkSubFOneJevWdbc",
+   "value": "0.319",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThinkSubFOneQwenAgnews",
+   "value": "0.854",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThinkSubFOneQwenGerman",
+   "value": "0.435",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThinkSubFOneQwenSst",
+   "value": "0.918",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThinkSubFOneQwenThinkAgnews",
+   "value": "0.893",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThinkSubFOneQwenThinkGerman",
+   "value": "0.531",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThinkSubFOneQwenThinkSst",
+   "value": "0.959",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThinkSubFOneQwenThinkWdbc",
+   "value": "0.890",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThinkSubFOneQwenWdbc",
+   "value": "0.772",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThinkSubFOneXgbAgnews",
+   "value": "0.884",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThinkSubFOneXgbGerman",
+   "value": "0.688",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThinkSubFOneXgbSst",
+   "value": "0.760",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThinkSubFOneXgbWdbc",
+   "value": "0.934",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThinkSubNAgnews",
+   "value": "50",
+   "source": "results/live/agnews/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThinkSubNGerman",
+   "value": "50",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThinkSubNSst",
+   "value": "50",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThinkSubNWdbc",
+   "value": "50",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThinkSubsampleN",
+   "value": "50",
+   "source": "configs/llm.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThinkTokensAgnews",
+   "value": "522",
+   "source": "results/live/agnews/qwen_think/predictions.parquet",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThinkTokensGerman",
+   "value": "1,765",
+   "source": "results/live/german/qwen_think/predictions.parquet",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThinkTokensSst",
+   "value": "376",
+   "source": "results/live/sst2/qwen_think/predictions.parquet",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThinkTokensWdbc",
+   "value": "1,500",
+   "source": "results/live/wdbc/qwen_think/predictions.parquet",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThinkTruncatedAgnews",
+   "value": "0.00",
+   "source": "results/live/agnews/qwen_think/predictions.parquet",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThinkTruncatedGerman",
+   "value": "0.40",
+   "source": "results/live/german/qwen_think/predictions.parquet",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThinkTruncatedSst",
+   "value": "0.00",
+   "source": "results/live/sst2/qwen_think/predictions.parquet",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThinkTruncatedWdbc",
+   "value": "0.12",
+   "source": "results/live/wdbc/qwen_think/predictions.parquet",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyAnalyticBertGerman",
+   "value": "0.426",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyAnalyticBertSst",
+   "value": "0.916",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyAnalyticBertWdbc",
+   "value": "0.661",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyAnalyticJevGerman",
+   "value": "0.351",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyAnalyticJevSst",
+   "value": "0.960",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyAnalyticJevWdbc",
+   "value": "0.370",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyAnalyticQwenGerman",
+   "value": "0.360",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyAnalyticQwenSst",
+   "value": "0.956",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyAnalyticQwenWdbc",
+   "value": "0.900",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyAnalyticXgbGerman",
+   "value": "0.597",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyAnalyticXgbSst",
+   "value": "0.791",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyAnalyticXgbWdbc",
+   "value": "0.936",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyDefaultBertGerman",
+   "value": "0.704",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyDefaultBertSst",
+   "value": "0.916",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyDefaultBertWdbc",
+   "value": "0.778",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyDefaultJevGerman",
+   "value": "0.465",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyDefaultJevSst",
+   "value": "0.960",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyDefaultJevWdbc",
+   "value": "0.405",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThrAccuracyDefaultQwenGerman",
+   "value": "0.542",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyDefaultQwenSst",
+   "value": "0.956",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyDefaultQwenWdbc",
+   "value": "0.825",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyDefaultXgbGerman",
+   "value": "0.741",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyDefaultXgbSst",
+   "value": "0.791",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyDefaultXgbWdbc",
+   "value": "0.949",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyValidationBertGerman",
+   "value": "0.459",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyValidationBertSst",
+   "value": "0.916",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyValidationBertWdbc",
+   "value": "0.709",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyValidationJevGerman",
+   "value": "0.350",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyValidationJevSst",
+   "value": "0.967",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyValidationJevWdbc",
+   "value": "0.735",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThrAccuracyValidationQwenGerman",
+   "value": "0.335",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyValidationQwenSst",
+   "value": "0.962",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyValidationQwenWdbc",
+   "value": "0.878",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyValidationXgbGerman",
+   "value": "0.588",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyValidationXgbSst",
+   "value": "0.795",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrAccuracyValidationXgbWdbc",
+   "value": "0.937",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveAnalyticBertGerman",
+   "value": "0.498",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveAnalyticBertSst",
+   "value": "0.920",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveAnalyticBertWdbc",
+   "value": "0.671",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveAnalyticJevGerman",
+   "value": "0.473",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveAnalyticJevSst",
+   "value": "0.960",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveAnalyticJevWdbc",
+   "value": "0.539",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveAnalyticQwenGerman",
+   "value": "0.472",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveAnalyticQwenSst",
+   "value": "0.956",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveAnalyticQwenWdbc",
+   "value": "0.870",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveAnalyticXgbGerman",
+   "value": "0.568",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveAnalyticXgbSst",
+   "value": "0.800",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveAnalyticXgbWdbc",
+   "value": "0.917",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveDefaultBertGerman",
+   "value": "0.125",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveDefaultBertSst",
+   "value": "0.920",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveDefaultBertWdbc",
+   "value": "0.595",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveDefaultJevGerman",
+   "value": "0.470",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveDefaultJevSst",
+   "value": "0.960",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveDefaultJevWdbc",
+   "value": "0.552",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveDefaultQwenGerman",
+   "value": "0.248",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveDefaultQwenSst",
+   "value": "0.956",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveDefaultQwenWdbc",
+   "value": "0.690",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveDefaultXgbGerman",
+   "value": "0.488",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveDefaultXgbSst",
+   "value": "0.800",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveDefaultXgbWdbc",
+   "value": "0.930",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveValidationBertGerman",
+   "value": "0.506",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveValidationBertSst",
+   "value": "0.920",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveValidationBertWdbc",
+   "value": "0.687",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveValidationJevGerman",
+   "value": "0.470",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveValidationJevSst",
+   "value": "0.967",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveValidationJevWdbc",
+   "value": "0.721",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveValidationQwenGerman",
+   "value": "0.464",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveValidationQwenSst",
+   "value": "0.962",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveValidationQwenWdbc",
+   "value": "0.850",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveValidationXgbGerman",
+   "value": "0.560",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveValidationXgbSst",
+   "value": "0.799",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrFOnePositiveValidationXgbWdbc",
+   "value": "0.917",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrMeanCostAnalyticBertGerman",
+   "value": "0.658",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrMeanCostAnalyticBertSst",
+   "value": "0.084",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrMeanCostAnalyticBertWdbc",
+   "value": "0.518",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrMeanCostAnalyticJevGerman",
+   "value": "0.686",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThrMeanCostAnalyticJevSst",
+   "value": "0.040",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrMeanCostAnalyticJevWdbc",
+   "value": "0.630",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThrMeanCostAnalyticQwenGerman",
+   "value": "0.694",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrMeanCostAnalyticQwenSst",
+   "value": "0.044",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrMeanCostAnalyticQwenWdbc",
+   "value": "0.240",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrMeanCostAnalyticXgbGerman",
+   "value": "0.544",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThrMeanCostAnalyticXgbSst",
+   "value": "0.209",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrMeanCostAnalyticXgbWdbc",
+   "value": "0.124",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrMeanCostDefaultBertGerman",
+   "value": "1.384",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrMeanCostDefaultBertSst",
+   "value": "0.084",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrMeanCostDefaultBertWdbc",
+   "value": "0.822",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrMeanCostDefaultJevGerman",
+   "value": "0.787",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThrMeanCostDefaultJevSst",
+   "value": "0.040",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThrMeanCostDefaultJevWdbc",
+   "value": "0.605",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThrMeanCostDefaultQwenGerman",
+   "value": "1.356",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrMeanCostDefaultQwenSst",
+   "value": "0.044",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrMeanCostDefaultQwenWdbc",
+   "value": "0.866",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrMeanCostDefaultXgbGerman",
+   "value": "0.963",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThrMeanCostDefaultXgbSst",
+   "value": "0.209",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrMeanCostDefaultXgbWdbc",
+   "value": "0.170",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrMeanCostValidationBertGerman",
+   "value": "0.639",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrMeanCostValidationBertSst",
+   "value": "0.084",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrMeanCostValidationBertWdbc",
+   "value": "0.519",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrMeanCostValidationJevGerman",
+   "value": "0.698",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThrMeanCostValidationJevSst",
+   "value": "0.033",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThrMeanCostValidationJevWdbc",
+   "value": "0.395",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThrMeanCostValidationQwenGerman",
+   "value": "0.713",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrMeanCostValidationQwenSst",
+   "value": "0.038",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrMeanCostValidationQwenWdbc",
+   "value": "0.231",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrMeanCostValidationXgbGerman",
+   "value": "0.566",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrMeanCostValidationXgbSst",
+   "value": "0.205",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrMeanCostValidationXgbWdbc",
+   "value": "0.147",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThrPrecisionAnalyticBertGerman",
+   "value": "0.345",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionAnalyticBertSst",
+   "value": "0.901",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionAnalyticBertWdbc",
+   "value": "0.560",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionAnalyticJevGerman",
+   "value": "0.313",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionAnalyticJevSst",
+   "value": "0.979",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionAnalyticJevWdbc",
+   "value": "0.369",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionAnalyticQwenGerman",
+   "value": "0.314",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionAnalyticQwenSst",
+   "value": "0.981",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionAnalyticQwenWdbc",
+   "value": "0.838",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionAnalyticXgbGerman",
+   "value": "0.419",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionAnalyticXgbSst",
+   "value": "0.781",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionAnalyticXgbWdbc",
+   "value": "0.879",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionDefaultBertGerman",
+   "value": "0.231",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionDefaultBertSst",
+   "value": "0.901",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionDefaultBertWdbc",
+   "value": "0.613",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionDefaultJevGerman",
+   "value": "0.334",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionDefaultJevSst",
+   "value": "0.979",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionDefaultJevWdbc",
+   "value": "0.382",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionDefaultQwenGerman",
+   "value": "0.244",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionDefaultQwenSst",
+   "value": "0.981",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionDefaultQwenWdbc",
+   "value": "0.991",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionDefaultXgbGerman",
+   "value": "0.604",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionDefaultXgbSst",
+   "value": "0.781",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionDefaultXgbWdbc",
+   "value": "0.942",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionValidationBertGerman",
+   "value": "0.352",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionValidationBertSst",
+   "value": "0.901",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionValidationBertWdbc",
+   "value": "0.587",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionValidationJevGerman",
+   "value": "0.311",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThrPrecisionValidationJevSst",
+   "value": "0.975",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionValidationJevWdbc",
+   "value": "0.605",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThrPrecisionValidationQwenGerman",
+   "value": "0.306",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionValidationQwenSst",
+   "value": "0.972",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionValidationQwenWdbc",
+   "value": "0.789",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionValidationXgbGerman",
+   "value": "0.415",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionValidationXgbSst",
+   "value": "0.798",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrPrecisionValidationXgbWdbc",
+   "value": "0.895",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallAnalyticBertGerman",
+   "value": "0.930",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallAnalyticBertSst",
+   "value": "0.939",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallAnalyticBertWdbc",
+   "value": "0.879",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallAnalyticJevGerman",
+   "value": "0.968",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallAnalyticJevSst",
+   "value": "0.941",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallAnalyticJevWdbc",
+   "value": "1.000",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallAnalyticQwenGerman",
+   "value": "0.955",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallAnalyticQwenSst",
+   "value": "0.932",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallAnalyticQwenWdbc",
+   "value": "0.905",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallAnalyticXgbGerman",
+   "value": "0.883",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallAnalyticXgbSst",
+   "value": "0.820",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallAnalyticXgbWdbc",
+   "value": "0.960",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallDefaultBertGerman",
+   "value": "0.093",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallDefaultBertSst",
+   "value": "0.939",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallDefaultBertWdbc",
+   "value": "0.593",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallDefaultJevGerman",
+   "value": "0.790",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallDefaultJevSst",
+   "value": "0.941",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallDefaultJevWdbc",
+   "value": "0.993",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallDefaultQwenGerman",
+   "value": "0.252",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallDefaultQwenSst",
+   "value": "0.932",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallDefaultQwenWdbc",
+   "value": "0.531",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallDefaultXgbGerman",
+   "value": "0.413",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallDefaultXgbSst",
+   "value": "0.820",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallDefaultXgbWdbc",
+   "value": "0.919",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallValidationBertGerman",
+   "value": "0.918",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallValidationBertSst",
+   "value": "0.939",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallValidationBertWdbc",
+   "value": "0.845",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallValidationJevGerman",
+   "value": "0.960",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThrRecallValidationJevSst",
+   "value": "0.959",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallValidationJevWdbc",
+   "value": "0.912",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThrRecallValidationQwenGerman",
+   "value": "0.960",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallValidationQwenSst",
+   "value": "0.953",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallValidationQwenWdbc",
+   "value": "0.926",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallValidationXgbGerman",
+   "value": "0.872",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallValidationXgbSst",
+   "value": "0.800",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrRecallValidationXgbWdbc",
+   "value": "0.943",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrValLabelsBertGerman",
+   "value": "200",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrValLabelsBertSst",
+   "value": "2000",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrValLabelsBertWdbc",
+   "value": "114",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrValLabelsJevGerman",
+   "value": "200",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThrValLabelsJevSst",
+   "value": "500",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThrValLabelsJevWdbc",
+   "value": "114",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThrValLabelsQwenGerman",
+   "value": "200",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrValLabelsQwenSst",
+   "value": "500",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrValLabelsQwenWdbc",
+   "value": "114",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrValLabelsXgbGerman",
+   "value": "200",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrValLabelsXgbSst",
+   "value": "2000",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThrValLabelsXgbWdbc",
+   "value": "114",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdAnalyticBertGerman",
+   "value": "0.17",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdAnalyticBertSst",
+   "value": "0.50",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdAnalyticBertWdbc",
+   "value": "0.17",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdAnalyticJevGerman",
+   "value": "0.17",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdAnalyticJevSst",
+   "value": "0.50",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdAnalyticJevWdbc",
+   "value": "0.17",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThresholdAnalyticQwenGerman",
+   "value": "0.17",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdAnalyticQwenSst",
+   "value": "0.50",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdAnalyticQwenWdbc",
+   "value": "0.17",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdAnalyticXgbGerman",
+   "value": "0.17",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdAnalyticXgbSst",
+   "value": "0.50",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdAnalyticXgbWdbc",
+   "value": "0.17",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdDefaultBertGerman",
+   "value": "0.50",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdDefaultBertSst",
+   "value": "0.50",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdDefaultBertWdbc",
+   "value": "0.50",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdDefaultJevGerman",
+   "value": "0.50",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdDefaultJevSst",
+   "value": "0.50",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdDefaultJevWdbc",
+   "value": "0.50",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdDefaultQwenGerman",
+   "value": "0.50",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdDefaultQwenSst",
+   "value": "0.50",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdDefaultQwenWdbc",
+   "value": "0.50",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdDefaultXgbGerman",
+   "value": "0.50",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdDefaultXgbSst",
+   "value": "0.50",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdDefaultXgbWdbc",
+   "value": "0.50",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdValidationBertGerman",
+   "value": "0.21",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdValidationBertSst",
+   "value": "0.49",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdValidationBertWdbc",
+   "value": "0.20",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdValidationJevGerman",
+   "value": "0.17",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdValidationJevSst",
+   "value": "0.36",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThresholdValidationJevWdbc",
+   "value": "0.77",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "ThresholdValidationQwenGerman",
+   "value": "0.14",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdValidationQwenSst",
+   "value": "0.29",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdValidationQwenWdbc",
+   "value": "0.15",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdValidationXgbGerman",
+   "value": "0.17",
+   "source": "results/live/german/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdValidationXgbSst",
+   "value": "0.55",
+   "source": "results/live/sst2/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "ThresholdValidationXgbWdbc",
+   "value": "0.27",
+   "source": "results/live/wdbc/thresholding/thresholding.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "TrainUSDBertAgnews",
+   "value": "1.09",
+   "source": "results/live/agnews/comparison/comparison.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "TrainUSDBertGerman",
+   "value": "0.15",
+   "source": "results/live/german/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "TrainUSDBertSst",
+   "value": "0.46",
+   "source": "results/live/sst2/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "TrainUSDBertWdbc",
+   "value": "0.13",
+   "source": "results/live/wdbc/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "TrainUSDXgbAgnews",
+   "value": "0.16",
+   "source": "results/live/agnews/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "TrainUSDXgbGerman",
+   "value": "0.01",
+   "source": "results/live/german/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "TrainUSDXgbSst",
+   "value": "0.02",
+   "source": "results/live/sst2/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "TrainUSDXgbWdbc",
+   "value": "0.01",
+   "source": "results/live/wdbc/comparison/comparison.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "TruePositiveGerman",
+   "value": "0.30",
+   "source": "results/live/german/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "TruePositiveSst",
+   "value": "0.51",
+   "source": "results/live/sst2/metrics/metrics.json",
+   "used_in_text": false,
+   "found_in_pdf": null
+  },
+  {
+   "macro": "TruePositiveWdbc",
+   "value": "0.37",
+   "source": "results/live/wdbc/metrics/metrics.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "XgbGridSize",
+   "value": "4",
+   "source": "configs/baseline.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "XgbImageTag",
+   "value": "3.0-5",
+   "source": "results/live/provenance.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "XgbMaxRounds",
+   "value": "500",
+   "source": "configs/baseline.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "XgbPatience",
+   "value": "30",
+   "source": "configs/baseline.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "XgbRerunPredictions",
+   "value": "identical",
+   "source": "results/live/xgb_rerun_check.json",
+   "used_in_text": true,
+   "found_in_pdf": true
+  },
+  {
+   "macro": "XgbTextBins",
+   "value": "16",
+   "source": "configs/baseline.yaml",
+   "used_in_text": true,
+   "found_in_pdf": true
+  }
+ ]
+}

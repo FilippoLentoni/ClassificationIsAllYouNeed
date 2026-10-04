@@ -1,0 +1,42 @@
+# Prior public evaluations of Jev on the datasets used here. Every number is stored with its
+# source, the text it was read from, the date it was checked and the protocol differences
+# that matter for comparison. The paper generator refuses an entry without `checked_on`.
+# No number from here is typed into the prose.
+sources:
+  - key: deusser2026jev
+    tag: Deusser
+    label: "Deußer et al."
+    reference: "T. Deußer, L. Sparrenberg, R. Sifa. Evaluating and Benchmarking the System One Model Jev. arXiv:2609.37647v1, 29 Sep 2026."
+    url: https://arxiv.org/abs/2609.37647
+    model: jev-1.13.0
+    checked_on: 2026-09-30
+    checked_how: "arXiv HTML version read through an automated web reader; rows quoted from its Table 2, read twice with identical values"
+    protocol: "zero-shot, one frozen template per dataset tried on 20 training or validation examples; ECE over 15 equal-width bins; bootstrap 95% intervals; Banking77 taken from mteb/banking77 (3,076 test items)"
+    results:
+      - {dataset: sst2, split: validation, n: 872, accuracy: 0.964, ci95: [0.951, 0.975], ece: 0.015, quote: "SST-2 | 872 | Acc. | 0.964 | [0.951, 0.975] | 0.015"}
+      - {dataset: agnews, split: test, n: 7600, accuracy: 0.885, ci95: [0.878, 0.891], ece: 0.077, quote: "AG News | 7,600 | Acc. | 0.885 | [0.878, 0.891] | 0.077"}
+  - key: jevbench2026
+    tag: Jevbench
+    label: "jevbench"
+    reference: "D. Mehra. jevbench: benchmark of TypeSafe Jev against LLMs, fine-tuned BERT, Laya and zero-shot NLI. GitHub repository dhruvmehra/jevbench, results file docs/results/2026-09-22-n500-summary.md."
+    url: https://github.com/dhruvmehra/jevbench
+    model: "typesafe/jev-1.13"
+    checked_on: 2026-09-30
+    checked_how: "results file read through an automated web reader; rows quoted"
+    protocol: "zero-shot on a seeded sample of 500 items from the validation (SST-2) or test split; ECE over 10 bins"
+    results:
+      - {dataset: sst2, split: validation sample, n: 500, accuracy: 0.954, ece: 0.026, quote: "jev | typesafe/jev-1.13 | 95.4 | 95.4 | 0.026"}
+      - {dataset: agnews, split: test sample, n: 500, accuracy: 0.843, ece: 0.112, quote: "jev | typesafe/jev-1.13 | 84.3 | 84.2 | 0.112"}
+  - key: statsguysam2026
+    tag: Statsguysam
+    label: "jev-classification-benchmark"
+    reference: "statsguysam. Jev classification benchmark. GitHub repository statsguysam/jev-classification-benchmark, version 0.3.0-tabular, 2026."
+    url: https://github.com/statsguysam/jev-classification-benchmark
+    model: "Jev 1.13"
+    checked_on: 2026-09-30
+    checked_how: "repository documentation read through an automated web reader; sentence quoted"
+    protocol: "zero-shot on a 114-row test split with a `feature=value` serialization and its own prompt; the same source reports 93.0% with 8 labelled examples"
+    results:
+      - {dataset: wdbc, split: test split, n: 114, accuracy: 0.842, quote: "Jev's zero/few-shot accuracy is...84.2%/93.0% on Breast Cancer"}
+# Datasets for which a search on 2026-09-30 found no public Jev evaluation.
+none_found: [german]

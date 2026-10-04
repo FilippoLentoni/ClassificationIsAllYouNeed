@@ -1,0 +1,16 @@
+\begin{tabular}{llcccccc}
+\toprule
+ & & \multicolumn{2}{c}{Cost at fixed $t$} & \multicolumn{2}{c}{Validation-selected} & \multicolumn{2}{c}{Accuracy} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-8}
+Dataset & Model & default & analytic & $t$ & cost & default & selected \\
+\midrule
+\multirow{2}{*}{German Credit} & Jev & 0.787 & 0.686 & 0.17 & 0.698 & 0.465 & 0.350 \\
+ & XGBoost & 0.963 & 0.544 & 0.17 & 0.566 & 0.741 & 0.588 \\
+\addlinespace
+\multirow{2}{*}{Breast Cancer Wisconsin} & Jev & 0.605 & 0.630 & 0.77 & 0.395 & 0.405 & 0.735 \\
+ & XGBoost & 0.170 & 0.124 & 0.27 & 0.147 & 0.949 & 0.937 \\
+\addlinespace
+\multirow{2}{*}{SST-2} & Jev & 0.040 & 0.040 & 0.36 & 0.033 & 0.960 & 0.967 \\
+ & XGBoost & 0.209 & 0.209 & 0.55 & 0.205 & 0.791 & 0.795 \\
+\bottomrule
+\end{tabular}

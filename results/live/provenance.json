@@ -1,0 +1,177 @@
+{
+ "mode": "live",
+ "jev": {
+  "requests_in_ledger": 50000,
+  "cap": 60000,
+  "by_stage": {
+   "smoke": {
+    "requests": 3,
+    "logged": 2,
+    "failed": 0,
+    "input_tokens": 861,
+    "latency_sum": 0.7036560110136634,
+    "usd": 3.6162e-05
+   },
+   "template": {
+    "requests": 60,
+    "logged": 60,
+    "failed": 0,
+    "input_tokens": 61488,
+    "latency_sum": 9.836822293975274,
+    "usd": 0.002582496
+   },
+   "predict": {
+    "requests": 13620,
+    "logged": 13521,
+    "failed": 0,
+    "input_tokens": 11802433,
+    "latency_sum": 1982.5637716477504,
+    "usd": 0.49570218600000004
+   },
+   "explain": {
+    "requests": 35317,
+    "logged": 35317,
+    "failed": 0,
+    "input_tokens": 25805463,
+    "latency_sum": 5599.452235765828,
+    "usd": 1.083829446
+   },
+   "escalation_val": {
+    "requests": 1000,
+    "logged": 1000,
+    "failed": 0,
+    "input_tokens": 1368287,
+    "latency_sum": 155.29394107201733,
+    "usd": 0.057468054000000005
+   }
+  },
+  "requests_in_log": 49900,
+  "failed_requests": 0,
+  "requests_before_logging": 100,
+  "requests_before_logging_with_token_counts": 99,
+  "input_tokens_before_logging": 51131,
+  "requests_with_token_counts": 49999,
+  "requests_without_token_counts": 1,
+  "input_tokens": 39038532,
+  "usd_per_million_input_tokens": 0.042,
+  "usd": 1.639618344,
+  "mean_latency_s": 0.1552675436230578,
+  "first_day": "2026-09-29",
+  "last_day": "2026-10-01",
+  "sdk_version": "0.7.2",
+  "model": "jev-1.13.0"
+ },
+ "aws": {
+  "attempts": 31,
+  "refused_attempts": 3,
+  "executions_started": 31,
+  "executions_succeeded": 25,
+  "executions_not_completed": 6,
+  "executions_superseded": 14,
+  "datasets": [
+   "agnews",
+   "banking77",
+   "german",
+   "german,wdbc,sst2,agnews",
+   "german,wdbc,sst2,agnews,banking77",
+   "sst2",
+   "wdbc",
+   "weights"
+  ],
+  "gpu_billable_seconds": 19150.0,
+  "jobs": 56,
+  "billable_seconds": 31211.052000000003,
+  "usd": 25.6688462525,
+  "spend_limit_usd": 75.0,
+  "instance_type": "ml.m5.xlarge",
+  "region": "us-east-2",
+  "images": [
+   "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+   "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-xgboost:3.0-5",
+   "763104351884.dkr.ecr.us-east-2.amazonaws.com/huggingface-pytorch-training:2.9.0-transformers5.3.0-gpu-py312-cu130-ubuntu22.04",
+   "763104351884.dkr.ecr.us-east-2.amazonaws.com/vllm:0.29.0-gpu-py312-cu130-ubuntu24.04-sagemaker-v1.2"
+  ],
+  "basis": "billable seconds of each job at on-demand list price (configs/baseline.yaml); not the AWS bill",
+  "by_model": {
+   "xgb": {
+    "attempts": 12,
+    "refused_attempts": 0,
+    "executions_started": 12,
+    "executions_succeeded": 11,
+    "executions_not_completed": 1,
+    "executions_superseded": 6,
+    "datasets": [
+     "agnews",
+     "banking77",
+     "german",
+     "sst2",
+     "wdbc"
+    ],
+    "gpu_billable_seconds": 0.0,
+    "jobs": 24,
+    "billable_seconds": 10520.673,
+    "usd": 0.6721541083333332,
+    "spend_limit_usd": 75.0,
+    "instance_type": "ml.m5.xlarge",
+    "region": "us-east-2",
+    "images": [
+     "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+     "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-xgboost:3.0-5"
+    ],
+    "basis": "billable seconds of each job at on-demand list price (configs/baseline.yaml); not the AWS bill"
+   },
+   "bert": {
+    "attempts": 5,
+    "refused_attempts": 0,
+    "executions_started": 5,
+    "executions_succeeded": 5,
+    "executions_not_completed": 0,
+    "executions_superseded": 0,
+    "datasets": [
+     "agnews",
+     "banking77",
+     "german",
+     "sst2",
+     "wdbc"
+    ],
+    "gpu_billable_seconds": 5650.0,
+    "jobs": 5,
+    "billable_seconds": 5650.0,
+    "usd": 1.9735763888888889,
+    "spend_limit_usd": 75.0,
+    "instance_type": "ml.g5.xlarge",
+    "region": "us-east-2",
+    "images": [
+     "763104351884.dkr.ecr.us-east-2.amazonaws.com/huggingface-pytorch-training:2.9.0-transformers5.3.0-gpu-py312-cu130-ubuntu22.04"
+    ],
+    "basis": "billable seconds of each job at on-demand list price (configs/baseline.yaml); not the AWS bill"
+   },
+   "qwen": {
+    "attempts": 14,
+    "refused_attempts": 3,
+    "executions_started": 14,
+    "executions_succeeded": 9,
+    "executions_not_completed": 5,
+    "executions_superseded": 3,
+    "datasets": [
+     "banking77",
+     "german,wdbc,sst2,agnews",
+     "german,wdbc,sst2,agnews,banking77",
+     "weights"
+    ],
+    "gpu_billable_seconds": 13500.0,
+    "jobs": 27,
+    "billable_seconds": 15040.378999999999,
+    "usd": 23.023115755277775,
+    "spend_limit_usd": 75.0,
+    "instance_type": "ml.g6.12xlarge",
+    "region": "us-east-2",
+    "images": [
+     "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+     "763104351884.dkr.ecr.us-east-2.amazonaws.com/vllm:0.29.0-gpu-py312-cu130-ubuntu24.04-sagemaker-v1.2"
+    ],
+    "basis": "billable seconds of each job at on-demand list price (configs/baseline.yaml); not the AWS bill"
+   }
+  }
+ }
+}

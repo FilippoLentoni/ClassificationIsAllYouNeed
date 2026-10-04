@@ -1,0 +1,149 @@
+{
+ "mode": "live",
+ "artifact_modes": [
+  "live"
+ ],
+ "dataset": "wdbc",
+ "title": "Breast Cancer Wisconsin Diagnostic",
+ "f1_by_labels": {
+  "jev": [
+   {
+    "n_train": 0,
+    "macro_f1": 0.3426633855281468,
+    "sd": 0.0
+   }
+  ],
+  "qwen": [
+   {
+    "n_train": 0,
+    "macro_f1": 0.7829649483055963,
+    "sd": 0.0
+   }
+  ],
+  "xgb": [
+   {
+    "n_train": 17,
+    "macro_f1": 0.8785700357333898,
+    "sd": 0.03203681091070877
+   },
+   {
+    "n_train": 34,
+    "macro_f1": 0.9044434942660292,
+    "sd": 0.034929009948002604
+   },
+   {
+    "n_train": 86,
+    "macro_f1": 0.9287320112919575,
+    "sd": 0.022764783360222664
+   },
+   {
+    "n_train": 171,
+    "macro_f1": 0.9407002916563192,
+    "sd": 0.023072801012605393
+   },
+   {
+    "n_train": 341,
+    "macro_f1": 0.9449005699151858,
+    "sd": 0.02278217649836108
+   }
+  ],
+  "bert": [
+   {
+    "n_train": 17,
+    "macro_f1": 0.3870967741935484,
+    "sd": 0.0
+   },
+   {
+    "n_train": 34,
+    "macro_f1": 0.40814623298681807,
+    "sd": 0.06656423330059177
+   },
+   {
+    "n_train": 86,
+    "macro_f1": 0.3870967741935484,
+    "sd": 0.0
+   },
+   {
+    "n_train": 171,
+    "macro_f1": 0.4631472407472419,
+    "sd": 0.16185969392776414
+   },
+   {
+    "n_train": 341,
+    "macro_f1": 0.7160600094386796,
+    "sd": 0.1815362500704811
+   }
+  ]
+ },
+ "costs": {
+  "jev": {
+   "kind": "API, per request",
+   "n_predictions": 569,
+   "n_with_cost": 569,
+   "usd_per_1k": 0.030185451669595784,
+   "how": "mean recorded cost per request (input tokens x published price), x 1,000",
+   "latency": {
+    "kind": "measured request latency",
+    "mean_s": 0.14184772044278865,
+    "median_s": 0.13461446500150487
+   },
+   "training_usd": 0.0
+  },
+  "qwen": {
+   "kind": "self-hosted, batch job",
+   "training_usd": 0.0,
+   "usd_per_1k": 1.34204848252203,
+   "usd_per_1k_inference_only": 1.2615732557497508,
+   "latency": {
+    "kind": "batch throughput and single-request latency",
+    "throughput_items_per_s": 1.2664962343611361,
+    "single_request_mean_s": 1.0993677258491517,
+    "single_request_median_s": 1.0995770692825317,
+    "single_request_n": 20
+   },
+   "how": "whole billed scoring job (instance start, weight copy, model loading included), less the time spent on the thinking subsample and the latency sample, allocated to the dataset by its share of scoring time; and inference time only, at the instance's list price",
+   "load_s": 20.543058395385742,
+   "instance_type": "ml.g6.12xlarge",
+   "region": "us-east-2"
+  },
+  "xgb": {
+   "kind": "trained on SageMaker",
+   "training_usd": 0.010065502777777778,
+   "billable_seconds": 157.547,
+   "instance_type": "ml.m5.xlarge",
+   "usd_per_1k": 1.9695094221981413e-07,
+   "how": "measured batch inference time per evaluation item at the instance's list price, x 1,000; training cost is the whole recorded execution",
+   "latency": {
+    "kind": "measured batch inference time per item",
+    "per_item_s": 3.082710399962308e-06
+   }
+  },
+  "bert": {
+   "kind": "trained on SageMaker",
+   "training_usd": 0.12924305555555557,
+   "billable_seconds": 370.0,
+   "instance_type": "ml.g5.xlarge",
+   "usd_per_1k": 0.00044183676906264086,
+   "how": "measured batch inference time per evaluation item at the instance's list price, x 1,000; training cost is the whole recorded execution",
+   "latency": {
+    "kind": "measured batch inference time per item",
+    "per_item_s": 0.0012649004919487133
+   }
+  }
+ },
+ "missing_models": [],
+ "list_prices_usd_per_hour": {
+  "ml.m5.large": 0.115,
+  "ml.m5.xlarge": 0.23,
+  "ml.m5.2xlarge": 0.461,
+  "ml.c5.xlarge": 0.204,
+  "ml.m4.xlarge": 0.24,
+  "ml.c5.2xlarge": 0.408,
+  "ml.g5.xlarge": 1.2575,
+  "ml.g5.2xlarge": 1.515,
+  "ml.g5.12xlarge": 7.09,
+  "ml.g6e.xlarge": 2.61,
+  "ml.g6e.12xlarge": 13.12,
+  "ml.g6.12xlarge": 5.752
+ }
+}

@@ -1,0 +1,49 @@
+\section{Training labels, cost and latency}
+\label{sec:comparison}
+
+A zero-shot model is paid per prediction and needs no labels; a supervised one needs labels and a
+training run and then predicts almost for free. Figure~\ref{fig:f1labels} puts the four models
+on one axis and Table~\ref{tab:costs} adds what each costs and how long a prediction takes. Every
+cost is computed from recorded quantities: Jev's token counts at its published price, and the
+billable seconds of each cloud job at the instance's list price.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{generated/figs/f1_by_labels}
+  \caption{Macro-F1 on the evaluation examples against the number of training labels. Curves:
+    supervised models. Dashed lines: zero-shot models, which use no training labels.}
+  \label{fig:f1labels}
+\end{figure}
+
+\begin{table}[t]
+  \caption{Labels, cost in USD and latency. Training cost is the whole recorded job, including
+    model selection and the learning curve. Cost per 1,000 predictions: Jev, mean recorded
+    request cost; Qwen, the billed scoring job allocated by scoring time, with inference time
+    only in parentheses; XGBoost and BERT, measured batch inference time at list price. Latency:
+    Jev, one API request; Qwen, one item sent alone, with batch throughput in parentheses;
+    XGBoost and BERT, batch inference time per item.}
+  \label{tab:costs}
+  \centering\small
+  \setlength{\tabcolsep}{4pt}
+  \fittable{\input{generated/tab_costs}}
+\end{table}
+
+With enough labels a fine-tuned encoder overtakes both zero-shot models on topic classification:
+BERT reaches macro-F1 \MacroFOneBertAgnews{} on AG News against \MacroFOneJevAgnews{} for Jev,
+and first matches Jev at \LabelsToMatchJevBertAgnews{} training labels (XGBoost:
+\LabelsToMatchJevXgbAgnews). On SST-2 neither supervised model matches the zero-shot ones at any
+size tried: BERT reaches \MacroFOneBertSst{} with all \NTrainSst{} labels, against
+\MacroFOneJevSst{} for Jev. On the tabular datasets XGBoost needs only its smallest training set
+to exceed both zero-shot models.
+
+A Jev prediction cost USD~\CostPerKJevSst{} to USD~\CostPerKJevWdbc{} per 1,000, depending on
+prompt length, and took \JevLatencySst\,s. Self-hosting Qwen on \texttt{\QwenScoringInstance}
+cost USD~\CostPerKQwenSst{} to USD~\CostPerKQwenWdbc{} per 1,000, which is \CostRatioQwenJevSst{}
+to \CostRatioQwenJevWdbc{} times Jev's price, at \QwenLatencySst{} to \QwenLatencyWdbc\,s per
+single item. The supervised models are cheaper per prediction by orders of magnitude once
+trained; their cost is the training run (at most USD~\TrainUSDBertAgnews{} for BERT) and, above
+all, the labels. Letting Qwen reason before answering raised its macro-F1 on every dataset on a
+\ThinkSubsampleN-item sample (for example \ThinkSubFOneQwenWdbc{} to
+\ThinkSubFOneQwenThinkWdbc{} on Breast Cancer Wisconsin) at many times the compute
+(Table~\ref{tab:thinking}). Appendix~\ref{app:learning} gives the accuracy curves
+(Figure~\ref{fig:learning}) and every point of both curves (Table~\ref{tab:learning}).

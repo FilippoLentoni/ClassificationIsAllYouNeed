@@ -1,0 +1,89 @@
+# The five datasets, their fixed ordered class sets, sources and split protocol (design D1).
+# Splits are computed from these settings, frozen by `python -m ciayn freeze` into
+# results/splits/, and checked against results/splits/MANIFEST.sha256 by every other stage.
+seed: 0                 # seed of the validation draws for the held-out datasets
+repeats: 10             # repeated stratified splits for the tabular datasets, seeds 0..9
+repeat_fractions: {val: 0.2, test: 0.2}   # the rest (0.6) is train
+text_normalisation: "whitespace runs collapsed to one space; leading and trailing space removed"
+missing_value: "unknown"
+
+german:
+  title: German Credit
+  kind: tabular
+  protocol: repeated
+  source: {openml: 31, name: "credit-g", version: 1}
+  classes: [good, bad]
+  positive: bad
+  task: "Assess the credit risk of a bank loan applicant described below."
+  criteria:
+    good: "The applicant is a good credit risk and is likely to repay the loan."
+    bad: "The applicant is a bad credit risk and is likely to default on the loan."
+  # Human-readable feature names and decoded values (OpenML keeps terse codes).
+  feature_names:
+    checking_status: checking account balance
+    duration: loan duration (months)
+    credit_history: credit history
+    purpose: loan purpose
+    credit_amount: credit amount (DM)
+    savings_status: savings account balance
+    employment: time in present employment
+    installment_commitment: installment rate (% of disposable income)
+    personal_status: personal status and sex
+    other_parties: other debtors / guarantors
+    residence_since: years at present residence
+    property_magnitude: most valuable property
+    age: age (years)
+    other_payment_plans: other installment plans
+    housing: housing
+    existing_credits: number of existing credits at this bank
+    job: job
+    num_dependents: number of dependents
+    own_telephone: has telephone
+    foreign_worker: foreign worker
+  value_labels:
+    checking_status: {"<0": "below 0 DM", "0<=X<200": "0 to 200 DM", ">=200": "200 DM or more", "no checking": "no checking account"}
+    savings_status: {"<100": "below 100 DM", "100<=X<500": "100 to 500 DM", "500<=X<1000": "500 to 1000 DM", ">=1000": "1000 DM or more", "no known savings": "no known savings"}
+    employment: {"unemployed": "unemployed", "<1": "less than 1 year", "1<=X<4": "1 to 4 years", "4<=X<7": "4 to 7 years", ">=7": "7 years or more"}
+    own_telephone: {"none": "no", "yes": "yes"}
+
+wdbc:
+  title: Breast Cancer Wisconsin Diagnostic
+  kind: tabular
+  protocol: repeated
+  source: {sklearn: load_breast_cancer, origin: "UCI Machine Learning Repository, Breast Cancer Wisconsin (Diagnostic), 569 rows, 30 features"}
+  classes: [benign, malignant]
+  positive: malignant
+  task: "Assess whether the breast mass described by the cell-nucleus measurements below is benign or malignant."
+  criteria:
+    benign: "The mass is benign (not cancerous)."
+    malignant: "The mass is malignant (cancerous)."
+
+sst2:
+  title: SST-2
+  kind: text
+  protocol: heldout
+  source: {hf: nyu-mll/glue, config: sst2, revision: bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c, text_column: sentence}
+  eval_split: validation          # the official test split is unlabelled
+  val_size: 2000                  # drawn from the official training split
+  jev_val_size: 500               # first items of the validation draw, used to select Jev's threshold
+  classes: [negative, positive]
+  positive: positive
+  task: "Classify the sentiment of the movie review sentence below."
+  criteria:
+    negative: "The sentence expresses a negative opinion of the movie."
+    positive: "The sentence expresses a positive opinion of the movie."
+
+agnews:
+  title: AG News
+  kind: text
+  protocol: heldout
+  source: {hf: fancyzhx/ag_news, revision: eb185aade064a813bc0b7f42de02595523103ca4, text_column: text}
+  eval_split: test
+  val_size: 5000
+  classes: [World, Sports, Business, Sci/Tech]
+  task: "Classify the topic of the news article below."
+  criteria:
+    World: "International news, politics, conflicts and world affairs."
+    Sports: "Sports news: games, athletes, teams and competitions."
+    Business: "Business and economic news: companies, markets, finance and the economy."
+    Sci/Tech: "Science and technology news: computing, the internet, research, space and health science."

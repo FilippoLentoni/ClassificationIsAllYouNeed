@@ -1,0 +1,53 @@
+{
+ "dataset": "sst2",
+ "example_id": "sst2-validation-36",
+ "gold_label": "positive",
+ "selection": "first evaluation example in a seeded order (seed 0) whose request is in the request log",
+ "source": "cache/exchanges/predict.jsonl, copied verbatim",
+ "exchange": {
+  "ledger_n": 1668,
+  "stage": "predict",
+  "dataset": "sst2",
+  "cache_key": "559ca90079e8f45c121b7cb1f7d155969062a0e696fe8393d671d4e076488fa1",
+  "ts": "2026-09-30T13:43:49.101+00:00",
+  "sdk_version": "0.7.2",
+  "requested_model": "jev-1.13.0",
+  "method": "POST",
+  "url": "https://api.typesafe.ai/v1/systemone",
+  "request": {
+   "state": "the weight of the piece , the unerring professionalism of the chilly production , and the fascination embedded in the lurid topic prove recommendation enough .",
+   "model": "jev-1.13.0",
+   "questions": {
+    "label": {
+     "type": "choice",
+     "instructions": "Classify the sentiment of the movie review sentence below.",
+     "criteria": {
+      "negative": "The sentence expresses a negative opinion of the movie.",
+      "positive": "The sentence expresses a positive opinion of the movie."
+     }
+    }
+   }
+  },
+  "status": 200,
+  "response": {
+   "model": "jev-1.13.0",
+   "answers": {
+    "label": {
+     "type": "choice",
+     "choice": "positive",
+     "confidence": 0.96,
+     "probabilities": {
+      "negative": 0.02,
+      "positive": 0.98
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 359,
+    "output_tokens": 31
+   }
+  },
+  "latency_s": 0.12545889499597251,
+  "reported_model": "jev-1.13.0"
+ }
+}

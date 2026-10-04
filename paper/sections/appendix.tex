@@ -1,0 +1,355 @@
+\sloppy
+\raggedbottom
+\section{Prior public evaluations of Jev}
+\label{app:prior}
+
+Table~\ref{tab:prior} sets the public results next to ours. Every prior number in it was read from
+its source on \PriorCheckedOn{} and is stored with the quoted text it came from; none was typed
+into this paper. The protocols differ: each study uses its own template; the repository results
+are for samples, with ECE over 10 bins; and the tabular benchmark uses a single
+\PriorNStatsguysamWdbc-row split and a different serialization, which is the likely reason its
+accuracy on Breast Cancer Wisconsin Diagnostic (\PriorAccStatsguysamWdbc) is far above ours
+(\AccuracyJevWdbc).
+
+\begin{table}[H]
+  \caption{Prior public evaluations of zero-shot Jev on the datasets used here, next to our
+    results at the default decision. Accuracy is at the argmax label.}
+  \label{tab:prior}
+  \centering\small
+  \fittable{\input{generated/tab_prior}}
+\end{table}
+
+\section{Protocol, label budgets and cost}
+\label{app:protocol}
+
+\paragraph{Models.}
+Jev is queried through the \texttt{typesafe-sdk} Python client (version \SdkVersion) with one
+\texttt{Choice} question per example; a missing tabular value is written as \texttt{unknown}, and
+text is sent after collapsing whitespace. The text templates were tried once on
+\TemplateCheckN{} training-split examples and frozen unchanged; the tabular templates were frozen
+without being tried on data rows, because every row can be an evaluation row in some repeat.
+XGBoost is trained with a fixed grid of \XgbGridSize{} configurations (tree depth and learning
+rate), early stopping on the validation part (at most \XgbMaxRounds{} rounds, patience
+\XgbPatience) and, for text, TF-IDF weights over unigrams and bigrams (at most \TfidfFeatures{}
+features, \XgbTextBins{} histogram bins). BERT is \texttt{\BertModelId} (revision
+\texttt{\BertRevision}); learning rates \BertLearningRates{} are each trained for up to
+\BertMaxEpochs{} epochs (batch size \BertBatchSize) and the learning rate and epoch with the
+lowest validation log-loss are kept, on the first split repeat for the tabular datasets. Inputs
+are truncated at \BertMaxLengthGerman{} tokens (tabular), \BertMaxLengthAgnews{} (AG News) or
+\BertMaxLengthSst{} (SST-2). Qwen is \texttt{\QwenModelId} (revision \texttt{\QwenRevision}) in
+bf16. Its scores are computed with \texttt{transformers} \QwenTransformersVersion{} on
+\texttt{\QwenScoringInstance}: the instruction and option list once per dataset, the rest of the
+prompt once per item, and every option on a copy of that state, after a check on one item per
+dataset that this equals a full recomputation. With thinking enabled the reasoning (greedy, at
+most \ThinkMaxTokens{} tokens) is generated with vLLM~\citep{kwon2023vllm} \QwenVllmVersion{} and
+the options are scored after it. All supervised training and all Qwen inference ran as managed
+cloud training jobs (containers \texttt{sagemaker-xgboost:\XgbImageTag} and \breaktt{\BertImage}
+for training).
+
+\begin{table}[H]
+  \caption{Labels used by each model, per split repeat. ``Early stopping, selection'' counts the
+    validation labels used for early stopping and hyperparameter selection. Threshold selection
+    applies to the binary datasets and reuses validation labels. The escalation threshold is
+    selected on validation items predicted by both zero-shot models.}
+  \label{tab:labels}
+  \centering\small
+  \fittable{\input{generated/tab_labels}}
+\end{table}
+
+\paragraph{Budget and cost.}
+The study was capped at \JevCap{} Jev inferences and used \JevInferencesUsed{}
+(\JevRequestsPredict{} for predictions, \JevRequestsExplain{} for explanations,
+\JevRequestsEscalationVal{} for escalation validation items, \JevRequestsTemplate{} for template
+checks, \JevRequestsSmoke{} for connectivity checks). Every request is counted in a persistent
+ledger before it is sent, and client retries are disabled; \JevFailedRequests{} requests failed.
+Token counts exist for \JevRequestsWithTokens{} of the requests: \JevInputTokensM{} million input
+tokens, USD~\JevCostUSD{} at USD~\JevPricePerMTok{} per million (Table~\ref{tab:cost}). All cloud
+jobs together cost about USD~\AwsCostTotalUSD{} at list prices, under a limit of
+USD~\AwsSpendLimit: USD~\AwsCostUSDXgb{} for XGBoost, USD~\AwsCostUSDBert{} for BERT
+(\AwsGpuHoursBert{} GPU hours) and USD~\AwsCostUSDQwen{} for Qwen (\AwsGpuHoursQwen{} GPU hours),
+counting stopped, failed and repeated executions. XGBoost was run a second time on every dataset
+to record its inference time, and its predictions were \XgbRerunPredictions{} to the first ones.
+Costs are computed from recorded token counts and from job records at list prices, not from
+invoices.
+
+\paragraph{A dataset that was run and removed.}
+A fifth dataset, \RemovedDataset, was run and then removed from the study, because the
+four-model comparison could not be completed on it within the compute limit. Everything spent on
+it remains in the totals above: \RemovedJevRequests{} Jev requests (\RemovedJevTokensM{} million
+input tokens, USD~\RemovedJevUSD), USD~\RemovedAwsDedicatedUSD{} of cloud jobs dedicated to it
+(\RemovedAwsDedicatedExecutions{} executions), and a part of the USD~\RemovedAwsSharedUSD{} spent
+on \RemovedAwsSharedExecutions{} exploratory Qwen executions that also covered other datasets and
+cannot be split. No result for it is reported.
+
+\paragraph{Societal impact.}
+Two of the datasets stand for decisions that affect people: credit and medical diagnosis. Our
+results are a caution for such uses. A zero-shot model's default decision was biased towards the
+adverse class on both, on German Credit even with no evidence in the input, and nothing in its
+text output would have revealed it. The positive side is that a class distribution makes the
+bias measurable with standard tools and, where the ranking is sound, repairable with a small
+labelled sample. The results describe four public benchmarks and one template per dataset and
+should not be read as evidence that any of these models is fit or unfit for a deployment.
+
+\paragraph{Uncertainty.}
+For the held-out datasets we report 95\% bootstrap intervals (\BootstrapN{} resamples, fixed
+seed). For the tabular datasets we report the mean and standard deviation over the \NRepeats{}
+repeats; their test parts overlap across repeats, so the standard deviation describes split
+variation, not an independent-sample standard error.
+
+\begin{table}[H]
+  \caption{Jev requests by stage. Input tokens are read from the logged responses and, for the
+    \JevRequestsBeforeLoggingCached{} cached responses that predate the log, from the cache;
+    \JevRequestsWithoutTokens{} request has no recorded token count. Output is not billed. The last
+    row is the part of the total that was spent on the removed dataset.}
+  \label{tab:cost}
+  \centering\small
+  \input{generated/tab_cost}
+\end{table}
+
+\section{Full metrics and calibration}
+\label{app:metrics}
+
+\begin{table}[H]
+  \caption{Classification metrics on identical evaluation examples. Brackets: 95\% bootstrap
+    intervals (held-out datasets). $\pm$: standard deviation over \NRepeats{} split repeats
+    (tabular datasets).}
+  \label{tab:metrics}
+  \centering\small
+  \setlength{\tabcolsep}{4pt}
+  \fittable{\input{generated/tab_metrics}}
+\end{table}
+
+\begin{table}[H]
+  \caption{Calibration: expected calibration error (\ECEBins{} equal-width bins), Brier score,
+    log-loss, and mean confidence (mean of the maximum class probability). A reported probability
+    of exactly zero for the true class is clipped at \LogLossClip{} in the log-loss.}
+  \label{tab:calibration}
+  \centering\small
+  \setlength{\tabcolsep}{4pt}
+  \fittable{\input{generated/tab_calibration}}
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{generated/figs/reliability}
+  \caption{Reliability diagrams: accuracy against the maximum class probability, in \ECEBins{}
+    equal-width bins. Rows, top to bottom: Jev and Qwen3.6-27B (zero-shot), XGBoost and BERT
+    (supervised). Tabular datasets pool the test parts of all split repeats.}
+  \label{fig:reliability}
+\end{figure}
+
+\section{Learning curves and thinking}
+\label{app:learning}
+
+\input{generated/text_baseline}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{generated/figs/learning_curves}
+  \caption{Accuracy of XGBoost and BERT on the evaluation examples against the number of
+    training labels, with the zero-shot models as horizontal references.}
+  \label{fig:learning}
+\end{figure}
+
+\begin{table}[H]
+  \caption{XGBoost and BERT on the evaluation examples when trained on nested, stratified
+    fractions of the training part with their selected configuration (mean over split repeats
+    for the tabular datasets). The first row of each dataset gives the zero-shot models, at zero
+    training labels, as accuracy / macro-F1.}
+  \label{tab:learning}
+  \centering\small
+  \input{generated/tab_learning}
+\end{table}
+
+\paragraph{Thinking.}
+On the \ThinkSubsampleN{} items per dataset where Qwen also reasoned before answering, its
+macro-F1 rose on every dataset: from \ThinkSubFOneQwenWdbc{} to \ThinkSubFOneQwenThinkWdbc{} on
+Breast Cancer Wisconsin Diagnostic, \ThinkSubFOneQwenGerman{} to \ThinkSubFOneQwenThinkGerman{}
+on German Credit, \ThinkSubFOneQwenSst{} to \ThinkSubFOneQwenThinkSst{} on SST-2 and
+\ThinkSubFOneQwenAgnews{} to \ThinkSubFOneQwenThinkAgnews{} on AG News. These are small samples,
+and the reasoning is long (\ThinkTokensWdbc{} tokens on average on Breast Cancer Wisconsin
+Diagnostic, with \ThinkTruncatedGerman{} of German Credit items reaching the limit). Reasoning on
+every item was projected at USD~\QwenThinkingAllProjectedUSD, which \QwenThinkingAllFits{} our
+spending limit with a safety margin, so it was not run.
+
+\begin{table}[H]
+  \caption{Macro-F1 on the thinking subsample. Every model is scored on the same items.
+    ``Thinking tokens'' is the mean length of the reasoning and ``Truncated'' the share of items
+    whose reasoning reached the limit of \ThinkMaxTokens{} tokens.}
+  \label{tab:thinking}
+  \centering\small
+  \fittable{\input{generated/tab_thinking}}
+\end{table}
+
+\section{Escalation: validation items}
+\label{app:escalation}
+
+The validation items for the escalation threshold are each repeat's validation part for the
+tabular datasets, the \EscValLabelsSst{} threshold-selection items for SST-2, and
+\EscValItemsNew{} seeded validation items for AG News that both models predicted for this
+purpose.
+
+
+\section{Threshold selection in full}
+\label{app:thresholds}
+
+Jev's threshold is selected on \ThrValLabelsJevGerman, \ThrValLabelsJevWdbc{} and
+\ThrValLabelsJevSst{} validation labels for German Credit, Breast Cancer Wisconsin Diagnostic
+and SST-2; on the tabular datasets this is repeated for each of the \NRepeats{} splits. On
+Breast Cancer Wisconsin Diagnostic, at the default threshold Jev calls
+\PredictedPositiveJevWdbc{} of the rows malignant, for a mean cost of
+\ThrMeanCostDefaultJevWdbc; the analytic threshold (\ThresholdAnalyticJevWdbc) moves the wrong
+way, to \ThrMeanCostAnalyticJevWdbc; the validation-selected threshold reaches
+\ThrMeanCostValidationJevWdbc, with recall \ThrRecallValidationJevWdbc{} and precision
+\ThrPrecisionValidationJevWdbc{} on malignant cases. On German Credit the cost is
+\ThrMeanCostDefaultJevGerman{} at the default, \ThrMeanCostAnalyticJevGerman{} at the analytic and
+\ThrMeanCostValidationJevGerman{} at the validation-selected threshold, and the lower cost is
+bought by calling nearly every applicant bad (recall \ThrRecallValidationJevGerman, precision
+\ThrPrecisionValidationJevGerman). On SST-2 the selected threshold
+($t = \ThresholdValidationJevSst$) changes the cost only from \ThrMeanCostDefaultJevSst{} to
+\ThrMeanCostValidationJevSst.
+
+
+\begin{table}[H]
+  \caption{Decisions at three thresholds on P(positive) for every model. Positive classes: bad
+    (German Credit), malignant (Breast Cancer Wisconsin), positive (SST-2). Tabular values are
+    means $\pm$ standard deviations over \NRepeats{} split repeats, and $t$ is the mean
+    threshold. Costs: \CostRatioGerman{} (canonical), \CostRatioWdbc{} (illustrative),
+    \CostRatioSst{} (illustrative).}
+  \label{tab:thresholds-all}
+  \centering\scriptsize
+  \setlength{\tabcolsep}{3.5pt}
+  \fittable{\input{generated/tab_thresholds_all}}
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\linewidth]{generated/figs/threshold_german_jev}\\
+  \includegraphics[width=0.8\linewidth]{generated/figs/threshold_sst2_jev}\\
+  \includegraphics[width=0.8\linewidth]{generated/figs/threshold_wdbc_xgb}
+  \caption{Threshold sweeps (first split repeat) for Jev on German Credit and SST-2, and for
+    XGBoost on Breast Cancer Wisconsin Diagnostic. For SST-2 the costs are symmetric, so the
+    analytic threshold coincides with the default.}
+  \label{fig:threshold-more}
+\end{figure}
+
+\section{Importance sampling in full}
+\label{app:importance}
+
+For each dataset the pool is the fixed set of examples with cached Jev predictions. The sampling
+procedure sees only those predictions: it draws $n$ items with replacement and asks for the
+labels of the drawn items only. The Hansen--Hurwitz estimate of the error rate is
+$\frac{1}{n}\sum_{j} \ell_{i_j}/(N q_{i_j})$, which is unbiased for any positive $q$, and accuracy
+is one minus it. We run \ISTrials{} seeded trials at each budget $n \in \{\ISBudgets\}$ and
+compare with the full-pool accuracy, which is used only as ground truth.
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{generated/figs/importance}
+  \caption{RMSE of the accuracy estimate against the label budget.}
+  \label{fig:is}
+\end{figure}
+
+Two things explain the result. First, because of the rounding, a large part of each text pool has
+a reported uncertainty of exactly zero: \IsZeroUncertaintySst{} of \IsPoolSst{} items on SST-2
+and \IsZeroUncertaintyAgnews{} of \IsPoolAgnews{} on AG News. Those items receive only the minimum
+sampling probability $\varepsilon/N$, yet they contain \IsErrorsZeroUncertaintySst{} of the
+\IsErrorsSst{} errors on SST-2 and \IsErrorsZeroUncertaintyAgnews{} of \IsErrorsAgnews{} on AG
+News. Second, for a 0/1 loss a proposal proportional to the expected loss has the same variance
+as uniform sampling under perfect calibration, and the optimum is proportional to the square
+root of the expected loss. With $\alpha = \ISAlphaSqrt$ the ratios at $n = \ISMaxBudget$ are
+\IsVarRatioHalfWdbc{} on Breast Cancer Wisconsin Diagnostic, \IsVarRatioHalfGerman{} on German
+Credit, \IsVarRatioHalfSst{} on SST-2 and \IsVarRatioHalfAgnews{} on AG News: still below 1 on
+\IsDatasetsSqrtBelowOne{} of the \NDatasets. Here the check says to sample uniformly unless the
+reported uncertainties are first floored or recalibrated.
+
+\section{Explanations in full}
+\label{app:explain}
+
+KernelSHAP uses \ShapCoalitions{} coalitions with the all-removed input as background, and LIME
+\LimeSamples{} samples. Text examples were drawn among those with \ExMinWords{} to \ExMaxWords{}
+words (\ExEligibleSst{} of \NTestSst{} for SST-2, \ExEligibleAgnews{} of \NTestAgnews{} for AG
+News), so that deleting five words is meaningful. Faithfulness is tested by deleting the top-$k$
+attributed units and re-querying Jev, against deleting $k$ random units (\ExRandomDraws{} draws).
+KernelSHAP's attributions plus its base value reconstruct Jev's probability exactly (largest
+additivity error \ExAdditivityMax). The two methods agree moderately to well on German Credit
+and SST-2 ($\tau = \ExTauGerman$ and \ExTauSst) and little on Breast Cancer Wisconsin Diagnostic
+and AG News ($\tau = \ExTauWdbc$ and \ExTauAgnews), where LIME's linear surrogate fits poorly
+($R^2 = \ExLimeRTwoWdbc$ and \ExLimeRTwoAgnews, against \ExLimeRTwoGerman{} on German Credit).
+With every feature removed, Jev assigns the positive class a probability of
+\ExEmptyInputPositiveGerman{} on German Credit and \ExEmptyInputPositiveWdbc{} on Breast Cancer
+Wisconsin Diagnostic, where the true shares are \TruePositiveGerman{} and \TruePositiveWdbc.
+Perturbation methods are paid for in model calls: at most \ExRequestsPerExample{} per example
+here, and \ExRequestsTotal{} requests in total (USD~\ExCostUSD), between \ExRequestsMin{} and
+\ExRequestsMax{} per dataset after caching repeated inputs.
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{generated/figs/faithfulness}
+  \caption{Deletion test: mean drop in Jev's predicted-class probability after deleting the $k$
+    top-attributed units (KernelSHAP, LIME) or $k$ random units.}
+  \label{fig:faithfulness}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.49\linewidth]{generated/figs/attributions_german}\hfill
+  \includegraphics[width=0.49\linewidth]{generated/figs/attributions_sst2}
+  \caption{KernelSHAP and LIME attributions for two German Credit applicants (left) and two
+    SST-2 sentences (right): the eight units with the largest absolute KernelSHAP value.}
+  \label{fig:attributions}
+\end{figure}
+
+\section{Exact requests and responses}
+\label{app:payloads}
+
+One complete exchange per dataset, copied from the request log. The example is the first
+evaluation example, in a seeded order, whose request is in the log. The request and response
+bodies are the JSON that crossed the wire, re-indented for reading; non-ASCII characters are shown
+as JSON escapes. Headers are not recorded, so the API key cannot appear.
+
+The \AuditUnlogged{} requests made before the log existed are not shown, because there is nothing
+to copy. For \AuditUnloggedCached{} of them the response was cached in parsed form; regenerating
+their requests from code and hashing them reproduces \AuditRegeneratedMatches{} of the
+\AuditUnloggedCached{} stored cache keys, which shows that the same input, instructions, label
+descriptions and model version were sent, but does not recover the payloads or the raw responses.
+The remaining one was a connectivity check that was not cached.
+
+\input{generated/appendix_payloads}
+
+\section{Qwen prompts}
+\label{app:qwen}
+
+One prompt per dataset as rendered by Qwen's own tokenizer inside the job, with thinking
+disabled, and the distribution obtained by scoring every option after it. The end-of-turn token
+is part of every scored option, which makes an option that is a prefix of another a complete
+answer.
+
+\input{generated/appendix_qwen}
+
+\section{Dataset documentation}
+\label{app:datasets}
+
+Evaluation identifiers were frozen on \FrozenAt{} (UTC), before any template check, training or
+threshold selection; every stage verifies their hash before running.
+
+\begin{table}[H]
+  \caption{Datasets and split protocol. ``Jev requests'' is the number of examples Jev predicts:
+    every row of the tabular datasets (each repeat's validation and test parts both use its
+    predictions), and the held-out split of the text datasets plus, for SST-2, \NJevValSst{}
+    validation items for threshold selection.}
+  \label{tab:datasets-full}
+  \centering\small
+  \fittable{\input{generated/tab_datasets}}
+\end{table}
+
+Table~\ref{tab:datasets-full} gives the split protocol in full.
+
+\input{generated/appendix_datasets}
+
+\section{Per-class metrics}
+\label{app:perclass}
+
+\input{generated/appendix_perclass}

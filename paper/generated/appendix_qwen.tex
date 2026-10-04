@@ -1,0 +1,137 @@
+\subsection*{German Credit}
+Example \texttt{german-529}. Prompt with thinking disabled, as rendered by the model's tokenizer inside the job:
+\begin{lstlisting}
+<|im_start|>system
+Assess the credit risk of a bank loan applicant described below. Fields that are not listed are unknown.
+
+Options:
+- good: The applicant is a good credit risk and is likely to repay the loan.
+- bad: The applicant is a bad credit risk and is likely to default on the loan.
+
+Answer with exactly one option name.<|im_end|>
+<|im_start|>user
+checking account balance: below 0 DM
+loan duration (months): 6
+credit history: existing paid
+loan purpose: new car
+credit amount (DM): 662
+savings account balance: below 100 DM
+time in present employment: less than 1 year
+installment rate (% of disposable income): 3
+personal status and sex: male single
+other debtors / guarantors: none
+years at present residence: 4
+most valuable property: real estate
+age (years): 41
+other installment plans: none
+housing: own
+number of existing credits at this bank: 1
+job: unskilled resident
+number of dependents: 2
+has telephone: yes
+foreign worker: yes<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+
+\end{lstlisting}
+Qwen3.6-27B's distribution: \texttt{good} 0.679, \texttt{bad} 0.321.
+
+\subsection*{Breast Cancer Wisconsin Diagnostic}
+Example \texttt{wdbc-477}. Prompt with thinking disabled, as rendered by the model's tokenizer inside the job:
+\begin{lstlisting}
+<|im_start|>system
+Assess whether the breast mass described by the cell-nucleus measurements below is benign or malignant. Fields that are not listed are unknown.
+
+Options:
+- benign: The mass is benign (not cancerous).
+- malignant: The mass is malignant (cancerous).
+
+Answer with exactly one option name.<|im_end|>
+<|im_start|>user
+mean radius: 13.9
+mean texture: 16.62
+mean perimeter: 88.97
+mean area: 599.4
+mean smoothness: 0.06828
+mean compactness: 0.05319
+mean concavity: 0.02224
+mean concave points: 0.01339
+mean symmetry: 0.1813
+mean fractal dimension: 0.05536
+radius error: 0.1555
+texture error: 0.5762
+perimeter error: 1.392
+area error: 14.03
+smoothness error: 0.003308
+compactness error: 0.01315
+concavity error: 0.009904
+concave points error: 0.004832
+symmetry error: 0.01316
+fractal dimension error: 0.002095
+worst radius: 15.14
+worst texture: 21.8
+worst perimeter: 101.2
+worst area: 718.9
+worst smoothness: 0.09384
+worst compactness: 0.2006
+worst concavity: 0.1384
+worst concave points: 0.06222
+worst symmetry: 0.2679
+worst fractal dimension: 0.07698<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+
+\end{lstlisting}
+Qwen3.6-27B's distribution: \texttt{benign} 0.977, \texttt{malignant} 0.023.
+
+\subsection*{SST-2}
+Example \texttt{sst2-validation-2}. Prompt with thinking disabled, as rendered by the model's tokenizer inside the job:
+\begin{lstlisting}
+<|im_start|>system
+Classify the sentiment of the movie review sentence below.
+
+Options:
+- negative: The sentence expresses a negative opinion of the movie.
+- positive: The sentence expresses a positive opinion of the movie.
+
+Answer with exactly one option name.<|im_end|>
+<|im_start|>user
+allows us to hope that nolan is poised to embark a major career as a commercial yet inventive filmmaker .<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+
+\end{lstlisting}
+Qwen3.6-27B's distribution: \texttt{positive} 1.000, \texttt{negative} 0.000.
+
+\subsection*{AG News}
+Example \texttt{agnews-test-20}. Prompt with thinking disabled, as rendered by the model's tokenizer inside the job:
+\begin{lstlisting}
+<|im_start|>system
+Classify the topic of the news article below.
+
+Options:
+- World: International news, politics, conflicts and world affairs.
+- Sports: Sports news: games, athletes, teams and competitions.
+- Business: Business and economic news: companies, markets, finance and the economy.
+- Sci/Tech: Science and technology news: computing, the internet, research, space and health science.
+
+Answer with exactly one option name.<|im_end|>
+<|im_start|>user
+IBM to hire even more new workers By the end of the year, the computing giant plans to have its biggest headcount since 1991.<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+
+\end{lstlisting}
+Qwen3.6-27B's distribution: \texttt{Business} 0.997, \texttt{Sci/Tech} 0.001, \texttt{World} 0.001, \texttt{Sports} 0.001.

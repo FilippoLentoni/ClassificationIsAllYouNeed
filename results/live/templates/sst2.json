@@ -1,0 +1,48 @@
+{
+ "dataset": "sst2",
+ "question_name": "label",
+ "instructions": "Classify the sentiment of the movie review sentence below.",
+ "criteria": [
+  [
+   "negative",
+   "The sentence expresses a negative opinion of the movie."
+  ],
+  [
+   "positive",
+   "The sentence expresses a positive opinion of the movie."
+  ]
+ ],
+ "model": "jev-1.13.0",
+ "question_sha256": "18534898e571e12e98dd498e710137f7f128682b02126a4cc9ffb92be551a85e",
+ "mode": "live",
+ "sdk_version": "0.7.2",
+ "frozen_at": "2026-09-30T13:42:43Z",
+ "check": {
+  "split": "train",
+  "n": 20,
+  "ids": [
+   "sst2-train-14983",
+   "sst2-train-6948",
+   "sst2-train-36485",
+   "sst2-train-3991",
+   "sst2-train-14611",
+   "sst2-train-55982",
+   "sst2-train-8769",
+   "sst2-train-39997",
+   "sst2-train-31652",
+   "sst2-train-57458",
+   "sst2-train-31600",
+   "sst2-train-51444",
+   "sst2-train-56980",
+   "sst2-train-1937",
+   "sst2-train-66009",
+   "sst2-train-9609",
+   "sst2-train-5634",
+   "sst2-train-12440",
+   "sst2-train-14721",
+   "sst2-train-67171"
+  ],
+  "valid_responses": 20,
+  "accuracy": 0.95
+ }
+}

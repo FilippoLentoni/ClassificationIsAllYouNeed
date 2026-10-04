@@ -1,0 +1,19 @@
+\begin{tabular}{llrrrrrrrrrr}
+\toprule
+ & & \multicolumn{5}{c}{Default decision} & \multicolumn{5}{c}{Validation-selected threshold} \\
+\cmidrule(lr){3-7}\cmidrule(lr){8-12}
+Dataset & Model & TP & FN & FP & TN & Cost & TP & FN & FP & TN & Cost \\
+\midrule
+\multirow{5}{*}{German Credit} & Jev & 474 & 126 & 945 & 455 & 1{,}575 & 576 & 24 & 1{,}275 & 125 & 1{,}395 \\
+ & Qwen3.6-27B & 151 & 449 & 467 & 933 & 2{,}712 & 576 & 24 & 1{,}306 & 94 & 1{,}426 \\
+ & XGBoost & 248 & 352 & 166 & 1{,}234 & 1{,}926 & 523 & 77 & 747 & 653 & 1{,}132 \\
+ & BERT & 56 & 544 & 48 & 1{,}352 & 2{,}768 & 551 & 49 & 1{,}034 & 366 & 1{,}279 \\
+ & \emph{flag every case} & 600 & 0 & 1{,}400 & 0 & 1{,}400 & 600 & 0 & 1{,}400 & 0 & 1{,}400 \\
+\addlinespace
+\multirow{5}{*}{Breast Cancer Wisconsin} & Jev & 417 & 3 & 675 & 45 & 690 & 383 & 37 & 265 & 455 & 450 \\
+ & Qwen3.6-27B & 223 & 197 & 2 & 718 & 987 & 389 & 31 & 108 & 612 & 263 \\
+ & XGBoost & 386 & 34 & 24 & 696 & 194 & 396 & 24 & 48 & 672 & 168 \\
+ & BERT & 249 & 171 & 82 & 638 & 937 & 355 & 65 & 267 & 453 & 592 \\
+ & \emph{flag every case} & 420 & 0 & 720 & 0 & 720 & 420 & 0 & 720 & 0 & 720 \\
+\bottomrule
+\end{tabular}

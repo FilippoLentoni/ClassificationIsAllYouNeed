@@ -1,0 +1,25 @@
+\begin{tabular}{llcccc}
+\toprule
+Dataset & Model & Accuracy & Macro-F1 & ROC-AUC & ECE \\
+\midrule
+\multirow{4}{*}{German Credit} & Jev & 0.467\,{\scriptsize$\pm$0.019} & 0.467 & 0.537 & 0.364 \\
+ & Qwen3.6-27B & 0.544\,{\scriptsize$\pm$0.023} & 0.457 & 0.496 & 0.136 \\
+ & XGBoost & 0.741\,{\scriptsize$\pm$0.031} & 0.657 & 0.768 & 0.069 \\
+ & BERT & 0.705\,{\scriptsize$\pm$0.008} & 0.473 & 0.683 & 0.060 \\
+\addlinespace
+\multirow{4}{*}{Breast Cancer Wisconsin} & Jev & 0.411\,{\scriptsize$\pm$0.014} & 0.343 & 0.917 & 0.374 \\
+ & Qwen3.6-27B & 0.825\,{\scriptsize$\pm$0.020} & 0.783 & 0.969 & 0.072 \\
+ & XGBoost & 0.949\,{\scriptsize$\pm$0.021} & 0.945 & 0.985 & 0.036 \\
+ & BERT & 0.778\,{\scriptsize$\pm$0.092} & 0.716 & 0.853 & 0.115 \\
+\addlinespace
+\multirow{4}{*}{SST-2} & Jev & 0.960\,{\scriptsize[0.948,\,0.971]} & 0.960 & 0.987 & 0.020 \\
+ & Qwen3.6-27B & 0.956\,{\scriptsize[0.943,\,0.968]} & 0.956 & 0.989 & 0.023 \\
+ & XGBoost & 0.791\,{\scriptsize[0.763,\,0.819]} & 0.791 & 0.873 & 0.026 \\
+ & BERT & 0.916\,{\scriptsize[0.896,\,0.935]} & 0.916 & 0.976 & 0.054 \\
+\addlinespace
+\multirow{4}{*}{AG News} & Jev & 0.879\,{\scriptsize[0.871,\,0.886]} & 0.878 & 0.961 & 0.082 \\
+ & Qwen3.6-27B & 0.877\,{\scriptsize[0.870,\,0.885]} & 0.877 & 0.962 & 0.099 \\
+ & XGBoost & 0.914\,{\scriptsize[0.908,\,0.921]} & 0.914 & 0.985 & 0.032 \\
+ & BERT & 0.942\,{\scriptsize[0.936,\,0.947]} & 0.942 & 0.992 & 0.018 \\
+\bottomrule
+\end{tabular}

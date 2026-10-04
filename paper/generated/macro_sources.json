@@ -1,0 +1,4354 @@
+{
+ "AccPctBertAgnews": {
+  "value": "94.2",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "AccPctBertGerman": {
+  "value": "70.5",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "AccPctBertSst": {
+  "value": "91.6",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "AccPctBertWdbc": {
+  "value": "77.8",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "AccPctJevAgnews": {
+  "value": "87.9",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "AccPctJevGerman": {
+  "value": "46.7",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "AccPctJevSst": {
+  "value": "96.0",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "AccPctJevWdbc": {
+  "value": "41.1",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "AccPctQwenAgnews": {
+  "value": "87.7",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "AccPctQwenGerman": {
+  "value": "54.4",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "AccPctQwenSst": {
+  "value": "95.6",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "AccPctQwenWdbc": {
+  "value": "82.5",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "AccPctXgbAgnews": {
+  "value": "91.4",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "AccPctXgbGerman": {
+  "value": "74.1",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "AccPctXgbSst": {
+  "value": "79.1",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "AccPctXgbWdbc": {
+  "value": "94.9",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "AccuracyBertAgnews": {
+  "value": "0.942",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "AccuracyBertGerman": {
+  "value": "0.705",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "AccuracyBertSst": {
+  "value": "0.916",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "AccuracyBertWdbc": {
+  "value": "0.778",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "AccuracyJevAgnews": {
+  "value": "0.879",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "AccuracyJevGerman": {
+  "value": "0.467",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "AccuracyJevSst": {
+  "value": "0.960",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "AccuracyJevWdbc": {
+  "value": "0.411",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "AccuracyQwenAgnews": {
+  "value": "0.877",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "AccuracyQwenGerman": {
+  "value": "0.544",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "AccuracyQwenSst": {
+  "value": "0.956",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "AccuracyQwenWdbc": {
+  "value": "0.825",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "AccuracyXgbAgnews": {
+  "value": "0.914",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "AccuracyXgbGerman": {
+  "value": "0.741",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "AccuracyXgbSst": {
+  "value": "0.791",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "AccuracyXgbWdbc": {
+  "value": "0.949",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "AuditRegeneratedMatches": {
+  "value": "99",
+  "source": "results/live/payload_audit.json"
+ },
+ "AuditUnlogged": {
+  "value": "100",
+  "source": "results/live/payload_audit.json"
+ },
+ "AuditUnloggedCached": {
+  "value": "99",
+  "source": "results/live/payload_audit.json"
+ },
+ "AwsAttempts": {
+  "value": "12",
+  "source": "results/live/provenance.json"
+ },
+ "AwsBillableHoursTotal": {
+  "value": "8.7",
+  "source": "results/live/provenance.json"
+ },
+ "AwsBillableMinutes": {
+  "value": "175",
+  "source": "results/live/provenance.json"
+ },
+ "AwsBillableMinutesBert": {
+  "value": "94",
+  "source": "results/live/provenance.json"
+ },
+ "AwsBillableMinutesQwen": {
+  "value": "251",
+  "source": "results/live/provenance.json"
+ },
+ "AwsBillableMinutesXgb": {
+  "value": "175",
+  "source": "results/live/provenance.json"
+ },
+ "AwsCostTotalUSD": {
+  "value": "25.67",
+  "source": "results/live/provenance.json"
+ },
+ "AwsCostUSD": {
+  "value": "0.67",
+  "source": "results/live/provenance.json"
+ },
+ "AwsCostUSDBert": {
+  "value": "1.97",
+  "source": "results/live/provenance.json"
+ },
+ "AwsCostUSDQwen": {
+  "value": "23.02",
+  "source": "results/live/provenance.json"
+ },
+ "AwsCostUSDXgb": {
+  "value": "0.67",
+  "source": "results/live/provenance.json"
+ },
+ "AwsDatasetsDone": {
+  "value": "5",
+  "source": "results/live/provenance.json"
+ },
+ "AwsExecutions": {
+  "value": "12",
+  "source": "results/live/provenance.json"
+ },
+ "AwsExecutionsBert": {
+  "value": "5",
+  "source": "results/live/provenance.json"
+ },
+ "AwsExecutionsNotCompleted": {
+  "value": "1",
+  "source": "results/live/provenance.json"
+ },
+ "AwsExecutionsQwen": {
+  "value": "14",
+  "source": "results/live/provenance.json"
+ },
+ "AwsExecutionsSucceeded": {
+  "value": "11",
+  "source": "results/live/provenance.json"
+ },
+ "AwsExecutionsSucceededBert": {
+  "value": "5",
+  "source": "results/live/provenance.json"
+ },
+ "AwsExecutionsSucceededQwen": {
+  "value": "9",
+  "source": "results/live/provenance.json"
+ },
+ "AwsExecutionsSucceededXgb": {
+  "value": "11",
+  "source": "results/live/provenance.json"
+ },
+ "AwsExecutionsSuperseded": {
+  "value": "6",
+  "source": "results/live/provenance.json"
+ },
+ "AwsExecutionsXgb": {
+  "value": "12",
+  "source": "results/live/provenance.json"
+ },
+ "AwsGpuHoursBert": {
+  "value": "1.57",
+  "source": "results/live/provenance.json"
+ },
+ "AwsGpuHoursQwen": {
+  "value": "3.75",
+  "source": "results/live/provenance.json"
+ },
+ "AwsGpuHoursXgb": {
+  "value": "0.00",
+  "source": "results/live/provenance.json"
+ },
+ "AwsInstanceType": {
+  "value": "ml.m5.xlarge",
+  "source": "results/live/provenance.json"
+ },
+ "AwsInstanceTypeBert": {
+  "value": "ml.g5.xlarge",
+  "source": "results/live/provenance.json"
+ },
+ "AwsInstanceTypeQwen": {
+  "value": "ml.g6.12xlarge",
+  "source": "results/live/provenance.json"
+ },
+ "AwsInstanceTypeXgb": {
+  "value": "ml.m5.xlarge",
+  "source": "results/live/provenance.json"
+ },
+ "AwsJobs": {
+  "value": "24",
+  "source": "results/live/provenance.json"
+ },
+ "AwsRefusedAttempts": {
+  "value": "0",
+  "source": "results/live/provenance.json"
+ },
+ "AwsRegion": {
+  "value": "us-east-2",
+  "source": "results/live/provenance.json"
+ },
+ "AwsSpendLimit": {
+  "value": "75",
+  "source": "results/live/provenance.json"
+ },
+ "BaselinesMissing": {
+  "value": "0",
+  "source": "results/live/*/metrics/metrics.json"
+ },
+ "BertBatchSize": {
+  "value": "32",
+  "source": "configs/encoder.yaml"
+ },
+ "BertEpochsAgnews": {
+  "value": "1",
+  "source": "results/live/agnews/bert/run.json"
+ },
+ "BertEpochsGerman": {
+  "value": "4",
+  "source": "results/live/german/bert/run.json"
+ },
+ "BertEpochsSst": {
+  "value": "2",
+  "source": "results/live/sst2/bert/run.json"
+ },
+ "BertEpochsWdbc": {
+  "value": "3",
+  "source": "results/live/wdbc/bert/run.json"
+ },
+ "BertGpu": {
+  "value": "NVIDIA A10G",
+  "source": "results/live/agnews/bert/run.json"
+ },
+ "BertImage": {
+  "value": "huggingface-pytorch-training:2.9.0-transformers5.3.0-gpu-py312-cu130-ubuntu22.04",
+  "source": "configs/encoder.yaml"
+ },
+ "BertLearningRates": {
+  "value": "2e-05 and 5e-05",
+  "source": "configs/encoder.yaml"
+ },
+ "BertMaxEpochs": {
+  "value": "4",
+  "source": "configs/encoder.yaml"
+ },
+ "BertMaxLengthAgnews": {
+  "value": "256",
+  "source": "configs/encoder.yaml"
+ },
+ "BertMaxLengthGerman": {
+  "value": "512",
+  "source": "configs/encoder.yaml"
+ },
+ "BertMaxLengthSst": {
+  "value": "128",
+  "source": "configs/encoder.yaml"
+ },
+ "BertMaxLengthWdbc": {
+  "value": "512",
+  "source": "configs/encoder.yaml"
+ },
+ "BertModelId": {
+  "value": "google-bert/bert-base-uncased",
+  "source": "configs/encoder.yaml"
+ },
+ "BertRevision": {
+  "value": "86b5e0934494",
+  "source": "configs/encoder.yaml"
+ },
+ "BertTruncatedAgnews": {
+  "value": "59",
+  "source": "results/live/agnews/bert/run.json"
+ },
+ "BertTruncatedGerman": {
+  "value": "0",
+  "source": "results/live/german/bert/run.json"
+ },
+ "BertTruncatedSst": {
+  "value": "0",
+  "source": "results/live/sst2/bert/run.json"
+ },
+ "BertTruncatedWdbc": {
+  "value": "0",
+  "source": "results/live/wdbc/bert/run.json"
+ },
+ "BootstrapN": {
+  "value": "1{,}000",
+  "source": "configs/metrics.yaml"
+ },
+ "BrierBertAgnews": {
+  "value": "0.091",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "BrierBertGerman": {
+  "value": "0.390",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "BrierBertSst": {
+  "value": "0.138",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "BrierBertWdbc": {
+  "value": "0.312",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "BrierJevAgnews": {
+  "value": "0.204",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "BrierJevGerman": {
+  "value": "0.833",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "BrierJevSst": {
+  "value": "0.064",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "BrierJevWdbc": {
+  "value": "0.655",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "BrierQwenAgnews": {
+  "value": "0.219",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "BrierQwenGerman": {
+  "value": "0.499",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "BrierQwenSst": {
+  "value": "0.073",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "BrierQwenWdbc": {
+  "value": "0.223",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "BrierXgbAgnews": {
+  "value": "0.135",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "BrierXgbGerman": {
+  "value": "0.346",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "BrierXgbSst": {
+  "value": "0.290",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "BrierXgbWdbc": {
+  "value": "0.074",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "ConfCostDefaultBertGerman": {
+  "value": "2{,}768",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfCostDefaultBertWdbc": {
+  "value": "937",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfCostDefaultJevGerman": {
+  "value": "1{,}575",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfCostDefaultJevWdbc": {
+  "value": "690",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfCostDefaultQwenGerman": {
+  "value": "2{,}712",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfCostDefaultQwenWdbc": {
+  "value": "987",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfCostDefaultXgbGerman": {
+  "value": "1{,}926",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfCostDefaultXgbWdbc": {
+  "value": "194",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfCostFlagAllGerman": {
+  "value": "1{,}400",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfCostFlagAllWdbc": {
+  "value": "720",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfCostFlagNoneGerman": {
+  "value": "3{,}000",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfCostFlagNoneWdbc": {
+  "value": "2{,}100",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfCostValidationBertGerman": {
+  "value": "1{,}279",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfCostValidationBertWdbc": {
+  "value": "592",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfCostValidationJevGerman": {
+  "value": "1{,}395",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfCostValidationJevWdbc": {
+  "value": "450",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfCostValidationQwenGerman": {
+  "value": "1{,}426",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfCostValidationQwenWdbc": {
+  "value": "263",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfCostValidationXgbGerman": {
+  "value": "1{,}132",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfCostValidationXgbWdbc": {
+  "value": "168",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfFnDefaultBertGerman": {
+  "value": "544",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfFnDefaultBertWdbc": {
+  "value": "171",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfFnDefaultJevGerman": {
+  "value": "126",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfFnDefaultJevWdbc": {
+  "value": "3",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfFnDefaultQwenGerman": {
+  "value": "449",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfFnDefaultQwenWdbc": {
+  "value": "197",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfFnDefaultXgbGerman": {
+  "value": "352",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfFnDefaultXgbWdbc": {
+  "value": "34",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfFnValidationBertGerman": {
+  "value": "49",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfFnValidationBertWdbc": {
+  "value": "65",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfFnValidationJevGerman": {
+  "value": "24",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfFnValidationJevWdbc": {
+  "value": "37",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfFnValidationQwenGerman": {
+  "value": "24",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfFnValidationQwenWdbc": {
+  "value": "31",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfFnValidationXgbGerman": {
+  "value": "77",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfFnValidationXgbWdbc": {
+  "value": "24",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfFpDefaultBertGerman": {
+  "value": "48",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfFpDefaultBertWdbc": {
+  "value": "82",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfFpDefaultJevGerman": {
+  "value": "945",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfFpDefaultJevWdbc": {
+  "value": "675",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfFpDefaultQwenGerman": {
+  "value": "467",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfFpDefaultQwenWdbc": {
+  "value": "2",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfFpDefaultXgbGerman": {
+  "value": "166",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfFpDefaultXgbWdbc": {
+  "value": "24",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfFpValidationBertGerman": {
+  "value": "1{,}034",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfFpValidationBertWdbc": {
+  "value": "267",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfFpValidationJevGerman": {
+  "value": "1{,}275",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfFpValidationJevWdbc": {
+  "value": "265",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfFpValidationQwenGerman": {
+  "value": "1{,}306",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfFpValidationQwenWdbc": {
+  "value": "108",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfFpValidationXgbGerman": {
+  "value": "747",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfFpValidationXgbWdbc": {
+  "value": "48",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfNegativesGerman": {
+  "value": "1{,}400",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfNegativesWdbc": {
+  "value": "720",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfPositivesGerman": {
+  "value": "600",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfPositivesWdbc": {
+  "value": "420",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfTnDefaultBertGerman": {
+  "value": "1{,}352",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfTnDefaultBertWdbc": {
+  "value": "638",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfTnDefaultJevGerman": {
+  "value": "455",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfTnDefaultJevWdbc": {
+  "value": "45",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfTnDefaultQwenGerman": {
+  "value": "933",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfTnDefaultQwenWdbc": {
+  "value": "718",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfTnDefaultXgbGerman": {
+  "value": "1{,}234",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfTnDefaultXgbWdbc": {
+  "value": "696",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfTnValidationBertGerman": {
+  "value": "366",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfTnValidationBertWdbc": {
+  "value": "453",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfTnValidationJevGerman": {
+  "value": "125",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfTnValidationJevWdbc": {
+  "value": "455",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfTnValidationQwenGerman": {
+  "value": "94",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfTnValidationQwenWdbc": {
+  "value": "612",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfTnValidationXgbGerman": {
+  "value": "653",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfTnValidationXgbWdbc": {
+  "value": "672",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfTpDefaultBertGerman": {
+  "value": "56",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfTpDefaultBertWdbc": {
+  "value": "249",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfTpDefaultJevGerman": {
+  "value": "474",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfTpDefaultJevWdbc": {
+  "value": "417",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfTpDefaultQwenGerman": {
+  "value": "151",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfTpDefaultQwenWdbc": {
+  "value": "223",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfTpDefaultXgbGerman": {
+  "value": "248",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfTpDefaultXgbWdbc": {
+  "value": "386",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfTpValidationBertGerman": {
+  "value": "551",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfTpValidationBertWdbc": {
+  "value": "355",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfTpValidationJevGerman": {
+  "value": "576",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfTpValidationJevWdbc": {
+  "value": "383",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfTpValidationQwenGerman": {
+  "value": "576",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfTpValidationQwenWdbc": {
+  "value": "389",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ConfTpValidationXgbGerman": {
+  "value": "523",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ConfTpValidationXgbWdbc": {
+  "value": "396",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "CostKindGerman": {
+  "value": "canonical",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "CostKindSst": {
+  "value": "illustrative",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "CostKindWdbc": {
+  "value": "illustrative",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "CostPerKBertAgnews": {
+  "value": "0.000",
+  "source": "results/live/agnews/comparison/comparison.json"
+ },
+ "CostPerKBertGerman": {
+  "value": "0.000",
+  "source": "results/live/german/comparison/comparison.json"
+ },
+ "CostPerKBertSst": {
+  "value": "0.000",
+  "source": "results/live/sst2/comparison/comparison.json"
+ },
+ "CostPerKBertWdbc": {
+  "value": "0.000",
+  "source": "results/live/wdbc/comparison/comparison.json"
+ },
+ "CostPerKInferenceOnlyQwenAgnews": {
+  "value": "0.551",
+  "source": "results/live/agnews/comparison/comparison.json"
+ },
+ "CostPerKInferenceOnlyQwenGerman": {
+  "value": "0.642",
+  "source": "results/live/german/comparison/comparison.json"
+ },
+ "CostPerKInferenceOnlyQwenSst": {
+  "value": "0.331",
+  "source": "results/live/sst2/comparison/comparison.json"
+ },
+ "CostPerKInferenceOnlyQwenWdbc": {
+  "value": "1.262",
+  "source": "results/live/wdbc/comparison/comparison.json"
+ },
+ "CostPerKJevAgnews": {
+  "value": "0.018",
+  "source": "results/live/agnews/comparison/comparison.json"
+ },
+ "CostPerKJevGerman": {
+  "value": "0.022",
+  "source": "results/live/german/comparison/comparison.json"
+ },
+ "CostPerKJevSst": {
+  "value": "0.015",
+  "source": "results/live/sst2/comparison/comparison.json"
+ },
+ "CostPerKJevWdbc": {
+  "value": "0.030",
+  "source": "results/live/wdbc/comparison/comparison.json"
+ },
+ "CostPerKQwenAgnews": {
+  "value": "0.586",
+  "source": "results/live/agnews/comparison/comparison.json"
+ },
+ "CostPerKQwenGerman": {
+  "value": "0.683",
+  "source": "results/live/german/comparison/comparison.json"
+ },
+ "CostPerKQwenSst": {
+  "value": "0.352",
+  "source": "results/live/sst2/comparison/comparison.json"
+ },
+ "CostPerKQwenWdbc": {
+  "value": "1.342",
+  "source": "results/live/wdbc/comparison/comparison.json"
+ },
+ "CostPerKXgbAgnews": {
+  "value": "0.000",
+  "source": "results/live/agnews/comparison/comparison.json"
+ },
+ "CostPerKXgbGerman": {
+  "value": "0.000",
+  "source": "results/live/german/comparison/comparison.json"
+ },
+ "CostPerKXgbSst": {
+  "value": "0.000",
+  "source": "results/live/sst2/comparison/comparison.json"
+ },
+ "CostPerKXgbWdbc": {
+  "value": "0.000",
+  "source": "results/live/wdbc/comparison/comparison.json"
+ },
+ "CostRatioGerman": {
+  "value": "5:1",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "CostRatioQwenJevAgnews": {
+  "value": "32",
+  "source": "results/live/agnews/comparison/comparison.json"
+ },
+ "CostRatioQwenJevGerman": {
+  "value": "32",
+  "source": "results/live/german/comparison/comparison.json"
+ },
+ "CostRatioQwenJevSst": {
+  "value": "24",
+  "source": "results/live/sst2/comparison/comparison.json"
+ },
+ "CostRatioQwenJevWdbc": {
+  "value": "44",
+  "source": "results/live/wdbc/comparison/comparison.json"
+ },
+ "CostRatioSst": {
+  "value": "1:1",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "CostRatioWdbc": {
+  "value": "5:1",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "CurveSmallestAccAgnews": {
+  "value": "0.843",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "CurveSmallestAccBertAgnews": {
+  "value": "0.904",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "CurveSmallestAccBertGerman": {
+  "value": "0.667",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "CurveSmallestAccBertSst": {
+  "value": "0.862",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "CurveSmallestAccBertWdbc": {
+  "value": "0.632",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "CurveSmallestAccGerman": {
+  "value": "0.701",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "CurveSmallestAccSst": {
+  "value": "0.657",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "CurveSmallestAccWdbc": {
+  "value": "0.889",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "CurveSmallestNAgnews": {
+  "value": "5{,}752",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "CurveSmallestNBertAgnews": {
+  "value": "5{,}752",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "CurveSmallestNBertGerman": {
+  "value": "30",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "CurveSmallestNBertSst": {
+  "value": "3{,}268",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "CurveSmallestNBertWdbc": {
+  "value": "17",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "CurveSmallestNGerman": {
+  "value": "30",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "CurveSmallestNSst": {
+  "value": "3{,}268",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "CurveSmallestNWdbc": {
+  "value": "17",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "ECEBins": {
+  "value": "15",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "EceBertAgnews": {
+  "value": "0.018",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "EceBertGerman": {
+  "value": "0.060",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "EceBertSst": {
+  "value": "0.054",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "EceBertWdbc": {
+  "value": "0.115",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "EceJevAgnews": {
+  "value": "0.082",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "EceJevGerman": {
+  "value": "0.364",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "EceJevSst": {
+  "value": "0.020",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "EceJevWdbc": {
+  "value": "0.374",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "EceQwenAgnews": {
+  "value": "0.099",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "EceQwenGerman": {
+  "value": "0.136",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "EceQwenSst": {
+  "value": "0.023",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "EceQwenWdbc": {
+  "value": "0.072",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "EceXgbAgnews": {
+  "value": "0.032",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "EceXgbGerman": {
+  "value": "0.069",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "EceXgbSst": {
+  "value": "0.026",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "EceXgbWdbc": {
+  "value": "0.036",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "EscAccAgnews": {
+  "value": "0.879",
+  "source": "results/live/agnews/escalation/escalation.json"
+ },
+ "EscAccGerman": {
+  "value": "0.524",
+  "source": "results/live/german/escalation/escalation.json"
+ },
+ "EscAccSst": {
+  "value": "0.960",
+  "source": "results/live/sst2/escalation/escalation.json"
+ },
+ "EscAccWdbc": {
+  "value": "0.868",
+  "source": "results/live/wdbc/escalation/escalation.json"
+ },
+ "EscCostPerKAgnews": {
+  "value": "0.040",
+  "source": "results/live/agnews/escalation/escalation.json"
+ },
+ "EscCostPerKGerman": {
+  "value": "0.421",
+  "source": "results/live/german/escalation/escalation.json"
+ },
+ "EscCostPerKSst": {
+  "value": "0.015",
+  "source": "results/live/sst2/escalation/escalation.json"
+ },
+ "EscCostPerKWdbc": {
+  "value": "0.950",
+  "source": "results/live/wdbc/escalation/escalation.json"
+ },
+ "EscErrorsAgnews": {
+  "value": "923",
+  "source": "results/live/agnews/escalation/escalation.json"
+ },
+ "EscErrorsGerman": {
+  "value": "103",
+  "source": "results/live/german/escalation/escalation.json"
+ },
+ "EscErrorsSst": {
+  "value": "35",
+  "source": "results/live/sst2/escalation/escalation.json"
+ },
+ "EscErrorsWdbc": {
+  "value": "66",
+  "source": "results/live/wdbc/escalation/escalation.json"
+ },
+ "EscFOneAgnews": {
+  "value": "0.878",
+  "source": "results/live/agnews/escalation/escalation.json"
+ },
+ "EscFOneGerman": {
+  "value": "0.478",
+  "source": "results/live/german/escalation/escalation.json"
+ },
+ "EscFOneSst": {
+  "value": "0.960",
+  "source": "results/live/sst2/escalation/escalation.json"
+ },
+ "EscFOneWdbc": {
+  "value": "0.856",
+  "source": "results/live/wdbc/escalation/escalation.json"
+ },
+ "EscJevFOneAgnews": {
+  "value": "0.878",
+  "source": "results/live/agnews/escalation/escalation.json"
+ },
+ "EscJevFOneGerman": {
+  "value": "0.467",
+  "source": "results/live/german/escalation/escalation.json"
+ },
+ "EscJevFOneSst": {
+  "value": "0.960",
+  "source": "results/live/sst2/escalation/escalation.json"
+ },
+ "EscJevFOneWdbc": {
+  "value": "0.343",
+  "source": "results/live/wdbc/escalation/escalation.json"
+ },
+ "EscLatencyAgnews": {
+  "value": "0.18",
+  "source": "results/live/agnews/escalation/escalation.json"
+ },
+ "EscLatencyGerman": {
+  "value": "0.70",
+  "source": "results/live/german/escalation/escalation.json"
+ },
+ "EscLatencySst": {
+  "value": "0.15",
+  "source": "results/live/sst2/escalation/escalation.json"
+ },
+ "EscLatencyWdbc": {
+  "value": "0.90",
+  "source": "results/live/wdbc/escalation/escalation.json"
+ },
+ "EscQwenFOneAgnews": {
+  "value": "0.877",
+  "source": "results/live/agnews/escalation/escalation.json"
+ },
+ "EscQwenFOneGerman": {
+  "value": "0.457",
+  "source": "results/live/german/escalation/escalation.json"
+ },
+ "EscQwenFOneSst": {
+  "value": "0.956",
+  "source": "results/live/sst2/escalation/escalation.json"
+ },
+ "EscQwenFOneWdbc": {
+  "value": "0.783",
+  "source": "results/live/wdbc/escalation/escalation.json"
+ },
+ "EscShareAgnews": {
+  "value": "0.04",
+  "source": "results/live/agnews/escalation/escalation.json"
+ },
+ "EscShareAtMaxAgnews": {
+  "value": "0.74",
+  "source": "results/live/agnews/escalation/escalation.json"
+ },
+ "EscShareAtMaxGerman": {
+  "value": "0.04",
+  "source": "results/live/german/escalation/escalation.json"
+ },
+ "EscShareAtMaxSst": {
+  "value": "0.62",
+  "source": "results/live/sst2/escalation/escalation.json"
+ },
+ "EscShareAtMaxWdbc": {
+  "value": "0.01",
+  "source": "results/live/wdbc/escalation/escalation.json"
+ },
+ "EscShareGerman": {
+  "value": "0.58",
+  "source": "results/live/german/escalation/escalation.json"
+ },
+ "EscShareSst": {
+  "value": "0.00",
+  "source": "results/live/sst2/escalation/escalation.json"
+ },
+ "EscShareWdbc": {
+  "value": "0.69",
+  "source": "results/live/wdbc/escalation/escalation.json"
+ },
+ "EscThresholdAgnews": {
+  "value": "0.65",
+  "source": "results/live/agnews/escalation/escalation.json"
+ },
+ "EscThresholdGerman": {
+  "value": "0.88",
+  "source": "results/live/german/escalation/escalation.json"
+ },
+ "EscThresholdSst": {
+  "value": "0.00",
+  "source": "results/live/sst2/escalation/escalation.json"
+ },
+ "EscThresholdWdbc": {
+  "value": "0.85",
+  "source": "results/live/wdbc/escalation/escalation.json"
+ },
+ "EscUnreachableAgnews": {
+  "value": "307",
+  "source": "results/live/agnews/escalation/escalation.json"
+ },
+ "EscUnreachableGerman": {
+  "value": "5",
+  "source": "results/live/german/escalation/escalation.json"
+ },
+ "EscUnreachableSst": {
+  "value": "5",
+  "source": "results/live/sst2/escalation/escalation.json"
+ },
+ "EscUnreachableWdbc": {
+  "value": "0",
+  "source": "results/live/wdbc/escalation/escalation.json"
+ },
+ "EscValItemsNew": {
+  "value": "500",
+  "source": "configs/escalation.yaml"
+ },
+ "EscValLabelsAgnews": {
+  "value": "500",
+  "source": "results/live/agnews/escalation/escalation.json"
+ },
+ "EscValLabelsGerman": {
+  "value": "200",
+  "source": "results/live/german/escalation/escalation.json"
+ },
+ "EscValLabelsSst": {
+  "value": "500",
+  "source": "results/live/sst2/escalation/escalation.json"
+ },
+ "EscValLabelsWdbc": {
+  "value": "114",
+  "source": "results/live/wdbc/escalation/escalation.json"
+ },
+ "ExAdditivityMax": {
+  "value": "4e-16",
+  "source": "results/live/*/explain/explain.json"
+ },
+ "ExCostUSD": {
+  "value": "0.54",
+  "source": "results/live/*/explain/explain.json"
+ },
+ "ExDropLimeAgnewsKFive": {
+  "value": "0.150",
+  "source": "results/live/agnews/explain/explain.json"
+ },
+ "ExDropLimeAgnewsKOne": {
+  "value": "0.007",
+  "source": "results/live/agnews/explain/explain.json"
+ },
+ "ExDropLimeAgnewsKThree": {
+  "value": "0.091",
+  "source": "results/live/agnews/explain/explain.json"
+ },
+ "ExDropLimeGermanKFive": {
+  "value": "0.746",
+  "source": "results/live/german/explain/explain.json"
+ },
+ "ExDropLimeGermanKOne": {
+  "value": "0.299",
+  "source": "results/live/german/explain/explain.json"
+ },
+ "ExDropLimeGermanKThree": {
+  "value": "0.603",
+  "source": "results/live/german/explain/explain.json"
+ },
+ "ExDropLimeSstKFive": {
+  "value": "0.530",
+  "source": "results/live/sst2/explain/explain.json"
+ },
+ "ExDropLimeSstKOne": {
+  "value": "0.182",
+  "source": "results/live/sst2/explain/explain.json"
+ },
+ "ExDropLimeSstKThree": {
+  "value": "0.419",
+  "source": "results/live/sst2/explain/explain.json"
+ },
+ "ExDropLimeWdbcKFive": {
+  "value": "0.203",
+  "source": "results/live/wdbc/explain/explain.json"
+ },
+ "ExDropLimeWdbcKOne": {
+  "value": "0.067",
+  "source": "results/live/wdbc/explain/explain.json"
+ },
+ "ExDropLimeWdbcKThree": {
+  "value": "0.155",
+  "source": "results/live/wdbc/explain/explain.json"
+ },
+ "ExDropRandomAgnewsKFive": {
+  "value": "0.016",
+  "source": "results/live/agnews/explain/explain.json"
+ },
+ "ExDropRandomAgnewsKOne": {
+  "value": "-0.000",
+  "source": "results/live/agnews/explain/explain.json"
+ },
+ "ExDropRandomAgnewsKThree": {
+  "value": "0.003",
+  "source": "results/live/agnews/explain/explain.json"
+ },
+ "ExDropRandomGermanKFive": {
+  "value": "0.056",
+  "source": "results/live/german/explain/explain.json"
+ },
+ "ExDropRandomGermanKOne": {
+  "value": "0.011",
+  "source": "results/live/german/explain/explain.json"
+ },
+ "ExDropRandomGermanKThree": {
+  "value": "0.008",
+  "source": "results/live/german/explain/explain.json"
+ },
+ "ExDropRandomSstKFive": {
+  "value": "0.173",
+  "source": "results/live/sst2/explain/explain.json"
+ },
+ "ExDropRandomSstKOne": {
+  "value": "0.012",
+  "source": "results/live/sst2/explain/explain.json"
+ },
+ "ExDropRandomSstKThree": {
+  "value": "0.096",
+  "source": "results/live/sst2/explain/explain.json"
+ },
+ "ExDropRandomWdbcKFive": {
+  "value": "0.019",
+  "source": "results/live/wdbc/explain/explain.json"
+ },
+ "ExDropRandomWdbcKOne": {
+  "value": "-0.001",
+  "source": "results/live/wdbc/explain/explain.json"
+ },
+ "ExDropRandomWdbcKThree": {
+  "value": "0.010",
+  "source": "results/live/wdbc/explain/explain.json"
+ },
+ "ExDropShapAgnewsKFive": {
+  "value": "0.130",
+  "source": "results/live/agnews/explain/explain.json"
+ },
+ "ExDropShapAgnewsKOne": {
+  "value": "0.005",
+  "source": "results/live/agnews/explain/explain.json"
+ },
+ "ExDropShapAgnewsKThree": {
+  "value": "0.075",
+  "source": "results/live/agnews/explain/explain.json"
+ },
+ "ExDropShapGermanKFive": {
+  "value": "0.761",
+  "source": "results/live/german/explain/explain.json"
+ },
+ "ExDropShapGermanKOne": {
+  "value": "0.296",
+  "source": "results/live/german/explain/explain.json"
+ },
+ "ExDropShapGermanKThree": {
+  "value": "0.577",
+  "source": "results/live/german/explain/explain.json"
+ },
+ "ExDropShapSstKFive": {
+  "value": "0.527",
+  "source": "results/live/sst2/explain/explain.json"
+ },
+ "ExDropShapSstKOne": {
+  "value": "0.148",
+  "source": "results/live/sst2/explain/explain.json"
+ },
+ "ExDropShapSstKThree": {
+  "value": "0.401",
+  "source": "results/live/sst2/explain/explain.json"
+ },
+ "ExDropShapWdbcKFive": {
+  "value": "0.117",
+  "source": "results/live/wdbc/explain/explain.json"
+ },
+ "ExDropShapWdbcKOne": {
+  "value": "0.026",
+  "source": "results/live/wdbc/explain/explain.json"
+ },
+ "ExDropShapWdbcKThree": {
+  "value": "0.065",
+  "source": "results/live/wdbc/explain/explain.json"
+ },
+ "ExEligibleAgnews": {
+  "value": "4{,}979",
+  "source": "results/live/agnews/explain/explain.json"
+ },
+ "ExEligibleGerman": {
+  "value": "885",
+  "source": "results/live/german/explain/explain.json"
+ },
+ "ExEligibleSst": {
+  "value": "835",
+  "source": "results/live/sst2/explain/explain.json"
+ },
+ "ExEligibleWdbc": {
+  "value": "506",
+  "source": "results/live/wdbc/explain/explain.json"
+ },
+ "ExEmptyInputPositiveGerman": {
+  "value": "0.69",
+  "source": "results/live/german/explain/explain.json"
+ },
+ "ExEmptyInputPositiveSst": {
+  "value": "0.37",
+  "source": "results/live/sst2/explain/explain.json"
+ },
+ "ExEmptyInputPositiveWdbc": {
+  "value": "0.51",
+  "source": "results/live/wdbc/explain/explain.json"
+ },
+ "ExExamplesAgnews": {
+  "value": "20",
+  "source": "results/live/agnews/explain/explain.json"
+ },
+ "ExExamplesGerman": {
+  "value": "20",
+  "source": "results/live/german/explain/explain.json"
+ },
+ "ExExamplesSst": {
+  "value": "20",
+  "source": "results/live/sst2/explain/explain.json"
+ },
+ "ExExamplesWdbc": {
+  "value": "20",
+  "source": "results/live/wdbc/explain/explain.json"
+ },
+ "ExFailedAgnews": {
+  "value": "0",
+  "source": "results/live/agnews/explain/explain.json"
+ },
+ "ExFailedGerman": {
+  "value": "0",
+  "source": "results/live/german/explain/explain.json"
+ },
+ "ExFailedSst": {
+  "value": "0",
+  "source": "results/live/sst2/explain/explain.json"
+ },
+ "ExFailedWdbc": {
+  "value": "0",
+  "source": "results/live/wdbc/explain/explain.json"
+ },
+ "ExFlipRandomAgnewsKFive": {
+  "value": "0.02",
+  "source": "results/live/agnews/explain/explain.json"
+ },
+ "ExFlipRandomAgnewsKOne": {
+  "value": "0.00",
+  "source": "results/live/agnews/explain/explain.json"
+ },
+ "ExFlipRandomAgnewsKThree": {
+  "value": "0.00",
+  "source": "results/live/agnews/explain/explain.json"
+ },
+ "ExFlipRandomGermanKFive": {
+  "value": "0.14",
+  "source": "results/live/german/explain/explain.json"
+ },
+ "ExFlipRandomGermanKOne": {
+  "value": "0.03",
+  "source": "results/live/german/explain/explain.json"
+ },
+ "ExFlipRandomGermanKThree": {
+  "value": "0.06",
+  "source": "results/live/german/explain/explain.json"
+ },
+ "ExFlipRandomSstKFive": {
+  "value": "0.18",
+  "source": "results/live/sst2/explain/explain.json"
+ },
+ "ExFlipRandomSstKOne": {
+  "value": "0.01",
+  "source": "results/live/sst2/explain/explain.json"
+ },
+ "ExFlipRandomSstKThree": {
+  "value": "0.09",
+  "source": "results/live/sst2/explain/explain.json"
+ },
+ "ExFlipRandomWdbcKFive": {
+  "value": "0.02",
+  "source": "results/live/wdbc/explain/explain.json"
+ },
+ "ExFlipRandomWdbcKOne": {
+  "value": "0.01",
+  "source": "results/live/wdbc/explain/explain.json"
+ },
+ "ExFlipRandomWdbcKThree": {
+  "value": "0.02",
+  "source": "results/live/wdbc/explain/explain.json"
+ },
+ "ExFlipShapAgnewsKFive": {
+  "value": "0.15",
+  "source": "results/live/agnews/explain/explain.json"
+ },
+ "ExFlipShapAgnewsKOne": {
+  "value": "0.00",
+  "source": "results/live/agnews/explain/explain.json"
+ },
+ "ExFlipShapAgnewsKThree": {
+  "value": "0.10",
+  "source": "results/live/agnews/explain/explain.json"
+ },
+ "ExFlipShapGermanKFive": {
+  "value": "1.00",
+  "source": "results/live/german/explain/explain.json"
+ },
+ "ExFlipShapGermanKOne": {
+  "value": "0.45",
+  "source": "results/live/german/explain/explain.json"
+ },
+ "ExFlipShapGermanKThree": {
+  "value": "0.85",
+  "source": "results/live/german/explain/explain.json"
+ },
+ "ExFlipShapSstKFive": {
+  "value": "0.60",
+  "source": "results/live/sst2/explain/explain.json"
+ },
+ "ExFlipShapSstKOne": {
+  "value": "0.10",
+  "source": "results/live/sst2/explain/explain.json"
+ },
+ "ExFlipShapSstKThree": {
+  "value": "0.40",
+  "source": "results/live/sst2/explain/explain.json"
+ },
+ "ExFlipShapWdbcKFive": {
+  "value": "0.20",
+  "source": "results/live/wdbc/explain/explain.json"
+ },
+ "ExFlipShapWdbcKOne": {
+  "value": "0.00",
+  "source": "results/live/wdbc/explain/explain.json"
+ },
+ "ExFlipShapWdbcKThree": {
+  "value": "0.05",
+  "source": "results/live/wdbc/explain/explain.json"
+ },
+ "ExLimeRTwoAgnews": {
+  "value": "0.29",
+  "source": "results/live/agnews/explain/explain.json"
+ },
+ "ExLimeRTwoGerman": {
+  "value": "0.80",
+  "source": "results/live/german/explain/explain.json"
+ },
+ "ExLimeRTwoMax": {
+  "value": "0.80",
+  "source": "results/live/*/explain/explain.json"
+ },
+ "ExLimeRTwoMin": {
+  "value": "0.29",
+  "source": "results/live/*/explain/explain.json"
+ },
+ "ExLimeRTwoSst": {
+  "value": "0.61",
+  "source": "results/live/sst2/explain/explain.json"
+ },
+ "ExLimeRTwoWdbc": {
+  "value": "0.54",
+  "source": "results/live/wdbc/explain/explain.json"
+ },
+ "ExMaxWords": {
+  "value": "40",
+  "source": "configs/explain.yaml"
+ },
+ "ExMeanUnitsAgnews": {
+  "value": "34",
+  "source": "results/live/agnews/explain/explain.json"
+ },
+ "ExMeanUnitsGerman": {
+  "value": "20",
+  "source": "results/live/german/explain/explain.json"
+ },
+ "ExMeanUnitsSst": {
+  "value": "18",
+  "source": "results/live/sst2/explain/explain.json"
+ },
+ "ExMeanUnitsWdbc": {
+  "value": "30",
+  "source": "results/live/wdbc/explain/explain.json"
+ },
+ "ExMinWords": {
+  "value": "6",
+  "source": "configs/explain.yaml"
+ },
+ "ExRandomDraws": {
+  "value": "5",
+  "source": "configs/explain.yaml"
+ },
+ "ExRequestsAgnews": {
+  "value": "7{,}919",
+  "source": "results/live/agnews/explain/explain.json"
+ },
+ "ExRequestsGerman": {
+  "value": "7{,}164",
+  "source": "results/live/german/explain/explain.json"
+ },
+ "ExRequestsMax": {
+  "value": "7{,}969",
+  "source": "results/live/*/explain/explain.json"
+ },
+ "ExRequestsMin": {
+  "value": "6{,}666",
+  "source": "results/live/*/explain/explain.json"
+ },
+ "ExRequestsPerExample": {
+  "value": "423",
+  "source": "configs/explain.yaml"
+ },
+ "ExRequestsSst": {
+  "value": "6{,}666",
+  "source": "results/live/sst2/explain/explain.json"
+ },
+ "ExRequestsTotal": {
+  "value": "29{,}718",
+  "source": "results/live/*/explain/explain.json"
+ },
+ "ExRequestsWdbc": {
+  "value": "7{,}969",
+  "source": "results/live/wdbc/explain/explain.json"
+ },
+ "ExTauAgnews": {
+  "value": "0.19",
+  "source": "results/live/agnews/explain/explain.json"
+ },
+ "ExTauGerman": {
+  "value": "0.71",
+  "source": "results/live/german/explain/explain.json"
+ },
+ "ExTauSst": {
+  "value": "0.51",
+  "source": "results/live/sst2/explain/explain.json"
+ },
+ "ExTauWdbc": {
+  "value": "0.37",
+  "source": "results/live/wdbc/explain/explain.json"
+ },
+ "ExTopThreeAgnews": {
+  "value": "0.27",
+  "source": "results/live/agnews/explain/explain.json"
+ },
+ "ExTopThreeGerman": {
+  "value": "0.80",
+  "source": "results/live/german/explain/explain.json"
+ },
+ "ExTopThreeSst": {
+  "value": "0.70",
+  "source": "results/live/sst2/explain/explain.json"
+ },
+ "ExTopThreeWdbc": {
+  "value": "0.35",
+  "source": "results/live/wdbc/explain/explain.json"
+ },
+ "FrozenAt": {
+  "value": "2026-09-30T13:20:53Z",
+  "source": "results/splits/MANIFEST.sha256"
+ },
+ "ISAlpha": {
+  "value": "1",
+  "source": "results/live/*/importance/importance.json"
+ },
+ "ISAlphaSqrt": {
+  "value": "0.5",
+  "source": "results/live/*/importance/importance.json"
+ },
+ "ISBudgets": {
+  "value": "25, 50, 100, 200, 400",
+  "source": "results/live/*/importance/importance.json"
+ },
+ "ISEpsilon": {
+  "value": "0.1",
+  "source": "results/live/*/importance/importance.json"
+ },
+ "ISMaxBudget": {
+  "value": "400",
+  "source": "results/live/*/importance/importance.json"
+ },
+ "ISTrials": {
+  "value": "1{,}000",
+  "source": "results/live/*/importance/importance.json"
+ },
+ "InferMsBertAgnews": {
+  "value": "0.31",
+  "source": "results/live/agnews/comparison/comparison.json"
+ },
+ "InferMsBertGerman": {
+  "value": "0.76",
+  "source": "results/live/german/comparison/comparison.json"
+ },
+ "InferMsBertSst": {
+  "value": "0.19",
+  "source": "results/live/sst2/comparison/comparison.json"
+ },
+ "InferMsBertWdbc": {
+  "value": "1.26",
+  "source": "results/live/wdbc/comparison/comparison.json"
+ },
+ "InferMsXgbAgnews": {
+  "value": "0.06",
+  "source": "results/live/agnews/comparison/comparison.json"
+ },
+ "InferMsXgbGerman": {
+  "value": "0.00",
+  "source": "results/live/german/comparison/comparison.json"
+ },
+ "InferMsXgbSst": {
+  "value": "0.01",
+  "source": "results/live/sst2/comparison/comparison.json"
+ },
+ "InferMsXgbWdbc": {
+  "value": "0.00",
+  "source": "results/live/wdbc/comparison/comparison.json"
+ },
+ "InvalidRateBertAgnews": {
+  "value": "0.000",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "InvalidRateBertGerman": {
+  "value": "0.000",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "InvalidRateBertSst": {
+  "value": "0.000",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "InvalidRateBertWdbc": {
+  "value": "0.000",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "InvalidRateJevAgnews": {
+  "value": "0.000",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "InvalidRateJevGerman": {
+  "value": "0.000",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "InvalidRateJevSst": {
+  "value": "0.000",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "InvalidRateJevWdbc": {
+  "value": "0.000",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "InvalidRateQwenAgnews": {
+  "value": "0.000",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "InvalidRateQwenGerman": {
+  "value": "0.000",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "InvalidRateQwenSst": {
+  "value": "0.000",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "InvalidRateQwenWdbc": {
+  "value": "0.000",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "InvalidRateXgbAgnews": {
+  "value": "0.000",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "InvalidRateXgbGerman": {
+  "value": "0.000",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "InvalidRateXgbSst": {
+  "value": "0.000",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "InvalidRateXgbWdbc": {
+  "value": "0.000",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "IsCoverageGuidedAgnewsNFourZeroZero": {
+  "value": "0.82",
+  "source": "results/live/agnews/importance/importance.json"
+ },
+ "IsCoverageGuidedAgnewsNOneZeroZero": {
+  "value": "0.62",
+  "source": "results/live/agnews/importance/importance.json"
+ },
+ "IsCoverageGuidedAgnewsNTwoFive": {
+  "value": "0.51",
+  "source": "results/live/agnews/importance/importance.json"
+ },
+ "IsCoverageGuidedGermanNFourZeroZero": {
+  "value": "0.94",
+  "source": "results/live/german/importance/importance.json"
+ },
+ "IsCoverageGuidedGermanNOneZeroZero": {
+  "value": "0.89",
+  "source": "results/live/german/importance/importance.json"
+ },
+ "IsCoverageGuidedGermanNTwoFive": {
+  "value": "0.83",
+  "source": "results/live/german/importance/importance.json"
+ },
+ "IsCoverageGuidedSstNFourZeroZero": {
+  "value": "0.75",
+  "source": "results/live/sst2/importance/importance.json"
+ },
+ "IsCoverageGuidedSstNOneZeroZero": {
+  "value": "0.70",
+  "source": "results/live/sst2/importance/importance.json"
+ },
+ "IsCoverageGuidedSstNTwoFive": {
+  "value": "0.64",
+  "source": "results/live/sst2/importance/importance.json"
+ },
+ "IsCoverageGuidedWdbcNFourZeroZero": {
+  "value": "0.96",
+  "source": "results/live/wdbc/importance/importance.json"
+ },
+ "IsCoverageGuidedWdbcNOneZeroZero": {
+  "value": "0.94",
+  "source": "results/live/wdbc/importance/importance.json"
+ },
+ "IsCoverageGuidedWdbcNTwoFive": {
+  "value": "0.94",
+  "source": "results/live/wdbc/importance/importance.json"
+ },
+ "IsCoverageUniformAgnewsNFourZeroZero": {
+  "value": "0.93",
+  "source": "results/live/agnews/importance/importance.json"
+ },
+ "IsCoverageUniformAgnewsNOneZeroZero": {
+  "value": "0.93",
+  "source": "results/live/agnews/importance/importance.json"
+ },
+ "IsCoverageUniformAgnewsNTwoFive": {
+  "value": "0.81",
+  "source": "results/live/agnews/importance/importance.json"
+ },
+ "IsCoverageUniformGermanNFourZeroZero": {
+  "value": "0.95",
+  "source": "results/live/german/importance/importance.json"
+ },
+ "IsCoverageUniformGermanNOneZeroZero": {
+  "value": "0.95",
+  "source": "results/live/german/importance/importance.json"
+ },
+ "IsCoverageUniformGermanNTwoFive": {
+  "value": "0.93",
+  "source": "results/live/german/importance/importance.json"
+ },
+ "IsCoverageUniformSstNFourZeroZero": {
+  "value": "0.95",
+  "source": "results/live/sst2/importance/importance.json"
+ },
+ "IsCoverageUniformSstNOneZeroZero": {
+  "value": "0.89",
+  "source": "results/live/sst2/importance/importance.json"
+ },
+ "IsCoverageUniformSstNTwoFive": {
+  "value": "0.67",
+  "source": "results/live/sst2/importance/importance.json"
+ },
+ "IsCoverageUniformWdbcNFourZeroZero": {
+  "value": "0.96",
+  "source": "results/live/wdbc/importance/importance.json"
+ },
+ "IsCoverageUniformWdbcNOneZeroZero": {
+  "value": "0.95",
+  "source": "results/live/wdbc/importance/importance.json"
+ },
+ "IsCoverageUniformWdbcNTwoFive": {
+  "value": "0.92",
+  "source": "results/live/wdbc/importance/importance.json"
+ },
+ "IsDatasetsGuidedWins": {
+  "value": "1",
+  "source": "results/live/*/importance/importance.json"
+ },
+ "IsDatasetsSqrtBelowOne": {
+  "value": "3",
+  "source": "results/live/*/importance/importance.json"
+ },
+ "IsErrorRateAgnews": {
+  "value": "0.12",
+  "source": "results/live/agnews/importance/importance.json"
+ },
+ "IsErrorRateGerman": {
+  "value": "0.53",
+  "source": "results/live/german/importance/importance.json"
+ },
+ "IsErrorRateSst": {
+  "value": "0.04",
+  "source": "results/live/sst2/importance/importance.json"
+ },
+ "IsErrorRateWdbc": {
+  "value": "0.57",
+  "source": "results/live/wdbc/importance/importance.json"
+ },
+ "IsErrorsAgnews": {
+  "value": "923",
+  "source": "results/live/agnews/importance/importance.json"
+ },
+ "IsErrorsGerman": {
+  "value": "529",
+  "source": "results/live/german/importance/importance.json"
+ },
+ "IsErrorsSst": {
+  "value": "35",
+  "source": "results/live/sst2/importance/importance.json"
+ },
+ "IsErrorsWdbc": {
+  "value": "326",
+  "source": "results/live/wdbc/importance/importance.json"
+ },
+ "IsErrorsZeroUncertaintyAgnews": {
+  "value": "307",
+  "source": "results/live/agnews/importance/importance.json"
+ },
+ "IsErrorsZeroUncertaintyGerman": {
+  "value": "34",
+  "source": "results/live/german/importance/importance.json"
+ },
+ "IsErrorsZeroUncertaintySst": {
+  "value": "5",
+  "source": "results/live/sst2/importance/importance.json"
+ },
+ "IsErrorsZeroUncertaintyWdbc": {
+  "value": "0",
+  "source": "results/live/wdbc/importance/importance.json"
+ },
+ "IsMaxAbsBias": {
+  "value": "0.005",
+  "source": "results/live/*/importance/importance.json"
+ },
+ "IsPoolAccuracyAgnews": {
+  "value": "0.879",
+  "source": "results/live/agnews/importance/importance.json"
+ },
+ "IsPoolAccuracyGerman": {
+  "value": "0.471",
+  "source": "results/live/german/importance/importance.json"
+ },
+ "IsPoolAccuracySst": {
+  "value": "0.960",
+  "source": "results/live/sst2/importance/importance.json"
+ },
+ "IsPoolAccuracyWdbc": {
+  "value": "0.427",
+  "source": "results/live/wdbc/importance/importance.json"
+ },
+ "IsPoolAgnews": {
+  "value": "7{,}600",
+  "source": "results/live/agnews/importance/importance.json"
+ },
+ "IsPoolGerman": {
+  "value": "1{,}000",
+  "source": "results/live/german/importance/importance.json"
+ },
+ "IsPoolSst": {
+  "value": "872",
+  "source": "results/live/sst2/importance/importance.json"
+ },
+ "IsPoolWdbc": {
+  "value": "569",
+  "source": "results/live/wdbc/importance/importance.json"
+ },
+ "IsProposalOnErrorsAgnews": {
+  "value": "0.38",
+  "source": "results/live/agnews/importance/importance.json"
+ },
+ "IsProposalOnErrorsGerman": {
+  "value": "0.47",
+  "source": "results/live/german/importance/importance.json"
+ },
+ "IsProposalOnErrorsSst": {
+  "value": "0.22",
+  "source": "results/live/sst2/importance/importance.json"
+ },
+ "IsProposalOnErrorsWdbc": {
+  "value": "0.68",
+  "source": "results/live/wdbc/importance/importance.json"
+ },
+ "IsRmseGuidedAgnewsNFourZeroZero": {
+  "value": "0.032",
+  "source": "results/live/agnews/importance/importance.json"
+ },
+ "IsRmseGuidedAgnewsNOneZeroZero": {
+  "value": "0.069",
+  "source": "results/live/agnews/importance/importance.json"
+ },
+ "IsRmseGuidedAgnewsNTwoFive": {
+  "value": "0.135",
+  "source": "results/live/agnews/importance/importance.json"
+ },
+ "IsRmseGuidedGermanNFourZeroZero": {
+  "value": "0.052",
+  "source": "results/live/german/importance/importance.json"
+ },
+ "IsRmseGuidedGermanNOneZeroZero": {
+  "value": "0.105",
+  "source": "results/live/german/importance/importance.json"
+ },
+ "IsRmseGuidedGermanNTwoFive": {
+  "value": "0.212",
+  "source": "results/live/german/importance/importance.json"
+ },
+ "IsRmseGuidedSstNFourZeroZero": {
+  "value": "0.014",
+  "source": "results/live/sst2/importance/importance.json"
+ },
+ "IsRmseGuidedSstNOneZeroZero": {
+  "value": "0.029",
+  "source": "results/live/sst2/importance/importance.json"
+ },
+ "IsRmseGuidedSstNTwoFive": {
+  "value": "0.057",
+  "source": "results/live/sst2/importance/importance.json"
+ },
+ "IsRmseGuidedWdbcNFourZeroZero": {
+  "value": "0.021",
+  "source": "results/live/wdbc/importance/importance.json"
+ },
+ "IsRmseGuidedWdbcNOneZeroZero": {
+  "value": "0.045",
+  "source": "results/live/wdbc/importance/importance.json"
+ },
+ "IsRmseGuidedWdbcNTwoFive": {
+  "value": "0.090",
+  "source": "results/live/wdbc/importance/importance.json"
+ },
+ "IsRmseUniformAgnewsNFourZeroZero": {
+  "value": "0.017",
+  "source": "results/live/agnews/importance/importance.json"
+ },
+ "IsRmseUniformAgnewsNOneZeroZero": {
+  "value": "0.032",
+  "source": "results/live/agnews/importance/importance.json"
+ },
+ "IsRmseUniformAgnewsNTwoFive": {
+  "value": "0.067",
+  "source": "results/live/agnews/importance/importance.json"
+ },
+ "IsRmseUniformGermanNFourZeroZero": {
+  "value": "0.025",
+  "source": "results/live/german/importance/importance.json"
+ },
+ "IsRmseUniformGermanNOneZeroZero": {
+  "value": "0.049",
+  "source": "results/live/german/importance/importance.json"
+ },
+ "IsRmseUniformGermanNTwoFive": {
+  "value": "0.097",
+  "source": "results/live/german/importance/importance.json"
+ },
+ "IsRmseUniformSstNFourZeroZero": {
+  "value": "0.010",
+  "source": "results/live/sst2/importance/importance.json"
+ },
+ "IsRmseUniformSstNOneZeroZero": {
+  "value": "0.020",
+  "source": "results/live/sst2/importance/importance.json"
+ },
+ "IsRmseUniformSstNTwoFive": {
+  "value": "0.039",
+  "source": "results/live/sst2/importance/importance.json"
+ },
+ "IsRmseUniformWdbcNFourZeroZero": {
+  "value": "0.024",
+  "source": "results/live/wdbc/importance/importance.json"
+ },
+ "IsRmseUniformWdbcNOneZeroZero": {
+  "value": "0.048",
+  "source": "results/live/wdbc/importance/importance.json"
+ },
+ "IsRmseUniformWdbcNTwoFive": {
+  "value": "0.101",
+  "source": "results/live/wdbc/importance/importance.json"
+ },
+ "IsVarRatioAgnewsNFourZeroZero": {
+  "value": "0.28",
+  "source": "results/live/agnews/importance/importance.json"
+ },
+ "IsVarRatioAgnewsNOneZeroZero": {
+  "value": "0.22",
+  "source": "results/live/agnews/importance/importance.json"
+ },
+ "IsVarRatioAgnewsNTwoFive": {
+  "value": "0.24",
+  "source": "results/live/agnews/importance/importance.json"
+ },
+ "IsVarRatioGermanNFourZeroZero": {
+  "value": "0.23",
+  "source": "results/live/german/importance/importance.json"
+ },
+ "IsVarRatioGermanNOneZeroZero": {
+  "value": "0.22",
+  "source": "results/live/german/importance/importance.json"
+ },
+ "IsVarRatioGermanNTwoFive": {
+  "value": "0.21",
+  "source": "results/live/german/importance/importance.json"
+ },
+ "IsVarRatioHalfAgnews": {
+  "value": "0.25",
+  "source": "results/live/agnews/importance/importance.json"
+ },
+ "IsVarRatioHalfGerman": {
+  "value": "0.32",
+  "source": "results/live/german/importance/importance.json"
+ },
+ "IsVarRatioHalfSst": {
+  "value": "0.52",
+  "source": "results/live/sst2/importance/importance.json"
+ },
+ "IsVarRatioHalfWdbc": {
+  "value": "1.17",
+  "source": "results/live/wdbc/importance/importance.json"
+ },
+ "IsVarRatioSstNFourZeroZero": {
+  "value": "0.48",
+  "source": "results/live/sst2/importance/importance.json"
+ },
+ "IsVarRatioSstNOneZeroZero": {
+  "value": "0.47",
+  "source": "results/live/sst2/importance/importance.json"
+ },
+ "IsVarRatioSstNTwoFive": {
+  "value": "0.46",
+  "source": "results/live/sst2/importance/importance.json"
+ },
+ "IsVarRatioWdbcNFourZeroZero": {
+  "value": "1.32",
+  "source": "results/live/wdbc/importance/importance.json"
+ },
+ "IsVarRatioWdbcNOneZeroZero": {
+  "value": "1.14",
+  "source": "results/live/wdbc/importance/importance.json"
+ },
+ "IsVarRatioWdbcNTwoFive": {
+  "value": "1.27",
+  "source": "results/live/wdbc/importance/importance.json"
+ },
+ "IsZeroUncertaintyAgnews": {
+  "value": "5{,}621",
+  "source": "results/live/agnews/importance/importance.json"
+ },
+ "IsZeroUncertaintyGerman": {
+  "value": "46",
+  "source": "results/live/german/importance/importance.json"
+ },
+ "IsZeroUncertaintySst": {
+  "value": "539",
+  "source": "results/live/sst2/importance/importance.json"
+ },
+ "IsZeroUncertaintyWdbc": {
+  "value": "0",
+  "source": "results/live/wdbc/importance/importance.json"
+ },
+ "JevCap": {
+  "value": "60{,}000",
+  "source": "results/live/provenance.json"
+ },
+ "JevCostUSD": {
+  "value": "1.64",
+  "source": "results/live/provenance.json"
+ },
+ "JevFailedRequests": {
+  "value": "0",
+  "source": "results/live/provenance.json"
+ },
+ "JevInferencesUsed": {
+  "value": "50{,}000",
+  "source": "results/live/provenance.json"
+ },
+ "JevInputTokensM": {
+  "value": "39.0",
+  "source": "results/live/provenance.json"
+ },
+ "JevInvalidOutputs": {
+  "value": "0",
+  "source": "results/live/*/jev/predictions.json"
+ },
+ "JevLatency": {
+  "value": "0.16",
+  "source": "results/live/provenance.json"
+ },
+ "JevLatencyAgnews": {
+  "value": "0.15",
+  "source": "results/live/agnews/comparison/comparison.json"
+ },
+ "JevLatencyGerman": {
+  "value": "0.15",
+  "source": "results/live/german/comparison/comparison.json"
+ },
+ "JevLatencySst": {
+  "value": "0.15",
+  "source": "results/live/sst2/comparison/comparison.json"
+ },
+ "JevLatencyWdbc": {
+  "value": "0.14",
+  "source": "results/live/wdbc/comparison/comparison.json"
+ },
+ "JevModel": {
+  "value": "jev-1.13.0",
+  "source": "results/live/provenance.json"
+ },
+ "JevPredictions": {
+  "value": "10{,}541",
+  "source": "results/live/*/jev/predictions.json"
+ },
+ "JevPricePerMTok": {
+  "value": "0.042",
+  "source": "results/live/provenance.json"
+ },
+ "JevRequestsBeforeLogging": {
+  "value": "100",
+  "source": "results/live/provenance.json"
+ },
+ "JevRequestsBeforeLoggingCached": {
+  "value": "99",
+  "source": "results/live/provenance.json"
+ },
+ "JevRequestsEscalationVal": {
+  "value": "1{,}000",
+  "source": "results/live/provenance.json"
+ },
+ "JevRequestsExplain": {
+  "value": "35{,}317",
+  "source": "results/live/provenance.json"
+ },
+ "JevRequestsLogged": {
+  "value": "49{,}900",
+  "source": "results/live/provenance.json"
+ },
+ "JevRequestsPredict": {
+  "value": "13{,}620",
+  "source": "results/live/provenance.json"
+ },
+ "JevRequestsSmoke": {
+  "value": "3",
+  "source": "results/live/provenance.json"
+ },
+ "JevRequestsTemplate": {
+  "value": "60",
+  "source": "results/live/provenance.json"
+ },
+ "JevRequestsWithTokens": {
+  "value": "49{,}999",
+  "source": "results/live/provenance.json"
+ },
+ "JevRequestsWithoutTokens": {
+  "value": "1",
+  "source": "results/live/provenance.json"
+ },
+ "LabelsToMatchJevBertAgnews": {
+  "value": "5{,}752",
+  "source": "results/live/agnews/comparison/comparison.json"
+ },
+ "LabelsToMatchJevBertGerman": {
+  "value": "600",
+  "source": "results/live/german/comparison/comparison.json"
+ },
+ "LabelsToMatchJevBertSst": {
+  "value": "no size tried",
+  "source": "results/live/sst2/comparison/comparison.json"
+ },
+ "LabelsToMatchJevBertWdbc": {
+  "value": "17",
+  "source": "results/live/wdbc/comparison/comparison.json"
+ },
+ "LabelsToMatchJevXgbAgnews": {
+  "value": "28{,}752",
+  "source": "results/live/agnews/comparison/comparison.json"
+ },
+ "LabelsToMatchJevXgbGerman": {
+  "value": "60",
+  "source": "results/live/german/comparison/comparison.json"
+ },
+ "LabelsToMatchJevXgbSst": {
+  "value": "no size tried",
+  "source": "results/live/sst2/comparison/comparison.json"
+ },
+ "LabelsToMatchJevXgbWdbc": {
+  "value": "17",
+  "source": "results/live/wdbc/comparison/comparison.json"
+ },
+ "LimeSamples": {
+  "value": "200",
+  "source": "configs/explain.yaml"
+ },
+ "LogLossBertAgnews": {
+  "value": "0.179",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "LogLossBertGerman": {
+  "value": "0.574",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "LogLossBertSst": {
+  "value": "0.259",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "LogLossBertWdbc": {
+  "value": "0.486",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "LogLossClip": {
+  "value": "$10^{-12}$",
+  "source": "src/ciayn/experiments/metrics.py"
+ },
+ "LogLossJevAgnews": {
+  "value": "1.464",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "LogLossJevGerman": {
+  "value": "2.136",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "LogLossJevSst": {
+  "value": "0.255",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "LogLossJevWdbc": {
+  "value": "0.865",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "LogLossQwenAgnews": {
+  "value": "0.925",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "LogLossQwenGerman": {
+  "value": "0.694",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "LogLossQwenSst": {
+  "value": "0.159",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "LogLossQwenWdbc": {
+  "value": "0.341",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "LogLossXgbAgnews": {
+  "value": "0.270",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "LogLossXgbGerman": {
+  "value": "0.516",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "LogLossXgbSst": {
+  "value": "0.451",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "LogLossXgbWdbc": {
+  "value": "0.139",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "MacroFOneBertAgnews": {
+  "value": "0.942",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "MacroFOneBertGerman": {
+  "value": "0.473",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "MacroFOneBertSst": {
+  "value": "0.916",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "MacroFOneBertWdbc": {
+  "value": "0.716",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "MacroFOneJevAgnews": {
+  "value": "0.878",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "MacroFOneJevGerman": {
+  "value": "0.467",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "MacroFOneJevSst": {
+  "value": "0.960",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "MacroFOneJevWdbc": {
+  "value": "0.343",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "MacroFOneQwenAgnews": {
+  "value": "0.877",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "MacroFOneQwenGerman": {
+  "value": "0.457",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "MacroFOneQwenSst": {
+  "value": "0.956",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "MacroFOneQwenWdbc": {
+  "value": "0.783",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "MacroFOneXgbAgnews": {
+  "value": "0.914",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "MacroFOneXgbGerman": {
+  "value": "0.657",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "MacroFOneXgbSst": {
+  "value": "0.791",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "MacroFOneXgbWdbc": {
+  "value": "0.945",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "MajorityRateGerman": {
+  "value": "0.700",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "MajorityRateSst": {
+  "value": "0.509",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "MajorityRateWdbc": {
+  "value": "0.632",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "MeanConfBertAgnews": {
+  "value": "0.958",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "MeanConfBertGerman": {
+  "value": "0.706",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "MeanConfBertSst": {
+  "value": "0.966",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "MeanConfBertWdbc": {
+  "value": "0.747",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "MeanConfJevAgnews": {
+  "value": "0.960",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "MeanConfJevGerman": {
+  "value": "0.814",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "MeanConfJevSst": {
+  "value": "0.967",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "MeanConfJevWdbc": {
+  "value": "0.773",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "MeanConfQwenAgnews": {
+  "value": "0.976",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "MeanConfQwenGerman": {
+  "value": "0.669",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "MeanConfQwenSst": {
+  "value": "0.974",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "MeanConfQwenWdbc": {
+  "value": "0.857",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "MeanConfXgbAgnews": {
+  "value": "0.887",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "MeanConfXgbGerman": {
+  "value": "0.757",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "MeanConfXgbSst": {
+  "value": "0.799",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "MeanConfXgbWdbc": {
+  "value": "0.966",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "NClassesAgnews": {
+  "value": "4",
+  "source": "results/splits/agnews.json"
+ },
+ "NClassesGerman": {
+  "value": "2",
+  "source": "results/splits/german.json"
+ },
+ "NClassesSst": {
+  "value": "2",
+  "source": "results/splits/sst2.json"
+ },
+ "NClassesWdbc": {
+  "value": "2",
+  "source": "results/splits/wdbc.json"
+ },
+ "NDatasets": {
+  "value": "4",
+  "source": "results/live/removed_datasets.json"
+ },
+ "NDistinctTestGerman": {
+  "value": "885",
+  "source": "results/splits/german.json"
+ },
+ "NDistinctTestWdbc": {
+  "value": "506",
+  "source": "results/splits/wdbc.json"
+ },
+ "NJevAgnews": {
+  "value": "7{,}600",
+  "source": "results/splits/agnews.json"
+ },
+ "NJevGerman": {
+  "value": "1{,}000",
+  "source": "results/splits/german.json"
+ },
+ "NJevSst": {
+  "value": "1{,}372",
+  "source": "results/splits/sst2.json"
+ },
+ "NJevValSst": {
+  "value": "500",
+  "source": "results/splits/sst2.json"
+ },
+ "NJevWdbc": {
+  "value": "569",
+  "source": "results/splits/wdbc.json"
+ },
+ "NRepeats": {
+  "value": "10",
+  "source": "results/splits/MANIFEST.sha256"
+ },
+ "NTestAgnews": {
+  "value": "7{,}600",
+  "source": "results/splits/agnews.json"
+ },
+ "NTestGerman": {
+  "value": "200",
+  "source": "results/splits/german.json"
+ },
+ "NTestNegativeGerman": {
+  "value": "140",
+  "source": "results/splits/german.json"
+ },
+ "NTestNegativeSst": {
+  "value": "428",
+  "source": "results/splits/sst2.json"
+ },
+ "NTestNegativeWdbc": {
+  "value": "72",
+  "source": "results/splits/wdbc.json"
+ },
+ "NTestPerClassMaxAgnews": {
+  "value": "1{,}900",
+  "source": "results/splits/agnews.json"
+ },
+ "NTestPerClassMinAgnews": {
+  "value": "1{,}900",
+  "source": "results/splits/agnews.json"
+ },
+ "NTestPositiveGerman": {
+  "value": "60",
+  "source": "results/splits/german.json"
+ },
+ "NTestPositiveSst": {
+  "value": "444",
+  "source": "results/splits/sst2.json"
+ },
+ "NTestPositiveWdbc": {
+  "value": "42",
+  "source": "results/splits/wdbc.json"
+ },
+ "NTestSst": {
+  "value": "872",
+  "source": "results/splits/sst2.json"
+ },
+ "NTestWdbc": {
+  "value": "114",
+  "source": "results/splits/wdbc.json"
+ },
+ "NTrainAgnews": {
+  "value": "115{,}000",
+  "source": "results/splits/agnews.json"
+ },
+ "NTrainGerman": {
+  "value": "600",
+  "source": "results/splits/german.json"
+ },
+ "NTrainSst": {
+  "value": "65{,}349",
+  "source": "results/splits/sst2.json"
+ },
+ "NTrainWdbc": {
+  "value": "341",
+  "source": "results/splits/wdbc.json"
+ },
+ "NValAgnews": {
+  "value": "5{,}000",
+  "source": "results/splits/agnews.json"
+ },
+ "NValGerman": {
+  "value": "200",
+  "source": "results/splits/german.json"
+ },
+ "NValSst": {
+  "value": "2{,}000",
+  "source": "results/splits/sst2.json"
+ },
+ "NValWdbc": {
+  "value": "114",
+  "source": "results/splits/wdbc.json"
+ },
+ "PayloadChoiceAgnews": {
+  "value": "Business",
+  "source": "results/live/payload_examples/agnews.json"
+ },
+ "PayloadChoiceGerman": {
+  "value": "good",
+  "source": "results/live/payload_examples/german.json"
+ },
+ "PayloadChoiceSst": {
+  "value": "positive",
+  "source": "results/live/payload_examples/sst2.json"
+ },
+ "PayloadChoiceWdbc": {
+  "value": "benign",
+  "source": "results/live/payload_examples/wdbc.json"
+ },
+ "PayloadConfidenceAgnews": {
+  "value": "0.97",
+  "source": "results/live/payload_examples/agnews.json"
+ },
+ "PayloadConfidenceGerman": {
+  "value": "0.13",
+  "source": "results/live/payload_examples/german.json"
+ },
+ "PayloadConfidenceSst": {
+  "value": "0.96",
+  "source": "results/live/payload_examples/sst2.json"
+ },
+ "PayloadConfidenceWdbc": {
+  "value": "0.06",
+  "source": "results/live/payload_examples/wdbc.json"
+ },
+ "PayloadExampleAgnews": {
+  "value": "agnews-test-3752",
+  "source": "results/live/payload_examples/agnews.json"
+ },
+ "PayloadExampleGerman": {
+  "value": "german-870",
+  "source": "results/live/payload_examples/german.json"
+ },
+ "PayloadExampleSst": {
+  "value": "sst2-validation-36",
+  "source": "results/live/payload_examples/sst2.json"
+ },
+ "PayloadExampleWdbc": {
+  "value": "wdbc-360",
+  "source": "results/live/payload_examples/wdbc.json"
+ },
+ "PayloadTokensAgnews": {
+  "value": "446",
+  "source": "results/live/payload_examples/agnews.json"
+ },
+ "PayloadTokensGerman": {
+  "value": "520",
+  "source": "results/live/payload_examples/german.json"
+ },
+ "PayloadTokensSst": {
+  "value": "359",
+  "source": "results/live/payload_examples/sst2.json"
+ },
+ "PayloadTokensWdbc": {
+  "value": "733",
+  "source": "results/live/payload_examples/wdbc.json"
+ },
+ "PctTestPositiveGerman": {
+  "value": "30",
+  "source": "results/splits/german.json"
+ },
+ "PctTestPositiveSst": {
+  "value": "51",
+  "source": "results/splits/sst2.json"
+ },
+ "PctTestPositiveWdbc": {
+  "value": "37",
+  "source": "results/splits/wdbc.json"
+ },
+ "PrAucBertAgnews": {
+  "value": "0.979",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "PrAucBertGerman": {
+  "value": "0.467",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "PrAucBertSst": {
+  "value": "0.979",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "PrAucBertWdbc": {
+  "value": "0.829",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "PrAucJevAgnews": {
+  "value": "0.901",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "PrAucJevGerman": {
+  "value": "0.316",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "PrAucJevSst": {
+  "value": "0.986",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "PrAucJevWdbc": {
+  "value": "0.878",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "PrAucQwenAgnews": {
+  "value": "0.909",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "PrAucQwenGerman": {
+  "value": "0.304",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "PrAucQwenSst": {
+  "value": "0.990",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "PrAucQwenWdbc": {
+  "value": "0.957",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "PrAucXgbAgnews": {
+  "value": "0.960",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "PrAucXgbGerman": {
+  "value": "0.574",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "PrAucXgbSst": {
+  "value": "0.879",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "PrAucXgbWdbc": {
+  "value": "0.982",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "PredictedPositiveBertGerman": {
+  "value": "0.05",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "PredictedPositiveBertSst": {
+  "value": "0.53",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "PredictedPositiveBertWdbc": {
+  "value": "0.29",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "PredictedPositiveJevGerman": {
+  "value": "0.70",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "PredictedPositiveJevSst": {
+  "value": "0.49",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "PredictedPositiveJevWdbc": {
+  "value": "0.95",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "PredictedPositiveQwenGerman": {
+  "value": "0.30",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "PredictedPositiveQwenSst": {
+  "value": "0.48",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "PredictedPositiveQwenWdbc": {
+  "value": "0.20",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "PredictedPositiveXgbGerman": {
+  "value": "0.21",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "PredictedPositiveXgbSst": {
+  "value": "0.53",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "PredictedPositiveXgbWdbc": {
+  "value": "0.36",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "PriorAccDeusserAgnews": {
+  "value": "0.885",
+  "source": "configs/prior_work.yaml"
+ },
+ "PriorAccDeusserSst": {
+  "value": "0.964",
+  "source": "configs/prior_work.yaml"
+ },
+ "PriorAccJevbenchAgnews": {
+  "value": "0.843",
+  "source": "configs/prior_work.yaml"
+ },
+ "PriorAccJevbenchSst": {
+  "value": "0.954",
+  "source": "configs/prior_work.yaml"
+ },
+ "PriorAccStatsguysamWdbc": {
+  "value": "0.842",
+  "source": "configs/prior_work.yaml"
+ },
+ "PriorCheckedOn": {
+  "value": "2026-09-30",
+  "source": "configs/prior_work.yaml"
+ },
+ "PriorEceDeusserAgnews": {
+  "value": "0.077",
+  "source": "configs/prior_work.yaml"
+ },
+ "PriorEceDeusserSst": {
+  "value": "0.015",
+  "source": "configs/prior_work.yaml"
+ },
+ "PriorEceJevbenchAgnews": {
+  "value": "0.112",
+  "source": "configs/prior_work.yaml"
+ },
+ "PriorEceJevbenchSst": {
+  "value": "0.026",
+  "source": "configs/prior_work.yaml"
+ },
+ "PriorNDeusserAgnews": {
+  "value": "7{,}600",
+  "source": "configs/prior_work.yaml"
+ },
+ "PriorNDeusserSst": {
+  "value": "872",
+  "source": "configs/prior_work.yaml"
+ },
+ "PriorNJevbenchAgnews": {
+  "value": "500",
+  "source": "configs/prior_work.yaml"
+ },
+ "PriorNJevbenchSst": {
+  "value": "500",
+  "source": "configs/prior_work.yaml"
+ },
+ "PriorNStatsguysamWdbc": {
+  "value": "114",
+  "source": "configs/prior_work.yaml"
+ },
+ "QwenCacheCheckAgnews": {
+  "value": "0.125",
+  "source": "results/live/agnews/qwen/run.json"
+ },
+ "QwenCacheCheckGerman": {
+  "value": "0.083",
+  "source": "results/live/german/qwen/run.json"
+ },
+ "QwenCacheCheckSst": {
+  "value": "0.003",
+  "source": "results/live/sst2/qwen/run.json"
+ },
+ "QwenCacheCheckWdbc": {
+  "value": "0.121",
+  "source": "results/live/wdbc/qwen/run.json"
+ },
+ "QwenCrossCheckN": {
+  "value": "2",
+  "source": "configs/llm.yaml"
+ },
+ "QwenExampleAgnews": {
+  "value": "agnews-test-20",
+  "source": "results/live/agnews/qwen/run.json"
+ },
+ "QwenExampleGerman": {
+  "value": "german-529",
+  "source": "results/live/german/qwen/run.json"
+ },
+ "QwenExampleSst": {
+  "value": "sst2-validation-2",
+  "source": "results/live/sst2/qwen/run.json"
+ },
+ "QwenExampleWdbc": {
+  "value": "wdbc-477",
+  "source": "results/live/wdbc/qwen/run.json"
+ },
+ "QwenGpu": {
+  "value": "NVIDIA L4",
+  "source": "results/live/agnews/qwen/run.json"
+ },
+ "QwenImage": {
+  "value": "vllm:0.29.0-gpu-py312-cu130-ubuntu24.04-sagemaker-v1.2",
+  "source": "configs/llm.yaml"
+ },
+ "QwenLatencyAgnews": {
+  "value": "0.93",
+  "source": "results/live/agnews/comparison/comparison.json"
+ },
+ "QwenLatencyGerman": {
+  "value": "0.95",
+  "source": "results/live/german/comparison/comparison.json"
+ },
+ "QwenLatencyN": {
+  "value": "20",
+  "source": "configs/llm.yaml"
+ },
+ "QwenLatencySst": {
+  "value": "0.92",
+  "source": "results/live/sst2/comparison/comparison.json"
+ },
+ "QwenLatencyWdbc": {
+  "value": "1.10",
+  "source": "results/live/wdbc/comparison/comparison.json"
+ },
+ "QwenModelId": {
+  "value": "Qwen/Qwen3.6-27B",
+  "source": "configs/llm.yaml"
+ },
+ "QwenRevision": {
+  "value": "6a9e13bd6fc8",
+  "source": "configs/llm.yaml"
+ },
+ "QwenScoringInstance": {
+  "value": "ml.g6.12xlarge",
+  "source": "results/live/agnews/qwen/run.json"
+ },
+ "QwenSharedPrefixAgnews": {
+  "value": "98",
+  "source": "results/live/agnews/qwen/run.json"
+ },
+ "QwenSharedPrefixGerman": {
+  "value": "82",
+  "source": "results/live/german/qwen/run.json"
+ },
+ "QwenSharedPrefixSst": {
+  "value": "57",
+  "source": "results/live/sst2/qwen/run.json"
+ },
+ "QwenSharedPrefixWdbc": {
+  "value": "76",
+  "source": "results/live/wdbc/qwen/run.json"
+ },
+ "QwenThinkingAllFits": {
+  "value": "does not fit",
+  "source": "results/live/qwen_thinking_projection.json"
+ },
+ "QwenThinkingAllProjectedHours": {
+  "value": "7.4",
+  "source": "results/live/qwen_thinking_projection.json"
+ },
+ "QwenThinkingAllProjectedUSD": {
+  "value": "49",
+  "source": "results/live/qwen_thinking_projection.json"
+ },
+ "QwenThroughputAgnews": {
+  "value": "2.9",
+  "source": "results/live/agnews/comparison/comparison.json"
+ },
+ "QwenThroughputGerman": {
+  "value": "2.5",
+  "source": "results/live/german/comparison/comparison.json"
+ },
+ "QwenThroughputSst": {
+  "value": "4.8",
+  "source": "results/live/sst2/comparison/comparison.json"
+ },
+ "QwenThroughputWdbc": {
+  "value": "1.3",
+  "source": "results/live/wdbc/comparison/comparison.json"
+ },
+ "QwenTorchVersion": {
+  "value": "2.13.0+cu130",
+  "source": "results/live/agnews/qwen/run.json"
+ },
+ "QwenTransformersVersion": {
+  "value": "5.16.1",
+  "source": "results/live/agnews/qwen/run.json"
+ },
+ "QwenVllmVersion": {
+  "value": "0.29.0",
+  "source": "configs/llm.yaml"
+ },
+ "RecallNegativeBertGerman": {
+  "value": "0.968",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "RecallNegativeBertSst": {
+  "value": "0.893",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "RecallNegativeBertWdbc": {
+  "value": "0.886",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "RecallNegativeJevGerman": {
+  "value": "0.330",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "RecallNegativeJevSst": {
+  "value": "0.979",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "RecallNegativeJevWdbc": {
+  "value": "0.071",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "RecallNegativeQwenGerman": {
+  "value": "0.674",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "RecallNegativeQwenSst": {
+  "value": "0.981",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "RecallNegativeQwenWdbc": {
+  "value": "0.997",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "RecallNegativeXgbGerman": {
+  "value": "0.881",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "RecallNegativeXgbSst": {
+  "value": "0.762",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "RecallNegativeXgbWdbc": {
+  "value": "0.967",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "RecallPositiveBertGerman": {
+  "value": "0.092",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "RecallPositiveBertSst": {
+  "value": "0.939",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "RecallPositiveBertWdbc": {
+  "value": "0.593",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "RecallPositiveJevGerman": {
+  "value": "0.787",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "RecallPositiveJevSst": {
+  "value": "0.941",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "RecallPositiveJevWdbc": {
+  "value": "0.993",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "RecallPositiveQwenGerman": {
+  "value": "0.242",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "RecallPositiveQwenSst": {
+  "value": "0.932",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "RecallPositiveQwenWdbc": {
+  "value": "0.529",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "RecallPositiveXgbGerman": {
+  "value": "0.413",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "RecallPositiveXgbSst": {
+  "value": "0.820",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "RecallPositiveXgbWdbc": {
+  "value": "0.919",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "RemovedAwsDedicatedExecutions": {
+  "value": "5",
+  "source": "results/live/removed_datasets.json"
+ },
+ "RemovedAwsDedicatedUSD": {
+  "value": "1.05",
+  "source": "results/live/removed_datasets.json"
+ },
+ "RemovedAwsSharedExecutions": {
+  "value": "9",
+  "source": "results/live/removed_datasets.json"
+ },
+ "RemovedAwsSharedUSD": {
+  "value": "12.77",
+  "source": "results/live/removed_datasets.json"
+ },
+ "RemovedDataset": {
+  "value": "Banking77",
+  "source": "results/live/removed_datasets.json"
+ },
+ "RemovedJevRequests": {
+  "value": "9{,}198",
+  "source": "results/live/removed_datasets.json"
+ },
+ "RemovedJevTokensM": {
+  "value": "21.1",
+  "source": "results/live/removed_datasets.json"
+ },
+ "RemovedJevUSD": {
+  "value": "0.89",
+  "source": "results/live/removed_datasets.json"
+ },
+ "RocAucBertAgnews": {
+  "value": "0.992",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "RocAucBertGerman": {
+  "value": "0.683",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "RocAucBertSst": {
+  "value": "0.976",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "RocAucBertWdbc": {
+  "value": "0.853",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "RocAucJevAgnews": {
+  "value": "0.961",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "RocAucJevGerman": {
+  "value": "0.537",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "RocAucJevSst": {
+  "value": "0.987",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "RocAucJevWdbc": {
+  "value": "0.917",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "RocAucQwenAgnews": {
+  "value": "0.962",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "RocAucQwenGerman": {
+  "value": "0.496",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "RocAucQwenSst": {
+  "value": "0.989",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "RocAucQwenWdbc": {
+  "value": "0.969",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "RocAucXgbAgnews": {
+  "value": "0.985",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "RocAucXgbGerman": {
+  "value": "0.768",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "RocAucXgbSst": {
+  "value": "0.873",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "RocAucXgbWdbc": {
+  "value": "0.985",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "RunDate": {
+  "value": "2026-09-29 to 2026-10-01",
+  "source": "results/live/provenance.json"
+ },
+ "SdkVersion": {
+  "value": "0.7.2",
+  "source": "results/live/provenance.json"
+ },
+ "ShapCoalitions": {
+  "value": "200",
+  "source": "configs/explain.yaml"
+ },
+ "SklearnImageTag": {
+  "value": "1.4-2-py312-cpu-py3",
+  "source": "results/live/provenance.json"
+ },
+ "SplitFractions": {
+  "value": "60/20/20",
+  "source": "configs/datasets.yaml"
+ },
+ "TemplateCheckN": {
+  "value": "20",
+  "source": "configs/datasets.yaml"
+ },
+ "TfidfFeatures": {
+  "value": "50{,}000",
+  "source": "configs/baseline.yaml"
+ },
+ "ThinkMaxTokens": {
+  "value": "2{,}048",
+  "source": "configs/llm.yaml"
+ },
+ "ThinkSecondsAgnews": {
+  "value": "1.40",
+  "source": "results/live/agnews/qwen_think/predictions.parquet"
+ },
+ "ThinkSecondsGerman": {
+  "value": "3.72",
+  "source": "results/live/german/qwen_think/predictions.parquet"
+ },
+ "ThinkSecondsSst": {
+  "value": "1.18",
+  "source": "results/live/sst2/qwen_think/predictions.parquet"
+ },
+ "ThinkSecondsWdbc": {
+  "value": "3.60",
+  "source": "results/live/wdbc/qwen_think/predictions.parquet"
+ },
+ "ThinkSubFOneBertAgnews": {
+  "value": "0.938",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "ThinkSubFOneBertGerman": {
+  "value": "0.479",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "ThinkSubFOneBertSst": {
+  "value": "0.960",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "ThinkSubFOneBertWdbc": {
+  "value": "0.792",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "ThinkSubFOneJevAgnews": {
+  "value": "0.873",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "ThinkSubFOneJevGerman": {
+  "value": "0.440",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "ThinkSubFOneJevSst": {
+  "value": "0.939",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "ThinkSubFOneJevWdbc": {
+  "value": "0.319",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "ThinkSubFOneQwenAgnews": {
+  "value": "0.854",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "ThinkSubFOneQwenGerman": {
+  "value": "0.435",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "ThinkSubFOneQwenSst": {
+  "value": "0.918",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "ThinkSubFOneQwenThinkAgnews": {
+  "value": "0.893",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "ThinkSubFOneQwenThinkGerman": {
+  "value": "0.531",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "ThinkSubFOneQwenThinkSst": {
+  "value": "0.959",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "ThinkSubFOneQwenThinkWdbc": {
+  "value": "0.890",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "ThinkSubFOneQwenWdbc": {
+  "value": "0.772",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "ThinkSubFOneXgbAgnews": {
+  "value": "0.884",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "ThinkSubFOneXgbGerman": {
+  "value": "0.688",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "ThinkSubFOneXgbSst": {
+  "value": "0.760",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "ThinkSubFOneXgbWdbc": {
+  "value": "0.934",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "ThinkSubNAgnews": {
+  "value": "50",
+  "source": "results/live/agnews/metrics/metrics.json"
+ },
+ "ThinkSubNGerman": {
+  "value": "50",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "ThinkSubNSst": {
+  "value": "50",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "ThinkSubNWdbc": {
+  "value": "50",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "ThinkSubsampleN": {
+  "value": "50",
+  "source": "configs/llm.yaml"
+ },
+ "ThinkTokensAgnews": {
+  "value": "522",
+  "source": "results/live/agnews/qwen_think/predictions.parquet"
+ },
+ "ThinkTokensGerman": {
+  "value": "1{,}765",
+  "source": "results/live/german/qwen_think/predictions.parquet"
+ },
+ "ThinkTokensSst": {
+  "value": "376",
+  "source": "results/live/sst2/qwen_think/predictions.parquet"
+ },
+ "ThinkTokensWdbc": {
+  "value": "1{,}500",
+  "source": "results/live/wdbc/qwen_think/predictions.parquet"
+ },
+ "ThinkTruncatedAgnews": {
+  "value": "0.00",
+  "source": "results/live/agnews/qwen_think/predictions.parquet"
+ },
+ "ThinkTruncatedGerman": {
+  "value": "0.40",
+  "source": "results/live/german/qwen_think/predictions.parquet"
+ },
+ "ThinkTruncatedSst": {
+  "value": "0.00",
+  "source": "results/live/sst2/qwen_think/predictions.parquet"
+ },
+ "ThinkTruncatedWdbc": {
+  "value": "0.12",
+  "source": "results/live/wdbc/qwen_think/predictions.parquet"
+ },
+ "ThrAccuracyAnalyticBertGerman": {
+  "value": "0.426",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrAccuracyAnalyticBertSst": {
+  "value": "0.916",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrAccuracyAnalyticBertWdbc": {
+  "value": "0.661",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrAccuracyAnalyticJevGerman": {
+  "value": "0.351",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrAccuracyAnalyticJevSst": {
+  "value": "0.960",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrAccuracyAnalyticJevWdbc": {
+  "value": "0.370",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrAccuracyAnalyticQwenGerman": {
+  "value": "0.360",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrAccuracyAnalyticQwenSst": {
+  "value": "0.956",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrAccuracyAnalyticQwenWdbc": {
+  "value": "0.900",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrAccuracyAnalyticXgbGerman": {
+  "value": "0.597",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrAccuracyAnalyticXgbSst": {
+  "value": "0.791",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrAccuracyAnalyticXgbWdbc": {
+  "value": "0.936",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrAccuracyDefaultBertGerman": {
+  "value": "0.704",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrAccuracyDefaultBertSst": {
+  "value": "0.916",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrAccuracyDefaultBertWdbc": {
+  "value": "0.778",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrAccuracyDefaultJevGerman": {
+  "value": "0.465",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrAccuracyDefaultJevSst": {
+  "value": "0.960",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrAccuracyDefaultJevWdbc": {
+  "value": "0.405",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrAccuracyDefaultQwenGerman": {
+  "value": "0.542",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrAccuracyDefaultQwenSst": {
+  "value": "0.956",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrAccuracyDefaultQwenWdbc": {
+  "value": "0.825",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrAccuracyDefaultXgbGerman": {
+  "value": "0.741",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrAccuracyDefaultXgbSst": {
+  "value": "0.791",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrAccuracyDefaultXgbWdbc": {
+  "value": "0.949",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrAccuracyValidationBertGerman": {
+  "value": "0.459",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrAccuracyValidationBertSst": {
+  "value": "0.916",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrAccuracyValidationBertWdbc": {
+  "value": "0.709",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrAccuracyValidationJevGerman": {
+  "value": "0.350",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrAccuracyValidationJevSst": {
+  "value": "0.967",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrAccuracyValidationJevWdbc": {
+  "value": "0.735",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrAccuracyValidationQwenGerman": {
+  "value": "0.335",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrAccuracyValidationQwenSst": {
+  "value": "0.962",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrAccuracyValidationQwenWdbc": {
+  "value": "0.878",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrAccuracyValidationXgbGerman": {
+  "value": "0.588",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrAccuracyValidationXgbSst": {
+  "value": "0.795",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrAccuracyValidationXgbWdbc": {
+  "value": "0.937",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveAnalyticBertGerman": {
+  "value": "0.498",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveAnalyticBertSst": {
+  "value": "0.920",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveAnalyticBertWdbc": {
+  "value": "0.671",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveAnalyticJevGerman": {
+  "value": "0.473",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveAnalyticJevSst": {
+  "value": "0.960",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveAnalyticJevWdbc": {
+  "value": "0.539",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveAnalyticQwenGerman": {
+  "value": "0.472",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveAnalyticQwenSst": {
+  "value": "0.956",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveAnalyticQwenWdbc": {
+  "value": "0.870",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveAnalyticXgbGerman": {
+  "value": "0.568",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveAnalyticXgbSst": {
+  "value": "0.800",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveAnalyticXgbWdbc": {
+  "value": "0.917",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveDefaultBertGerman": {
+  "value": "0.125",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveDefaultBertSst": {
+  "value": "0.920",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveDefaultBertWdbc": {
+  "value": "0.595",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveDefaultJevGerman": {
+  "value": "0.470",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveDefaultJevSst": {
+  "value": "0.960",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveDefaultJevWdbc": {
+  "value": "0.552",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveDefaultQwenGerman": {
+  "value": "0.248",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveDefaultQwenSst": {
+  "value": "0.956",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveDefaultQwenWdbc": {
+  "value": "0.690",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveDefaultXgbGerman": {
+  "value": "0.488",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveDefaultXgbSst": {
+  "value": "0.800",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveDefaultXgbWdbc": {
+  "value": "0.930",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveValidationBertGerman": {
+  "value": "0.506",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveValidationBertSst": {
+  "value": "0.920",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveValidationBertWdbc": {
+  "value": "0.687",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveValidationJevGerman": {
+  "value": "0.470",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveValidationJevSst": {
+  "value": "0.967",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveValidationJevWdbc": {
+  "value": "0.721",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveValidationQwenGerman": {
+  "value": "0.464",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveValidationQwenSst": {
+  "value": "0.962",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveValidationQwenWdbc": {
+  "value": "0.850",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveValidationXgbGerman": {
+  "value": "0.560",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveValidationXgbSst": {
+  "value": "0.799",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrFOnePositiveValidationXgbWdbc": {
+  "value": "0.917",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrMeanCostAnalyticBertGerman": {
+  "value": "0.658",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrMeanCostAnalyticBertSst": {
+  "value": "0.084",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrMeanCostAnalyticBertWdbc": {
+  "value": "0.518",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrMeanCostAnalyticJevGerman": {
+  "value": "0.686",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrMeanCostAnalyticJevSst": {
+  "value": "0.040",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrMeanCostAnalyticJevWdbc": {
+  "value": "0.630",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrMeanCostAnalyticQwenGerman": {
+  "value": "0.694",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrMeanCostAnalyticQwenSst": {
+  "value": "0.044",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrMeanCostAnalyticQwenWdbc": {
+  "value": "0.240",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrMeanCostAnalyticXgbGerman": {
+  "value": "0.544",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrMeanCostAnalyticXgbSst": {
+  "value": "0.209",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrMeanCostAnalyticXgbWdbc": {
+  "value": "0.124",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrMeanCostDefaultBertGerman": {
+  "value": "1.384",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrMeanCostDefaultBertSst": {
+  "value": "0.084",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrMeanCostDefaultBertWdbc": {
+  "value": "0.822",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrMeanCostDefaultJevGerman": {
+  "value": "0.787",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrMeanCostDefaultJevSst": {
+  "value": "0.040",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrMeanCostDefaultJevWdbc": {
+  "value": "0.605",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrMeanCostDefaultQwenGerman": {
+  "value": "1.356",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrMeanCostDefaultQwenSst": {
+  "value": "0.044",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrMeanCostDefaultQwenWdbc": {
+  "value": "0.866",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrMeanCostDefaultXgbGerman": {
+  "value": "0.963",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrMeanCostDefaultXgbSst": {
+  "value": "0.209",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrMeanCostDefaultXgbWdbc": {
+  "value": "0.170",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrMeanCostValidationBertGerman": {
+  "value": "0.639",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrMeanCostValidationBertSst": {
+  "value": "0.084",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrMeanCostValidationBertWdbc": {
+  "value": "0.519",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrMeanCostValidationJevGerman": {
+  "value": "0.698",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrMeanCostValidationJevSst": {
+  "value": "0.033",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrMeanCostValidationJevWdbc": {
+  "value": "0.395",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrMeanCostValidationQwenGerman": {
+  "value": "0.713",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrMeanCostValidationQwenSst": {
+  "value": "0.038",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrMeanCostValidationQwenWdbc": {
+  "value": "0.231",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrMeanCostValidationXgbGerman": {
+  "value": "0.566",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrMeanCostValidationXgbSst": {
+  "value": "0.205",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrMeanCostValidationXgbWdbc": {
+  "value": "0.147",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrPrecisionAnalyticBertGerman": {
+  "value": "0.345",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrPrecisionAnalyticBertSst": {
+  "value": "0.901",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrPrecisionAnalyticBertWdbc": {
+  "value": "0.560",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrPrecisionAnalyticJevGerman": {
+  "value": "0.313",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrPrecisionAnalyticJevSst": {
+  "value": "0.979",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrPrecisionAnalyticJevWdbc": {
+  "value": "0.369",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrPrecisionAnalyticQwenGerman": {
+  "value": "0.314",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrPrecisionAnalyticQwenSst": {
+  "value": "0.981",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrPrecisionAnalyticQwenWdbc": {
+  "value": "0.838",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrPrecisionAnalyticXgbGerman": {
+  "value": "0.419",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrPrecisionAnalyticXgbSst": {
+  "value": "0.781",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrPrecisionAnalyticXgbWdbc": {
+  "value": "0.879",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrPrecisionDefaultBertGerman": {
+  "value": "0.231",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrPrecisionDefaultBertSst": {
+  "value": "0.901",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrPrecisionDefaultBertWdbc": {
+  "value": "0.613",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrPrecisionDefaultJevGerman": {
+  "value": "0.334",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrPrecisionDefaultJevSst": {
+  "value": "0.979",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrPrecisionDefaultJevWdbc": {
+  "value": "0.382",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrPrecisionDefaultQwenGerman": {
+  "value": "0.244",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrPrecisionDefaultQwenSst": {
+  "value": "0.981",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrPrecisionDefaultQwenWdbc": {
+  "value": "0.991",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrPrecisionDefaultXgbGerman": {
+  "value": "0.604",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrPrecisionDefaultXgbSst": {
+  "value": "0.781",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrPrecisionDefaultXgbWdbc": {
+  "value": "0.942",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrPrecisionValidationBertGerman": {
+  "value": "0.352",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrPrecisionValidationBertSst": {
+  "value": "0.901",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrPrecisionValidationBertWdbc": {
+  "value": "0.587",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrPrecisionValidationJevGerman": {
+  "value": "0.311",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrPrecisionValidationJevSst": {
+  "value": "0.975",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrPrecisionValidationJevWdbc": {
+  "value": "0.605",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrPrecisionValidationQwenGerman": {
+  "value": "0.306",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrPrecisionValidationQwenSst": {
+  "value": "0.972",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrPrecisionValidationQwenWdbc": {
+  "value": "0.789",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrPrecisionValidationXgbGerman": {
+  "value": "0.415",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrPrecisionValidationXgbSst": {
+  "value": "0.798",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrPrecisionValidationXgbWdbc": {
+  "value": "0.895",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrRecallAnalyticBertGerman": {
+  "value": "0.930",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrRecallAnalyticBertSst": {
+  "value": "0.939",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrRecallAnalyticBertWdbc": {
+  "value": "0.879",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrRecallAnalyticJevGerman": {
+  "value": "0.968",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrRecallAnalyticJevSst": {
+  "value": "0.941",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrRecallAnalyticJevWdbc": {
+  "value": "1.000",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrRecallAnalyticQwenGerman": {
+  "value": "0.955",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrRecallAnalyticQwenSst": {
+  "value": "0.932",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrRecallAnalyticQwenWdbc": {
+  "value": "0.905",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrRecallAnalyticXgbGerman": {
+  "value": "0.883",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrRecallAnalyticXgbSst": {
+  "value": "0.820",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrRecallAnalyticXgbWdbc": {
+  "value": "0.960",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrRecallDefaultBertGerman": {
+  "value": "0.093",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrRecallDefaultBertSst": {
+  "value": "0.939",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrRecallDefaultBertWdbc": {
+  "value": "0.593",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrRecallDefaultJevGerman": {
+  "value": "0.790",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrRecallDefaultJevSst": {
+  "value": "0.941",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrRecallDefaultJevWdbc": {
+  "value": "0.993",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrRecallDefaultQwenGerman": {
+  "value": "0.252",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrRecallDefaultQwenSst": {
+  "value": "0.932",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrRecallDefaultQwenWdbc": {
+  "value": "0.531",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrRecallDefaultXgbGerman": {
+  "value": "0.413",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrRecallDefaultXgbSst": {
+  "value": "0.820",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrRecallDefaultXgbWdbc": {
+  "value": "0.919",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrRecallValidationBertGerman": {
+  "value": "0.918",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrRecallValidationBertSst": {
+  "value": "0.939",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrRecallValidationBertWdbc": {
+  "value": "0.845",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrRecallValidationJevGerman": {
+  "value": "0.960",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrRecallValidationJevSst": {
+  "value": "0.959",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrRecallValidationJevWdbc": {
+  "value": "0.912",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrRecallValidationQwenGerman": {
+  "value": "0.960",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrRecallValidationQwenSst": {
+  "value": "0.953",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrRecallValidationQwenWdbc": {
+  "value": "0.926",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrRecallValidationXgbGerman": {
+  "value": "0.872",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrRecallValidationXgbSst": {
+  "value": "0.800",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrRecallValidationXgbWdbc": {
+  "value": "0.943",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrValLabelsBertGerman": {
+  "value": "200",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrValLabelsBertSst": {
+  "value": "2000",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrValLabelsBertWdbc": {
+  "value": "114",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrValLabelsJevGerman": {
+  "value": "200",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrValLabelsJevSst": {
+  "value": "500",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrValLabelsJevWdbc": {
+  "value": "114",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrValLabelsQwenGerman": {
+  "value": "200",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrValLabelsQwenSst": {
+  "value": "500",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrValLabelsQwenWdbc": {
+  "value": "114",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThrValLabelsXgbGerman": {
+  "value": "200",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThrValLabelsXgbSst": {
+  "value": "2000",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThrValLabelsXgbWdbc": {
+  "value": "114",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThresholdAnalyticBertGerman": {
+  "value": "0.17",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThresholdAnalyticBertSst": {
+  "value": "0.50",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThresholdAnalyticBertWdbc": {
+  "value": "0.17",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThresholdAnalyticJevGerman": {
+  "value": "0.17",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThresholdAnalyticJevSst": {
+  "value": "0.50",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThresholdAnalyticJevWdbc": {
+  "value": "0.17",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThresholdAnalyticQwenGerman": {
+  "value": "0.17",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThresholdAnalyticQwenSst": {
+  "value": "0.50",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThresholdAnalyticQwenWdbc": {
+  "value": "0.17",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThresholdAnalyticXgbGerman": {
+  "value": "0.17",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThresholdAnalyticXgbSst": {
+  "value": "0.50",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThresholdAnalyticXgbWdbc": {
+  "value": "0.17",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThresholdDefaultBertGerman": {
+  "value": "0.50",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThresholdDefaultBertSst": {
+  "value": "0.50",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThresholdDefaultBertWdbc": {
+  "value": "0.50",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThresholdDefaultJevGerman": {
+  "value": "0.50",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThresholdDefaultJevSst": {
+  "value": "0.50",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThresholdDefaultJevWdbc": {
+  "value": "0.50",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThresholdDefaultQwenGerman": {
+  "value": "0.50",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThresholdDefaultQwenSst": {
+  "value": "0.50",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThresholdDefaultQwenWdbc": {
+  "value": "0.50",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThresholdDefaultXgbGerman": {
+  "value": "0.50",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThresholdDefaultXgbSst": {
+  "value": "0.50",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThresholdDefaultXgbWdbc": {
+  "value": "0.50",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThresholdValidationBertGerman": {
+  "value": "0.21",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThresholdValidationBertSst": {
+  "value": "0.49",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThresholdValidationBertWdbc": {
+  "value": "0.20",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThresholdValidationJevGerman": {
+  "value": "0.17",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThresholdValidationJevSst": {
+  "value": "0.36",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThresholdValidationJevWdbc": {
+  "value": "0.77",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThresholdValidationQwenGerman": {
+  "value": "0.14",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThresholdValidationQwenSst": {
+  "value": "0.29",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThresholdValidationQwenWdbc": {
+  "value": "0.15",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "ThresholdValidationXgbGerman": {
+  "value": "0.17",
+  "source": "results/live/german/thresholding/thresholding.json"
+ },
+ "ThresholdValidationXgbSst": {
+  "value": "0.55",
+  "source": "results/live/sst2/thresholding/thresholding.json"
+ },
+ "ThresholdValidationXgbWdbc": {
+  "value": "0.27",
+  "source": "results/live/wdbc/thresholding/thresholding.json"
+ },
+ "TrainUSDBertAgnews": {
+  "value": "1.09",
+  "source": "results/live/agnews/comparison/comparison.json"
+ },
+ "TrainUSDBertGerman": {
+  "value": "0.15",
+  "source": "results/live/german/comparison/comparison.json"
+ },
+ "TrainUSDBertSst": {
+  "value": "0.46",
+  "source": "results/live/sst2/comparison/comparison.json"
+ },
+ "TrainUSDBertWdbc": {
+  "value": "0.13",
+  "source": "results/live/wdbc/comparison/comparison.json"
+ },
+ "TrainUSDXgbAgnews": {
+  "value": "0.16",
+  "source": "results/live/agnews/comparison/comparison.json"
+ },
+ "TrainUSDXgbGerman": {
+  "value": "0.01",
+  "source": "results/live/german/comparison/comparison.json"
+ },
+ "TrainUSDXgbSst": {
+  "value": "0.02",
+  "source": "results/live/sst2/comparison/comparison.json"
+ },
+ "TrainUSDXgbWdbc": {
+  "value": "0.01",
+  "source": "results/live/wdbc/comparison/comparison.json"
+ },
+ "TruePositiveGerman": {
+  "value": "0.30",
+  "source": "results/live/german/metrics/metrics.json"
+ },
+ "TruePositiveSst": {
+  "value": "0.51",
+  "source": "results/live/sst2/metrics/metrics.json"
+ },
+ "TruePositiveWdbc": {
+  "value": "0.37",
+  "source": "results/live/wdbc/metrics/metrics.json"
+ },
+ "XgbGridSize": {
+  "value": "4",
+  "source": "configs/baseline.yaml"
+ },
+ "XgbImageTag": {
+  "value": "3.0-5",
+  "source": "results/live/provenance.json"
+ },
+ "XgbMaxRounds": {
+  "value": "500",
+  "source": "configs/baseline.yaml"
+ },
+ "XgbPatience": {
+  "value": "30",
+  "source": "configs/baseline.yaml"
+ },
+ "XgbRerunPredictions": {
+  "value": "identical",
+  "source": "results/live/xgb_rerun_check.json"
+ },
+ "XgbTextBins": {
+  "value": "16",
+  "source": "configs/baseline.yaml"
+ }
+}

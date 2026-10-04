@@ -1,0 +1,1192 @@
+[
+ {
+  "model": "xgb",
+  "dataset": "german",
+  "region": "us-east-2",
+  "instance_type": "ml.m5.xlarge",
+  "run_id": "20260930T134227Z",
+  "started": "2026-09-30T13:42:27Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-xgb/execution/sutjzq7ymqcu",
+  "status": "Succeeded",
+  "failure": null,
+  "steps": {
+   "Train": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-sutjzq7ymqcu-Train-mqiduqaZx4",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-xgboost:3.0-5",
+    "billable_seconds": 88.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/german/20260930T134227Z/train/pipelines-sutjzq7ymqcu-Train-mqiduqaZx4/output/output.tar.gz"
+   },
+   "Preprocess": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-sutjzq7ymqcu-Preprocess-Sps7xr1aAf",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+    "billable_seconds": 63.384
+   }
+  },
+  "ended": "2026-09-30T13:47:29Z",
+  "billable_seconds": 151.38400000000001,
+  "cost_usd": 0.009671755555555557,
+  "reason": null,
+  "refused": false
+ },
+ {
+  "model": "xgb",
+  "dataset": "wdbc",
+  "region": "us-east-2",
+  "instance_type": "ml.m5.xlarge",
+  "run_id": "20260930T134842Z",
+  "started": "2026-09-30T13:48:42Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-xgb/execution/j6pp37qfezd5",
+  "status": "Succeeded",
+  "failure": null,
+  "steps": {
+   "Train": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-j6pp37qfezd5-Train-xPFWYOVzJK",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-xgboost:3.0-5",
+    "billable_seconds": 94.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/wdbc/20260930T134842Z/train/pipelines-j6pp37qfezd5-Train-xPFWYOVzJK/output/output.tar.gz"
+   },
+   "Preprocess": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-j6pp37qfezd5-Preprocess-rtPj0GRQwF",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+    "billable_seconds": 63.482
+   }
+  },
+  "ended": "2026-09-30T13:53:44Z",
+  "billable_seconds": 157.482,
+  "cost_usd": 0.01006135,
+  "reason": null,
+  "refused": false
+ },
+ {
+  "model": "xgb",
+  "dataset": "sst2",
+  "region": "us-east-2",
+  "instance_type": "ml.m5.xlarge",
+  "run_id": "20260930T135346Z",
+  "started": "2026-09-30T13:53:46Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-xgb/execution/178suxku8nm5",
+  "status": "Succeeded",
+  "failure": null,
+  "steps": {
+   "Train": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-178suxku8nm5-Train-cZZROLFgND",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-xgboost:3.0-5",
+    "billable_seconds": 430.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/sst2/20260930T135346Z/train/pipelines-178suxku8nm5-Train-cZZROLFgND/output/output.tar.gz"
+   },
+   "Preprocess": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-178suxku8nm5-Preprocess-mR6TwNNyUp",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+    "billable_seconds": 68.477
+   }
+  },
+  "ended": "2026-09-30T14:04:18Z",
+  "billable_seconds": 498.477,
+  "cost_usd": 0.03184714166666666,
+  "reason": null,
+  "refused": false
+ },
+ {
+  "model": "xgb",
+  "dataset": "agnews",
+  "region": "us-east-2",
+  "instance_type": "ml.m5.xlarge",
+  "run_id": "20260930T140423Z",
+  "started": "2026-09-30T14:04:23Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-xgb/execution/wwsucc841qkh",
+  "status": "Stopped",
+  "failure": null,
+  "steps": {
+   "Train": {
+    "status": "Stopped",
+    "failure": null,
+    "job": "pipelines-wwsucc841qkh-Train-pCJqKvmbdO",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-xgboost:3.0-5",
+    "billable_seconds": 1996.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/agnews/20260930T140423Z/train/pipelines-wwsucc841qkh-Train-pCJqKvmbdO/output/output.tar.gz"
+   },
+   "Preprocess": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-wwsucc841qkh-Preprocess-IP04FunSyT",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+    "billable_seconds": 87.454
+   }
+  },
+  "ended": "2026-09-30T14:41:00Z",
+  "billable_seconds": 2083.454,
+  "cost_usd": 0.1331095611111111,
+  "reason": null,
+  "refused": false
+ },
+ {
+  "model": "xgb",
+  "dataset": "sst2",
+  "region": "us-east-2",
+  "instance_type": "ml.m5.xlarge",
+  "run_id": "20260930T144654Z",
+  "started": "2026-09-30T14:46:54Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-xgb/execution/lqnjgva3z5go",
+  "status": "Succeeded",
+  "failure": null,
+  "steps": {
+   "Train": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-lqnjgva3z5go-Train-laVTT2qluN",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-xgboost:3.0-5",
+    "billable_seconds": 315.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/sst2/20260930T144654Z/train/pipelines-lqnjgva3z5go-Train-laVTT2qluN/output/output.tar.gz"
+   },
+   "Preprocess": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-lqnjgva3z5go-Preprocess-guotV2yJQX",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+    "billable_seconds": 68.485
+   }
+  },
+  "ended": "2026-09-30T14:55:26Z",
+  "billable_seconds": 383.485,
+  "cost_usd": 0.024500430555555557,
+  "reason": null,
+  "refused": false
+ },
+ {
+  "model": "xgb",
+  "dataset": "banking77",
+  "region": "us-east-2",
+  "instance_type": "ml.m5.xlarge",
+  "run_id": "20260930T145530Z",
+  "started": "2026-09-30T14:55:30Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-xgb/execution/ojjglfb9e7z0",
+  "status": "Succeeded",
+  "failure": null,
+  "steps": {
+   "Train": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-ojjglfb9e7z0-Train-T3aeMSuC6p",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-xgboost:3.0-5",
+    "billable_seconds": 795.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/banking77/20260930T145530Z/train/pipelines-ojjglfb9e7z0-Train-T3aeMSuC6p/output/output.tar.gz"
+   },
+   "Preprocess": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-ojjglfb9e7z0-Preprocess-5Ftkx2FNex",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+    "billable_seconds": 63.375
+   }
+  },
+  "ended": "2026-09-30T15:18:04Z",
+  "billable_seconds": 858.375,
+  "cost_usd": 0.054840625000000004,
+  "reason": null,
+  "refused": false
+ },
+ {
+  "model": "xgb",
+  "dataset": "agnews",
+  "region": "us-east-2",
+  "instance_type": "ml.m5.xlarge",
+  "run_id": "20260930T150128Z",
+  "started": "2026-09-30T15:01:28Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-xgb/execution/8w1trqigtn10",
+  "status": "Succeeded",
+  "failure": null,
+  "steps": {
+   "Train": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-8w1trqigtn10-Train-pvO9VTBcuh",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-xgboost:3.0-5",
+    "billable_seconds": 2366.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/agnews/20260930T150128Z/train/pipelines-8w1trqigtn10-Train-pvO9VTBcuh/output/output.tar.gz"
+   },
+   "Preprocess": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-8w1trqigtn10-Preprocess-MucvBjCmCe",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+    "billable_seconds": 88.549
+   }
+  },
+  "ended": "2026-09-30T15:44:14Z",
+  "billable_seconds": 2454.549,
+  "cost_usd": 0.15681840833333333,
+  "reason": null,
+  "refused": false,
+  "recorded_from": "SageMaker execution record after the local watcher process was killed (machine out of memory)"
+ },
+ {
+  "model": "xgb",
+  "dataset": "german",
+  "region": "us-east-2",
+  "instance_type": "ml.m5.xlarge",
+  "run_id": "20261001T003643Z-9305",
+  "started": "2026-10-01T00:36:43Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-xgb/execution/au1gk1tgw4yu",
+  "status": "Succeeded",
+  "failure": null,
+  "steps": {
+   "Train": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-au1gk1tgw4yu-Train-TQNPA7CFWH",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-xgboost:3.0-5",
+    "billable_seconds": 89.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/german/20261001T003643Z-9305/train/pipelines-au1gk1tgw4yu-Train-TQNPA7CFWH/output/output.tar.gz",
+    "instance_type": "ml.m5.xlarge",
+    "cost_usd": 0.005686111111111111
+   },
+   "Preprocess": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-au1gk1tgw4yu-Preprocess-cOiEK0RZlj",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+    "billable_seconds": 63.58,
+    "instance_type": "ml.m5.xlarge",
+    "cost_usd": 0.004062055555555556
+   }
+  },
+  "ended": "2026-10-01T00:41:45Z",
+  "billable_seconds": 152.57999999999998,
+  "cost_usd": 0.009748166666666667,
+  "reason": null,
+  "refused": false
+ },
+ {
+  "model": "bert",
+  "dataset": "german",
+  "region": "us-east-2",
+  "instance_type": "ml.g5.xlarge",
+  "run_id": "20261001T003344Z-4d22",
+  "started": "2026-10-01T00:33:44Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-bert/execution/3etbhy037a39",
+  "status": "Succeeded",
+  "failure": null,
+  "steps": {
+   "Train": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-3etbhy037a39-Train-HNZ02fkrex",
+    "image": "763104351884.dkr.ecr.us-east-2.amazonaws.com/huggingface-pytorch-training:2.9.0-transformers5.3.0-gpu-py312-cu130-ubuntu22.04",
+    "billable_seconds": 425.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/german/20261001T003344Z-4d22/bert/pipelines-3etbhy037a39-Train-HNZ02fkrex/output/output.tar.gz",
+    "instance_type": "ml.g5.xlarge",
+    "cost_usd": 0.1484548611111111
+   }
+  },
+  "ended": "2026-10-01T00:41:45Z",
+  "billable_seconds": 425.0,
+  "cost_usd": 0.1484548611111111,
+  "reason": null,
+  "refused": false
+ },
+ {
+  "model": "xgb",
+  "dataset": "wdbc",
+  "region": "us-east-2",
+  "instance_type": "ml.m5.xlarge",
+  "run_id": "20261001T004147Z-fad8",
+  "started": "2026-10-01T00:41:47Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-xgb/execution/71dyb11282ic",
+  "status": "Succeeded",
+  "failure": null,
+  "steps": {
+   "Train": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-71dyb11282ic-Train-3Kw6iEny26",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-xgboost:3.0-5",
+    "billable_seconds": 94.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/wdbc/20261001T004147Z-fad8/train/pipelines-71dyb11282ic-Train-3Kw6iEny26/output/output.tar.gz",
+    "instance_type": "ml.m5.xlarge",
+    "cost_usd": 0.0060055555555555565
+   },
+   "Preprocess": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-71dyb11282ic-Preprocess-FHLkAGWWnF",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+    "billable_seconds": 63.547,
+    "instance_type": "ml.m5.xlarge",
+    "cost_usd": 0.004059947222222222
+   }
+  },
+  "ended": "2026-10-01T00:46:48Z",
+  "billable_seconds": 157.547,
+  "cost_usd": 0.010065502777777778,
+  "reason": null,
+  "refused": false
+ },
+ {
+  "model": "bert",
+  "dataset": "wdbc",
+  "region": "us-east-2",
+  "instance_type": "ml.g5.xlarge",
+  "run_id": "20261001T004211Z-3d5f",
+  "started": "2026-10-01T00:42:11Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-bert/execution/7y7b5h3bcsbl",
+  "status": "Succeeded",
+  "failure": null,
+  "steps": {
+   "Train": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-7y7b5h3bcsbl-Train-Eb3N3kDori",
+    "image": "763104351884.dkr.ecr.us-east-2.amazonaws.com/huggingface-pytorch-training:2.9.0-transformers5.3.0-gpu-py312-cu130-ubuntu22.04",
+    "billable_seconds": 370.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/wdbc/20261001T004211Z-3d5f/bert/pipelines-7y7b5h3bcsbl-Train-Eb3N3kDori/output/output.tar.gz",
+    "instance_type": "ml.g5.xlarge",
+    "cost_usd": 0.12924305555555557
+   }
+  },
+  "ended": "2026-10-01T00:49:42Z",
+  "billable_seconds": 370.0,
+  "cost_usd": 0.12924305555555557,
+  "reason": null,
+  "refused": false
+ },
+ {
+  "model": "qwen",
+  "dataset": "weights",
+  "region": "us-east-2",
+  "instance_type": "ml.m5.2xlarge",
+  "run_id": "20261001T003752Z-0994",
+  "started": "2026-10-01T00:37:53Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/3w8dq4j2r4lj",
+  "status": "Succeeded",
+  "failure": null,
+  "steps": {
+   "IfInfer": {
+    "status": "Succeeded",
+    "failure": null,
+    "instance_type": "ml.m5.2xlarge",
+    "cost_usd": 0.0
+   },
+   "Stage": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-3w8dq4j2r4lj-Stage-w5W0TFtgDW",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+    "billable_seconds": 845.872,
+    "instance_type": "ml.m5.2xlarge",
+    "cost_usd": 0.10831860888888888
+   }
+  },
+  "ended": "2026-10-01T00:53:26Z",
+  "billable_seconds": 845.872,
+  "cost_usd": 0.10831860888888888,
+  "reason": null,
+  "refused": false,
+  "kind": "stage",
+  "substitution": null,
+  "checkpoints": "s3://ciayn-baseline-<aws-account-id>-us-east-2/checkpoints/qwen/20261001T003752Z-0994/"
+ },
+ {
+  "model": "xgb",
+  "dataset": "sst2",
+  "region": "us-east-2",
+  "instance_type": "ml.m5.xlarge",
+  "run_id": "20261001T004650Z-b533",
+  "started": "2026-10-01T00:46:50Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-xgb/execution/8kdpnbbvihe0",
+  "status": "Succeeded",
+  "failure": null,
+  "steps": {
+   "Train": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-8kdpnbbvihe0-Train-R8MekwzGUZ",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-xgboost:3.0-5",
+    "billable_seconds": 314.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/sst2/20261001T004650Z-b533/train/pipelines-8kdpnbbvihe0-Train-R8MekwzGUZ/output/output.tar.gz",
+    "instance_type": "ml.m5.xlarge",
+    "cost_usd": 0.020061111111111113
+   },
+   "Preprocess": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-8kdpnbbvihe0-Preprocess-GAwGMiK7Vu",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+    "billable_seconds": 68.455,
+    "instance_type": "ml.m5.xlarge",
+    "cost_usd": 0.004373513888888889
+   }
+  },
+  "ended": "2026-10-01T00:55:22Z",
+  "billable_seconds": 382.455,
+  "cost_usd": 0.024434625,
+  "reason": null,
+  "refused": false
+ },
+ {
+  "model": "qwen",
+  "kind": "smoke",
+  "dataset": "german,wdbc,sst2,agnews,banking77",
+  "region": "us-east-2",
+  "instance_type": "ml.g6e.12xlarge",
+  "started": "2026-10-01T00:53:58Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/c78p6svfclg6",
+  "status": "Stopped",
+  "failure": null,
+  "steps": {
+   "Infer": {
+    "status": "Stopped",
+    "failure": null,
+    "job": "pipelines-c78p6svfclg6-Infer-Wvh1FkZDeB",
+    "image": "763104351884.dkr.ecr.us-east-2.amazonaws.com/vllm:0.29.0-gpu-py312-cu130-ubuntu24.04-sagemaker-v1.2",
+    "billable_seconds": 0.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/qwen/20261001T005357Z-6720/pipelines-c78p6svfclg6-Infer-Wvh1FkZDeB/output/output.tar.gz",
+    "instance_type": "ml.g6e.12xlarge",
+    "cost_usd": 0.0
+   },
+   "IfInfer": {
+    "status": "Succeeded",
+    "failure": null,
+    "instance_type": "ml.g6e.12xlarge",
+    "cost_usd": 0.0
+   },
+   "Stage": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-c78p6svfclg6-Stage-88YSsbp3GD",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+    "billable_seconds": 53.498,
+    "instance_type": "ml.m5.2xlarge",
+    "cost_usd": 0.006850716111111111
+   }
+  },
+  "ended": "2026-10-01T01:12:06Z",
+  "billable_seconds": 53.498,
+  "cost_usd": 0.006850716111111111,
+  "reason": "CapacityError: the inference job waited 1088s for an ml.g6e.12xlarge instance; the execution was stopped by hand (the capacity timeout was added to the code afterwards)",
+  "refused": true,
+  "substitution": "inference ran in a SageMaker training job, because the account's quota for GPU processing jobs is 0 in every region checked, while GPU training-job quotas exist"
+ },
+ {
+  "model": "bert",
+  "dataset": "sst2",
+  "region": "us-east-2",
+  "instance_type": "ml.g5.xlarge",
+  "run_id": "20261001T004949Z-3af6",
+  "started": "2026-10-01T00:49:49Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-bert/execution/btxkppuraynd",
+  "status": "Succeeded",
+  "failure": null,
+  "steps": {
+   "Train": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-btxkppuraynd-Train-hmg1d84BzO",
+    "image": "763104351884.dkr.ecr.us-east-2.amazonaws.com/huggingface-pytorch-training:2.9.0-transformers5.3.0-gpu-py312-cu130-ubuntu22.04",
+    "billable_seconds": 1307.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/sst2/20261001T004949Z-3af6/bert/pipelines-btxkppuraynd-Train-hmg1d84BzO/output/output.tar.gz",
+    "instance_type": "ml.g5.xlarge",
+    "cost_usd": 0.4565423611111112
+   }
+  },
+  "ended": "2026-10-01T01:12:23Z",
+  "billable_seconds": 1307.0,
+  "cost_usd": 0.4565423611111112,
+  "reason": null,
+  "refused": false
+ },
+ {
+  "model": "bert",
+  "dataset": "banking77",
+  "region": "us-east-2",
+  "instance_type": "ml.g5.xlarge",
+  "run_id": "20261001T011228Z-60c9",
+  "started": "2026-10-01T01:12:28Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-bert/execution/ubvgjpq7fkdr",
+  "status": "Succeeded",
+  "failure": null,
+  "steps": {
+   "Train": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-ubvgjpq7fkdr-Train-oSGRay5tPe",
+    "image": "763104351884.dkr.ecr.us-east-2.amazonaws.com/huggingface-pytorch-training:2.9.0-transformers5.3.0-gpu-py312-cu130-ubuntu22.04",
+    "billable_seconds": 424.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/banking77/20261001T011228Z-60c9/bert/pipelines-ubvgjpq7fkdr-Train-oSGRay5tPe/output/output.tar.gz",
+    "instance_type": "ml.g5.xlarge",
+    "cost_usd": 0.14810555555555555
+   }
+  },
+  "ended": "2026-10-01T01:20:31Z",
+  "billable_seconds": 424.0,
+  "cost_usd": 0.14810555555555555,
+  "reason": null,
+  "refused": false
+ },
+ {
+  "model": "xgb",
+  "dataset": "agnews",
+  "region": "us-east-2",
+  "instance_type": "ml.m5.xlarge",
+  "run_id": "20261001T005525Z-f805",
+  "started": "2026-10-01T00:55:25Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-xgb/execution/osk0jdjorglt",
+  "status": "Succeeded",
+  "failure": null,
+  "steps": {
+   "Train": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-osk0jdjorglt-Train-FkXXx7pcX3",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-xgboost:3.0-5",
+    "billable_seconds": 2347.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/agnews/20261001T005525Z-f805/train/pipelines-osk0jdjorglt-Train-FkXXx7pcX3/output/output.tar.gz",
+    "instance_type": "ml.m5.xlarge",
+    "cost_usd": 0.14994722222222223
+   },
+   "Preprocess": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-osk0jdjorglt-Preprocess-Ra90p5IXx9",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+    "billable_seconds": 106.465,
+    "instance_type": "ml.m5.xlarge",
+    "cost_usd": 0.006801930555555557
+   }
+  },
+  "ended": "2026-10-01T01:38:02Z",
+  "billable_seconds": 2453.465,
+  "cost_usd": 0.1567491527777778,
+  "reason": null,
+  "refused": false
+ },
+ {
+  "model": "xgb",
+  "dataset": "banking77",
+  "region": "us-east-2",
+  "instance_type": "ml.m5.xlarge",
+  "run_id": "20261001T013803Z-480f",
+  "started": "2026-10-01T01:38:03Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-xgb/execution/fnrpbl4wjtp8",
+  "status": "Succeeded",
+  "failure": null,
+  "steps": {
+   "Train": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-fnrpbl4wjtp8-Train-u8V0Ie43P6",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-xgboost:3.0-5",
+    "billable_seconds": 724.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/banking77/20261001T013803Z-480f/train/pipelines-fnrpbl4wjtp8-Train-u8V0Ie43P6/output/output.tar.gz",
+    "instance_type": "ml.m5.xlarge",
+    "cost_usd": 0.04625555555555556
+   },
+   "Preprocess": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-fnrpbl4wjtp8-Preprocess-wN2pd94zcw",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+    "billable_seconds": 63.42,
+    "instance_type": "ml.m5.xlarge",
+    "cost_usd": 0.0040518333333333335
+   }
+  },
+  "ended": "2026-10-01T01:53:36Z",
+  "billable_seconds": 787.42,
+  "cost_usd": 0.05030738888888889,
+  "reason": null,
+  "refused": false
+ },
+ {
+  "model": "bert",
+  "dataset": "agnews",
+  "region": "us-east-2",
+  "instance_type": "ml.g5.xlarge",
+  "run_id": "20261001T012041Z-5448",
+  "started": "2026-10-01T01:20:41Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-bert/execution/3etno79cwnbj",
+  "status": "Succeeded",
+  "failure": null,
+  "steps": {
+   "Train": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-3etno79cwnbj-Train-NOoWdrEGyq",
+    "image": "763104351884.dkr.ecr.us-east-2.amazonaws.com/huggingface-pytorch-training:2.9.0-transformers5.3.0-gpu-py312-cu130-ubuntu22.04",
+    "billable_seconds": 3124.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/agnews/20261001T012041Z-5448/bert/pipelines-3etno79cwnbj-Train-NOoWdrEGyq/output/output.tar.gz",
+    "instance_type": "ml.g5.xlarge",
+    "cost_usd": 1.0912305555555555
+   }
+  },
+  "ended": "2026-10-01T02:14:05Z",
+  "billable_seconds": 3124.0,
+  "cost_usd": 1.0912305555555555,
+  "reason": null,
+  "refused": false
+ },
+ {
+  "model": "qwen",
+  "dataset": "german,wdbc,sst2,agnews,banking77",
+  "region": "us-east-2",
+  "instance_type": "ml.g5.12xlarge",
+  "run_id": "20261001T011221Z-11ed",
+  "started": "2026-10-01T01:12:22Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/fymmhe6yvg03",
+  "status": "Succeeded",
+  "failure": null,
+  "steps": {
+   "Infer": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-fymmhe6yvg03-Infer-o739c9mRmj",
+    "image": "763104351884.dkr.ecr.us-east-2.amazonaws.com/vllm:0.29.0-gpu-py312-cu130-ubuntu24.04-sagemaker-v1.2",
+    "billable_seconds": 3379.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/qwen/20261001T011221Z-11ed/pipelines-fymmhe6yvg03-Infer-o739c9mRmj/output/output.tar.gz",
+    "instance_type": "ml.g5.12xlarge",
+    "cost_usd": 6.6547527777777775
+   },
+   "IfInfer": {
+    "status": "Succeeded",
+    "failure": null,
+    "instance_type": "ml.g5.12xlarge",
+    "cost_usd": 0.0
+   },
+   "Stage": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-fymmhe6yvg03-Stage-KBTC55z6Mc",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+    "billable_seconds": 53.277,
+    "instance_type": "ml.m5.2xlarge",
+    "cost_usd": 0.006822415833333334
+   }
+  },
+  "ended": "2026-10-01T02:24:23Z",
+  "billable_seconds": 3432.277,
+  "cost_usd": 6.661575193611111,
+  "reason": null,
+  "refused": false,
+  "kind": "smoke",
+  "substitution": "inference ran in a SageMaker training job, because the account's quota for GPU processing jobs is 0 in every region checked, while GPU training-job quotas exist",
+  "checkpoints": "s3://ciayn-baseline-<aws-account-id>-us-east-2/checkpoints/qwen/20261001T011221Z-11ed/"
+ },
+ {
+  "model": "qwen",
+  "dataset": "german,wdbc,sst2,agnews,banking77",
+  "region": "us-east-2",
+  "instance_type": "ml.g5.12xlarge",
+  "run_id": "20261001T110727Z-52cf",
+  "started": "2026-10-01T11:07:28Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/xteihti12sjh",
+  "status": "Stopped",
+  "failure": "CapacityError: pipelines-xteihti12sjh-Infer-dyHyfvBVMP waited 1800s for an instance; the execution was stopped",
+  "steps": {
+   "Infer": {
+    "status": "Stopped",
+    "failure": null,
+    "job": "pipelines-xteihti12sjh-Infer-dyHyfvBVMP",
+    "image": "763104351884.dkr.ecr.us-east-2.amazonaws.com/vllm:0.29.0-gpu-py312-cu130-ubuntu24.04-sagemaker-v1.2",
+    "billable_seconds": 0.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/qwen/20261001T110727Z-52cf/pipelines-xteihti12sjh-Infer-dyHyfvBVMP/output/output.tar.gz",
+    "instance_type": "ml.g5.12xlarge",
+    "cost_usd": 0.0
+   },
+   "IfInfer": {
+    "status": "Succeeded",
+    "failure": null,
+    "instance_type": "ml.g5.12xlarge",
+    "cost_usd": 0.0
+   },
+   "Stage": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-xteihti12sjh-Stage-DVMJl15iTP",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+    "billable_seconds": 53.4,
+    "instance_type": "ml.m5.2xlarge",
+    "cost_usd": 0.006838166666666667
+   }
+  },
+  "ended": "2026-10-01T11:41:43Z",
+  "billable_seconds": 53.4,
+  "cost_usd": 0.006838166666666667,
+  "reason": "CapacityError: pipelines-xteihti12sjh-Infer-dyHyfvBVMP waited 1800s for an instance; the execution was stopped",
+  "refused": true,
+  "kind": "smoke",
+  "substitution": "inference ran in a SageMaker training job, because the account's quota for GPU processing jobs is 0 in every region checked, while GPU training-job quotas exist",
+  "checkpoints": "s3://ciayn-baseline-<aws-account-id>-us-east-2/checkpoints/qwen/20261001T110727Z-52cf/"
+ },
+ {
+  "model": "qwen",
+  "dataset": "german,wdbc,sst2,agnews,banking77",
+  "region": "us-east-2",
+  "instance_type": "ml.g6e.12xlarge",
+  "run_id": "20261001T114218Z-929e",
+  "started": "2026-10-01T11:42:19Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/6d6pwkcrzou6",
+  "status": "Stopped",
+  "failure": "CapacityError: pipelines-6d6pwkcrzou6-Infer-HnP9BZQLws waited 900s for an instance; the execution was stopped",
+  "steps": {
+   "Infer": {
+    "status": "Stopped",
+    "failure": null,
+    "job": "pipelines-6d6pwkcrzou6-Infer-HnP9BZQLws",
+    "image": "763104351884.dkr.ecr.us-east-2.amazonaws.com/vllm:0.29.0-gpu-py312-cu130-ubuntu24.04-sagemaker-v1.2",
+    "billable_seconds": 0.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/qwen/20261001T114218Z-929e/pipelines-6d6pwkcrzou6-Infer-HnP9BZQLws/output/output.tar.gz",
+    "instance_type": "ml.g6e.12xlarge",
+    "cost_usd": 0.0
+   },
+   "IfInfer": {
+    "status": "Succeeded",
+    "failure": null,
+    "instance_type": "ml.g6e.12xlarge",
+    "cost_usd": 0.0
+   },
+   "Stage": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-6d6pwkcrzou6-Stage-QerXgdp9tA",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+    "billable_seconds": 53.376,
+    "instance_type": "ml.m5.2xlarge",
+    "cost_usd": 0.006835093333333334
+   }
+  },
+  "ended": "2026-10-01T12:02:27Z",
+  "billable_seconds": 53.376,
+  "cost_usd": 0.006835093333333334,
+  "reason": "CapacityError: pipelines-6d6pwkcrzou6-Infer-HnP9BZQLws waited 900s for an instance; the execution was stopped",
+  "refused": true,
+  "kind": "smoke",
+  "substitution": "inference ran in a SageMaker training job, because the account's quota for GPU processing jobs is 0 in every region checked, while GPU training-job quotas exist",
+  "checkpoints": "s3://ciayn-baseline-<aws-account-id>-us-east-2/checkpoints/qwen/20261001T114218Z-929e/"
+ },
+ {
+  "model": "qwen",
+  "dataset": "german,wdbc,sst2,agnews,banking77",
+  "region": "us-east-2",
+  "instance_type": "ml.g6.12xlarge",
+  "run_id": "20261001T120232Z-f2f9",
+  "started": "2026-10-01T12:02:33Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/kezd9bep9swg",
+  "status": "Stopped",
+  "failure": null,
+  "steps": {
+   "Infer": {
+    "status": "Stopped",
+    "failure": null,
+    "job": "pipelines-kezd9bep9swg-Infer-dKuKoMbSf8",
+    "image": "763104351884.dkr.ecr.us-east-2.amazonaws.com/vllm:0.29.0-gpu-py312-cu130-ubuntu24.04-sagemaker-v1.2",
+    "billable_seconds": 2377.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/qwen/20261001T120232Z-f2f9/pipelines-kezd9bep9swg-Infer-dKuKoMbSf8/output/output.tar.gz",
+    "instance_type": "ml.g6.12xlarge",
+    "cost_usd": 3.7979177777777773
+   },
+   "IfInfer": {
+    "status": "Succeeded",
+    "failure": null,
+    "instance_type": "ml.g6.12xlarge",
+    "cost_usd": 0.0
+   },
+   "Stage": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-kezd9bep9swg-Stage-YGYLMcN9GC",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+    "billable_seconds": 53.402,
+    "instance_type": "ml.m5.2xlarge",
+    "cost_usd": 0.006838422777777778
+   }
+  },
+  "ended": "2026-10-01T12:45:52Z",
+  "billable_seconds": 2430.402,
+  "cost_usd": 3.804756200555555,
+  "reason": "stopped by hand after 2,430 billable seconds: with a 784-token cache block the prefix cache does not help prompts shorter than 784 tokens and only half of a Banking77 prompt, so Banking77 could not finish (measured 128 s per item)",
+  "refused": false,
+  "kind": "smoke",
+  "substitution": "inference ran in a SageMaker training job, because the account's quota for GPU processing jobs is 0 in every region checked, while GPU training-job quotas exist",
+  "checkpoints": "s3://ciayn-baseline-<aws-account-id>-us-east-2/checkpoints/qwen/20261001T120232Z-f2f9/",
+  "stopped_by_hand": true
+ },
+ {
+  "model": "qwen",
+  "dataset": "banking77",
+  "region": "us-east-2",
+  "instance_type": "ml.g6.12xlarge",
+  "run_id": "20261001T125135Z-405c",
+  "started": "2026-10-01T12:51:35Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/kb3oac52c1oe",
+  "status": "Failed",
+  "failure": "Step failure: One or multiple steps failed.",
+  "steps": {
+   "Infer": {
+    "status": "Failed",
+    "failure": "ClientError: AlgorithmError: , exit code: 1",
+    "job": "pipelines-kb3oac52c1oe-Infer-nrH2FyaveC",
+    "image": "763104351884.dkr.ecr.us-east-2.amazonaws.com/vllm:0.29.0-gpu-py312-cu130-ubuntu24.04-sagemaker-v1.2",
+    "billable_seconds": 215.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/qwen/20261001T125135Z-405c/pipelines-kb3oac52c1oe-Infer-nrH2FyaveC/output/output.tar.gz",
+    "instance_type": "ml.g6.12xlarge",
+    "cost_usd": 0.34352222222222223
+   },
+   "IfInfer": {
+    "status": "Succeeded",
+    "failure": null,
+    "instance_type": "ml.g6.12xlarge",
+    "cost_usd": 0.0
+   },
+   "Stage": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-kb3oac52c1oe-Stage-SpbFZdQCL4",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+    "billable_seconds": 53.397,
+    "instance_type": "ml.m5.2xlarge",
+    "cost_usd": 0.0068377825
+   }
+  },
+  "ended": "2026-10-01T12:59:09Z",
+  "billable_seconds": 268.397,
+  "cost_usd": 0.35036000472222223,
+  "reason": "Step failure: One or multiple steps failed.",
+  "refused": false,
+  "kind": "smoke-hf",
+  "substitution": "inference ran in a SageMaker training job, because the account's quota for GPU processing jobs is 0 in every region checked, while GPU training-job quotas exist",
+  "checkpoints": "s3://ciayn-baseline-<aws-account-id>-us-east-2/checkpoints/qwen/20261001T125135Z-405c/"
+ },
+ {
+  "model": "qwen",
+  "dataset": "banking77",
+  "region": "us-east-2",
+  "instance_type": "ml.g6.12xlarge",
+  "run_id": "20261001T130014Z-10fb",
+  "started": "2026-10-01T13:00:14Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/ymitczdwtttq",
+  "status": "Succeeded",
+  "failure": null,
+  "steps": {
+   "Infer": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-ymitczdwtttq-Infer-dncgS4kGtx",
+    "image": "763104351884.dkr.ecr.us-east-2.amazonaws.com/vllm:0.29.0-gpu-py312-cu130-ubuntu24.04-sagemaker-v1.2",
+    "billable_seconds": 274.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/qwen/20261001T130014Z-10fb/pipelines-ymitczdwtttq-Infer-dncgS4kGtx/output/output.tar.gz",
+    "instance_type": "ml.g6.12xlarge",
+    "cost_usd": 0.43779111111111113
+   },
+   "IfInfer": {
+    "status": "Succeeded",
+    "failure": null,
+    "instance_type": "ml.g6.12xlarge",
+    "cost_usd": 0.0
+   },
+   "Stage": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-ymitczdwtttq-Stage-tFPQoIQJAC",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+    "billable_seconds": 53.586,
+    "instance_type": "ml.m5.2xlarge",
+    "cost_usd": 0.006861985
+   }
+  },
+  "ended": "2026-10-01T13:08:18Z",
+  "billable_seconds": 327.586,
+  "cost_usd": 0.44465309611111115,
+  "reason": null,
+  "refused": false,
+  "kind": "smoke-hf",
+  "substitution": "inference ran in a SageMaker training job, because the account's quota for GPU processing jobs is 0 in every region checked, while GPU training-job quotas exist",
+  "checkpoints": "s3://ciayn-baseline-<aws-account-id>-us-east-2/checkpoints/qwen/20261001T130014Z-10fb/"
+ },
+ {
+  "model": "qwen",
+  "dataset": "german,wdbc,sst2,agnews,banking77",
+  "region": "us-east-2",
+  "instance_type": "ml.g6.12xlarge",
+  "run_id": "20261001T131106Z-2bdd",
+  "started": "2026-10-01T13:11:07Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/klqpq6nk3g8d",
+  "status": "Succeeded",
+  "failure": null,
+  "steps": {
+   "Infer": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-klqpq6nk3g8d-Infer-yEgBtyWUgu",
+    "image": "763104351884.dkr.ecr.us-east-2.amazonaws.com/vllm:0.29.0-gpu-py312-cu130-ubuntu24.04-sagemaker-v1.2",
+    "billable_seconds": 310.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/qwen/20261001T131106Z-2bdd/pipelines-klqpq6nk3g8d-Infer-yEgBtyWUgu/output/output.tar.gz",
+    "instance_type": "ml.g6.12xlarge",
+    "cost_usd": 0.4953111111111111
+   },
+   "IfInfer": {
+    "status": "Succeeded",
+    "failure": null,
+    "instance_type": "ml.g6.12xlarge",
+    "cost_usd": 0.0
+   },
+   "Stage": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-klqpq6nk3g8d-Stage-H7RWnbkayv",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+    "billable_seconds": 53.329,
+    "instance_type": "ml.m5.2xlarge",
+    "cost_usd": 0.006829074722222222
+   }
+  },
+  "ended": "2026-10-01T13:23:13Z",
+  "billable_seconds": 363.329,
+  "cost_usd": 0.5021401858333333,
+  "reason": null,
+  "refused": false,
+  "kind": "smoke-hf",
+  "substitution": "inference ran in a SageMaker training job, because the account's quota for GPU processing jobs is 0 in every region checked, while GPU training-job quotas exist",
+  "checkpoints": "s3://ciayn-baseline-<aws-account-id>-us-east-2/checkpoints/qwen/20261001T131106Z-2bdd/"
+ },
+ {
+  "model": "qwen",
+  "dataset": "german,wdbc,sst2,agnews,banking77",
+  "region": "us-east-2",
+  "instance_type": "ml.g6.12xlarge",
+  "run_id": "20261001T132609Z-4287",
+  "started": "2026-10-01T13:26:10Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/8q1tp8bqt6ex",
+  "status": "Succeeded",
+  "failure": null,
+  "steps": {
+   "Infer": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-8q1tp8bqt6ex-Infer-HSIX7bP7m2",
+    "image": "763104351884.dkr.ecr.us-east-2.amazonaws.com/vllm:0.29.0-gpu-py312-cu130-ubuntu24.04-sagemaker-v1.2",
+    "billable_seconds": 309.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/qwen/20261001T132609Z-4287/pipelines-8q1tp8bqt6ex-Infer-HSIX7bP7m2/output/output.tar.gz",
+    "instance_type": "ml.g6.12xlarge",
+    "cost_usd": 0.4937133333333333
+   },
+   "IfInfer": {
+    "status": "Succeeded",
+    "failure": null,
+    "instance_type": "ml.g6.12xlarge",
+    "cost_usd": 0.0
+   },
+   "Stage": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-8q1tp8bqt6ex-Stage-yWrNbJ2YUx",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+    "billable_seconds": 53.493,
+    "instance_type": "ml.m5.2xlarge",
+    "cost_usd": 0.006850075833333334
+   }
+  },
+  "ended": "2026-10-01T13:38:16Z",
+  "billable_seconds": 362.493,
+  "cost_usd": 0.5005634091666666,
+  "reason": null,
+  "refused": false,
+  "kind": "smoke-hf",
+  "substitution": "inference ran in a SageMaker training job, because the account's quota for GPU processing jobs is 0 in every region checked, while GPU training-job quotas exist",
+  "checkpoints": "s3://ciayn-baseline-<aws-account-id>-us-east-2/checkpoints/qwen/20261001T132609Z-4287/"
+ },
+ {
+  "model": "qwen",
+  "dataset": "german,wdbc,sst2,agnews,banking77",
+  "region": "us-east-2",
+  "instance_type": "ml.g6.12xlarge",
+  "run_id": "20261001T133915Z-233c",
+  "started": "2026-10-01T13:39:16Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/9kt9w3cxbg9v",
+  "status": "Succeeded",
+  "failure": null,
+  "steps": {
+   "Infer": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-9kt9w3cxbg9v-Infer-i95ViEYgZx",
+    "image": "763104351884.dkr.ecr.us-east-2.amazonaws.com/vllm:0.29.0-gpu-py312-cu130-ubuntu24.04-sagemaker-v1.2",
+    "billable_seconds": 370.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/qwen/20261001T133915Z-233c/pipelines-9kt9w3cxbg9v-Infer-i95ViEYgZx/output/output.tar.gz",
+    "instance_type": "ml.g6.12xlarge",
+    "cost_usd": 0.5911777777777777
+   },
+   "IfInfer": {
+    "status": "Succeeded",
+    "failure": null,
+    "instance_type": "ml.g6.12xlarge",
+    "cost_usd": 0.0
+   },
+   "Stage": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-9kt9w3cxbg9v-Stage-n0wetma6Cc",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+    "billable_seconds": 53.401,
+    "instance_type": "ml.m5.2xlarge",
+    "cost_usd": 0.006838294722222223
+   }
+  },
+  "ended": "2026-10-01T13:49:20Z",
+  "billable_seconds": 423.401,
+  "cost_usd": 0.5980160724999999,
+  "reason": null,
+  "refused": false,
+  "kind": "smoke-hf",
+  "substitution": "inference ran in a SageMaker training job, because the account's quota for GPU processing jobs is 0 in every region checked, while GPU training-job quotas exist",
+  "checkpoints": "s3://ciayn-baseline-<aws-account-id>-us-east-2/checkpoints/qwen/20261001T133915Z-233c/"
+ },
+ {
+  "model": "qwen",
+  "dataset": "german,wdbc,sst2,agnews,banking77",
+  "region": "us-east-2",
+  "instance_type": "ml.g6.12xlarge",
+  "run_id": "20261001T135053Z-4adb",
+  "started": "2026-10-01T13:50:54Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/gitxl1mk24f8",
+  "status": "Succeeded",
+  "failure": null,
+  "steps": {
+   "Infer": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-gitxl1mk24f8-Infer-pO8FN1bB0K",
+    "image": "763104351884.dkr.ecr.us-east-2.amazonaws.com/vllm:0.29.0-gpu-py312-cu130-ubuntu24.04-sagemaker-v1.2",
+    "billable_seconds": 420.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/qwen/20261001T135053Z-4adb/pipelines-gitxl1mk24f8-Infer-pO8FN1bB0K/output/output.tar.gz",
+    "instance_type": "ml.g6.12xlarge",
+    "cost_usd": 0.6710666666666667
+   },
+   "IfInfer": {
+    "status": "Succeeded",
+    "failure": null,
+    "instance_type": "ml.g6.12xlarge",
+    "cost_usd": 0.0
+   },
+   "Stage": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-gitxl1mk24f8-Stage-j59avMe4Ca",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+    "billable_seconds": 53.46,
+    "instance_type": "ml.m5.2xlarge",
+    "cost_usd": 0.0068458500000000005
+   }
+  },
+  "ended": "2026-10-01T14:01:29Z",
+  "billable_seconds": 473.46,
+  "cost_usd": 0.6779125166666667,
+  "reason": null,
+  "refused": false,
+  "kind": "smoke-hf",
+  "substitution": "inference ran in a SageMaker training job, because the account's quota for GPU processing jobs is 0 in every region checked, while GPU training-job quotas exist",
+  "checkpoints": "s3://ciayn-baseline-<aws-account-id>-us-east-2/checkpoints/qwen/20261001T135053Z-4adb/"
+ },
+ {
+  "model": "qwen",
+  "dataset": "german,wdbc,sst2,agnews",
+  "region": "us-east-2",
+  "instance_type": "ml.g6.12xlarge",
+  "run_id": "20261001T140436Z-d02b",
+  "started": "2026-10-01T14:04:37Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/1bke8noosau8",
+  "status": "Succeeded",
+  "failure": null,
+  "steps": {
+   "Infer": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-1bke8noosau8-Infer-EM72sHcGvj",
+    "image": "763104351884.dkr.ecr.us-east-2.amazonaws.com/vllm:0.29.0-gpu-py312-cu130-ubuntu24.04-sagemaker-v1.2",
+    "billable_seconds": 1092.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/qwen/20261001T140436Z-d02b/pipelines-1bke8noosau8-Infer-EM72sHcGvj/output/output.tar.gz",
+    "instance_type": "ml.g6.12xlarge",
+    "cost_usd": 1.7447733333333333
+   },
+   "IfInfer": {
+    "status": "Succeeded",
+    "failure": null,
+    "instance_type": "ml.g6.12xlarge",
+    "cost_usd": 0.0
+   },
+   "Stage": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-1bke8noosau8-Stage-mQszTIaFWG",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+    "billable_seconds": 53.54,
+    "instance_type": "ml.m5.2xlarge",
+    "cost_usd": 0.006856094444444445
+   }
+  },
+  "ended": "2026-10-01T14:26:17Z",
+  "billable_seconds": 1145.54,
+  "cost_usd": 1.7516294277777777,
+  "reason": null,
+  "refused": false,
+  "kind": "full",
+  "substitution": "inference ran in a SageMaker training job, because the account's quota for GPU processing jobs is 0 in every region checked, while GPU training-job quotas exist",
+  "checkpoints": "s3://ciayn-baseline-<aws-account-id>-us-east-2/checkpoints/qwen/20261001T140436Z-d02b/"
+ },
+ {
+  "model": "qwen",
+  "dataset": "german,wdbc,sst2,agnews",
+  "region": "us-east-2",
+  "instance_type": "ml.g6.12xlarge",
+  "run_id": "20261001T142622Z-ea17",
+  "started": "2026-10-01T14:26:24Z",
+  "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/mpsepno5ej5b",
+  "status": "Succeeded",
+  "failure": null,
+  "steps": {
+   "Infer": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-mpsepno5ej5b-Infer-x6tpoBWqRD",
+    "image": "763104351884.dkr.ecr.us-east-2.amazonaws.com/vllm:0.29.0-gpu-py312-cu130-ubuntu24.04-sagemaker-v1.2",
+    "billable_seconds": 4754.0,
+    "output": "s3://ciayn-baseline-<aws-account-id>-us-east-2/output/qwen/20261001T142622Z-ea17/pipelines-mpsepno5ej5b-Infer-x6tpoBWqRD/output/output.tar.gz",
+    "instance_type": "ml.g6.12xlarge",
+    "cost_usd": 7.595835555555555
+   },
+   "IfInfer": {
+    "status": "Succeeded",
+    "failure": null,
+    "instance_type": "ml.g6.12xlarge",
+    "cost_usd": 0.0
+   },
+   "Stage": {
+    "status": "Succeeded",
+    "failure": null,
+    "job": "pipelines-mpsepno5ej5b-Stage-v94SgsnQRY",
+    "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+    "billable_seconds": 53.348,
+    "instance_type": "ml.m5.2xlarge",
+    "cost_usd": 0.006831507777777778
+   }
+  },
+  "ended": "2026-10-01T15:52:33Z",
+  "billable_seconds": 4807.348,
+  "cost_usd": 7.602667063333333,
+  "reason": null,
+  "refused": false,
+  "kind": "full-hf",
+  "substitution": "inference ran in a SageMaker training job, because the account's quota for GPU processing jobs is 0 in every region checked, while GPU training-job quotas exist",
+  "checkpoints": "s3://ciayn-baseline-<aws-account-id>-us-east-2/checkpoints/qwen/20261001T142622Z-ea17/"
+ }
+]

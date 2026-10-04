@@ -1,0 +1,106 @@
+{
+ "mode": "live",
+ "dataset": "agnews",
+ "repeats": {
+  "0": {
+   "selected": {
+    "max_depth": 6,
+    "eta": 0.3,
+    "val_logloss": 0.2617924357037878,
+    "best_iteration": 498
+   },
+   "grid": [
+    {
+     "max_depth": 3,
+     "eta": 0.1,
+     "val_logloss": 0.43059355558246315,
+     "best_iteration": 499,
+     "seconds": 245.6
+    },
+    {
+     "max_depth": 3,
+     "eta": 0.3,
+     "val_logloss": 0.31039076891052025,
+     "best_iteration": 499,
+     "seconds": 222.0
+    },
+    {
+     "max_depth": 6,
+     "eta": 0.1,
+     "val_logloss": 0.332688886752693,
+     "best_iteration": 499,
+     "seconds": 614.2
+    },
+    {
+     "max_depth": 6,
+     "eta": 0.3,
+     "val_logloss": 0.2617924357037878,
+     "best_iteration": 498,
+     "seconds": 495.9
+    }
+   ],
+   "n_features": 50000,
+   "curve_train_sizes": {
+    "0.05": 5752,
+    "0.1": 11500,
+    "0.25": 28752,
+    "0.5": 57500,
+    "1.0": 115000
+   },
+   "curve_skipped": {},
+   "infer_test_s": 0.4922165870666504,
+   "infer_s_per_item": 6.476534040350663e-05,
+   "label_budget": {
+    "training": 115000,
+    "early_stopping_and_selection": 5000,
+    "threshold_selection": 0,
+    "calibration": 0
+   }
+  }
+ },
+ "grid_searched": {
+  "max_depth": [
+   3,
+   6
+  ],
+  "eta": [
+   0.1,
+   0.3
+  ]
+ },
+ "max_rounds": 500,
+ "max_bin": 16,
+ "patience": 30,
+ "fractions": [
+  0.05,
+  0.1,
+  0.25,
+  0.5,
+  1.0
+ ],
+ "seconds": 2258.8,
+ "versions": {
+  "python": "3.10.21",
+  "xgboost": "3.0.5",
+  "numpy": "2.1.0"
+ },
+ "model_version": "xgboost-3.0.5",
+ "region": "us-east-2",
+ "instance_type": "ml.m5.xlarge",
+ "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-xgb/execution/osk0jdjorglt",
+ "jobs": {
+  "Train": {
+   "job": "pipelines-osk0jdjorglt-Train-FkXXx7pcX3",
+   "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-xgboost:3.0-5",
+   "billable_seconds": 2347.0
+  },
+  "Preprocess": {
+   "job": "pipelines-osk0jdjorglt-Preprocess-Ra90p5IXx9",
+   "image": "257758044811.dkr.ecr.us-east-2.amazonaws.com/sagemaker-scikit-learn:1.4-2-py312-cpu-py3",
+   "billable_seconds": 106.465
+  }
+ },
+ "billable_seconds": 2453.465,
+ "cost_usd": 0.1567491527777778,
+ "fetched_at": "2026-10-01T11:05:32Z"
+}

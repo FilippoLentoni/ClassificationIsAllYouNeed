@@ -1,0 +1,21 @@
+# Decision costs C[true][predicted] for the binary datasets, rows/cols in the dataset's class order
+# (the positive class is second). `canonical: true` marks a matrix that is part of the dataset;
+# every other matrix is an illustrative assumption and is reported as such (design D8).
+german:
+  classes: [good, bad]
+  canonical: true       # Statlog German Credit: predicting "good" for a "bad" applicant costs 5, the reverse 1
+  matrix:
+    - [0, 1]   # true good
+    - [5, 0]   # true bad
+wdbc:
+  classes: [benign, malignant]
+  canonical: false      # illustrative: a missed malignant mass is taken to cost 5 times a false alarm
+  matrix:
+    - [0, 1]   # true benign
+    - [5, 0]   # true malignant
+sst2:
+  classes: [negative, positive]
+  canonical: false      # illustrative: symmetric costs, so the analytic threshold equals the default
+  matrix:
+    - [0, 1]
+    - [1, 0]

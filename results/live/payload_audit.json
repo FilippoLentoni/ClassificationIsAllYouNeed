@@ -1,0 +1,20 @@
+{
+ "checked_at": "2026-09-30T13:31:06Z",
+ "ledger_entries_without_a_logged_exchange": 100,
+ "ledger_entries_without_a_logged_exchange_by_stage": {
+  "smoke": 1,
+  "predict": 99
+ },
+ "cached_responses_without_a_logged_exchange": 99,
+ "regenerated_requests_matching_a_stored_cache_key": 99,
+ "regenerated_matches_by_dataset": {
+  "german": 99
+ },
+ "what_a_match_shows": "the regenerated input text, instructions, label descriptions and model version hash to the key under which the response was stored when it was received",
+ "not_recorded": [
+  "the request payloads as sent on the wire",
+  "the raw response bodies (only the parsed probabilities, chosen label, confidence, token count and latency were stored)",
+  "the smoke-test call, which bypassed the cache: neither its request nor its response was stored"
+ ],
+ "exchange_log_records_created_by_this_audit": 0
+}

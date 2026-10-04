@@ -1,0 +1,57 @@
+{
+ "dataset": "agnews",
+ "example_id": "agnews-test-3752",
+ "gold_label": "Business",
+ "selection": "first evaluation example in a seeded order (seed 0) whose request is in the request log",
+ "source": "cache/exchanges/predict.jsonl, copied verbatim",
+ "exchange": {
+  "ledger_n": 9835,
+  "stage": "predict",
+  "dataset": "agnews",
+  "cache_key": "3b6fd2e350a78db261e9602b0590ffd50b33bfeb6eb64bfa39288eefa8d19926",
+  "ts": "2026-09-30T13:46:45.754+00:00",
+  "sdk_version": "0.7.2",
+  "requested_model": "jev-1.13.0",
+  "method": "POST",
+  "url": "https://api.typesafe.ai/v1/systemone",
+  "request": {
+   "state": "McTeer: Lonesome Dove to be an Aggie NEW YORK (CNN/Money) - A New Economy champion, a lover of the Texas picker poets who write lovesick country songs...and, oh, by the way, a member of the Federal Reserve system for 36 years.",
+   "model": "jev-1.13.0",
+   "questions": {
+    "label": {
+     "type": "choice",
+     "instructions": "Classify the topic of the news article below.",
+     "criteria": {
+      "World": "International news, politics, conflicts and world affairs.",
+      "Sports": "Sports news: games, athletes, teams and competitions.",
+      "Business": "Business and economic news: companies, markets, finance and the economy.",
+      "Sci/Tech": "Science and technology news: computing, the internet, research, space and health science."
+     }
+    }
+   }
+  },
+  "status": 200,
+  "response": {
+   "model": "jev-1.13.0",
+   "answers": {
+    "label": {
+     "type": "choice",
+     "choice": "Business",
+     "confidence": 0.97,
+     "probabilities": {
+      "Sci/Tech": 0.0,
+      "Business": 0.98,
+      "Sports": 0.01,
+      "World": 0.01
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 446,
+    "output_tokens": 47
+   }
+  },
+  "latency_s": 0.11380615599045996,
+  "reported_model": "jev-1.13.0"
+ }
+}

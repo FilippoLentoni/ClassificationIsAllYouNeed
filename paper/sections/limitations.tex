@@ -1,0 +1,14 @@
+\section{Limitations}
+\label{sec:limitations}
+
+The comparison is unequal by design: two models use no training labels and two use up to
+\NTrainAgnews. Each dataset has one frozen template, never tuned; a public result on Breast
+Cancer Wisconsin with a different serialization is much higher than ours, so our tabular numbers
+describe this template, not Jev's best case. Qwen's distribution comes from scoring option names,
+one of several ways to turn a generative model into a classifier, and carries numerical noise at
+the second decimal; its cost and latency describe one deployment. No model is recalibrated. The
+tabular datasets are small and their repeated splits overlap. Only German Credit has a canonical
+cost matrix. Thinking was measured on \ThinkSubsampleN{} items per dataset, and explanations on
+\ExExamplesGerman. All four datasets are widely circulated and the models may have seen them. A
+fifth dataset was run and removed before writing; its costs are reported
+(Appendix~\ref{app:protocol}).

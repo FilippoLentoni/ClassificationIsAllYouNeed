@@ -1,0 +1,6 @@
+# Jev (TypeSafe System One). Pin `model` to the version reported by `make smoke` (task 11.1).
+model: jev-1.13.0   # pinned from `make smoke` on 2026-09-29 (response model)
+concurrency: 8
+timeout_s: 30
+usd_per_mtok_input: 0.042
+question_name: label

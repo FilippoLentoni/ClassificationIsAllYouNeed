@@ -1,0 +1,106 @@
+"""Qwen prompts and job packages (design D4): the same content Jev receives, no labels.
+
+For every item the system message holds the frozen Jev instructions, the options as
+`name: description` lines in Jev's order and one answer instruction; the user message is the Jev
+request state. The chat template, with thinking disabled or enabled, is applied inside the job by
+the model's own tokenizer, which also saves one fully rendered prompt per dataset.
+
+Two jobs (`engine_by_dataset` in configs/llm.yaml says which engine scores a dataset): `full` (vLLM)
+generates the reasoning of the thinking subsample and scores the datasets assigned to vLLM, if any;
+`full-hf` (transformers) scores its datasets, with thinking disabled and after the saved reasoning.
+"""
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+from .. import config, escalation_val, templates
+from ..data.datasets import Dataset
+from ..data.serialize import serialize
+from . import latency_sample, thinking_subsample
+
+KINDS = {"smoke": "vllm", "full": "vllm", "thinking-all": "vllm", "smoke-hf": "transformers", "full-hf": "transformers"}
+
+
+def engine_of(name: str) -> str:
+    return config.load("llm")["engine_by_dataset"][name]
+
+
+def system_message(tpl: dict) -> str:
+    lines = [tpl["instructions"], "", "Options:"] + [f"- {name}: {desc}" for name, desc in tpl["criteria"]]
+    return "\n".join(lines + ["", config.load("llm")["answer_instruction"]])
+
+
+def messages(ds: Dataset, tpl: dict, ex_id: str) -> list[dict]:
+    return [{"role": "system", "content": system_message(tpl)}, {"role": "user", "content": serialize(ds, ex_id)}]
+
+
+def all_items(ds: Dataset) -> list[str]:
+    """Every item Jev predicted, plus the escalation validation items (AG News)."""
+    return list(ds.jev_ids) + escalation_val.ids(ds)
+
+
+def sets(ds: Dataset, kind: str) -> dict[str, list[str]]:
+    """Which items each variant covers in a job of `kind`, for the engine that job runs."""
+    cfg = config.load("llm")
+    sub, lat, mine = thinking_subsample(ds), latency_sample(ds), engine_of(ds.name) == KINDS[kind]
+    none = {"nothink": [], "think": [], "latency": []}
+    if kind == "smoke":
+        return {"nothink": sub[: int(cfg["smoke"]["items_per_dataset"])], "think": sub[:5], "latency": lat[:3]} if mine else none
+    if kind == "smoke-hf":
+        n = int(cfg["smoke_hf_items"][ds.name])
+        return {"nothink": (sub + [i for i in ds.ids("test", 0) if i not in set(sub)])[:n], "think": [], "latency": lat[:2]} if mine else none
+    if kind == "full" and KINDS[kind] == "vllm" and not mine:   # vLLM only generates the reasoning; the other engine scores
+        return {"nothink": [], "think": sub, "latency": []}
+    if kind == "full":         # vLLM also generates the reasoning for the datasets the other engine scores
+        return {"nothink": all_items(ds), "think": sub, "latency": lat} if mine else {"nothink": [], "think": sub, "latency": []}
+    if kind == "full-hf":
+        return {"nothink": all_items(ds), "think": sub, "latency": lat} if mine else none
+    if kind == "thinking-all":
+        return {"nothink": [], "think": list(ds.jev_ids), "latency": []} if mine else none
+    raise ValueError(kind)
+
+
+def think_mode(ds: Dataset, kind: str) -> str:
+    """score: reason then score; generate: reason only (vLLM, for a dataset the other engine scores); given: score after saved reasoning."""
+    if KINDS[kind] == "vllm":
+        return "score" if engine_of(ds.name) == "vllm" else "generate"
+    return "given"
+
+
+def write_job(dss: list[Dataset], kind: str, out: Path, mode: str = "live", reasoning: dict | None = None) -> Path:
+    """Write <out>/{job.json, <dataset>.jsonl}; returns <out>. `reasoning`: {dataset: {id: saved reasoning row}} for `full-hf`."""
+    cfg = config.load("llm")
+    out.mkdir(parents=True, exist_ok=True)
+    job = {"kind": kind, "engine": KINDS[kind], "vllm_method": cfg["vllm_method"], "datasets": [], "options": {}, "sets": {},
+           "example_id": {}, "think_mode": {},
+           "tensor_parallel": cfg["infer"]["tensor_parallel"], "dtype": cfg["infer"]["dtype"],
+           "max_model_len": cfg["infer"]["max_model_len"], "gpu_memory_utilization": cfg["infer"]["gpu_memory_utilization"],
+           "max_thinking_tokens": cfg["thinking"]["max_thinking_tokens"], "model_id": cfg["model_id"], "revision": cfg["revision"],
+           "cross_check_items": int(cfg["cross_check_items"]), "think_items_per_call": int(cfg["think_items_per_call"])}
+    if KINDS[kind] == "vllm":
+        job["items_per_call"] = int(cfg["items_per_call"])
+    for ds in dss:
+        s = sets(ds, kind)
+        if not any(s.values()):
+            continue
+        tpl = templates.require(mode, ds)
+        example = thinking_subsample(ds)[0]
+        tm = think_mode(ds, kind)
+        saved = (reasoning or {}).get(ds.name, {})
+        if tm == "given" and s["think"] and set(s["think"]) - set(saved):
+            raise RuntimeError(f"{ds.name}: the reasoning generated by the vLLM job is missing for "
+                               f"{len(set(s['think']) - set(saved))} items; run and fetch the `full` job first")
+        ids = list(dict.fromkeys(s["nothink"] + s["think"] + s["latency"] + [example]))
+        with open(out / f"{ds.name}.jsonl", "w") as f:
+            for i in ids:
+                rec = {"id": i, "messages": messages(ds, tpl, i)}
+                if tm == "given" and i in saved and i in set(s["think"]):
+                    rec.update(reasoning_ids=saved[i]["reasoning_ids"], thinking_truncated=saved[i]["thinking_truncated"],
+                               seconds=saved[i].get("seconds"))
+                f.write(json.dumps(rec) + "\n")
+        job["datasets"].append(ds.name)
+        job["options"][ds.name] = [name for name, _ in tpl["criteria"]]
+        job["sets"][ds.name], job["example_id"][ds.name], job["think_mode"][ds.name] = s, example, tm
+    (out / "job.json").write_text(json.dumps(job, indent=1))
+    return out

@@ -1,0 +1,176 @@
+{
+ "what": "datasets removed from the study after work had been paid for on them; every total in provenance.json still includes that work",
+ "datasets": {
+  "banking77": {
+   "dataset": "banking77",
+   "jev": {
+    "by_stage": {
+     "escalation_val": {
+      "requests": 500,
+      "failed": 0,
+      "input_tokens": 1148848,
+      "usd": 0.048251616000000004
+     },
+     "explain": {
+      "requests": 5599,
+      "failed": 0,
+      "input_tokens": 12835690,
+      "usd": 0.53909898
+     },
+     "predict": {
+      "requests": 3079,
+      "failed": 0,
+      "input_tokens": 7071186,
+      "usd": 0.296989812
+     },
+     "template": {
+      "requests": 20,
+      "failed": 0,
+      "input_tokens": 45918,
+      "usd": 0.001928556
+     }
+    },
+    "requests": 9198,
+    "input_tokens": 21101642,
+    "usd": 0.8862689640000001,
+    "basis": "request-log rows of this dataset; every request made on it was logged"
+   },
+   "aws": {
+    "dedicated_executions": [
+     {
+      "model": "xgb",
+      "kind": null,
+      "instance_type": "ml.m5.xlarge",
+      "status": "Succeeded",
+      "billable_seconds": 858.375,
+      "cost_usd": 0.054840625000000004,
+      "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-xgb/execution/ojjglfb9e7z0"
+     },
+     {
+      "model": "bert",
+      "kind": null,
+      "instance_type": "ml.g5.xlarge",
+      "status": "Succeeded",
+      "billable_seconds": 424.0,
+      "cost_usd": 0.14810555555555555,
+      "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-bert/execution/ubvgjpq7fkdr"
+     },
+     {
+      "model": "xgb",
+      "kind": null,
+      "instance_type": "ml.m5.xlarge",
+      "status": "Succeeded",
+      "billable_seconds": 787.42,
+      "cost_usd": 0.05030738888888889,
+      "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-xgb/execution/fnrpbl4wjtp8"
+     },
+     {
+      "model": "qwen",
+      "kind": "smoke-hf",
+      "instance_type": "ml.g6.12xlarge",
+      "status": "Failed",
+      "billable_seconds": 268.397,
+      "cost_usd": 0.35036000472222223,
+      "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/kb3oac52c1oe"
+     },
+     {
+      "model": "qwen",
+      "kind": "smoke-hf",
+      "instance_type": "ml.g6.12xlarge",
+      "status": "Succeeded",
+      "billable_seconds": 327.586,
+      "cost_usd": 0.44465309611111115,
+      "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/ymitczdwtttq"
+     }
+    ],
+    "dedicated_usd": 1.0482666702777776,
+    "shared_executions": [
+     {
+      "model": "qwen",
+      "kind": "smoke",
+      "instance_type": "ml.g6e.12xlarge",
+      "status": "Stopped",
+      "billable_seconds": 53.498,
+      "cost_usd": 0.006850716111111111,
+      "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/c78p6svfclg6"
+     },
+     {
+      "model": "qwen",
+      "kind": "smoke",
+      "instance_type": "ml.g5.12xlarge",
+      "status": "Succeeded",
+      "billable_seconds": 3432.277,
+      "cost_usd": 6.661575193611111,
+      "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/fymmhe6yvg03"
+     },
+     {
+      "model": "qwen",
+      "kind": "smoke",
+      "instance_type": "ml.g5.12xlarge",
+      "status": "Stopped",
+      "billable_seconds": 53.4,
+      "cost_usd": 0.006838166666666667,
+      "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/xteihti12sjh"
+     },
+     {
+      "model": "qwen",
+      "kind": "smoke",
+      "instance_type": "ml.g6e.12xlarge",
+      "status": "Stopped",
+      "billable_seconds": 53.376,
+      "cost_usd": 0.006835093333333334,
+      "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/6d6pwkcrzou6"
+     },
+     {
+      "model": "qwen",
+      "kind": "smoke",
+      "instance_type": "ml.g6.12xlarge",
+      "status": "Stopped",
+      "billable_seconds": 2430.402,
+      "cost_usd": 3.804756200555555,
+      "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/kezd9bep9swg"
+     },
+     {
+      "model": "qwen",
+      "kind": "smoke-hf",
+      "instance_type": "ml.g6.12xlarge",
+      "status": "Succeeded",
+      "billable_seconds": 363.329,
+      "cost_usd": 0.5021401858333333,
+      "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/klqpq6nk3g8d"
+     },
+     {
+      "model": "qwen",
+      "kind": "smoke-hf",
+      "instance_type": "ml.g6.12xlarge",
+      "status": "Succeeded",
+      "billable_seconds": 362.493,
+      "cost_usd": 0.5005634091666666,
+      "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/8q1tp8bqt6ex"
+     },
+     {
+      "model": "qwen",
+      "kind": "smoke-hf",
+      "instance_type": "ml.g6.12xlarge",
+      "status": "Succeeded",
+      "billable_seconds": 423.401,
+      "cost_usd": 0.5980160724999999,
+      "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/9kt9w3cxbg9v"
+     },
+     {
+      "model": "qwen",
+      "kind": "smoke-hf",
+      "instance_type": "ml.g6.12xlarge",
+      "status": "Succeeded",
+      "billable_seconds": 473.46,
+      "cost_usd": 0.6779125166666667,
+      "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-qwen/execution/gitxl1mk24f8"
+     }
+    ],
+    "shared_usd": 12.765487554444443,
+    "basis": "dedicated: executions whose only dataset was this one; shared: executions that also covered other datasets, listed with their whole cost, which cannot be split"
+   },
+   "recorded_at": "2026-10-01T23:07:26Z"
+  }
+ }
+}

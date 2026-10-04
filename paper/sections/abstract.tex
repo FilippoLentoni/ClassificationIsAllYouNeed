@@ -1,0 +1,29 @@
+\begin{abstract}
+Language models are widely used for classification, but generating an answer does not directly
+provide a probability distribution over a fixed label set. We evaluate Jev, TypeSafe's first
+System One model, zero-shot on four public datasets against zero-shot Qwen3.6-27B self-hosted on
+an AWS SageMaker \texttt{\QwenScoringInstance} instance (four \QwenGpu{} GPUs), BERT fine-tuned
+on an \texttt{\AwsInstanceTypeBert} instance (one \BertGpu{} GPU), and XGBoost trained on an
+\texttt{\AwsInstanceTypeXgb} CPU instance. The comparison measures accuracy, inference cost,
+latency, and training-label requirements. On balanced or nearly balanced text tasks evaluated
+with equal error costs, Jev reaches \AccPctJevSst\% accuracy on SST-2 and \AccPctJevAgnews\% on
+AG News, matching Qwen (\AccPctQwenSst\% and \AccPctQwenAgnews\%) at substantially lower
+inference cost and latency. Across the four datasets, Jev costs
+\$\CostPerKJevSst--\$\CostPerKJevWdbc{} per 1,000 predictions and takes
+\JevLatencyWdbc--\JevLatencySst{} seconds per request, compared with
+\$\CostPerKQwenSst--\$\CostPerKQwenWdbc{} in AWS compute and
+\QwenLatencySst--\QwenLatencyWdbc{} seconds for Qwen. On AG News, BERT and XGBoost surpass both
+zero-shot models with \LabelsToMatchJevBertAgnews{} and \LabelsToMatchJevXgbAgnews{} training
+examples, respectively---the smallest tested budgets, alongside validation labels for model
+selection. Neither surpasses Jev on SST-2 with all \NTrainSst{} training examples. Once trained,
+supervised models offer orders-of-magnitude cheaper inference, with microsecond-to-millisecond
+batch time per item. On the imbalanced German Credit and Breast Cancer Wisconsin datasets,
+XGBoost achieves the highest default macro-F1 scores, at \MacroFOneXgbGerman{} and
+\MacroFOneXgbWdbc, respectively. Jev produces the fewest false negatives but substantially more
+false positives. This tradeoff warrants evaluation in applications where missed positive cases
+are especially costly, but model selection requires explicit error costs and comparison at
+suitable decision thresholds. All Jev results are zero-shot, using one fixed input template per
+dataset without prompt optimization. Finally, we evaluate KernelSHAP and LIME, showing that these
+standard perturbation-based explanation methods apply directly to Jev's class probabilities and
+identify words or features that influence its predictions.
+\end{abstract}

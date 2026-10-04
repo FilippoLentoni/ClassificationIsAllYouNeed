@@ -1,0 +1,142 @@
+{
+ "mode": "live",
+ "dataset": "agnews",
+ "selected": {
+  "learning_rate": 2e-05,
+  "epochs": 1,
+  "val_logloss": 0.1712927928421133,
+  "selected_on": "repeat 0 validation log-loss"
+ },
+ "repeats": {
+  "0": {
+   "truncated": {
+    "train": 55,
+    "val": 2,
+    "test": 2
+   },
+   "n": {
+    "train": 115000,
+    "val": 5000,
+    "test": 7600
+   },
+   "grid": [
+    {
+     "learning_rate": 2e-05,
+     "history": [
+      {
+       "epoch": 1,
+       "val_logloss": 0.1712927928421133
+      },
+      {
+       "epoch": 2,
+       "val_logloss": 0.17533287018819013
+      },
+      {
+       "epoch": 3,
+       "val_logloss": 0.1916238746574944
+      },
+      {
+       "epoch": 4,
+       "val_logloss": 0.2428232989569247
+      }
+     ],
+     "best_epoch": 1,
+     "val_logloss": 0.1712927928421133,
+     "train_s": 1284.1191067695618
+    },
+    {
+     "learning_rate": 5e-05,
+     "history": [
+      {
+       "epoch": 1,
+       "val_logloss": 0.17938690606839905
+      },
+      {
+       "epoch": 2,
+       "val_logloss": 0.1882817188529997
+      },
+      {
+       "epoch": 3,
+       "val_logloss": 0.2066284027683863
+      },
+      {
+       "epoch": 4,
+       "val_logloss": 0.26630800900649493
+      }
+     ],
+     "best_epoch": 1,
+     "val_logloss": 0.17938690606839905,
+     "train_s": 1283.5379872322083
+    }
+   ],
+   "label_budget": {
+    "training": 115000,
+    "early_stopping_and_selection": 5000,
+    "calibration": 0,
+    "threshold_selection": 0
+   },
+   "train_s": 1284.1191067695618,
+   "infer_val_s": 1.5997693538665771,
+   "infer_test_s": 2.351102828979492,
+   "infer_s_per_item": 0.00030935563539203844,
+   "curve": {
+    "0.05": {
+     "n_train": 5752
+    },
+    "0.1": {
+     "n_train": 11500
+    },
+    "0.25": {
+     "n_train": 28752
+    },
+    "0.5": {
+     "n_train": 57500
+    },
+    "1.0": {
+     "n_train": 115000
+    }
+   }
+  }
+ },
+ "fractions": [
+  0.05,
+  0.1,
+  0.25,
+  0.5,
+  1.0
+ ],
+ "max_length": 256,
+ "model_id": "google-bert/bert-base-uncased",
+ "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+ "device": "cuda",
+ "gpu": "NVIDIA A10G",
+ "versions": {
+  "torch": "2.9.0+cu130",
+  "transformers": "5.3.0",
+  "python": "3.12.10"
+ },
+ "elapsed_s": 2912.7101356983185,
+ "model_version": "google-bert/bert-base-uncased@86b5e0934494",
+ "label_budget": [
+  {
+   "training": 115000,
+   "early_stopping_and_selection": 5000,
+   "calibration": 0,
+   "threshold_selection": 0
+  }
+ ],
+ "region": "us-east-2",
+ "instance_type": "ml.g5.xlarge",
+ "execution_arn": "arn:aws:sagemaker:us-east-2:<aws-account-id>:pipeline/ciayn-bert/execution/3etno79cwnbj",
+ "jobs": {
+  "Train": {
+   "job": "pipelines-3etno79cwnbj-Train-NOoWdrEGyq",
+   "image": "763104351884.dkr.ecr.us-east-2.amazonaws.com/huggingface-pytorch-training:2.9.0-transformers5.3.0-gpu-py312-cu130-ubuntu22.04",
+   "billable_seconds": 3124.0
+  }
+ },
+ "billable_seconds": 3124.0,
+ "cost_usd": 1.0912305555555555,
+ "fetched_at": "2026-10-01T11:05:26Z",
+ "infer_s_per_item": 0.00030935563539203844
+}
